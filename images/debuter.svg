@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fd0ff"/><stop offset="1" stop-color="#e9f7ff"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#fffbe0" stop-opacity=".9"/><stop offset="1" stop-color="#fffbe0" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#sky)"/>
+<circle cx="900" cy="170" r="260" fill="url(#glow)"/>
+<circle cx="900" cy="170" r="58" fill="#fffbe0"/>
+<polygon points="0,675 0,408 80,394 160,394 240,368 320,377 400,374 480,412 560,401 640,412 720,386 800,408 880,446 960,456 1040,419 1120,416 1200,441 1280,456 1200,675" fill="#9cc7a6"/>
+<rect y="330" width="1200" height="345" fill="url(#fog)"/>
+<polygon points="0,675 0,505 60,508 120,528 180,521 240,528 300,513 360,488 420,478 480,494 540,490 600,480 660,498 720,497 780,528 840,524 900,528 960,528 1020,528 1080,528 1140,528 1200,528 1260,528 1200,675" fill="#6fa27e"/>
+<rect y="430" width="1200" height="245" fill="url(#fog)"/>
+<polygon points="0,675 0,586 50,601 100,606 150,606 200,593 250,582 300,591 350,586 400,600 450,586 500,571 550,574 600,568 650,578 700,578 750,573 800,570 850,581 900,568 950,551 1000,550 1050,550 1100,550 1150,550 1200,560 1250,566 1200,675" fill="#4e7d5c"/>
+<path d="M600 675 C 560 560, 700 520, 640 450 S 600 380, 620 350" stroke="#e8d3a3" stroke-width="40" fill="none" opacity=".9"/>
+<g fill="#1d1a2a"><rect x="300" y="420" width="10" height="160"/><circle cx="305" cy="410" r="60"/><circle cx="270" cy="450" r="45"/><circle cx="340" cy="450" r="45"/>
+<rect x="900" y="440" width="10" height="150"/><circle cx="905" cy="430" r="55"/><circle cx="875" cy="465" r="40"/><circle cx="935" cy="465" r="40"/>
+<rect x="700" y="470" width="6" height="80"/><polygon points="706,472 760,486 706,500"/></g>
+</svg>

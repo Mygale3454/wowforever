@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donjons & Raids – wowforever</title>
+<meta name="description" content="Liste des donjons et raids de WoW Forever avec niveaux et emplacements.">
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main><div class="wrap">
+<div class="crumbs"><a href="index.html">Accueil</a> › Donjons & Raids</div>
+<h1 class="page-title">Donjons et raids de WoW Forever</h1>
+<p class="page-lead">Tous les donjons de Classic reviennent, accompagnés de neuf nouveaux donjons à 5 joueurs du niveau 13 au 60. Les niveaux bas sont dans les Royaumes de l'Est, les plus hauts en Kalimdor.</p>
+<div class="cover"><img src="images/donjons.svg" alt=""></div>
+<div class="filters" id="dfilters">
+  <button class="on" data-f="all">Tous</button>
+  <button data-f="new">Nouveaux</button>
+  <button data-f="classic">Classic</button>
+</div>
+<div class="table-wrap"><table>
+  <thead><tr><th>Donjon</th><th>Niveaux</th><th>Zone</th><th>Type</th></tr></thead>
+  <tbody id="dtable"></tbody>
+</table></div>
+<p class="small">Niveaux indicatifs issus de la bêta, susceptibles d'évoluer.</p>
+
+<div class="sec-title"><h2>Raids</h2></div>
+<div class="grid">
+  <a class="card" href="calendrier.html"><div class="thumb"><img src="images/raids.svg" alt="" loading="lazy"><span class="badge green">9 déc. 2026</span></div><div class="card-body"><h3>Ouverture des raids</h3><p>Les premiers raids débloquent un peu plus d'un mois après la sortie.</p></div></a>
+  <div class="card"><div class="thumb"><img src="images/une.svg" alt="" loading="lazy"><span class="badge ">Nouveau</span></div><div class="card-body"><h3>Raids 10 et 20 joueurs</h3><p>En plus des formats de Classic, des raids pour groupes plus réduits.</p></div></div>
+  <a class="card" href="calendrier.html"><div class="thumb"><img src="images/calendrier.svg" alt="" loading="lazy"><span class="badge grey">2027</span></div><div class="card-body"><h3>Encore des donjons</h3><p>Deux nouveaux donjons prévus au printemps et deux autres avec la mise à jour d'été.</p></div></a>
+</div>
+
+<script>
+/* Pour ajouter un donjon : ajoute une ligne [nom, niveaux, zone, "new" ou "classic"] */
+const DONJONS = [
+  ["Gouffre de Ragefeu","13–18","Orgrimmar","classic"],
+  ["Hall of Thanes","13–18","Sous Forgefer, Dun Morogh","new"],
+  ["Ruins of Lordaeron","15–20","Ruines au-dessus de Fossoyeuse, Clairières de Tirisfal","new"],
+  ["Les Mortemines","16–21","Marche de l'Ouest","classic"],
+  ["Cavernes des lamentations","17–24","Les Tarides","classic"],
+  ["Donjon d'Ombrecroc","18–25","Forêt des Pins-Argentés","classic"],
+  ["Excavation Site","24–29","Les Paluns","new"],
+  ["Gnomeregan","25–32","Dun Morogh","classic"],
+  ["City of Dalaran","28–33","Montagnes d'Alterac","new"],
+  ["Monastère écarlate","30–40","Clairières de Tirisfal","classic"],
+  ["The Drowned City","35–40","Vallée de Strangleronce","new"],
+  ["Krol'dok Stronghold","40–55","The Riverglades","new"],
+  ["Zul'Farrak","42–48","Tanaris","classic"],
+  ["Maraudon","42–52","Désolace","classic"],
+  ["Temple englouti","45–55","Marais des Chagrins","classic"],
+  ["Pic Rochenoire","53–60","Mont Rochenoire","classic"],
+  ["Hache-Tripes","54–60","Feralas","classic"],
+  ["Stratholme","55–60","Maleterres de l'Est","classic"],
+  ["Scholomance","57–60","Maleterres de l'Ouest","classic"],
+  ["3 nouveaux donjons","Haut niveau","Kalimdor (détails à venir)","new"]
+];
+function afficher(f){
+  document.getElementById("dtable").innerHTML = DONJONS.filter(d => f==="all" || d[3]===f).map(d =>
+    `<tr><td><b>${d[0]}</b></td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td>${d[3]==="new" ? '<span class="badge">Nouveau</span>' : '<span class="badge grey">Classic</span>'}</td></tr>`).join("");
+}
+afficher("all");
+document.getElementById("dfilters").addEventListener("click", e => {
+  if (e.target.tagName !== "BUTTON") return;
+  document.querySelectorAll("#dfilters button").forEach(b => b.classList.toggle("on", b === e.target));
+  afficher(e.target.dataset.f);
+});
+</script>
+</div></main>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+</body>
+</html>

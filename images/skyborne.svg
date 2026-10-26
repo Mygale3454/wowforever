@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a6c8ff"/><stop offset="1" stop-color="#f1e9ff"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#sky)"/>
+<circle cx="300" cy="150" r="260" fill="url(#glow)"/>
+<circle cx="300" cy="150" r="58" fill="#ffffff"/>
+<polygon points="0,675 0,583 90,571 180,559 270,561 360,538 450,535 540,521 630,513 720,521 810,501 900,523 990,523 1080,521 1170,526 1260,503 1200,675" fill="#c8c6ec"/>
+<g transform="translate(620,300)"><path d="M-260 0 L 260 0 L 120 150 L 40 250 L -30 190 L -120 140 Z" fill="#1d1a2a"/>
+<ellipse cx="0" cy="0" rx="260" ry="26" fill="#3d7a5a"/>
+<g fill="#2c5e45"><circle cx="-150" cy="-40" r="45"/><circle cx="-100" cy="-60" r="55"/><circle cx="130" cy="-45" r="50"/></g>
+<rect x="10" y="-200" width="40" height="200" fill="#efe7ff"/><polygon points="0,-200 30,-280 60,-200" fill="#7e6ad6"/>
+<path d="M30 250 q -10 60 20 120" stroke="#9fd7ff" stroke-width="10" fill="none" opacity=".7"/></g>
+<g fill="none" stroke="#fff" stroke-width="5" opacity=".8"><path d="M250 180 q 15 -15 30 0 q 15 -15 30 0"/><path d="M330 140 q 12 -12 24 0 q 12 -12 24 0"/></g>
+</svg>

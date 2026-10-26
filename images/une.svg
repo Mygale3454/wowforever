@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb36b"/><stop offset="1" stop-color="#ffe6c2"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#fff3cf" stop-opacity=".9"/><stop offset="1" stop-color="#fff3cf" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+</defs>
+<rect width="1600" height="700" fill="url(#sky)"/>
+<circle cx="860" cy="230" r="260" fill="url(#glow)"/>
+<circle cx="860" cy="230" r="58" fill="#fff3cf"/>
+<polygon points="0,700 0,434 90,416 180,464 270,478 360,464 450,478 540,457 630,478 720,478 810,471 900,463 990,478 1080,471 1170,478 1260,450 1350,478 1440,478 1530,434 1620,435 1600,700" fill="#a67a6b"/>
+<rect y="310" width="1600" height="390" fill="url(#fog)"/>
+<polygon points="0,700 0,507 70,524 140,536 210,536 280,522 350,491 420,507 490,491 560,500 630,495 700,518 770,483 840,462 910,497 980,486 1050,459 1120,480 1190,513 1260,494 1330,482 1400,463 1470,442 1540,430 1610,454 1600,700" fill="#7d5a55"/>
+<rect y="410" width="1600" height="290" fill="url(#fog)"/>
+<polygon points="0,700 0,564 60,580 120,562 180,540 240,524 300,520 360,543 420,532 480,532 540,532 600,520 660,533 720,559 780,573 840,550 900,536 960,522 1020,522 1080,520 1140,520 1200,520 1260,520 1320,538 1380,554 1440,579 1500,594 1560,604 1620,601 1600,700" fill="#4a3540"/>
+<g fill="#1d1a2a" transform="translate(760,250)">
+<rect x="0" y="120" width="300" height="320"/><rect x="-40" y="40" width="80" height="400"/><rect x="260" y="60" width="80" height="380"/>
+<polygon points="-50,40 0,-40 50,40"/><polygon points="250,60 300,-20 350,60"/><rect x="110" y="0" width="80" height="440"/><polygon points="100,0 150,-90 200,0"/>
+<path d="M120 440 v-90 a30 30 0 0 1 60 0 v90z" fill="#f2c25a" opacity=".85"/>
+<rect x="-25" y="90" width="14" height="26" fill="#f2c25a"/><rect x="285" y="120" width="14" height="26" fill="#f2c25a"/><rect x="143" y="60" width="14" height="26" fill="#f2c25a"/></g>
+</svg>
