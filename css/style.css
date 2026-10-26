@@ -1,4 +1,4 @@
-/* ===== wowforever – thème clair ===== */
+/* ===== wowforever – thème parchemin ===== */
 :root{
   --bg:#f7f4ee; --bg2:#efe9de; --card:#ffffff; --line:#e4dccd;
   --text:#211c15; --muted:#6f6656; --accent:#b0781a; --accent-soft:#f6e7c8;
@@ -173,3 +173,81 @@ footer a:hover{color:#f2c25a}
 .lightbox button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:1.8rem;cursor:pointer}
 .lightbox button:hover{background:rgba(255,255,255,.25)}
 .lb-close{top:16px;right:16px}.lb-prev{left:16px;top:50%}.lb-next{right:16px;top:50%}
+
+/* =========================================================
+   THÈME PARCHEMIN  (toutes les couleurs se changent ici)
+   ========================================================= */
+:root{
+  --bg:#ecdcb8; --bg2:#e2cea4; --card:#f7ecd2; --line:#cdb284;
+  --text:#3b2a17; --muted:#6e5638; --accent:#9c6a16; --accent-soft:#ead4a2;
+  --title:#7a2418; --ink:#2b1d0e; --leather:#3a2614;
+  --horde:#9e2a1f; --alliance:#24508f; --green:#3c7a3a; --sky:#6a52b3;
+  --shadow:0 2px 10px rgba(70,45,15,.12);
+  --paper:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .24 0 0 0 0 .1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body{background:var(--paper),radial-gradient(ellipse at 50% 0%,#f5e8c8 0%,var(--bg) 55%,#dcc595 100%);background-attachment:fixed;color:var(--text)}
+h1,h2,h3,.page-title,.sec-title h2,aside h4{font-family:Cinzel,serif;color:var(--title);letter-spacing:.3px}
+.card h3,.cls h3{font-family:Cinzel,serif}
+.card,.article,aside .box,.gal-item,.hero,.table-wrap table,.cls,.tree{background:var(--paper),var(--card)}
+.card,.article,aside .box,.gal-item,.hero,.table-wrap,.cls{border-color:var(--line)}
+.article p,.article li{color:var(--text)}
+th{background:var(--bg2);color:var(--muted)}
+tbody tr:hover{background:#efdfba}
+.badge.grey{background:var(--bg2);color:var(--muted)}
+.info{background:var(--accent-soft);color:var(--ink)}
+.tags a{background:var(--card)}
+
+/* ----- Bandeau ----- */
+.topbar{background:var(--ink)}
+.banner{position:relative;height:190px;overflow:hidden;background:#5a4a2a}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,18,6,.65) 0%,rgba(30,18,6,.25) 45%,transparent 70%),linear-gradient(transparent 60%,rgba(236,220,184,.9))}
+.banner-in{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center}
+.logo.big{font-size:clamp(2.2rem,6vw,3.6rem);color:#fff6de;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+.logo.big span{color:#f2c25a}
+.tagline{color:#f6e9c9;font-weight:500;text-shadow:0 2px 8px rgba(0,0,0,.7);margin-top:2px}
+
+/* ----- Barre de menu (cuir) ----- */
+header.navbar{background:linear-gradient(#4a3119,var(--leather));border-top:2px solid #b8893a;border-bottom:2px solid #b8893a;box-shadow:0 3px 10px rgba(40,25,8,.3)}
+header.navbar .wrap{height:54px}
+.mini-logo{display:none;color:#fff6de;font-size:1.25rem}
+.menu a{color:#e9d6ab;font-family:Cinzel,serif;font-weight:700;font-size:.9rem;letter-spacing:.3px}
+.menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.menu a.active{color:#2b1d0e;background:linear-gradient(#f2c25a,#c9922e)}
+.burger{background:rgba(255,255,255,.08);border-color:#b8893a;color:#f2c25a}
+footer{background:var(--paper),var(--ink)}
+
+@media (max-width:860px){
+  .banner{height:130px}
+  .mini-logo{display:block}
+  .menu{top:54px;background:var(--leather);border-bottom:2px solid #b8893a}
+}
+
+/* ----- Fiches de classes ----- */
+.legend{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;font-size:.82rem}
+.new-note{color:var(--muted)}
+.jumps{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.jump{padding:6px 14px;border-radius:99px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);font-family:Cinzel,serif;font-weight:700;font-size:.85rem}
+.jump:hover{background:var(--accent-soft)}
+.fiches{display:grid;gap:22px;margin-bottom:24px}
+.fiche{background:var(--paper),var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:12px;padding:24px;box-shadow:var(--shadow);scroll-margin-top:70px}
+.fiche header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:8px}
+.fiche h2{font-size:1.5rem;color:var(--c);text-shadow:0 1px 0 rgba(0,0,0,.25)}
+.fiche h3{font-size:.95rem;color:var(--title);margin:16px 0 8px}
+.fiche p{color:var(--text)}
+.roles{display:flex;gap:6px}
+.role{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:3px 9px;border-radius:5px;background:var(--bg2);color:var(--muted)}
+.races{display:flex;flex-wrap:wrap;gap:6px}
+.race{display:inline-flex;gap:6px;align-items:center;padding:4px 10px;border-radius:6px;font-size:.82rem;font-weight:600;color:#fff}
+.race.a{background:var(--alliance)}.race.h{background:var(--horde)}.race.s{background:var(--sky)}
+.race em{font-style:normal;font-weight:500;opacity:.85;font-size:.74rem}
+table.specs{min-width:600px}
+table.specs td:last-child{color:var(--muted);font-size:.86rem}
+.tier{display:inline-block;width:28px;text-align:center;font-weight:800;border-radius:6px;padding:2px 0;color:#fff;font-family:Cinzel,serif}
+.tier.tS{background:#b8322a}.tier.tA{background:#d07a1f}.tier.tB{background:#b89a2a}.tier.tC{background:#6f8a3a}.tier.tD{background:#7d7466}
+@media (max-width:560px){ .tagline{display:none} .banner{height:110px} }
+html{background:var(--bg)}
+body{background-color:var(--bg);background-attachment:scroll}
+.fiche header{position:static;background:none;border:0;box-shadow:none;backdrop-filter:none}
+.fiche h2{color:color-mix(in srgb,var(--c) 68%,#1e1208);text-shadow:none}
+.jump{border-left-color:var(--c)}

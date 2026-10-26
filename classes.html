@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Classes – wowforever</title>
-<meta name="description" content="Les classes et nouvelles combinaisons race/classe de WoW Forever.">
+<meta name="description" content="Les 9 classes de WoW Forever : description, races jouables et spécialisations préférées des joueurs.">
 <link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,24 +16,96 @@
 <main><div class="wrap">
 <div class="crumbs"><a href="index.html">Accueil</a> › Classes</div>
 <h1 class="page-title">Classes de WoW Forever</h1>
-<p class="page-lead">Les neuf classes de Classic sont là, rééquilibrées tout en gardant leur identité. Aucune nouvelle classe à la sortie, mais six nouvelles combinaisons race/classe et la race Skyborne.</p>
+<p class="page-lead">Les neuf classes de Classic sont là, rééquilibrées tout en gardant leur identité. Aucune nouvelle classe à la sortie, mais de nouvelles combinaisons race/classe et la race Skyborne. Pour chaque classe : son rôle, les races qui peuvent la jouer et les spécialisations les mieux classées par les joueurs.</p>
 <div class="cover"><img src="images/classes.jpg" alt=""></div>
-<div class="classes">
-<div class="cls" style="--c:#C69B6D"><h3 style="color:#C69B6D">Guerrier</h3><p>Tank ou dégâts au corps à corps.</p></div>
-<div class="cls" style="--c:#D9619C"><h3 style="color:#D9619C">Paladin</h3><p>Soin, tank ou dégâts.</p><div class='new'>★ Désormais jouable côté Horde</div></div>
-<div class="cls" style="--c:#7FAE3E"><h3 style="color:#7FAE3E">Chasseur</h3><p>Dégâts à distance avec un familier.</p></div>
-<div class="cls" style="--c:#D4B82A"><h3 style="color:#D4B82A">Voleur</h3><p>Furtivité et dégâts rapides.</p></div>
-<div class="cls" style="--c:#9A9A9A"><h3 style="color:#9A9A9A">Prêtre</h3><p>Soins puissants ou ombre.</p></div>
-<div class="cls" style="--c:#0070DD"><h3 style="color:#0070DD">Chaman</h3><p>Totems, soin ou dégâts.</p><div class='new'>★ Désormais jouable côté Alliance</div></div>
-<div class="cls" style="--c:#2BA9CC"><h3 style="color:#2BA9CC">Mage</h3><p>Dégâts de sorts à distance.</p><div class='new'>★ Jouable en Skyborne (Alliance)</div></div>
-<div class="cls" style="--c:#7072D6"><h3 style="color:#7072D6">Démoniste</h3><p>Démons et dégâts sur la durée.</p></div>
-<div class="cls" style="--c:#E86E08"><h3 style="color:#E86E08">Druide</h3><p>Hybride : tank, soin ou dégâts.</p></div>
+
+<div class="legend">
+  <span class="race a">Alliance</span><span class="race h">Horde</span><span class="race s">Skyborne (deux factions)</span><span class="new-note">★ = nouvelle combinaison dans Forever</span>
 </div>
+<nav class="jumps"><a class="jump" href="#guerrier" style="--c:#C69B6D">Guerrier</a><a class="jump" href="#paladin" style="--c:#D9619C">Paladin</a><a class="jump" href="#chasseur" style="--c:#7FAE3E">Chasseur</a><a class="jump" href="#voleur" style="--c:#D4B82A">Voleur</a><a class="jump" href="#pretre" style="--c:#9A9A9A">Prêtre</a><a class="jump" href="#chaman" style="--c:#0070DD">Chaman</a><a class="jump" href="#mage" style="--c:#2BA9CC">Mage</a><a class="jump" href="#demoniste" style="--c:#7072D6">Démoniste</a><a class="jump" href="#druide" style="--c:#E86E08">Druide</a></nav>
+
+<div class="fiches">
+<article class="fiche" id="guerrier" style="--c:#C69B6D">
+  <header><h2>Guerrier</h2><div class="roles"><span class="role">Tank</span><span class="role">Dégâts</span></div></header>
+  <p>Le combattant au corps à corps par excellence. Il génère sa rage en frappant et en encaissant, porte les plus lourdes armures et reste la référence pour tenir les monstres en respect. Exigeant au début, il devient redoutable une fois bien équipé.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Protection</b></td><td>Tank</td><td><span class="tier tS">S</span></td><td>Menace énorme grâce à Heurt de bouclier : le tank le plus demandé.</td></tr><tr><td><b>Fureur</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Gros dégâts soutenus en mêlée, très apprécié en donjon.</td></tr><tr><td><b>Armes</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Plus lent mais solide, souvent choisi pour monter de niveau et en JcJ.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="paladin" style="--c:#D9619C">
+  <header><h2>Paladin</h2><div class="roles"><span class="role">Tank</span><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
+  <p>Chevalier sacré polyvalent, capable de soigner, de protéger et de frapper. Ses bénédictions et auras renforcent tout le groupe, et il fait partie des personnages les plus résistants pour progresser seul.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race h" title="Premiers paladins de la Horde">Mort-vivant ★<em>Premiers paladins de la Horde</em></span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Protection</b></td><td>Tank</td><td><span class="tier tS">S</span></td><td>Bouclier sacré et sorts défensifs renforcés : tank de premier plan.</td></tr><tr><td><b>Sacré</b></td><td>Soins</td><td><span class="tier tA">A</span></td><td>Soins puissants sur une cible, idéal pour soigner le tank.</td></tr><tr><td><b>Vindicte</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Hybride robuste et agréable pour monter de niveau.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="chasseur" style="--c:#7FAE3E">
+  <header><h2>Chasseur</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
+  <p>Archer ou tireur accompagné d'un familier qui encaisse les coups à sa place. Très autonome, il est souvent considéré comme la classe la plus simple et la plus efficace pour monter de niveau.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain ★</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race h">Orc</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Maîtrise des bêtes</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Familier très puissant : le meilleur choix pour le leveling.</td></tr><tr><td><b>Survie</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Pièges et contrôle, très efficace en donjon.</td></tr><tr><td><b>Précision</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros tirs à distance, un classique apprécié des joueurs.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="voleur" style="--c:#D4B82A">
+  <header><h2>Voleur</h2><div class="roles"><span class="role">Dégâts</span></div></header>
+  <p>Spécialiste de la furtivité, des poisons et des coups critiques. Il choisit ses combats, ouvre les coffres verrouillés et excelle en JcJ grâce à ses étourdissements.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Assassinat</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Poisons et gros coups critiques : la spé la plus forte en donjon.</td></tr><tr><td><b>Combat</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Dégâts constants et simples à jouer.</td></tr><tr><td><b>Finesse</b></td><td>Dégâts</td><td><span class="tier tD">D</span></td><td>Surtout pour le JcJ, en retrait en donjon.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="pretre" style="--c:#9A9A9A">
+  <header><h2>Prêtre</h2><div class="roles"><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
+  <p>Le soigneur emblématique, maître de la lumière et de l'ombre. Il protège le groupe avec ses boucliers ou bascule dans l'ombre pour infliger des dégâts sur la durée.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome ★</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Sacré</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Soins de groupe excellents, l'un des meilleurs soigneurs.</td></tr><tr><td><b>Discipline</b></td><td>Soins</td><td><span class="tier tA">A</span></td><td>Boucliers et prévention, très efficace en donjon.</td></tr><tr><td><b>Ombre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Solide en JcJ et agréable pour progresser seul.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="chaman" style="--c:#0070DD">
+  <header><h2>Chaman</h2><div class="roles"><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
+  <p>Lien vivant avec les éléments, il pose des totems qui renforcent ses alliés. Soigneur très recherché, il peut aussi frapper au corps à corps ou lancer la foudre.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a" title="Premiers chamans de l'Alliance">Nain ★<em>Premiers chamans de l'Alliance</em></span><span class="race h">Orc</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s" title="Côté Horde uniquement">Skyborne ★<em>Côté Horde uniquement</em></span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Restauration</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Salve de guérison et Remous : le soigneur de groupe idéal.</td></tr><tr><td><b>Amélioration</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Dégâts de mêlée explosifs, très populaire.</td></tr><tr><td><b>Élémentaire</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Gros dégâts de sorts à distance.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="mage" style="--c:#2BA9CC">
+  <header><h2>Mage</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
+  <p>Lanceur de sorts de givre, de feu et d'arcanes. Il crée nourriture et eau, ouvre des portails et inflige d'énormes dégâts de zone, parfait pour enchaîner les groupes de monstres.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Gnome</span><span class="race h">Orc ★</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span><span class="race s" title="Côté Alliance uniquement">Skyborne ★<em>Côté Alliance uniquement</em></span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Arcanes</b></td><td>Dégâts</td><td><span class="tier tS">S</span></td><td>Pouvoir des arcanes : la spé de dégâts la mieux notée.</td></tr><tr><td><b>Givre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Contrôle et sécurité, la référence pour le leveling de zone.</td></tr><tr><td><b>Feu</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros coups critiques, appréciée en raid.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="demoniste" style="--c:#7072D6">
+  <header><h2>Démoniste</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
+  <p>Maître des démons et des malédictions. Il invoque des serviteurs, draine la vie de ses ennemis et peut invoquer ses alliés auprès de lui. Excellent en solo.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Humain</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Troll ★</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Affliction</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Dégâts sur la durée et très bonne survie en solo.</td></tr><tr><td><b>Démonologie</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Démons renforcés, solide en donjon.</td></tr><tr><td><b>Destruction</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros sorts de feu, efficace en JcJ.</td></tr></tbody></table></div>
+</article>
+<article class="fiche" id="druide" style="--c:#E86E08">
+  <header><h2>Druide</h2><div class="roles"><span class="role">Tank</span><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
+  <p>Gardien de la nature capable de changer de forme : ours pour tanker, félin pour frapper, sélénien pour lancer des sorts ou arbre pour soigner. La classe la plus polyvalente du jeu.</p>
+  <h3>Races jouables</h3>
+  <div class="races"><span class="race a">Elfe de la nuit</span><span class="race h">Tauren</span><span class="race s">Skyborne ★</span></div>
+  <h3>Spécialisations préférées</h3>
+  <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Restauration</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Croissance sauvage : soins de groupe sur la durée très efficaces.</td></tr><tr><td><b>Combat farouche</b></td><td>Tank / Dégâts</td><td><span class="tier tB">B</span></td><td>Ours ou félin, très souple pour jouer les deux rôles.</td></tr><tr><td><b>Équilibre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Sorts de nature et des étoiles à distance.</td></tr></tbody></table></div>
+</article>
+</div>
+
+<div class="info">Les tiers (S, A, B…) résument les classements publiés par la communauté pendant la bêta, pour le jeu en donjon. Ils évolueront après la sortie et l'ouverture des raids : à prendre comme une tendance, pas comme une règle. Toutes les spécialisations restent jouables !</div>
+
 <div class="sec-title"><h2>Nouvelles combinaisons à retenir</h2></div>
 <div class="grid">
-  <div class="card"><div class="thumb"><img src="images/horde.jpg" alt="" loading="lazy"><span class="badge red">Horde</span></div><div class="card-body"><h3>Paladins Horde</h3><p>Pour la première fois dans une version Vanilla, la Horde a accès au paladin.</p></div></div>
-  <div class="card"><div class="thumb"><img src="images/alliance.jpg" alt="" loading="lazy"><span class="badge blue">Alliance</span></div><div class="card-body"><h3>Chamans Alliance</h3><p>Le chaman rejoint l'Alliance, comme à l'époque de Burning Crusade.</p></div></div>
-  <div class="card"><div class="thumb"><img src="images/skyborne.jpg" alt="" loading="lazy"><span class="badge ">Skyborne</span></div><div class="card-body"><h3>Skyborne des deux factions</h3><p>Disponibles côté Alliance comme Horde : mage uniquement côté Alliance, chaman uniquement côté Horde.</p></div></div>
+  <div class="card"><div class="thumb"><img src="images/galerie/14.jpg" alt="" loading="lazy"><span class="badge red">Horde</span></div><div class="card-body"><h3>Paladins morts-vivants</h3><p>Pour la première fois dans une version Vanilla, la Horde a ses paladins : ce sont les Réprouvés.</p></div></div>
+  <div class="card"><div class="thumb"><img src="images/alliance.jpg" alt="" loading="lazy"><span class="badge blue">Alliance</span></div><div class="card-body"><h3>Chamans nains</h3><p>Le chaman rejoint l'Alliance grâce aux nains.</p></div></div>
+  <div class="card"><div class="thumb"><img src="images/skyborne.jpg" alt="" loading="lazy"><span class="badge">Skyborne</span></div><div class="card-body"><h3>Les Skyborne</h3><p>Nouvelle race jouable dans les deux factions : mage côté Alliance, chaman côté Horde, et aussi guerrier, chasseur, voleur ou druide.</p></div></div>
 </div>
 </div></main>
 

@@ -26,8 +26,15 @@ document.getElementById("site-header").outerHTML = `
   <span class="live" id="topbar-cd">Sortie de WoW Forever bientôt</span>
   <span class="hide-m">Site de fan non officiel · Guides en français</span>
 </div></div>
-<header><div class="wrap">
-  <a class="logo" href="index.html">wow<span>forever</span></a>
+<div class="banner">
+  <img src="images/bandeau.jpg" alt="">
+  <div class="wrap banner-in">
+    <a class="logo big" href="index.html">wow<span>forever</span></a>
+    <p class="tagline">Guides, actualités et astuces pour World of Warcraft: Forever</p>
+  </div>
+</div>
+<header class="navbar"><div class="wrap">
+  <a class="logo mini-logo" href="index.html">wow<span>forever</span></a>
   <nav class="menu" id="menu">
     ${MENU.map(([href, label]) => `<a href="${href}"${href === current ? ' class="active"' : ""}>${label}</a>`).join("")}
   </nav>
