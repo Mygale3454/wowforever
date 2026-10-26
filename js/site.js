@@ -8,6 +8,7 @@ const MENU = [
   ["donjons.html", "Donjons & Raids"],
   ["legacy.html", "Legacy"],
   ["calendrier.html", "Calendrier"],
+  ["addons.html", "Addons"],
   ["galerie.html", "Galerie"]
 ];
 
@@ -45,7 +46,7 @@ document.getElementById("site-footer").outerHTML = `
 <footer><div class="wrap">
   <div class="cols">
     <div><div class="logo">wow<span>forever</span></div><p>Guides, actualités et outils en français pour World of Warcraft: Forever.</p></div>
-    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="classes.html">Classes</a><a href="donjons.html">Donjons & Raids</a><a href="legacy.html">Legacy</a></div>
+    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="classes.html">Classes</a><a href="donjons.html">Donjons & Raids</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
     <div><h5>Infos</h5><a href="actualites.html">Actualités</a><a href="calendrier.html">Calendrier</a><a href="galerie.html">Galerie</a></div>
   </div>
   <div class="legal">wowforever est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Captures et visuels de World of Warcraft © Blizzard Entertainment.</div>
@@ -64,7 +65,7 @@ document.querySelectorAll("[data-sidebar]").forEach(a => a.innerHTML = `
   <div class="box">
     <h4>Thèmes</h4>
     <div class="tags">
-      <a href="classes.html">Skyborne</a><a href="donjons.html">Donjons</a><a href="donjons.html">Raids</a><a href="legacy.html">Legacy</a><a href="debuter.html">Camping</a><a href="calendrier.html">Hardcore</a><a href="debuter.html">Métiers</a><a href="actualites.html">JcJ</a>
+      <a href="classes.html">Skyborne</a><a href="donjons.html">Donjons</a><a href="donjons.html">Raids</a><a href="legacy.html">Legacy</a><a href="debuter.html">Camping</a><a href="calendrier.html">Hardcore</a><a href="debuter.html">Métiers</a><a href="actualites.html">JcJ</a><a href="addons.html">Addons</a>
     </div>
   </div>`);
 
