@@ -16,7 +16,7 @@
 <main><div class="wrap">
 <div class="crumbs"><a href="index.html">Accueil</a> › Donjons & Raids</div>
 <h1 class="page-title">Donjons et raids de WoW Forever</h1>
-<p class="page-lead">Tous les donjons de Classic reviennent, accompagnés de neuf nouveaux donjons à 5 joueurs du niveau 13 au 60. Les niveaux bas sont dans les Royaumes de l'Est, les plus hauts en Kalimdor.</p>
+<p class="page-lead">Tous les donjons de Classic reviennent, accompagnés de neuf nouveaux donjons à 5 joueurs du niveau 13 au 60 : six dans les Royaumes de l'Est et les trois plus difficiles en Kalimdor. Pour chacun, nous avons sélectionné les meilleurs guides du web.</p>
 <div class="cover"><img src="images/donjons.jpg" alt=""></div>
 <div class="filters" id="dfilters">
   <button class="on" data-f="all">Tous</button>
@@ -24,10 +24,10 @@
   <button data-f="classic">Classic</button>
 </div>
 <div class="table-wrap"><table>
-  <thead><tr><th>Donjon</th><th>Niveaux</th><th>Zone</th><th>Type</th></tr></thead>
+  <thead><tr><th>Donjon</th><th>Niveaux</th><th>Zone</th><th>Type</th><th>Guides</th></tr></thead>
   <tbody id="dtable"></tbody>
 </table></div>
-<p class="small">Niveaux indicatifs issus de la bêta, susceptibles d'évoluer.</p>
+<p class="small">Niveaux indicatifs, susceptibles d'évoluer. Les guides s'ouvrent dans un nouvel onglet : <b>FR</b> = en français, <b>EN</b> = en anglais. « Classic » signale un guide écrit pour WoW Classic, en attendant une version Forever.</p>
 
 <div class="sec-title"><h2>Raids</h2></div>
 <div class="grid">
@@ -37,32 +37,483 @@
 </div>
 
 <script>
-/* Pour ajouter un donjon : ajoute une ligne [nom, niveaux, zone, "new" ou "classic"] */
+/* Pour ajouter un donjon : [nom, niveaux, zone, "new" ou "classic", [[nom du site, lien, langue], ...]] */
 const DONJONS = [
-  ["Gouffre de Ragefeu","13–18","Orgrimmar","classic"],
-  ["Hall of Thanes","13–18","Sous Forgefer, Dun Morogh","new"],
-  ["Ruins of Lordaeron","15–20","Ruines au-dessus de Fossoyeuse, Clairières de Tirisfal","new"],
-  ["Les Mortemines","16–21","Marche de l'Ouest","classic"],
-  ["Cavernes des lamentations","17–24","Les Tarides","classic"],
-  ["Donjon d'Ombrecroc","18–25","Forêt des Pins-Argentés","classic"],
-  ["Excavation Site","24–29","Les Paluns","new"],
-  ["Gnomeregan","25–32","Dun Morogh","classic"],
-  ["City of Dalaran","28–33","Montagnes d'Alterac","new"],
-  ["Monastère écarlate","30–40","Clairières de Tirisfal","classic"],
-  ["The Drowned City","35–40","Vallée de Strangleronce","new"],
-  ["Krol'dok Stronghold","40–55","The Riverglades","new"],
-  ["Zul'Farrak","42–48","Tanaris","classic"],
-  ["Maraudon","42–52","Désolace","classic"],
-  ["Temple englouti","45–55","Marais des Chagrins","classic"],
-  ["Pic Rochenoire","53–60","Mont Rochenoire","classic"],
-  ["Hache-Tripes","54–60","Feralas","classic"],
-  ["Stratholme","55–60","Maleterres de l'Est","classic"],
-  ["Scholomance","57–60","Maleterres de l'Ouest","classic"],
-  ["3 nouveaux donjons","Haut niveau","Kalimdor (détails à venir)","new"]
+[
+"Gouffre de Ragefeu",
+"13–18",
+"Orgrimmar",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/ragefire-chasm/",
+"EN"
+],
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/ragefire-chasm/",
+"EN"
+]
+]
+],
+[
+"La Salle des Thanes",
+"13–18",
+"Sous Forgefer, Dun Morogh",
+"new",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/la-salle-des-thanes-wow-forever/",
+"FR"
+],
+[
+"Mamytwink (quêtes)",
+"https://www.mamytwink.com/guides/wow-forever-les-quetes-du-donjon-la-salle-des-thanes",
+"FR"
+],
+[
+"Icy Veins",
+"https://www.icy-veins.com/wow-forever/hall-of-thanes-guide",
+"EN"
+]
+]
+],
+[
+"Ruines de Lordaeron",
+"15–20",
+"Au-dessus de Fossoyeuse, Clairières de Tirisfal",
+"new",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron/",
+"EN"
+],
+[
+"Icy Veins",
+"https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-guide",
+"EN"
+]
+]
+],
+[
+"Les Mortemines",
+"15–22",
+"Marche de l'Ouest",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/les-mortemines-wow-forever/",
+"FR"
+],
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/the-deadmines/",
+"EN"
+]
+]
+],
+[
+"Cavernes des lamentations",
+"17–24",
+"Les Tarides",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/cavernes-des-lamentations-wow-forever/",
+"FR"
+],
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/wailing-caverns/",
+"EN"
+]
+]
+],
+[
+"Donjon d'Ombrecroc",
+"20–26",
+"Forêt des Pins-Argentés",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/donjon-d-ombrecroc-wow-forever/",
+"FR"
+],
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/shadowfang-keep/",
+"EN"
+]
+]
+],
+[
+"Profondeurs de Brassenoire",
+"22–28",
+"Orneval",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/blackfathom-deeps/",
+"EN"
+],
+[
+"Method",
+"https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+"EN"
+]
+]
+],
+[
+"Site de fouilles des Paluns",
+"24–29",
+"Les Paluns",
+"new",
+[
+[
+"Icy Veins",
+"https://www.icy-veins.com/wow-forever/excavation-site-wetlands-guide",
+"EN"
+],
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands/",
+"EN"
+]
+]
+],
+[
+"La Prison",
+"25–29",
+"Hurlevent",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/the-stockade-dungeon-map-location-bosses/",
+"EN"
+],
+[
+"Method",
+"https://www.method.gg/wow-forever/dungeons/the-stockade",
+"EN"
+]
+]
+],
+[
+"Cité de Dalaran",
+"28–33",
+"Montagnes d'Alterac",
+"new",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/city-of-dalaran/",
+"EN"
+],
+[
+"Method",
+"https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+"EN"
+]
+]
+],
+[
+"Gnomeregan",
+"29–38",
+"Dun Morogh",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/gnomeregan/",
+"EN"
+],
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/gnomeregan/",
+"EN"
+]
+]
+],
+[
+"Kraal de Tranchebauge",
+"29–38",
+"Les Tarides",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/razorfen-kraul/",
+"EN"
+],
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/razorfen-kraul/",
+"EN"
+]
+]
+],
+[
+"Monastère écarlate",
+"30–46",
+"Clairières de Tirisfal (4 ailes)",
+"classic",
+[
+[
+"Cimetière",
+"https://www.warcrafttavern.com/forever/guides/scarlet-monastery-graveyard/",
+"EN"
+],
+[
+"Bibliothèque",
+"https://www.warcrafttavern.com/forever/guides/scarlet-monastery-library/",
+"EN"
+],
+[
+"Armurerie",
+"https://www.warcrafttavern.com/forever/guides/scarlet-monastery-armory/",
+"EN"
+],
+[
+"Cathédrale",
+"https://www.warcrafttavern.com/forever/guides/scarlet-monastery-cathedral/",
+"EN"
+]
+]
+],
+[
+"La Cité engloutie",
+"35–40",
+"Au large de la Vallée de Strangleronce",
+"new",
+[
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/the-drowned-city/",
+"EN"
+]
+]
+],
+[
+"Uldaman",
+"36–45",
+"Terres ingrates",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/uldaman-wow-forever/",
+"FR"
+],
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/uldaman/",
+"EN"
+]
+]
+],
+[
+"Souilles de Tranchebauge",
+"37–46",
+"Les Tarides",
+"classic",
+[
+[
+"Warcraft Tavern",
+"https://www.warcrafttavern.com/forever/guides/razorfen-downs/",
+"EN"
+],
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/razorfen-downs/",
+"EN"
+]
+]
+],
+[
+"Bastion de Krol'dok",
+"40–45",
+"Riverglades",
+"new",
+[
+[
+"Zockify",
+"https://www.zockify.com/forever/dungeons/kroldok-stronghold/",
+"EN"
+],
+[
+"WoW Forever Guides",
+"https://wowforeverguides.com/dungeons/kroldok-stronghold",
+"EN"
+]
+]
+],
+[
+"Zul'Farrak",
+"40–47",
+"Tanaris",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/zul-farrak-wow-forever/",
+"FR"
+],
+[
+"Conquest Capped",
+"https://conquestcapped.com/guides/wow-forever/wow-forever-zulfarrak-guide/",
+"EN"
+]
+]
+],
+[
+"Maraudon",
+"45–51",
+"Désolace",
+"classic",
+[]
+],
+[
+"Prison d'Alcaz",
+"48–53",
+"Marécage d'Âprefange",
+"new",
+[
+[
+"WoW Forever Guides",
+"https://wowforeverguides.com/dungeons/alcaz-prison",
+"EN"
+],
+[
+"Mmonster",
+"https://mmonster.co/wow-forever/guides/dungeons/alcaz-prison",
+"EN"
+]
+]
+],
+[
+"Temple englouti",
+"50–55",
+"Marais des Chagrins",
+"classic",
+[
+[
+"Conquest Capped",
+"https://conquestcapped.com/guides/fr/wow-forever/wow-forever-sunken-temple-guide/",
+"FR"
+]
+]
+],
+[
+"Profondeurs de Rochenoire",
+"52–60",
+"Mont Rochenoire",
+"classic",
+[]
+],
+[
+"Repaire des Noiregueules",
+"55–60",
+"Azshara",
+"new",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/repaire-des-noiregueules-wow-forever/",
+"FR"
+],
+[
+"WoW Forever Guides",
+"https://wowforeverguides.com/dungeons/blackmaw-hold",
+"EN"
+]
+]
+],
+[
+"Pic Rochenoire inférieur",
+"57–60",
+"Mont Rochenoire",
+"classic",
+[]
+],
+[
+"Terrasse du Façonneur",
+"58–60",
+"Cratère d'Un'Goro",
+"new",
+[
+[
+"WoW Forever Guides",
+"https://wowforeverguides.com/dungeons/the-shapers-terrace",
+"EN"
+]
+]
+],
+[
+"Hache-Tripes",
+"58–60",
+"Feralas (3 ailes)",
+"classic",
+[]
+],
+[
+"Stratholme",
+"58–60",
+"Maleterres de l'Est",
+"classic",
+[
+[
+"Côté vivant (Classic)",
+"https://warcrafttavern.com/wow-classic/guides/stratholme-living",
+"EN"
+],
+[
+"Côté mort-vivant (Classic)",
+"https://warcrafttavern.com/wow-classic/guides/stratholme-undead",
+"EN"
+]
+]
+],
+[
+"Scholomance",
+"58–60",
+"Maleterres de l'Ouest",
+"classic",
+[
+[
+"Kami Labs",
+"https://kami-labs.fr/scholomance-wow-forever/",
+"FR"
+],
+[
+"Icy Veins (Classic)",
+"https://www.icy-veins.com/wow-classic/scholomance-dungeon-guide",
+"EN"
+]
+]
+],
+[
+"Pic Rochenoire supérieur",
+"60",
+"Mont Rochenoire",
+"classic",
+[]
+]
 ];
+function guides(g){
+  if(!g.length) return '<span class="soon">Guide à venir</span>';
+  return '<div class="gl">' + g.map(([n,u,l]) => `<a class="glink${l==="FR"?" fr":""}" href="${u}" target="_blank" rel="noopener">${n}<small>${l}</small></a>`).join("") + '</div>';
+}
 function afficher(f){
   document.getElementById("dtable").innerHTML = DONJONS.filter(d => f==="all" || d[3]===f).map(d =>
-    `<tr><td><b>${d[0]}</b></td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td>${d[3]==="new" ? '<span class="badge">Nouveau</span>' : '<span class="badge grey">Classic</span>'}</td></tr>`).join("");
+    `<tr><td><b>${d[0]}</b></td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td>${d[3]==="new" ? '<span class="badge">Nouveau</span>' : '<span class="badge grey">Classic</span>'}</td><td class="guides">${guides(d[4])}</td></tr>`).join("");
 }
 afficher("all");
 document.getElementById("dfilters").addEventListener("click", e => {

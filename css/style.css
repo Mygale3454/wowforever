@@ -251,3 +251,12 @@ body{background-color:var(--bg);background-attachment:scroll}
 .fiche header{position:static;background:none;border:0;box-shadow:none;backdrop-filter:none}
 .fiche h2{color:color-mix(in srgb,var(--c) 68%,#1e1208);text-shadow:none}
 .jump{border-left-color:var(--c)}
+
+/* Liens vers les guides de donjons */
+.gl{display:flex;flex-wrap:wrap;gap:6px}
+.glink{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:6px;background:var(--card);border:1px solid var(--line);font-size:.8rem;font-weight:600;color:var(--title);white-space:nowrap}
+.glink:hover{background:var(--accent-soft);border-color:var(--accent)}
+.glink small{font-size:.65rem;font-weight:700;padding:0 4px;border-radius:3px;background:var(--bg2);color:var(--muted)}
+.glink.fr small{background:var(--alliance);color:#fff}
+.soon{font-size:.8rem;color:var(--muted);font-style:italic}
+table{min-width:820px}
