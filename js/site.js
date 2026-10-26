@@ -11,11 +11,11 @@ const MENU = [
 ];
 
 const POPULAIRES = [
-  ["debuter.html", "images/debuter.svg", "Bien débuter sur WoW Forever"],
-  ["donjons.html", "images/donjons.svg", "Les 9 nouveaux donjons"],
-  ["legacy.html", "images/legacy.svg", "Le système Legacy expliqué"],
-  ["classes.html", "images/classes.svg", "Races et classes : les nouveautés"],
-  ["calendrier.html", "images/calendrier.svg", "Roadmap 2026-2027"]
+  ["debuter.html", "images/debuter.jpg", "Bien débuter sur WoW Forever"],
+  ["donjons.html", "images/donjons.jpg", "Les 9 nouveaux donjons"],
+  ["legacy.html", "images/legacy.jpg", "Le système Legacy expliqué"],
+  ["classes.html", "images/classes.jpg", "Races et classes : les nouveautés"],
+  ["calendrier.html", "images/calendrier.jpg", "Roadmap 2026-2027"]
 ];
 
 const current = location.pathname.split("/").pop() || "index.html";
@@ -40,7 +40,7 @@ document.getElementById("site-footer").outerHTML = `
     <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="classes.html">Classes</a><a href="donjons.html">Donjons & Raids</a><a href="legacy.html">Legacy</a></div>
     <div><h5>Infos</h5><a href="actualites.html">Actualités</a><a href="calendrier.html">Calendrier</a></div>
   </div>
-  <div class="legal">wowforever est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Illustrations originales du site.</div>
+  <div class="legal">wowforever est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Captures et visuels de World of Warcraft © Blizzard Entertainment.</div>
 </div></footer>`;
 
 document.querySelectorAll("[data-sidebar]").forEach(a => a.innerHTML = `

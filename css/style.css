@@ -151,3 +151,11 @@ footer a:hover{color:#f2c25a}
   .topbar .hide-m{display:none}
 }
 @media (max-width:520px){ .tiles{grid-template-columns:repeat(2,1fr)} .hero{aspect-ratio:auto;min-height:320px} .cover{aspect-ratio:16/9} .article{padding:20px} }
+
+/* Article à la une : image entière, texte en dessous */
+.hero{aspect-ratio:auto;min-height:0;background:var(--card);border:1px solid var(--line)}
+.hero::after{display:none}
+.hero img{position:static;aspect-ratio:16/9;height:auto}
+.hero-body{position:static;color:var(--text);padding:20px 24px 24px}
+.hero p{color:var(--muted)}
+@media (max-width:520px){ .hero{min-height:0} }
