@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie – wowforever</title>
+<meta name="description" content="Galerie de captures d'écran de World of Warcraft.">
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main><div class="wrap">
+<div class="crumbs"><a href="index.html">Accueil</a> › Galerie</div>
+<h1 class="page-title">Galerie</h1>
+<p class="page-lead">Nos plus belles captures d'Azeroth. Clique sur une image pour l'agrandir.</p>
+<div class="gallery">
+  <figure class="gal-item" data-i="0"><img src="images/galerie/01.jpg" alt="Le visuel officiel de WoW Forever" loading="lazy"><figcaption>Le visuel officiel de WoW Forever</figcaption></figure>
+  <figure class="gal-item" data-i="1"><img src="images/galerie/02.jpg" alt="Un nain dans les neiges de Dun Morogh" loading="lazy"><figcaption>Un nain dans les neiges de Dun Morogh</figcaption></figure>
+  <figure class="gal-item" data-i="2"><img src="images/galerie/03.jpg" alt="Des Skyborne sur leurs montures" loading="lazy"><figcaption>Des Skyborne sur leurs montures</figcaption></figure>
+  <figure class="gal-item" data-i="3"><img src="images/galerie/04.jpg" alt="Ruines au coucher du soleil" loading="lazy"><figcaption>Ruines au coucher du soleil</figcaption></figure>
+  <figure class="gal-item" data-i="4"><img src="images/galerie/05.jpg" alt="Un zeppelin au-dessus des côtes" loading="lazy"><figcaption>Un zeppelin au-dessus des côtes</figcaption></figure>
+  <figure class="gal-item" data-i="5"><img src="images/galerie/06.jpg" alt="Bataille sur le pont d'un navire de l'Alliance" loading="lazy"><figcaption>Bataille sur le pont d'un navire de l'Alliance</figcaption></figure>
+  <figure class="gal-item" data-i="6"><img src="images/galerie/07.jpg" alt="Duel entre un orc et un humain" loading="lazy"><figcaption>Duel entre un orc et un humain</figcaption></figure>
+  <figure class="gal-item" data-i="7"><img src="images/galerie/08.jpg" alt="Un mage gèle un groupe de trolls sous la pluie" loading="lazy"><figcaption>Un mage gèle un groupe de trolls sous la pluie</figcaption></figure>
+  <figure class="gal-item" data-i="8"><img src="images/galerie/09.jpg" alt="Un raid face au dragon dans la lave" loading="lazy"><figcaption>Un raid face au dragon dans la lave</figcaption></figure>
+  <figure class="gal-item" data-i="9"><img src="images/galerie/10.jpg" alt="Le manoir hanté" loading="lazy"><figcaption>Le manoir hanté</figcaption></figure>
+  <figure class="gal-item" data-i="10"><img src="images/galerie/11.jpg" alt="Le port et ses grands navires" loading="lazy"><figcaption>Le port et ses grands navires</figcaption></figure>
+  <figure class="gal-item" data-i="11"><img src="images/galerie/12.jpg" alt="Un pêcheur et ses prises" loading="lazy"><figcaption>Un pêcheur et ses prises</figcaption></figure>
+  <figure class="gal-item" data-i="12"><img src="images/galerie/13.jpg" alt="Un élémentaire de feu dans la forêt" loading="lazy"><figcaption>Un élémentaire de feu dans la forêt</figcaption></figure>
+  <figure class="gal-item" data-i="13"><img src="images/galerie/14.jpg" alt="Un mort-vivant aux portes du cimetière" loading="lazy"><figcaption>Un mort-vivant aux portes du cimetière</figcaption></figure>
+  <figure class="gal-item" data-i="14"><img src="images/galerie/15.jpg" alt="Un troll et une banshee dans la tempête" loading="lazy"><figcaption>Un troll et une banshee dans la tempête</figcaption></figure>
+  <figure class="gal-item" data-i="15"><img src="images/galerie/16.jpg" alt="Une gardienne ailée" loading="lazy"><figcaption>Une gardienne ailée</figcaption></figure>
+  <figure class="gal-item" data-i="16"><img src="images/galerie/17.jpg" alt="Un guerrier ailé en armure dorée" loading="lazy"><figcaption>Un guerrier ailé en armure dorée</figcaption></figure>
+  <figure class="gal-item" data-i="17"><img src="images/galerie/18.jpg" alt="Un mage au bâton vert" loading="lazy"><figcaption>Un mage au bâton vert</figcaption></figure>
+  <figure class="gal-item" data-i="18"><img src="images/galerie/19.jpg" alt="Portrait en armure sombre" loading="lazy"><figcaption>Portrait en armure sombre</figcaption></figure>
+  <figure class="gal-item" data-i="19"><img src="images/galerie/20.jpg" alt="Un tauren à l'épée enflammée" loading="lazy"><figcaption>Un tauren à l'épée enflammée</figcaption></figure>
+</div>
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Fermer">×</button>
+  <button class="lb-prev" aria-label="Précédente">‹</button>
+  <img id="lb-img" alt="">
+  <button class="lb-next" aria-label="Suivante">›</button>
+  <p id="lb-cap"></p>
+</div>
+<script>
+const figs=[...document.querySelectorAll(".gal-item")], lb=document.getElementById("lightbox");
+let cur=0;
+function show(i){cur=(i+figs.length)%figs.length;const im=figs[cur].querySelector("img");
+  document.getElementById("lb-img").src=im.src;document.getElementById("lb-cap").textContent=im.alt;lb.hidden=false;}
+figs.forEach((f,i)=>f.onclick=()=>show(i));
+lb.querySelector(".lb-close").onclick=()=>lb.hidden=true;
+lb.querySelector(".lb-prev").onclick=e=>{e.stopPropagation();show(cur-1)};
+lb.querySelector(".lb-next").onclick=e=>{e.stopPropagation();show(cur+1)};
+lb.onclick=e=>{if(e.target===lb)lb.hidden=true};
+document.addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")lb.hidden=true;if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
+</script>
+</div></main>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+</body>
+</html>
