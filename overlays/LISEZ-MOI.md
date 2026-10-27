@@ -6,7 +6,7 @@ Cinq scènes au format 1920 x 1080, sur le thème parchemin de WoW Forever.
 |---|---|---|
 | `attente.html` | Le stream commence bientôt | Compte à rebours, astuces WoW Forever qui défilent, braises animées |
 | `pause.html` | Pause | Un nain qui boit sa chope dans une taverne : « C'est l'heure du rafraîchissement ! » |
-| `fin.html` | Fin du live | Remerciements et date du prochain live |
+| `fin.html` | Fin du live | Petit message de remerciement |
 | `jeu.html` | En jeu (fond transparent) | Cadre webcam en bas à gauche, pseudo, compte à rebours de la sortie |
 | `discussion.html` | Discussion | Grand cadre webcam, cadre de chat « La taverne », astuces |
 
@@ -31,9 +31,8 @@ Réglages possibles :
 
 - `?nom=TonPseudo` : ton pseudo Twitch, sur toutes les scènes
 - `&min=5` : durée du compte à rebours de l'écran d'attente, en minutes
-- `&prochain=Mercredi 21h` : date du prochain live sur l'écran de fin
 
-Exemple : `fin.html?nom=Mygale&prochain=Mercredi 21h`
+Exemple : `attente.html?nom=Mygale&min=5`
 
 Le compte à rebours repart de zéro à chaque fois que la scène est rechargée. Dans OBS, coche
 **« Actualiser le navigateur quand la scène devient active »** pour qu'il redémarre à chaque passage sur la scène.
