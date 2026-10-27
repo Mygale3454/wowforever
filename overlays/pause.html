@@ -1,19 +1,179 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><title>Petite pause</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="overlay.css"></head>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="overlay.css">
+<style>
+  .tavern{position:absolute;inset:0}
+  /* le bras et la chope se lèvent pour boire */
+  #drink{transform-box:view-box;transform-origin:770px 690px;animation:sip 5s ease-in-out infinite}
+  @keyframes sip{0%,100%{transform:rotate(14deg)}35%,70%{transform:rotate(-4deg)}}
+  /* la tête bascule un peu en arrière en buvant */
+  #head{transform-box:view-box;transform-origin:610px 600px;animation:tilt 5s ease-in-out infinite}
+  @keyframes tilt{0%,100%{transform:rotate(0)}35%,70%{transform:rotate(-5deg)}}
+  /* gouttes de mousse */
+  .drop{animation:drop 2.4s ease-in infinite;opacity:0}
+  @keyframes drop{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(170px);opacity:0}}
+  /* flammes et lanternes */
+  .flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick 1.3s ease-in-out infinite alternate}
+  @keyframes flick{from{transform:scaleY(1) scaleX(1)}to{transform:scaleY(1.15) scaleX(.92)}}
+  .glow{animation:glow 3s ease-in-out infinite alternate}
+  @keyframes glow{from{opacity:.55}to{opacity:.85}}
+  /* l'enseigne se balance */
+  #sign{transform-box:view-box;transform-origin:1380px 120px;animation:swing 6s ease-in-out infinite}
+  @keyframes swing{0%,100%{transform:rotate(1.2deg)}50%{transform:rotate(-1.2deg)}}
+  .sign-text{font-family:Cinzel,serif;font-weight:900;fill:#f6d77e;stroke:#3a2208;stroke-width:3px;paint-order:stroke}
+</style></head>
 <body>
 <div class="scene">
-  <div class="bg blur" style="background-image:url(img/camp.jpg)"></div>
-  <div class="embers"></div>
-  <div class="logo" style="position:absolute;z-index:2;top:48px;left:64px;font-size:54px">wow<span>forever</span></div>
-  <div class="parchment" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:1000px;padding:56px 60px;text-align:center">
-    <div class="sub" style="font-size:24px;letter-spacing:6px;text-transform:uppercase">Repos à l'auberge</div>
-    <div class="title" style="font-size:96px;margin:10px 0">Petite pause</div>
-    <div class="sub" style="font-size:28px"><span data-nom></span> revient dans quelques minutes, ne bouge pas !</div>
-    <div class="divider"></div>
-    <div class="tip" data-tips></div>
-  </div>
+<svg class="tavern" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a170b"/><stop offset="1" stop-color="#4a2a14"/></linearGradient>
+    <radialGradient id="fire" cx="1500" cy="900" r="900" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".55"/><stop offset=".5" stop-color="#ff7a20" stop-opacity=".15"/><stop offset="1" stop-color="#ff7a20" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lamp"><stop offset="0" stop-color="#ffd27a" stop-opacity=".9"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d0d6"/><stop offset=".5" stop-color="#8c959e"/><stop offset="1" stop-color="#4f565d"/></linearGradient>
+    <linearGradient id="beard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d5713a"/><stop offset="1" stop-color="#9c4320"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a2b"/><stop offset="1" stop-color="#5a3617"/></linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a22"/><stop offset="1" stop-color="#3e230e"/></linearGradient>
+    <linearGradient id="beer" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7a4a1e"/><stop offset=".5" stop-color="#a56a30"/><stop offset="1" stop-color="#6a3e17"/></linearGradient>
+    <linearGradient id="tunic" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f5a7a"/><stop offset="1" stop-color="#1d3a52"/></linearGradient>
+  </defs>
+
+  <!-- Murs de la taverne -->
+  <rect width="1920" height="1080" fill="url(#wall)"/>
+  <g opacity=".5">
+    <rect x="0" width="6" height="1080" fill="#1a0e05" transform="translate(160 0)"/>
+    <rect width="6" height="1080" fill="#1a0e05" transform="translate(420 0)"/>
+    <rect width="6" height="1080" fill="#1a0e05" transform="translate(900 0)"/>
+    <rect width="6" height="1080" fill="#1a0e05" transform="translate(1180 0)"/>
+    <rect width="6" height="1080" fill="#1a0e05" transform="translate(1640 0)"/>
+  </g>
+  <!-- Poutres -->
+  <rect y="70" width="1920" height="56" fill="#3a2010"/><rect y="70" width="1920" height="8" fill="#5a3418"/>
+  <rect x="120" y="0" width="50" height="1080" fill="#341c0c"/><rect x="1760" y="0" width="50" height="1080" fill="#341c0c"/>
+
+  <!-- Cheminée -->
+  <g>
+    <rect x="1330" y="640" width="420" height="330" rx="10" fill="#4b4540"/>
+    <g fill="#5d5650" stroke="#37322e" stroke-width="3">
+      <rect x="1330" y="640" width="105" height="55"/><rect x="1435" y="640" width="105" height="55"/><rect x="1540" y="640" width="105" height="55"/><rect x="1645" y="640" width="105" height="55"/>
+      <rect x="1330" y="695" width="60" height="275"/><rect x="1690" y="695" width="60" height="275"/>
+    </g>
+    <rect x="1390" y="695" width="300" height="275" fill="#140904"/>
+    <g class="flame"><path d="M1440 960 C1430 900 1470 880 1465 820 C1500 860 1520 900 1505 960Z" fill="#ff7a1a"/></g>
+    <g class="flame" style="animation-delay:-.4s"><path d="M1500 960 C1490 880 1540 860 1545 780 C1590 850 1610 900 1590 960Z" fill="#ffa53a"/></g>
+    <g class="flame" style="animation-delay:-.8s"><path d="M1580 960 C1575 910 1610 890 1615 840 C1640 880 1650 920 1640 960Z" fill="#ff7a1a"/></g>
+    <path d="M1520 960 C1515 920 1540 905 1545 870 C1565 905 1575 930 1565 960Z" fill="#ffe08a"/>
+    <rect x="1420" y="950" width="240" height="22" rx="8" fill="#3a1e0c"/>
+  </g>
+  <rect width="1920" height="1080" fill="url(#fire)" class="glow"/>
+
+  <!-- Lanterne -->
+  <g>
+    <line x1="330" y1="126" x2="330" y2="230" stroke="#1a0e05" stroke-width="4"/>
+    <circle cx="330" cy="290" r="150" fill="url(#lamp)" class="glow"/>
+    <rect x="300" y="230" width="60" height="90" rx="8" fill="#ffcf6a" stroke="#2a1708" stroke-width="7"/>
+    <path d="M292 232 h76 l-12 -18 h-52z" fill="#2a1708"/><rect x="304" y="318" width="52" height="12" fill="#2a1708"/>
+  </g>
+
+  <!-- Enseigne qui se balance -->
+  <g id="sign">
+    <line x1="1110" y1="126" x2="1130" y2="250" stroke="#2a1a0c" stroke-width="6"/>
+    <line x1="1650" y1="126" x2="1630" y2="250" stroke="#2a1a0c" stroke-width="6"/>
+    <rect x="980" y="240" width="800" height="330" rx="26" fill="url(#wood)" stroke="#2e1a09" stroke-width="10"/>
+    <g stroke="#4a2c12" stroke-width="3" opacity=".6"><line x1="1000" y1="320" x2="1760" y2="320"/><line x1="1000" y1="410" x2="1760" y2="410"/><line x1="1000" y1="500" x2="1760" y2="500"/></g>
+    <rect x="1002" y="262" width="756" height="286" rx="18" fill="none" stroke="#c9922e" stroke-width="4"/>
+    <circle cx="1020" cy="280" r="9" fill="#c9922e"/><circle cx="1740" cy="280" r="9" fill="#c9922e"/><circle cx="1020" cy="530" r="9" fill="#c9922e"/><circle cx="1740" cy="530" r="9" fill="#c9922e"/>
+    <text class="sign-text" x="1380" y="378" text-anchor="middle" font-size="62">C'est l'heure du</text>
+    <text class="sign-text" x="1380" y="490" text-anchor="middle" font-size="84" textLength="700" lengthAdjust="spacingAndGlyphs">rafraîchissement !</text>
+  </g>
+
+  <!-- Le nain -->
+  <g id="dwarf">
+    <ellipse cx="620" cy="1010" rx="330" ry="40" fill="#000" opacity=".35"/>
+    <!-- corps -->
+    <path d="M400 1080 C390 860 440 720 620 700 C800 720 850 860 840 1080Z" fill="url(#tunic)"/>
+    <path d="M430 760 C470 700 560 680 620 690 C690 680 780 700 815 760 C780 790 700 760 620 770 C540 760 470 790 430 760Z" fill="#6b4a2a"/>
+    <g fill="#8a6a44" opacity=".8"><circle cx="460" cy="745" r="26"/><circle cx="510" cy="725" r="28"/><circle cx="730" cy="725" r="28"/><circle cx="785" cy="745" r="26"/></g>
+    <rect x="440" y="930" width="360" height="56" rx="8" fill="#3a2612"/>
+    <rect x="575" y="918" width="90" height="80" rx="12" fill="#e0b04a" stroke="#7a5414" stroke-width="6"/>
+    <rect x="600" y="940" width="40" height="36" rx="6" fill="#7a5414"/>
+    <!-- bras gauche posé -->
+    <path d="M440 800 C380 860 380 940 450 980 C500 990 540 970 560 940 C520 930 480 900 470 840Z" fill="url(#tunic)"/>
+    <circle cx="520" cy="955" r="40" fill="#e3a982"/>
+
+    <g id="head">
+      <!-- visage -->
+      <ellipse cx="615" cy="560" rx="105" ry="112" fill="#e8b08a"/>
+      <ellipse cx="510" cy="560" rx="18" ry="30" fill="#d9997a"/>
+      <!-- casque -->
+      <path d="M505 520 C505 400 725 400 725 520Z" fill="url(#steel)"/>
+      <rect x="492" y="505" width="246" height="34" rx="12" fill="#6a7178" stroke="#3a3f44" stroke-width="4"/>
+      <g fill="#c9922e"><circle cx="520" cy="522" r="6"/><circle cx="570" cy="522" r="6"/><circle cx="660" cy="522" r="6"/><circle cx="710" cy="522" r="6"/></g>
+      <path d="M612 420 L600 505 L630 505Z" fill="#c9922e" opacity=".85"/>
+      <!-- sourcils broussailleux -->
+      <path d="M540 552 C560 532 600 535 610 555 C590 548 565 552 540 562Z" fill="#a8461f"/>
+      <path d="M632 555 C645 532 690 532 708 552 C685 552 660 548 632 562Z" fill="#a8461f"/>
+      <!-- yeux fermés de plaisir -->
+      <path d="M555 578 q20 14 40 0" stroke="#2b1a10" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M640 578 q20 14 40 0" stroke="#2b1a10" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- joues rouges -->
+      <circle cx="555" cy="618" r="26" fill="#e06a5a" opacity=".45"/><circle cx="685" cy="618" r="26" fill="#e06a5a" opacity=".45"/>
+      <!-- nez -->
+      <ellipse cx="622" cy="615" rx="36" ry="32" fill="#da8d6b"/>
+      <ellipse cx="610" cy="603" rx="10" ry="7" fill="#f2c4a6"/>
+      <!-- barbe -->
+      <path d="M505 600 C500 720 540 830 600 880 L640 880 C700 830 740 720 735 600 C715 660 690 655 670 650 C650 670 590 670 570 650 C545 655 520 660 505 600Z" fill="url(#beard)"/>
+      <g stroke="#8a3a18" stroke-width="5" fill="none" opacity=".7">
+        <path d="M545 690 C560 760 585 820 605 860"/><path d="M620 690 C620 770 620 830 620 870"/><path d="M695 690 C680 760 655 820 635 860"/>
+      </g>
+      <!-- tresses avec anneaux -->
+      <path d="M585 860 C580 900 585 940 575 975" stroke="url(#beard)" stroke-width="30" stroke-linecap="round" fill="none"/>
+      <path d="M655 860 C660 900 655 940 665 975" stroke="url(#beard)" stroke-width="30" stroke-linecap="round" fill="none"/>
+      <rect x="560" y="900" width="38" height="20" rx="6" fill="#e0b04a" stroke="#7a5414" stroke-width="3"/>
+      <rect x="642" y="900" width="38" height="20" rx="6" fill="#e0b04a" stroke="#7a5414" stroke-width="3"/>
+      <!-- moustache -->
+      <path d="M622 640 C590 630 540 650 520 690 C560 675 600 675 622 662Z" fill="#c55e2c"/>
+      <path d="M622 640 C654 630 704 650 724 690 C684 675 644 675 622 662Z" fill="#c55e2c"/>
+    </g>
+
+    <!-- bras droit + chope (animés) -->
+    <g id="drink">
+      <path d="M760 760 C850 760 880 700 860 640 C845 600 800 590 770 610 C790 650 790 700 740 720Z" fill="url(#tunic)"/>
+      <g transform="translate(790 560) rotate(-28)">
+        <!-- chope -->
+        <path d="M70 -40 C140 -40 150 70 70 80" stroke="#5a3617" stroke-width="22" fill="none"/>
+        <rect x="-80" y="-80" width="160" height="200" rx="16" fill="url(#beer)" stroke="#3a2208" stroke-width="6"/>
+        <rect x="-86" y="-60" width="172" height="18" rx="5" fill="#9aa3ad" stroke="#4f565d" stroke-width="3"/>
+        <rect x="-86" y="80" width="172" height="18" rx="5" fill="#9aa3ad" stroke="#4f565d" stroke-width="3"/>
+        <g stroke="#5a3617" stroke-width="4" opacity=".6"><line x1="-40" y1="-40" x2="-40" y2="110"/><line x1="0" y1="-40" x2="0" y2="110"/><line x1="40" y1="-40" x2="40" y2="110"/></g>
+        <!-- mousse -->
+        <path d="M-92 -78 C-100 -110 -60 -125 -40 -108 C-30 -135 20 -135 30 -110 C50 -130 100 -115 92 -78 C80 -60 60 -75 50 -62 C40 -48 15 -60 0 -55 C-15 -48 -40 -62 -55 -55 C-75 -48 -90 -60 -92 -78Z" fill="#fff7e2"/>
+        <circle cx="-70" cy="-60" r="10" fill="#fff7e2"/><circle cx="75" cy="-58" r="12" fill="#fff7e2"/>
+        <ellipse class="drop" cx="-78" cy="-40" rx="8" ry="11" fill="#fff7e2" style="animation-delay:-.3s"/>
+        <ellipse class="drop" cx="84" cy="-30" rx="7" ry="10" fill="#fff7e2" style="animation-delay:-1.4s"/>
+        <!-- main -->
+        <circle cx="-90" cy="40" r="42" fill="#e3a982"/>
+        <path d="M-70 10 C-55 10 -55 70 -70 70" stroke="#c98a66" stroke-width="5" fill="none"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Table au premier plan -->
+  <rect x="0" y="985" width="1920" height="95" fill="url(#table)"/>
+  <rect x="0" y="985" width="1920" height="10" fill="#9a6a38"/>
+  <g stroke="#2e1a09" stroke-width="3" opacity=".6"><line x1="0" y1="1030" x2="1920" y2="1030"/></g>
+  <!-- chopes sur la table -->
+  <g transform="translate(1040 900)">
+    <rect x="0" y="0" width="80" height="100" rx="8" fill="url(#beer)" stroke="#3a2208" stroke-width="4"/>
+    <path d="M78 20 C118 20 118 70 78 75" stroke="#5a3617" stroke-width="12" fill="none"/>
+    <path d="M-6 4 C-10 -16 20 -22 30 -10 C40 -24 70 -20 86 4Z" fill="#fff7e2"/>
+  </g>
+  <g transform="translate(1180 920)">
+    <rect x="0" y="0" width="70" height="80" rx="8" fill="url(#beer)" stroke="#3a2208" stroke-width="4"/>
+    <path d="M-6 4 C-10 -14 18 -20 28 -8 C38 -20 64 -16 76 4Z" fill="#fff7e2"/>
+  </g>
+</svg>
+<div class="embers"></div>
 </div>
 <script src="overlay.js"></script>
 </body></html>
