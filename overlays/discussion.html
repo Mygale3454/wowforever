@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Discussion</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="overlay.css"></head>
+<body>
+<div class="scene">
+  <div class="bg blur" style="background-image:url(img/fond.jpg)"></div>
+  <div class="embers"></div>
+  <div class="logo" style="position:absolute;z-index:2;top:36px;left:64px;font-size:46px">wow<span>forever</span></div>
+  <div class="plate" style="z-index:2;top:44px;right:64px;font-size:22px" data-sortie></div>
+  <!-- Zone webcam : la source webcam se place dans ce cadre (1200 x 675) -->
+  <div class="frame" style="z-index:2;left:64px;top:140px;width:1200px;height:675px;background:rgba(20,12,4,.35)"></div>
+  <div class="plate" style="z-index:3;left:100px;top:790px;font-size:30px">Discussion avec <span data-nom></span></div>
+  <!-- Zone chat : la source chat se place dans ce cadre -->
+  <div class="parchment" style="position:absolute;right:64px;top:140px;width:520px;height:675px;padding:22px">
+    <div class="title" style="font-size:30px;text-align:center">La taverne</div>
+    <div class="divider" style="margin:12px auto"></div>
+  </div>
+  <div class="parchment" style="position:absolute;left:64px;right:64px;bottom:46px;height:120px;padding:22px 40px;display:flex;align-items:center">
+    <div class="tip" data-tips style="min-height:0;font-size:26px"></div>
+  </div>
+</div>
+<script src="overlay.js"></script>
+</body></html>
