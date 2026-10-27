@@ -7,7 +7,7 @@ Cinq scènes au format 1920 x 1080, sur le thème parchemin de WoW Forever.
 | `attente.html` | Le stream commence bientôt | Compte à rebours, astuces WoW Forever qui défilent, braises animées |
 | `pause.html` | Pause | Le nain et sa chope, avec l'enseigne « C'est l'heure du rafraîchissement ! » |
 | `fin.html` | Fin du live | Petit message de remerciement |
-| `jeu.html` | En jeu (fond transparent) | Cadre webcam en bas à gauche, pseudo, compte à rebours de la sortie |
+| `jeu.html` | En jeu (fond transparent) | Petit cadre webcam en bas à gauche avec ton pseudo |
 | `discussion.html` | Discussion | Grand cadre webcam, cadre de chat « La taverne », astuces |
 
 Le dossier `png/` contient les mêmes scènes en images fixes, si tu préfères des images simples.
@@ -40,7 +40,7 @@ Le compte à rebours repart de zéro à chaque fois que la scène est rechargée
 ## Scène « En jeu »
 
 1. Ajoute d'abord la **Capture de jeu** de WoW.
-2. Ajoute ta **webcam** et place-la dans le cadre en bas à gauche (440 x 248, à 40 px du bord).
+2. Ajoute ta **webcam** et place-la dans le cadre en bas à gauche (320 x 180, à 32 px du bord).
 3. Ajoute `jeu.html` en source Navigateur **tout en haut de la liste** : son fond est transparent.
 
 ## Scène « Discussion »
