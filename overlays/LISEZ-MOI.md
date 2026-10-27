@@ -5,7 +5,7 @@ Cinq scènes au format 1920 x 1080, sur le thème parchemin de WoW Forever.
 | Fichier | Scène | Contenu |
 |---|---|---|
 | `attente.html` | Le stream commence bientôt | Compte à rebours, astuces WoW Forever qui défilent, braises animées |
-| `pause.html` | Pause | Un nain qui boit sa chope dans une taverne : « C'est l'heure du rafraîchissement ! » |
+| `pause.html` | Pause | Le nain et sa chope, avec l'enseigne « C'est l'heure du rafraîchissement ! » |
 | `fin.html` | Fin du live | Petit message de remerciement |
 | `jeu.html` | En jeu (fond transparent) | Cadre webcam en bas à gauche, pseudo, compte à rebours de la sortie |
 | `discussion.html` | Discussion | Grand cadre webcam, cadre de chat « La taverne », astuces |
