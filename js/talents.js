@@ -76,7 +76,7 @@ const initials = n => n.replace(/[^A-Za-z ]/g, "").split(" ").filter(w => w.leng
 
 function renderClasses() {
   $("#classes").innerHTML = CLASSES.map(([id, fr]) =>
-    `<button class="cbtn${id === cls ? " on" : ""}" data-c="${id}" style="--c:${TALENTS[id].color}">${fr}</button>`).join("");
+    `<button class="cbtn${id === cls ? " on" : ""}" data-c="${id}" style="--c:${TALENTS[id].color}"><img src="images/icons/class_${id}.jpg" alt="">${fr}</button>`).join("");
 }
 
 function render() {
@@ -94,7 +94,7 @@ function render() {
       const state = r === t.m ? "max" : r ? "part" : canAdd(ti, t) ? "open" : "lock";
       return `<button class="tal ${state}${t.a ? " active" : ""}" data-k="${k}" data-ti="${ti}" data-id="${t.id}"
         style="grid-row:${t.r + 1};grid-column:${t.c + 1}" aria-label="${t.n}, rang ${r} sur ${t.m}">
-        <span class="ini">${initials(t.n)}</span><span class="rk">${r}/${t.m}</span>
+        <img src="images/icons/${t.i}.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="ini">${initials(t.n)}</span><span class="rk">${r}/${t.m}</span>
         ${t.s === "new" ? '<i class="dot" title="Nouveau"></i>' : ""}</button>`;
     }).join("");
     const arrows = tr.t.flatMap(t => t.p.map(([id]) => {
@@ -102,7 +102,7 @@ function render() {
       return `<line x1="${p.c + .5}" y1="${p.r + .5}" x2="${t.c + .5}" y2="${t.r + .5}" class="${on ? "on" : ""}"/>`;
     })).join("");
     return `<section class="tree">
-      <header><h2>${TREE_FR[tr.n] || tr.n}</h2><span class="tp">${treeSpent(ti)}</span>
+      <header>${tr.i ? `<img class="ticon" src="images/icons/${tr.i}.jpg" alt="">` : ""}<h2>${TREE_FR[tr.n] || tr.n}</h2><span class="tp">${treeSpent(ti)}</span>
         <button class="treset" data-ti="${ti}" title="Vider cet arbre">↺</button></header>
       <div class="grid" style="--cols:${tr.cols};--rows:${tr.rows}">
         <svg class="arrows" viewBox="0 0 ${tr.cols} ${tr.rows}" preserveAspectRatio="none">${arrows}</svg>
@@ -124,7 +124,7 @@ function showTip(k, keep) {
   const cur = r ? t.t[r - 1] : null, next = r < t.m ? t.t[r] : null;
   $("#tip").innerHTML = `
     <button class="tclose" aria-label="Fermer">×</button>
-    <h3>${t.n}</h3>
+    <div class="thead"><img src="images/icons/${t.i}.jpg" alt=""><h3>${t.n}</h3></div>
     <div class="trank">Rang ${r}/${t.m}${t.a ? " · Sort actif" : ""}${st ? ` · <span class="st ${st[1]}">${st[0]}</span>` : ""}</div>
     ${reqs.length ? `<div class="treq">Requiert : ${reqs.join(", ")}</div>` : ""}
     ${t.q ? `<div class="treq">${t.q}</div>` : ""}
