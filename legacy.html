@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Legacy – wowforever</title>
-<meta name="description" content="Le système Legacy de WoW Forever expliqué.">
+<title>Héritage (Legacy) – wowforever</title>
+<meta name="description" content="Le système d'Héritage (Legacy) de WoW Forever : les 65 défis, les 21 avantages des trois arbres, les récompenses et un compteur de points.">
 <link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,32 +14,74 @@
 <div id="site-header"></div>
 
 <main><div class="wrap">
+<div class="crumbs"><a href="index.html">Accueil</a> › Systèmes › Héritage</div>
+<h1 class="page-title">Le système d'Héritage (Legacy)</h1>
+<p class="page-lead">La grande nouveauté de progression de WoW Forever : une progression « horizontale » partagée par tout ton compte, qui récompense l'exploration de tous les aspects du jeu plutôt que la seule montée de niveau.</p>
+<div class="hhero"><img src="images/une.jpg" alt=""><div class="hhero-txt"><b>65</b><span>défis à relever</span><b>21</b><span>avantages dans 3 arbres</span><b>16</b><span>points max. par personnage</span><b>4</b><span>récompenses exclusives</span></div></div>
+<nav class="jumps"><a class="jump" href="#principe" style="--c:var(--accent)">Le principe</a><a class="jump" href="#defis" style="--c:var(--accent)">Les 65 défis</a><a class="jump" href="#arbres" style="--c:var(--accent)">Les avantages</a><a class="jump" href="#recompenses" style="--c:var(--accent)">Les récompenses</a><a class="jump" href="#extreme" style="--c:var(--accent)">Mode Extrême</a></nav>
+
 <div class="layout">
-  <div>
-    <div class="crumbs"><a href="index.html">Accueil</a> › Systèmes › Legacy</div>
-<h1 class="page-title">Le système Legacy expliqué</h1>
-<p class="page-lead">Un mélange de hauts faits, d'arbre de talents et de parcours, pensé pour les complétionnistes et les amateurs de rerolls.</p>
-<div class="cover"><img src="images/legacy.jpg" alt=""></div>
-    <div class="article">
-      <h2>Comment gagner des points ?</h2>
-      <p>Les points Legacy s'obtiennent en relevant des défis : monter certaines classes, atteindre des paliers de métiers, explorer, terminer donjons et raids.</p>
-      <h2>Compte ou personnage ?</h2>
-      <p>Les points sont partagés sur tout le compte, mais chaque personnage choisit où les investir. À la sortie, un personnage peut dépenser jusqu'à 16 points, sur 65 au total à gagner.</p>
-      <h2>Les trois arbres</h2>
-      <div class="trees">
-        <div class="tree"><h3>Aventure</h3><p>Des bonus liés à l'exploration et au leveling, comme des points de talent plus tôt.</p></div>
-        <div class="tree"><h3>Métiers</h3><p>Des bonus d'efficacité pour la récolte et l'artisanat.</p></div>
-        <div class="tree"><h3>Ingéniosité</h3><p>Des avantages pratiques pour la vie de tous les jours en Azeroth.</p></div>
-      </div>
-      <h2>Récompenses</h2>
-      <p>Atteindre certains paliers débloque des récompenses purement cosmétiques : mascottes, apparences exclusives pour la transmogrification…</p>
-    </div>
+<div>
+<div class="article" id="principe">
+  <h2>Comment ça marche ?</h2>
+  <p>L'Héritage tient en trois éléments : des <b>défis</b>, qui rapportent chacun <b>un point d'Héritage</b> ; des <b>avantages</b>, achetés avec ces points dans trois arbres ; et des <b>récompenses cosmétiques</b>, débloquées au fil des points gagnés.</p>
+  <ul>
+    <li><b>Débloquer l'Héritage :</b> il s'ouvre avec ton premier point, généralement quand ton premier personnage atteint le niveau 25. Atteindre le niveau 150 dans un métier principal (hors récolte) ou explorer toute la carte fonctionne aussi.</li>
+    <li><b>Y accéder :</b> icône en forme de bouclier dans le menu, ou touche <b>Y</b> par défaut.</li>
+    <li><b>Des points pour tout le compte :</b> les points sont liés à ton compte Battle.net et profitent à tous tes personnages (sauf en mode Extrême).</li>
+    <li><b>Une dépense par personnage :</b> chaque personnage choisit ses avantages, jusqu'à <b>16 points</b> au lancement. Tu peux donc spécialiser chacun différemment.</li>
+  </ul>
+  <div class="info">Pas besoin d'enchaîner les rerolls : un seul personnage peut gagner jusqu'à <b>29 points</b> (3 en montant de niveau, 6 avec deux métiers, 12 en JcJ, 2 en aventure et 6 en donjons et raids). C'est largement assez pour remplir ses 16 points. Le plafond évite aussi qu'un nouveau joueur se sente trop loin derrière les vétérans.</div>
+</div>
+
+<div class="sec-title" id="defis"><h2>Les 65 défis</h2><span class="small" style="margin:0">Coche tes défis pour compter tes points</span></div>
+<div class="hcats">
+<details class="hcat" open><summary><img src="images/classes.jpg" alt=""><div><h3>Classes</h3><p>Atteindre les niveaux 25, 45 et 60 avec chaque classe.</p></div><b class="hpts" data-cat="Classes">0 / 27</b></summary><div class="hbody"><div class="hgrid"><div class="hcls"><img src="images/icons/class_warrior.jpg" alt=""><span>Guerrier</span><div class="hchk"><label><input type="checkbox" data-h="cls-warrior-25"> 25</label><label><input type="checkbox" data-h="cls-warrior-45"> 45</label><label><input type="checkbox" data-h="cls-warrior-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_paladin.jpg" alt=""><span>Paladin</span><div class="hchk"><label><input type="checkbox" data-h="cls-paladin-25"> 25</label><label><input type="checkbox" data-h="cls-paladin-45"> 45</label><label><input type="checkbox" data-h="cls-paladin-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_hunter.jpg" alt=""><span>Chasseur</span><div class="hchk"><label><input type="checkbox" data-h="cls-hunter-25"> 25</label><label><input type="checkbox" data-h="cls-hunter-45"> 45</label><label><input type="checkbox" data-h="cls-hunter-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_rogue.jpg" alt=""><span>Voleur</span><div class="hchk"><label><input type="checkbox" data-h="cls-rogue-25"> 25</label><label><input type="checkbox" data-h="cls-rogue-45"> 45</label><label><input type="checkbox" data-h="cls-rogue-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_priest.jpg" alt=""><span>Prêtre</span><div class="hchk"><label><input type="checkbox" data-h="cls-priest-25"> 25</label><label><input type="checkbox" data-h="cls-priest-45"> 45</label><label><input type="checkbox" data-h="cls-priest-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_shaman.jpg" alt=""><span>Chaman</span><div class="hchk"><label><input type="checkbox" data-h="cls-shaman-25"> 25</label><label><input type="checkbox" data-h="cls-shaman-45"> 45</label><label><input type="checkbox" data-h="cls-shaman-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_mage.jpg" alt=""><span>Mage</span><div class="hchk"><label><input type="checkbox" data-h="cls-mage-25"> 25</label><label><input type="checkbox" data-h="cls-mage-45"> 45</label><label><input type="checkbox" data-h="cls-mage-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_warlock.jpg" alt=""><span>Démoniste</span><div class="hchk"><label><input type="checkbox" data-h="cls-warlock-25"> 25</label><label><input type="checkbox" data-h="cls-warlock-45"> 45</label><label><input type="checkbox" data-h="cls-warlock-60"> 60</label></div></div><div class="hcls"><img src="images/icons/class_druid.jpg" alt=""><span>Druide</span><div class="hchk"><label><input type="checkbox" data-h="cls-druid-25"> 25</label><label><input type="checkbox" data-h="cls-druid-45"> 45</label><label><input type="checkbox" data-h="cls-druid-60"> 60</label></div></div></div></div></details>
+<details class="hcat" open><summary><img src="images/camping.jpg" alt=""><div><h3>Métiers</h3><p>Atteindre 150, 225 et 300 dans chaque métier principal hors récolte.</p></div><b class="hpts" data-cat="Métiers">0 / 18</b></summary><div class="hbody"><div class="hgrid"><div class="hcls"><span>Alchimie</span><div class="hchk"><label><input type="checkbox" data-h="pro-0-150"> 150</label><label><input type="checkbox" data-h="pro-0-225"> 225</label><label><input type="checkbox" data-h="pro-0-300"> 300</label></div></div><div class="hcls"><span>Forge</span><div class="hchk"><label><input type="checkbox" data-h="pro-1-150"> 150</label><label><input type="checkbox" data-h="pro-1-225"> 225</label><label><input type="checkbox" data-h="pro-1-300"> 300</label></div></div><div class="hcls"><span>Enchantement</span><div class="hchk"><label><input type="checkbox" data-h="pro-2-150"> 150</label><label><input type="checkbox" data-h="pro-2-225"> 225</label><label><input type="checkbox" data-h="pro-2-300"> 300</label></div></div><div class="hcls"><span>Ingénierie</span><div class="hchk"><label><input type="checkbox" data-h="pro-3-150"> 150</label><label><input type="checkbox" data-h="pro-3-225"> 225</label><label><input type="checkbox" data-h="pro-3-300"> 300</label></div></div><div class="hcls"><span>Travail du cuir</span><div class="hchk"><label><input type="checkbox" data-h="pro-4-150"> 150</label><label><input type="checkbox" data-h="pro-4-225"> 225</label><label><input type="checkbox" data-h="pro-4-300"> 300</label></div></div><div class="hcls"><span>Couture</span><div class="hchk"><label><input type="checkbox" data-h="pro-5-150"> 150</label><label><input type="checkbox" data-h="pro-5-225"> 225</label><label><input type="checkbox" data-h="pro-5-300"> 300</label></div></div></div><p class="small">Les métiers de récolte (minage, herboristerie, dépeçage) ne comptent pas.</p></div></details>
+<details class="hcat" open><summary><img src="images/jcj.jpg" alt=""><div><h3>JcJ</h3><p>Rangs PvP, réputations des champs de bataille et périple saisonnier.</p></div><b class="hpts" data-cat="JcJ">0 / 12</b></summary><div class="hbody"><label class="hline"><input type="checkbox" data-h="pvp-r3"> Atteindre le rang 3</label><label class="hline"><input type="checkbox" data-h="pvp-r7"> Atteindre le rang 7</label><label class="hline"><input type="checkbox" data-h="pvp-r10"> Atteindre le rang 10</label><label class="hline"><input type="checkbox" data-h="pvp-r13"> Atteindre le rang 13</label><label class="hline"><input type="checkbox" data-h="pvp-r14"> Atteindre le rang 14</label><label class="hline"><input type="checkbox" data-h="pvp-x0"> Exalté : Goulet des Chanteguerres</label><label class="hline"><input type="checkbox" data-h="pvp-x1"> Exalté : Bassin Arathi</label><label class="hline"><input type="checkbox" data-h="pvp-x2"> Exalté : Vallée d'Alterac</label><label class="hline"><input type="checkbox" data-h="pvp-x3"> Exalté : Îles des Sombrelances</label><label class="hline"><input type="checkbox" data-h="pvp-w4"> Périple Champ d'honneur : semaine 4</label><label class="hline"><input type="checkbox" data-h="pvp-w7"> Périple Champ d'honneur : semaine 7</label><label class="hline"><input type="checkbox" data-h="pvp-w10"> Périple Champ d'honneur : semaine 10</label><p class="small">Tous les détails sur notre <a href="pvp.html">page PvP</a>.</p></div></details>
+<details class="hcat" open><summary><img src="images/debuter.jpg" alt=""><div><h3>Aventure</h3><p>Explorer le monde et une grande suite de quêtes.</p></div><b class="hpts" data-cat="Aventure">0 / 2</b></summary><div class="hbody"><label class="hline"><input type="checkbox" data-h="adv-map"> Explorer toute la carte du monde avec un personnage</label><label class="hline"><input type="checkbox" data-h="adv-val"> Terminer la suite de quêtes du donjon de Lord Valthalak</label></div></details>
+<details class="hcat" open><summary><img src="images/donjons.jpg" alt=""><div><h3>Donjons</h3><p>Vaincre le dernier boss de tous les donjons d'une tranche de niveaux.</p></div><b class="hpts" data-cat="Donjons">0 / 3</b></summary><div class="hbody"><label class="hline"><input type="checkbox" data-h="dun-1"> Vaincre le dernier boss de tous les donjons de niveau 15 à 25</label><label class="hline"><input type="checkbox" data-h="dun-2"> Vaincre le dernier boss de tous les donjons de niveau 26 à 45</label><label class="hline"><input type="checkbox" data-h="dun-3"> Vaincre le dernier boss de tous les donjons de niveau 46 à 60</label><p class="small">Voir notre <a href="donjons.html">liste des donjons</a>.</p></div></details>
+<details class="hcat" open><summary><img src="images/raids.jpg" alt=""><div><h3>Raids</h3><p>Vaincre les grands raids de Forever.</p></div><b class="hpts" data-cat="Raids">0 / 3</b></summary><div class="hbody"><label class="hline"><input type="checkbox" data-h="rai-1"> Vaincre Onyxia</label><label class="hline"><input type="checkbox" data-h="rai-2"> Vaincre les 13 boss du Sommet d'Hyjal</label><label class="hline"><input type="checkbox" data-h="rai-3"> Vaincre les 8 boss des Profondeurs des saisons</label></div></details>
+</div>
+<div class="info" style="margin-top:14px">Ta progression est enregistrée dans ton navigateur : tu peux revenir la cocher au fil de tes aventures.</div>
+
+<div class="sec-title" id="arbres"><h2>Les avantages : trois arbres</h2></div>
+<p class="page-lead" style="margin-bottom:16px">Avec tes points, chaque personnage choisit ses avantages parmi 21, répartis dans trois arbres. Les valeurs exactes ne sont pas encore toutes connues et peuvent évoluer d'ici la sortie.</p>
+<div class="htrees"><div class="htree" style="--c:#3c7a3a"><div class="htree-img"><img src="images/camping.jpg" alt="" loading="lazy"><h3>Métiers</h3></div><ul><li><b>Heures supplémentaires</b><span>Plus de chances de gagner un point de compétence dans tous les métiers, y compris les compétences de classe comme le crochetage.</span></li><li><b>Récolte généreuse</b><span>Plus de chances d'obtenir des matériaux rares en minage, herboristerie et dépeçage.</span></li><li><b>Marchandage</b><span>Réduit le prix des objets achetés chez tous les marchands.</span></li><li><b>Charismatique</b><span>Chance de gagner plus de faveur marchande auprès de l'Administration commerciale d'Azeroth (Alliance) ou des Transports logistiques Durotar (Horde).</span></li><li><b>Cordon bleu</b><span>Chance de cuisiner un plat supplémentaire.</span></li><li><b>Maître des appâts</b><span>Chance de pêcher un poisson supplémentaire.</span></li><li><b>Étude assidue</b><span>Bonus quotidien de progression des métiers, ou essences élémentaires gratuites une fois tous les métiers au niveau 300.</span></li></ul></div><div class="htree" style="--c:#2f63b5"><div class="htree-img"><img src="images/zeppelin.jpg" alt="" loading="lazy"><h3>Aventure</h3></div><ul><li><b>Bien reposé</b><span>Augmente le plafond d'expérience reposée et la vitesse à laquelle elle s'accumule.</span></li><li><b>Frisson de l'aventure</b><span>Rend un peu de vie et de mana quand tu achèves un ennemi notable.</span></li><li><b>Alerte avancée</b><span>Améliore la détection des unités camouflées, hors champs de bataille.</span></li><li><b>Guide de terrain</b><span>Réduit d'une heure le temps de recharge pour ajouter des éléments au feu de camp.</span></li><li><b>Médecine de terrain</b><span>Raccourcit l'effet « Un bandage a été appliqué récemment » (sans effet en donjon, raid et champ de bataille).</span></li><li><b>Talent</b><span>Débloque tes points de talent jusqu'à cinq niveaux plus tôt.</span></li><li><b>Vols fréquents</b><span>Trajets aériens moins chers et plus rapides.</span></li></ul></div><div class="htree" style="--c:#8a3a8c"><div class="htree-img"><img src="images/legacy.jpg" alt="" loading="lazy"><h3>Ingéniosité</h3></div><ul><li><b>Gourmand</b><span>Allonge la durée des bonus de nourriture.</span></li><li><b>Mort et vif</b><span>Ton fantôme court plus vite vers ton corps, et les buffs de groupe et de raid sont gratuits après une résurrection.</span></li><li><b>Renforcer</b><span>Réduit la perte de durabilité à la mort.</span></li><li><b>Pour un grand honneur</b><span>Augmente l'honneur gagné en JcJ.</span></li><li><b>Permanence</b><span>Allonge la durée des buffs de groupe, de raid et de feu de camp.</span></li><li><b>Diplomatie</b><span>Augmente les gains de réputation.</span></li><li><b>Économie des composants</b><span>Les techniques de classe n'utilisent plus de composants achetés chez les marchands, et les objets de feu de camp de niveau 1 n'en demandent plus.</span></li></ul></div></div>
+
+<div class="sec-title" id="recompenses"><h2>Les récompenses d'Héritage</h2></div>
+<p class="page-lead" style="margin-bottom:16px">Des objets cosmétiques exclusifs, débloqués selon le total de points gagnés sur ton compte. Le thème du lancement : l'ours spectral, compagnon du chasseur nain de la cinématique.</p>
+<div class="hbar"><div class="hbar-fill" id="hbarfill"></div><span class="hmark" style="left:23.076923076923077%">15</span><span class="hmark" style="left:38.46153846153847%">25</span><span class="hmark" style="left:61.53846153846154%">40</span><span class="hmark" style="left:84.61538461538461%">55</span></div>
+<div class="hrews"><div class="hrew" data-need="15"><div class="hrew-img"><img src="images/jcj.jpg" alt="" loading="lazy"><span class="hneed">15 points</span></div><h4>Réplique de carabine à air comprimé de Forgefer</h4><p>Un jouet pour des batailles pour rire : ses faux fusils étourdissent les autres joueurs et comptent les points.</p><span class="hstate">Verrouillé</span></div><div class="hrew" data-need="25"><div class="hrew-img"><img src="images/une.jpg" alt="" loading="lazy"><span class="hneed">25 points</span></div><h4>Ourson spectral</h4><p>Une mascotte exclusive, inspirée du chasseur nain et de son compagnon de la cinématique de WoW Forever.</p><span class="hstate">Verrouillé</span></div><div class="hrew" data-need="40"><div class="hrew-img"><img src="images/nain.jpg" alt="" loading="lazy"><span class="hneed">40 points</span></div><h4>Tabard d'ours spectral</h4><p>Un tabard exclusif au système d'Héritage.</p><span class="hstate">Verrouillé</span></div><div class="hrew" data-need="55"><div class="hrew-img"><img src="images/galerie/02.jpg" alt="" loading="lazy"><span class="hneed">55 points</span></div><h4>Rênes d'ours spectral</h4><p>Une monture ours spectral, exclusive au système d'Héritage.</p><span class="hstate">Verrouillé</span></div></div>
+<p class="small">Paliers de la bêta, susceptibles de changer avant la sortie. De nouveaux objets et jouets arriveront avec chaque mise à jour de contenu.</p>
+
+<div class="article" id="extreme" style="margin-top:24px">
+  <h2>Et le mode Extrême (Hardcore) ?</h2>
+  <p>Le mode Extrême, où chaque personnage n'a qu'une vie, n'est pas disponible au lancement et aura ses propres règles :</p>
+  <ul>
+    <li>Les défis réussis dans les autres modes <b>n'apparaissent pas</b> en mode Extrême.</li>
+    <li>À l'inverse, un défi réussi <b>en mode Extrême compte pour tous tes personnages</b> des autres modes.</li>
+    <li>Les défis JcJ y sont impossibles : <b>12 défis propres au mode Extrême</b> les remplaceront.</li>
+  </ul>
+  <h2>Et après ?</h2>
+  <p>Blizzard prévoit d'ajouter de nouveaux défis à chaque mise à jour de contenu, de nouveaux avantages dans les arbres existants et dans de nouveaux arbres, ainsi que de nouvelles récompenses à mesure que de nouveaux points apparaîtront.</p>
+</div>
+</div>
+
+<aside>
+  <div data-sidebar></div>
+  <div class="box hcounter">
+    <h4>Mes points d'Héritage</h4>
+    <div class="hbig"><b id="htotal">0</b><span>/ 65</span></div>
+    <div class="small" id="hnext">Prochaine récompense : 15 points</div>
+    <button class="btn-link" id="hreset" style="margin-top:12px;cursor:pointer;font:inherit;font-size:.85rem">Tout décocher</button>
   </div>
-  <aside data-sidebar></aside>
+</aside>
 </div>
 </div></main>
 
 <div id="site-footer"></div>
 <script src="js/site.js"></script>
+<script src="js/heritage.js"></script>
 </body>
 </html>
