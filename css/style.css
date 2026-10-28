@@ -358,3 +358,5 @@ body:not(.hover) .tip .tclose{display:block;position:absolute;top:6px;right:10px
 .tip .thead img{width:38px;height:38px;border-radius:6px;border:1px solid #b8893a}
 .tal.lock img{filter:grayscale(1) brightness(.55)}
 .tal.lock{filter:none}
+.article li a{color:var(--title)}
+@media (max-width:560px){ a.card[style*="flex-direction:row"]{flex-direction:column!important} a.card[style*="flex-direction:row"] .thumb{width:100%!important} }

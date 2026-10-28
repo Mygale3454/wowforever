@@ -18,6 +18,7 @@ const POPULAIRES = [
   ["donjons.html", "images/donjons.jpg", "Les 9 nouveaux donjons"],
   ["legacy.html", "images/legacy.jpg", "Le système Legacy expliqué"],
   ["classes.html", "images/classes.jpg", "Races et classes : les nouveautés"],
+  ["article-addons.html", "images/galerie/18.jpg", "Les meilleurs addons pour WoW Forever"],
   ["calendrier.html", "images/calendrier.jpg", "Roadmap 2026-2027"]
 ];
 
