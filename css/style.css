@@ -360,3 +360,23 @@ body:not(.hover) .tip .tclose{display:block;position:absolute;top:6px;right:10px
 .tal.lock{filter:none}
 .article li a{color:var(--title)}
 @media (max-width:560px){ a.card[style*="flex-direction:row"]{flex-direction:column!important} a.card[style*="flex-direction:row"] .thumb{width:100%!important} }
+
+/* ----- Page PvP ----- */
+.bgs{display:grid;gap:22px}
+.bg{display:grid;grid-template-columns:340px 1fr;background:var(--paper),var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:70px}
+.bg-img{position:relative}
+.bg-img img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.bg-img .badge{position:absolute;left:12px;top:12px}
+.bg-body{padding:22px 24px}
+.bg h3{font-size:1.4rem;margin-bottom:10px}
+.bg h3 small{font-family:Inter,sans-serif;font-size:.8rem;color:var(--muted);font-weight:500}
+.bg h4{font-family:Cinzel,serif;color:var(--title);font-size:.95rem;margin:14px 0 6px}
+.bg ul{padding-left:20px}.bg li{margin-bottom:5px;font-size:.93rem}
+.bg-facts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+.bg-facts div{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:6px 12px}
+.bg-facts span{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+.bg-facts b{font-size:.92rem}
+.bg-fac{margin-bottom:8px;font-size:.9rem}
+.bg-fac .race{font-size:.78rem}
+td a{color:var(--title)}
+@media (max-width:860px){ .bg{grid-template-columns:1fr} .bg-img img{min-height:0;aspect-ratio:16/8} }
