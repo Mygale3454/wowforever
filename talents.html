@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculateur de talents – wowforever</title>
+<meta name="description" content="Calculateur de talents WoW Forever pour les 9 classes : prépare ton build et partage-le avec un lien.">
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main><div class="wrap">
+<div class="crumbs"><a href="index.html">Accueil</a> › Calculateur de talents</div>
+<h1 class="page-title">Calculateur de talents</h1>
+<p class="page-lead">Prépare ton build WoW Forever : choisis ta classe et répartis tes 51 points dans les trois arbres. Le lien de la page se met à jour à chaque clic : copie-le pour partager ton build.</p>
+
+<nav class="cbar" id="classes"></nav>
+
+<div class="tbar">
+  <div class="tstat"><b id="points">0 / 51</b><span>Points dépensés</span></div>
+  <div class="tstat"><b id="left">51</b><span>Restants</span></div>
+  <div class="tstat"><b id="level">–</b><span>Niveau requis</span></div>
+  <div class="tstat"><b id="split">0 / 0 / 0</b><span>Répartition</span></div>
+  <div class="tactions"><button class="btn-link" id="copy">Copier le lien</button><button class="btn-link" id="reset">Tout réinitialiser</button></div>
+</div>
+<p class="small help"><b>Ordinateur :</b> clic gauche pour ajouter un point, clic droit (ou Maj + clic) pour en retirer. <b>Mobile :</b> touche un talent pour voir sa fiche et ajouter ou retirer des points. Les talents avec un point vert sont nouveaux dans Forever.</p>
+
+<div class="trees" id="trees"></div>
+<div class="tip" id="tip" hidden></div>
+
+<div class="info" style="margin-top:24px">Données de la bêta (build 70291 du 14 octobre 2026), susceptibles de changer à la sortie. Les noms et descriptions des talents sont en anglais, comme dans la source. Données des talents : <a href="https://talentsforever.com/" target="_blank" rel="noopener">talentsforever.com</a> (licence CC BY 4.0).</div>
+</div></main>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/talents-data.js"></script>
+<script src="js/talents.js"></script>
+</body>
+</html>
