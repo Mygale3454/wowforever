@@ -8,7 +8,7 @@
 <link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202610292139">
+<link rel="stylesheet" href="css/style.css?v=202610292144">
 </head>
 <body>
 <div id="site-header"></div>
@@ -25,6 +25,7 @@
 </div>
 <nav class="jumps"><a class="jump" href="#guerrier" style="--c:#C69B6D">Guerrier</a><a class="jump" href="#paladin" style="--c:#D9619C">Paladin</a><a class="jump" href="#chasseur" style="--c:#7FAE3E">Chasseur</a><a class="jump" href="#voleur" style="--c:#D4B82A">Voleur</a><a class="jump" href="#pretre" style="--c:#9A9A9A">Prêtre</a><a class="jump" href="#chaman" style="--c:#0070DD">Chaman</a><a class="jump" href="#mage" style="--c:#2BA9CC">Mage</a><a class="jump" href="#demoniste" style="--c:#7072D6">Démoniste</a><a class="jump" href="#druide" style="--c:#E86E08">Druide</a></nav>
 
+<p class="small">Dans chaque fiche, « Voir tous les sorts » déplie la liste complète des sorts de la classe, par niveau d'apprentissage. Survole un sort pour voir sa description (infobulles Wowhead), ou clique dessus pour ouvrir sa fiche. Pour le prêtre, les sorts propres à une race sont détaillés sur la <a href="races.html#pretre">page Races</a>. Noms des sorts en anglais, d'après le client bêta.</p>
 <div class="fiches">
 <article class="fiche" id="guerrier" style="--c:#C69B6D">
   <header><h2>Guerrier</h2><div class="roles"><span class="role">Tank</span><span class="role">Dégâts</span></div></header>
@@ -33,6 +34,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Protection</b></td><td>Tank</td><td><span class="tier tS">S</span></td><td>Menace énorme grâce à Heurt de bouclier : le tank le plus demandé.</td></tr><tr><td><b>Fureur</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Gros dégâts soutenus en mêlée, très apprécié en donjon.</td></tr><tr><td><b>Armes</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Plus lent mais solide, souvent choisi pour monter de niveau et en JcJ.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#warrior">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="warrior"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="paladin" style="--c:#D9619C">
   <header><h2>Paladin</h2><div class="roles"><span class="role">Tank</span><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
@@ -41,6 +46,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race h" title="Premiers paladins de la Horde">Mort-vivant ★<em>Premiers paladins de la Horde</em></span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Protection</b></td><td>Tank</td><td><span class="tier tS">S</span></td><td>Bouclier sacré et sorts défensifs renforcés : tank de premier plan.</td></tr><tr><td><b>Sacré</b></td><td>Soins</td><td><span class="tier tA">A</span></td><td>Soins puissants sur une cible, idéal pour soigner le tank.</td></tr><tr><td><b>Vindicte</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Hybride robuste et agréable pour monter de niveau.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#paladin">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="paladin"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="chasseur" style="--c:#7FAE3E">
   <header><h2>Chasseur</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
@@ -49,6 +58,10 @@
   <div class="races"><span class="race a">Humain ★</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race h">Orc</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Maîtrise des bêtes</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Familier très puissant : le meilleur choix pour le leveling.</td></tr><tr><td><b>Survie</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Pièges et contrôle, très efficace en donjon.</td></tr><tr><td><b>Précision</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros tirs à distance, un classique apprécié des joueurs.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#hunter">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="hunter"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="voleur" style="--c:#D4B82A">
   <header><h2>Voleur</h2><div class="roles"><span class="role">Dégâts</span></div></header>
@@ -57,6 +70,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span><span class="race s">Skyborne ★</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Assassinat</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Poisons et gros coups critiques : la spé la plus forte en donjon.</td></tr><tr><td><b>Combat</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Dégâts constants et simples à jouer.</td></tr><tr><td><b>Finesse</b></td><td>Dégâts</td><td><span class="tier tD">D</span></td><td>Surtout pour le JcJ, en retrait en donjon.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#rogue">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="rogue"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="pretre" style="--c:#9A9A9A">
   <header><h2>Prêtre</h2><div class="roles"><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
@@ -65,6 +82,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Nain</span><span class="race a">Elfe de la nuit</span><span class="race a">Gnome ★</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Sacré</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Soins de groupe excellents, l'un des meilleurs soigneurs.</td></tr><tr><td><b>Discipline</b></td><td>Soins</td><td><span class="tier tA">A</span></td><td>Boucliers et prévention, très efficace en donjon.</td></tr><tr><td><b>Ombre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Solide en JcJ et agréable pour progresser seul.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#priest">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="priest"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="chaman" style="--c:#0070DD">
   <header><h2>Chaman</h2><div class="roles"><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
@@ -73,6 +94,10 @@
   <div class="races"><span class="race a" title="Premiers chamans de l'Alliance">Nain ★<em>Premiers chamans de l'Alliance</em></span><span class="race h">Orc</span><span class="race h">Tauren</span><span class="race h">Troll</span><span class="race s" title="Côté Horde uniquement">Skyborne ★<em>Côté Horde uniquement</em></span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Restauration</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Salve de guérison et Remous : le soigneur de groupe idéal.</td></tr><tr><td><b>Amélioration</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Dégâts de mêlée explosifs, très populaire.</td></tr><tr><td><b>Élémentaire</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Gros dégâts de sorts à distance.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#shaman">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="shaman"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="mage" style="--c:#2BA9CC">
   <header><h2>Mage</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
@@ -81,6 +106,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Gnome</span><span class="race h">Orc ★</span><span class="race h">Mort-vivant</span><span class="race h">Troll</span><span class="race s" title="Côté Alliance uniquement">Skyborne ★<em>Côté Alliance uniquement</em></span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Arcanes</b></td><td>Dégâts</td><td><span class="tier tS">S</span></td><td>Pouvoir des arcanes : la spé de dégâts la mieux notée.</td></tr><tr><td><b>Givre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Contrôle et sécurité, la référence pour le leveling de zone.</td></tr><tr><td><b>Feu</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros coups critiques, appréciée en raid.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#mage">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="mage"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="demoniste" style="--c:#7072D6">
   <header><h2>Démoniste</h2><div class="roles"><span class="role">Dégâts à distance</span></div></header>
@@ -89,6 +118,10 @@
   <div class="races"><span class="race a">Humain</span><span class="race a">Gnome</span><span class="race h">Orc</span><span class="race h">Mort-vivant</span><span class="race h">Troll ★</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Affliction</b></td><td>Dégâts</td><td><span class="tier tA">A</span></td><td>Dégâts sur la durée et très bonne survie en solo.</td></tr><tr><td><b>Démonologie</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Démons renforcés, solide en donjon.</td></tr><tr><td><b>Destruction</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Gros sorts de feu, efficace en JcJ.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#warlock">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="warlock"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 <article class="fiche" id="druide" style="--c:#E86E08">
   <header><h2>Druide</h2><div class="roles"><span class="role">Tank</span><span class="role">Soins</span><span class="role">Dégâts</span></div></header>
@@ -97,6 +130,10 @@
   <div class="races"><span class="race a">Elfe de la nuit</span><span class="race h">Tauren</span><span class="race s">Skyborne ★</span></div>
   <h3>Spécialisations préférées</h3>
   <div class="table-wrap"><table class="specs"><thead><tr><th>Spécialisation</th><th>Rôle</th><th>Tier</th><th>Pourquoi</th></tr></thead><tbody><tr><td><b>Restauration</b></td><td>Soins</td><td><span class="tier tS">S</span></td><td>Croissance sauvage : soins de groupe sur la durée très efficaces.</td></tr><tr><td><b>Combat farouche</b></td><td>Tank / Dégâts</td><td><span class="tier tB">B</span></td><td>Ours ou félin, très souple pour jouer les deux rôles.</td></tr><tr><td><b>Équilibre</b></td><td>Dégâts</td><td><span class="tier tB">B</span></td><td>Sorts de nature et des étoiles à distance.</td></tr></tbody></table></div>
+  <div class="factions">
+    <a class="btn-link" href="talents.html#druid">Ouvrir l'arbre de talents ↗</a>
+  </div>
+  <details class="spells" data-class="druid"><summary>Voir tous les sorts de la classe</summary><div class="spl"></div></details>
 </article>
 </div>
 
@@ -111,6 +148,10 @@
 </div></main>
 
 <div id="site-footer"></div>
-<script src="js/site.js?v=202610292139"></script>
+<script src="js/spells-data.js?v=202610292144"></script>
+<script src="js/classes-spells.js?v=202610292144"></script>
+<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false};</script>
+<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+<script src="js/site.js?v=202610292144"></script>
 </body>
 </html>
