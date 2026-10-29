@@ -68,3 +68,18 @@ Ne montre jamais cette adresse à l'écran : le jeton est personnel.
 
 - Webcam : cadre de 1200 x 675, à 64 px de la gauche et 140 px du haut.
 - Chat : place une source de chat (par exemple l'adresse « Chat en fenêtre » de Twitch) dans le cadre de droite (520 x 675).
+
+## Animations d'alertes (dossier `alertes/`)
+
+Quatre animations originales de 3 secondes, au fond transparent, pour les alertes Streamlabs :
+
+| Fichier | Idée d'utilisation |
+|---|---|
+| `rune.webm` | Follow |
+| `parchemin.webm` | Abonnement |
+| `tresor.webm` | Bits et dons |
+| `portail.webm` | Raid |
+
+Les versions `.gif` sont fournies pour les logiciels qui ne lisent pas le WebM (moins nettes).
+Dans Streamlabs, champ **Image** de l'alerte → icône d'envoi → **Upload**, ou icône 🔗 avec l'adresse en ligne, par exemple :
+`https://mygale3454.github.io/wowforever/overlays/alertes/rune.webm`
