@@ -3,7 +3,7 @@
 const MENU = [
   ["index.html", "News"],
   ["debuter.html", "Bien débuter"],
-  ["classes.html", "Classes"],
+  ["Classes / Races", [["classes.html", "Classes"], ["races.html", "Races"]]],
   ["talents.html", "Talents"],
   ["donjons.html", "Donjons & Raids"],
   ["pvp.html", "PvP"],
@@ -18,7 +18,7 @@ const POPULAIRES = [
   ["debuter.html", "images/debuter.jpg", "Bien débuter sur WoW Forever"],
   ["donjons.html", "images/donjons.jpg", "Les 9 nouveaux donjons"],
   ["legacy.html", "images/legacy.jpg", "Le système Legacy expliqué"],
-  ["classes.html", "images/classes.jpg", "Races et classes : les nouveautés"],
+  ["races.html", "images/skyborne.jpg", "Quelle race choisir ? Le comparatif"],
   ["article-addons.html", "images/galerie/18.jpg", "Les meilleurs addons pour WoW Forever"],
   ["calendrier.html", "images/calendrier.jpg", "Roadmap 2026-2027"]
 ];
@@ -40,7 +40,9 @@ document.getElementById("site-header").outerHTML = `
 <header class="navbar"><div class="wrap">
   <a class="logo mini-logo" href="index.html">wow<span>forever</span></a>
   <nav class="menu" id="menu">
-    ${MENU.map(([href, label]) => `<a href="${href}"${href === current ? ' class="active"' : ""}>${label}</a>`).join("")}
+    ${MENU.map(([a, b]) => Array.isArray(b)
+      ? `<div class="sub${b.some(([h]) => h === current) ? " active" : ""}"><button class="subbtn" type="button">${a} ▾</button><div class="subm">${b.map(([h, l]) => `<a href="${h}"${h === current ? ' class="active"' : ""}>${l}</a>`).join("")}</div></div>`
+      : `<a href="${a}"${a === current ? ' class="active"' : ""}>${b}</a>`).join("")}
   </nav>
   <button class="burger" id="burger" aria-label="Menu">☰</button>
 </div></header>`;
@@ -72,6 +74,8 @@ document.querySelectorAll("[data-sidebar]").forEach(a => a.innerHTML = `
     </div>
   </div>`);
 
+document.querySelectorAll(".subbtn").forEach(b => b.onclick = e => { e.stopPropagation(); const p = b.parentElement, o = p.classList.contains("open"); document.querySelectorAll(".sub.open").forEach(x => x.classList.remove("open")); if (!o) p.classList.add("open"); });
+document.addEventListener("click", () => document.querySelectorAll(".sub.open").forEach(x => x.classList.remove("open")));
 document.getElementById("burger").onclick = () => document.getElementById("menu").classList.toggle("open");
 
 /* ----- Compte à rebours : 4 nov. 2026, 15:00 heure du Pacifique = 23:00 UTC ----- */

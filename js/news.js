@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-29", type: "site", lien: "races.html", img: "images/skyborne.jpg",
+    titre: "Quelle race choisir ? Le comparatif des 9 races",
+    texte: "Capacités raciales, classes jouables et sorts de prêtre propres à chaque race, avec les nouveaux Skyborne." },
   { date: "2026-10-29", type: "site", lien: "metiers.html", img: "images/camping.jpg",
     titre: "Nouvelle page Métiers : nouveautés et guides 1 à 300",
     texte: "Les 12 métiers de Forever, leurs objets de camp, la Faveur marchande et les meilleurs guides pour les monter, en français et en anglais." },
