@@ -53,6 +53,17 @@ Autres réglages possibles :
 
 Pour changer de portrait, remplace l'image `img/mygale.jpg` (format carré).
 
+### Mise à jour automatique avec Streamlabs
+
+1. Sur streamlabs.com : **Paramètres** (ton avatar en haut à droite) → **Paramètres API** → onglet **Jetons API**.
+2. Copie **Ton jeton Socket API** (« Your Socket API Token »).
+3. Dans OBS, mets cette adresse dans la source navigateur de la scène « En jeu » :
+   `https://mygale3454.github.io/wowforever/overlays/jeu.html?slt=TON_JETON`
+4. Teste avec les boutons **Test** de la fenêtre d'alerte Streamlabs (abonnement, bits…) : les plaques doivent changer et s'illuminer.
+
+Les derniers noms sont gardés en mémoire par OBS, même après un redémarrage.
+Ne montre jamais cette adresse à l'écran : le jeton est personnel.
+
 ## Scène « Discussion »
 
 - Webcam : cadre de 1200 x 675, à 64 px de la gauche et 140 px du haut.

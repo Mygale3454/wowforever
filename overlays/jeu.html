@@ -30,6 +30,8 @@
   .row:nth-child(1) b{color:#f2c25a}
 
   /* Cadre webcam facultatif (?cam=1) au-dessus de l'encadré */
+  .row.flash{animation:flash 1.6s ease-out}
+  @keyframes flash{0%{background:rgba(242,194,90,.75);transform:scale(1.04)}100%{transform:scale(1)}}
   #cam{display:none;left:28px;bottom:300px;width:320px;height:180px}
   body.cam #cam{display:block}
 </style></head>
@@ -53,13 +55,48 @@
 
 <script src="overlay.js"></script>
 <script>
-  /* Réglages par l'adresse : ?sub=Pseudo&gift=Pseudo&bits=Pseudo&cam=1&perso=Nom%20Prénom */
+  /* Réglages par l'adresse : ?sub=Pseudo&gift=Pseudo&bits=Pseudo&cam=1&perso=Nom%20Prénom
+     Mise à jour automatique avec Streamlabs : ?slt=TON_JETON_SOCKET_API */
   const q = new URLSearchParams(location.search);
-  document.querySelectorAll("[data-k]").forEach(el => { const v = q.get(el.dataset.k); if (v) el.textContent = v; });
+  const KEY = "wowforever-soutiens";
+  let mem = {};
+  try { mem = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+  const set = (k, v, save) => {
+    if (!v) return;
+    const el = document.querySelector(`[data-k="${k}"]`);
+    el.textContent = v;
+    el.parentElement.classList.remove("flash"); void el.offsetWidth; el.parentElement.classList.add("flash");
+    if (save) { mem[k] = v; try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch (e) {} }
+  };
+  ["sub", "gift", "bits"].forEach(k => { const v = q.get(k) || mem[k]; if (v) document.querySelector(`[data-k="${k}"]`).textContent = v; });
   if (q.get("cam") === "1") document.body.classList.add("cam");
   if (q.get("perso")) {
     const [a, ...b] = q.get("perso").split(" ");
     document.querySelector("[data-perso]").innerHTML = `${a} <span>${b.join(" ")}</span>`;
+  }
+
+  /* ----- Connexion à Streamlabs (événements en direct) ----- */
+  const token = q.get("slt");
+  if (token) {
+    const sc = document.createElement("script");
+    sc.src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js";
+    sc.onload = () => {
+      const socket = io(`https://sockets.streamlabs.com?token=${encodeURIComponent(token)}`, { transports: ["websocket"] });
+      socket.on("event", ev => {
+        if (!ev || (ev.for && ev.for !== "twitch_account")) return;
+        (Array.isArray(ev.message) ? ev.message : [ev.message]).forEach(m => {
+          if (!m) return;
+          const name = m.display_name || m.name;
+          const gifter = m.gifter_display_name || m.gifter || m.gifter_name;
+          if (ev.type === "bits") set("bits", `${name} (${m.amount})`, true);
+          else if (ev.type === "subMysteryGift") set("gift", `${gifter || name}${m.amount ? " ×" + m.amount : ""}`, true);
+          else if (ev.type === "subscription" || ev.type === "resub") {
+            if (gifter) set("gift", gifter, true); else set("sub", name, true);
+          }
+        });
+      });
+    };
+    document.head.appendChild(sc);
   }
 </script>
 </body></html>
