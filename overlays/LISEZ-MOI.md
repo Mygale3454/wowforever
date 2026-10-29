@@ -66,7 +66,7 @@ Ne montre jamais cette adresse à l'écran : le jeton est personnel.
 
 ## Scène « Discussion »
 
-- Webcam : cadre de 1200 x 675, à 64 px de la gauche et 140 px du haut.
+- Webcam ou fenêtre : cadre de 1200 x 675, à 64 px de la gauche et 140 px du haut. La plaque « Discussion avec… » est placée sous le cadre, elle reste visible.
 - Chat : place une source de chat (par exemple l'adresse « Chat en fenêtre » de Twitch) dans le cadre de droite (520 x 675).
 
 ## Animations d'alertes (dossier `alertes/`)
