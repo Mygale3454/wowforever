@@ -23,12 +23,18 @@ const POPULAIRES = [
   ["calendrier.html", "images/calendrier.jpg", "Roadmap 2026-2027"]
 ];
 
+/* Thème : "gris" (par défaut) ou "parchemin", mémorisé dans le navigateur */
+const THEME_KEY = "wowforever-theme";
+let theme = "gris";
+try { theme = localStorage.getItem(THEME_KEY) || "gris"; } catch (e) {}
+document.documentElement.dataset.theme = theme;
+
 const current = location.pathname.split("/").pop() || "index.html";
 
 document.getElementById("site-header").outerHTML = `
 <div class="topbar"><div class="wrap">
   <span class="live" id="topbar-cd">Sortie de WoW Forever bientôt</span>
-  <span class="hide-m">Site de fan non officiel · Guides en français</span>
+  <span><span class="hide-m">Site de fan non officiel · Guides en français</span><button class="themebtn" id="themebtn" type="button"></button></span>
 </div></div>
 <div class="banner">
   <img src="images/bandeau.jpg" alt="">
@@ -76,6 +82,15 @@ document.querySelectorAll("[data-sidebar]").forEach(a => a.innerHTML = `
 
 document.querySelectorAll(".subbtn").forEach(b => b.onclick = e => { e.stopPropagation(); const p = b.parentElement, o = p.classList.contains("open"); document.querySelectorAll(".sub.open").forEach(x => x.classList.remove("open")); if (!o) p.classList.add("open"); });
 document.addEventListener("click", () => document.querySelectorAll(".sub.open").forEach(x => x.classList.remove("open")));
+const tb = document.getElementById("themebtn");
+const setTb = () => tb.textContent = document.documentElement.dataset.theme === "gris" ? "Thème parchemin" : "Thème gris";
+setTb();
+tb.onclick = () => {
+  const t = document.documentElement.dataset.theme === "gris" ? "parchemin" : "gris";
+  document.documentElement.dataset.theme = t;
+  try { localStorage.setItem(THEME_KEY, t); } catch (e) {}
+  setTb();
+};
 document.getElementById("burger").onclick = () => document.getElementById("menu").classList.toggle("open");
 
 /* ----- Compte à rebours : 4 nov. 2026, 15:00 heure du Pacifique = 23:00 UTC ----- */
