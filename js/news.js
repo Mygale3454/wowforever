@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-29", type: "guide", lien: "guides.html", img: "images/classes.jpg",
+    titre: "Les guides des 27 spécialisations sont en ligne",
+    texte: "Rôle, points forts et faibles, build de talents à ouvrir en un clic dans le calculateur, priorité des statistiques et races conseillées." },
   { date: "2026-10-29", type: "site", lien: "races.html", img: "images/skyborne.jpg",
     titre: "Quelle race choisir ? Le comparatif des 9 races",
     texte: "Capacités raciales, classes jouables et sorts de prêtre propres à chaque race, avec les nouveaux Skyborne." },

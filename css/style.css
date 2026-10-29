@@ -617,3 +617,23 @@ html[data-theme="gris"] input[type=checkbox]{accent-color:#111214}
 .wowhead-tooltip th,.wowhead-tooltip td{padding:3px 8px!important;font-size:12px!important;line-height:1.45!important;text-transform:none!important;letter-spacing:0!important;font-weight:normal!important;text-align:left!important;color:#fff;vertical-align:top}
 .wowhead-tooltip tbody tr:hover{background:transparent!important}
 .wowhead-tooltip b{font-size:14px;font-weight:700}
+
+/* ----- Guides de spécialisation ----- */
+.sgc{margin:34px 0;scroll-margin-top:80px}
+.sgc-head{display:flex;align-items:center;gap:12px;border-bottom:3px solid var(--c);padding-bottom:8px;margin-bottom:16px}
+.sgc-head img{width:40px;height:40px;border-radius:8px}
+.sgc-head h2{margin:0;flex:1}
+.sgc-head a{font-size:.85rem;font-weight:600}
+.sgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.sg{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:10px;padding:16px 18px;scroll-margin-top:80px;display:flex;flex-direction:column}
+.sg-h{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.sg h3{margin:0;font-size:1.2rem}
+.sg h4{margin:14px 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+.sg p{margin:8px 0}
+.sg ul{margin:0;padding-left:18px;font-size:.9rem}
+.sg-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sg-build{font-size:.88rem}
+.sg-stats{font-weight:600;font-size:.9rem}
+.sg .btn-link{align-self:flex-start;margin-top:4px}
+.sg .race{margin:2px 0}
+@media(max-width:560px){.sg-cols{grid-template-columns:1fr}}
