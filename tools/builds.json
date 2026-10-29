@@ -1,0 +1,751 @@
+{
+ "druid-balance": {
+  "code": "druid-5532220115501351--505",
+  "total": 51,
+  "split": "41/0/10",
+  "bad": [],
+  "stats": [
+   "Spell Power",
+   "Critical Strike",
+   "Hit",
+   "Intellect",
+   "Haste",
+   "Spirit"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "tauren"
+  },
+  "conf": "low",
+  "key": [
+   "Nature's Grace",
+   "Eclipse",
+   "Moonfury",
+   "Moonkin Form"
+  ],
+  "adapted": false,
+  "main": "Balance"
+ },
+ "druid-feral-combat": {
+  "code": "druid--55232332120132012551-03",
+  "total": 51,
+  "split": "0/48/3",
+  "bad": [],
+  "stats": [
+   "Defense",
+   "Stamina",
+   "Agility",
+   "Weapon DPS",
+   "Hit",
+   "Expertise",
+   "Strength"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "tauren"
+  },
+  "conf": "low",
+  "key": [
+   "Leader of the Pack",
+   "Natural Instinct",
+   "Natural Reaction",
+   "Rend and Tear",
+   "Berserk"
+  ],
+  "adapted": true,
+  "main": "Feral Combat"
+ },
+ "druid-restoration": {
+  "code": "druid-55002001--5050035153113051",
+  "total": 51,
+  "split": "13/0/38",
+  "bad": [],
+  "stats": [
+   "Bonus Healing",
+   "Intellect",
+   "Spirit",
+   "Critical Strike",
+   "Haste"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "tauren"
+  },
+  "conf": "low",
+  "key": [
+   "Nature's Swiftness",
+   "Living Spirit",
+   "Improved Regrowth",
+   "Wild Growth"
+  ],
+  "adapted": false,
+  "main": "Restoration"
+ },
+ "hunter-beast-mastery": {
+  "code": "hunter-5520001505101051-0053552-",
+  "total": 51,
+  "split": "31/20/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Critical Strike",
+   "Intellect",
+   "Attack Power",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Intimidation",
+   "Frenzy",
+   "Bestial Wrath"
+  ],
+  "adapted": false,
+  "main": "Beast Mastery"
+ },
+ "hunter-marksmanship": {
+  "code": "hunter-5-3053552511523051-",
+  "total": 51,
+  "split": "5/46/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Critical Strike",
+   "Intellect",
+   "Attack Power",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Rapid Recuperation",
+   "Barrage",
+   "Ranged Weapon Specialization",
+   "Sniper Shot"
+  ],
+  "adapted": false,
+  "main": "Marksmanship"
+ },
+ "hunter-survival": {
+  "code": "hunter-5-005005001-500250230050222151",
+  "total": 51,
+  "split": "5/11/35",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Critical Strike",
+   "Expertise",
+   "Strength",
+   "Intellect",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Resourcefulness",
+   "Expose Prey",
+   "Survivalist's Discipline",
+   "Strider Kick",
+   "Lightning Reflexes",
+   "Lacerating Strikes"
+  ],
+  "adapted": false,
+  "main": "Survival"
+ },
+ "mage-arcane": {
+  "code": "mage-255225123122311531-23-",
+  "total": 51,
+  "split": "46/5/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Spell Power",
+   "Spirit",
+   "Intellect",
+   "Crit",
+   "Stamina",
+   "MP5"
+  ],
+  "races": {
+   "alliance": "gnome",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Presence of Mind",
+   "Arcane Mind",
+   "Arcane Instability",
+   "Arcane Power"
+  ],
+  "adapted": false,
+  "main": "Arcane"
+ },
+ "mage-fire": {
+  "code": "mage--23552333132133151-005",
+  "total": 51,
+  "split": "0/46/5",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Spell Power",
+   "Crit",
+   "Spirit",
+   "Intellect",
+   "Stamina",
+   "MP5"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "troll"
+  },
+  "conf": "low",
+  "key": [
+   "Critical Mass",
+   "Blast Wave",
+   "Fire Power",
+   "Combustion"
+  ],
+  "adapted": true,
+  "main": "Fire"
+ },
+ "mage-frost": {
+  "code": "mage-053005003--0555000331001301251",
+  "total": 51,
+  "split": "16/0/35",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Spell Power",
+   "Crit",
+   "Intellect",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "gnome",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Cold Snap",
+   "Fingers of Frost",
+   "Winter's Chill",
+   "Ice Barrier"
+  ],
+  "adapted": false,
+  "main": "Frost"
+ },
+ "paladin-holy": {
+  "code": "paladin-05320113225101051-500250002-05",
+  "total": 51,
+  "split": "32/14/5",
+  "bad": [],
+  "stats": [
+   "Bonus Healing",
+   "Intellect",
+   "MP5",
+   "Crit",
+   "Haste",
+   "Spirit"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "undead"
+  },
+  "conf": "low",
+  "key": [
+   "Holy Shock",
+   "Holy Power",
+   "Light's Vigil"
+  ],
+  "adapted": false,
+  "main": "Holy"
+ },
+ "paladin-protection": {
+  "code": "paladin--5530513321301551-0512",
+  "total": 51,
+  "split": "0/43/8",
+  "bad": [],
+  "stats": [
+   "Spell Power",
+   "Hit",
+   "Stamina",
+   "Defense",
+   "Armor",
+   "Block",
+   "Intellect",
+   "Strength",
+   "Agility"
+  ],
+  "races": {
+   "alliance": "dwarf",
+   "horde": "undead"
+  },
+  "conf": "medium",
+  "key": [
+   "Templar's Bulwark",
+   "Reckoning",
+   "Iron Creed",
+   "Holy Shield"
+  ],
+  "adapted": false,
+  "main": "Protection"
+ },
+ "paladin-retribution": {
+  "code": "paladin-55003002--05225331201330321",
+  "total": 51,
+  "split": "15/0/36",
+  "bad": [],
+  "stats": [
+   "Weapon DPS",
+   "Hit",
+   "Expertise",
+   "Crit",
+   "Intellect",
+   "Spell Power",
+   "Strength",
+   "Agility",
+   "Stamina",
+   "Spirit"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "undead"
+  },
+  "conf": "medium",
+  "key": [
+   "Two-Handed Weapon Specialization",
+   "Vengeance",
+   "Champion of the Light",
+   "Instrument of Law",
+   "Twist of Light"
+  ],
+  "adapted": false,
+  "main": "Retribution"
+ },
+ "priest-discipline": {
+  "code": "priest-005303031305101531-335050000001-",
+  "total": 51,
+  "split": "34/17/0",
+  "bad": [],
+  "stats": [
+   "Bonus Healing",
+   "MP5",
+   "Spirit",
+   "Intellect",
+   "Crit",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "gnome",
+   "horde": "undead"
+  },
+  "conf": "low",
+  "key": [
+   "Penance",
+   "Renewed Hope",
+   "Divine Aegis",
+   "Power Infusion"
+  ],
+  "adapted": false,
+  "main": "Discipline"
+ },
+ "priest-holy": {
+  "code": "priest-0053030203-03525103032101531-",
+  "total": 51,
+  "split": "16/35/0",
+  "bad": [],
+  "stats": [
+   "Healing Power",
+   "Spirit",
+   "Intellect",
+   "MP5",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "gnome",
+   "horde": "undead"
+  },
+  "conf": "low",
+  "key": [
+   "Spirit of Redemption",
+   "Spiritual Guidance",
+   "Spiritual Healing",
+   "Prayer of Mending"
+  ],
+  "adapted": false,
+  "main": "Holy"
+ },
+ "priest-shadow": {
+  "code": "priest-1053200103--505122501201302151",
+  "total": 51,
+  "split": "15/0/36",
+  "bad": [],
+  "stats": [
+   "Spell Power",
+   "Hit",
+   "Crit",
+   "Intellect",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "troll"
+  },
+  "conf": "low",
+  "key": [
+   "Devouring Contagion",
+   "Early Demise",
+   "Darkness",
+   "Shadowform"
+  ],
+  "adapted": false,
+  "main": "Shadow"
+ },
+ "rogue-assassination": {
+  "code": "rogue-22532310551521031-025003-",
+  "total": 51,
+  "split": "41/10/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Crit",
+   "Attack Power",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Vigor",
+   "Mutilate",
+   "Seal Fate",
+   "Venom"
+  ],
+  "adapted": false,
+  "main": "Assassination"
+ },
+ "rogue-combat": {
+  "code": "rogue-00532-32533321121515211-",
+  "total": 51,
+  "split": "10/41/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Crit",
+   "Attack Power",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Blade Flurry",
+   "Hack and Slash",
+   "Weapon Expertise",
+   "Aggression",
+   "Adrenaline Rush"
+  ],
+  "adapted": false,
+  "main": "Combat"
+ },
+ "rogue-subtlety": {
+  "code": "rogue-00532--2223223310213211551",
+  "total": 51,
+  "split": "10/0/41",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Agility",
+   "Crit",
+   "Attack Power",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Dirty Deeds",
+   "Preparation",
+   "Hemorrhage",
+   "Quietus",
+   "Cutthroat",
+   "Thousand Cuts"
+  ],
+  "adapted": false,
+  "main": "Subtlety"
+ },
+ "shaman-elemental": {
+  "code": "shaman-5500301323103051-05-053050001",
+  "total": 51,
+  "split": "32/5/14",
+  "bad": [],
+  "stats": [
+   "Spell Power",
+   "Hit",
+   "Haste",
+   "Crit",
+   "Intellect",
+   "MP5",
+   "Spirit",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "dwarf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Lightning Overload",
+   "Elemental Fury",
+   "Lava Burst"
+  ],
+  "adapted": false,
+  "main": "Elemental"
+ },
+ "shaman-enhancement": {
+  "code": "shaman-050003-055030031005102251-05005",
+  "total": 51,
+  "split": "8/33/10",
+  "bad": [],
+  "stats": [
+   "Weapon DPS",
+   "Hit",
+   "Expertise",
+   "Crit",
+   "Strength",
+   "Intellect",
+   "Agility",
+   "Spell Power",
+   "Spirit",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "dwarf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Mental Quickness",
+   "Improved Stormstrike",
+   "Maelstrom Weapon",
+   "Rage of the Farseer"
+  ],
+  "adapted": false,
+  "main": "Enhancement"
+ },
+ "shaman-restoration": {
+  "code": "shaman---5533523315513151",
+  "total": 51,
+  "split": "0/0/51",
+  "bad": [],
+  "stats": [
+   "Healing Power",
+   "Crit",
+   "Intellect",
+   "MP5",
+   "Spirit"
+  ],
+  "races": {
+   "alliance": "dwarf",
+   "horde": "troll"
+  },
+  "conf": "low",
+  "key": [
+   "Healing Way",
+   "Nature's Swiftness",
+   "Purification",
+   "Riptide"
+  ],
+  "adapted": false,
+  "main": "Restoration"
+ },
+ "warlock-affliction": {
+  "code": "warlock-25550320035001351-0050203001-",
+  "total": 51,
+  "split": "40/11/0",
+  "bad": [],
+  "stats": [
+   "Spell Power (Shadow)",
+   "Hit",
+   "Critical Strike",
+   "Spirit",
+   "Intellect",
+   "Stamina",
+   "Haste"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Siphon Life",
+   "Soul Siphon",
+   "Shadow Mastery",
+   "Wrack"
+  ],
+  "adapted": false,
+  "main": "Affliction"
+ },
+ "warlock-demonology": {
+  "code": "warlock-2-0055003201221001351-0550305",
+  "total": 51,
+  "split": "2/31/18",
+  "bad": [],
+  "stats": [
+   "Spell Power (Shadow)",
+   "Hit",
+   "Critical Strike",
+   "Haste",
+   "Spirit",
+   "Intellect",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Soul Link",
+   "Demonic Knowledge",
+   "Master Demonologist",
+   "Demonic Pact"
+  ],
+  "adapted": false,
+  "main": "Demonology"
+ },
+ "warlock-destruction": {
+  "code": "warlock-1-005020320122-0550305103101351",
+  "total": 51,
+  "split": "1/17/33",
+  "bad": [],
+  "stats": [
+   "Spell Power (Fire)",
+   "Hit",
+   "Critical Strike",
+   "Haste",
+   "Spirit",
+   "Intellect",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "human",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Bane of Havoc",
+   "Fire and Brimstone",
+   "Shadow and Flame",
+   "Incinerate"
+  ],
+  "adapted": false,
+  "main": "Destruction"
+ },
+ "warrior-arms": {
+  "code": "warrior-30305213132515231-050501-",
+  "total": 51,
+  "split": "40/11/0",
+  "bad": [],
+  "stats": [
+   "Weapon Damage",
+   "Hit",
+   "Strength",
+   "Crit",
+   "Agility",
+   "Expertise",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Bloodthrill",
+   "Sweeping Strikes",
+   "Weaponmaster",
+   "Improved Slam",
+   "Improved Hamstring",
+   "Mortal Strike"
+  ],
+  "adapted": true,
+  "main": "Arms"
+ },
+ "warrior-fury": {
+  "code": "warrior-33-55053105152212521-",
+  "total": 51,
+  "split": "6/45/0",
+  "bad": [],
+  "stats": [
+   "Hit",
+   "Crit",
+   "Strength",
+   "Agility",
+   "Stamina"
+  ],
+  "races": {
+   "alliance": "night-elf",
+   "horde": "orc"
+  },
+  "conf": "low",
+  "key": [
+   "Improved Berserker Rage",
+   "Death Wish",
+   "Improved Intercept",
+   "Flurry",
+   "Gore Drinker",
+   "Bloodthirst"
+  ],
+  "adapted": true,
+  "main": "Fury"
+ },
+ "warrior-protection": {
+  "code": "warrior-35--250533122231221351",
+  "total": 51,
+  "split": "8/0/43",
+  "bad": [],
+  "stats": [
+   "Stamina",
+   "Defense",
+   "Hit",
+   "Strength",
+   "Armor"
+  ],
+  "races": {
+   "alliance": "dwarf",
+   "horde": "tauren"
+  },
+  "conf": "low",
+  "key": [
+   "Improved Shield Wall",
+   "Concussion Blow",
+   "Focused Rage",
+   "Bastion",
+   "Shield Slam"
+  ],
+  "adapted": true,
+  "main": "Protection"
+ }
+}
