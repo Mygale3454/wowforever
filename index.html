@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>wowforever – Guides et actus WoW Forever</title>
+<title>wowforever – News et guides WoW Forever</title>
 <meta name="description" content="wowforever : actualités, guides, donjons, classes et système Legacy de World of Warcraft: Forever. Site de fan non officiel.">
 <link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,55 +15,22 @@
 
 <main><div class="wrap">
 <div class="tiles">
-  <a class="tile" href="actualites.html"><img src="images/actus.jpg" alt=""><span>Actualités</span></a>
+  <a class="tile" href="pvp.html"><img src="images/jcj.jpg" alt=""><span>PvP</span></a>
   <a class="tile" href="debuter.html"><img src="images/debuter.jpg" alt=""><span>Bien débuter</span></a>
-  <a class="tile" href="classes.html"><img src="images/classes.jpg" alt=""><span>Classes</span></a>
+  <a class="tile" href="classes.html"><img src="images/galerie/17.jpg" alt=""><span>Classes</span></a>
   <a class="tile" href="donjons.html"><img src="images/donjons.jpg" alt=""><span>Donjons & Raids</span></a>
   <a class="tile" href="legacy.html"><img src="images/legacy.jpg" alt=""><span>Legacy</span></a>
+  <a class="tile" href="talents.html"><img src="images/classes.jpg" alt=""><span>Talents</span></a>
   <a class="tile" href="calendrier.html"><img src="images/calendrier.jpg" alt=""><span>Calendrier</span></a>
 </div>
 <div class="layout">
   <div>
-    <article class="vnews">
-      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/LbQiqWerBNQ?rel=0" title="Bande-annonce de lancement de WoW Forever" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <div class="hero-body">
-        <span class="badge red">Nouveau · Vidéo</span> <span class="date">28 octobre 2026</span>
-        <h1>« Sentier de la guerre » : la bande-annonce de lancement de WoW Forever</h1>
-        <p>À une semaine de la sortie, Blizzard dévoile un clip animé façon anime, réalisé avec Brunch Studio. Sur les pentes du Mont Hyjal, l'Alliance et la Horde se livrent une guerre sans merci, au milieu des monstres d'Azeroth.</p>
-        <p>Côté musique, le titre « End of You » réunit Poppy, Amy Lee (Evanescence) et Courtney LaPlante (Spiritbox). Le clip se termine sur trois mots qui résument l'esprit du jeu : « Alliance. Horde. Guerre. »</p>
-        <p class="small">Rendez-vous le 4 novembre à minuit (heure de Paris) pour le lancement. <a href="https://www.youtube.com/watch?v=LbQiqWerBNQ" target="_blank" rel="noopener">Voir sur YouTube ↗</a></p>
-      </div>
-    </article>
-
-    <a class="hero" href="actualites.html">
-      <img src="images/une.jpg" alt="">
-      <div class="hero-body">
-        <span class="badge">Dossier</span>
-        <h1>WoW Forever sort le 4 novembre : tout ce qu'il faut savoir avant le lancement</h1>
-        <p>Niveau 60 bloqué, nouvelle race Skyborne, neuf donjons inédits et système Legacy : notre récap complet du « Classic+ » de Blizzard.</p>
-      </div>
-    </a>
-
-    <div class="sec-title"><h2>Derniers guides</h2><a href="debuter.html">Tout voir →</a></div>
-    <div class="grid g2">
-      <a class="card" href="debuter.html"><div class="thumb"><img src="images/debuter.jpg" alt="" loading="lazy"><span class="badge ">Guide</span></div><div class="card-body"><h3>Bien débuter sur WoW Forever</h3><p>Accès, prix, différences avec Classic : le guide pour bien commencer.</p><div class="meta">Débutant · 6 min</div></div></a>
-      <a class="card" href="donjons.html"><div class="thumb"><img src="images/donjons.jpg" alt="" loading="lazy"><span class="badge red">Donjons</span></div><div class="card-body"><h3>Les 9 nouveaux donjons</h3><p>Niveaux, emplacements et accès Horde/Alliance de chaque instance inédite.</p><div class="meta">Instances · 5 min</div></div></a>
-      <a class="card" href="legacy.html"><div class="thumb"><img src="images/legacy.jpg" alt="" loading="lazy"><span class="badge ">Système</span></div><div class="card-body"><h3>Le système Legacy expliqué</h3><p>Points, arbres de talents de compte et récompenses : comment ça marche.</p><div class="meta">Progression · 4 min</div></div></a>
-      <a class="card" href="classes.html"><div class="thumb"><img src="images/skyborne.jpg" alt="" loading="lazy"><span class="badge blue">Classes</span></div><div class="card-body"><h3>Races et classes : les nouveautés</h3><p>Paladins Horde, chamans Alliance, Skyborne : les nouvelles combinaisons.</p><div class="meta">Création de perso · 5 min</div></div></a>
+    <div id="featured"></div>
+    <div class="sec-title"><h2>Toutes les news</h2></div>
+    <div class="nfilters" id="nfilters">
+      <button class="on" data-f="all">Tout</button><button data-f="actu">Actus du jeu</button><button data-f="guide">Guides</button><button data-f="site">Nouveau sur le site</button>
     </div>
-
-    <div class="sec-title"><h2>Actualités</h2><a href="actualites.html">Toutes les actus →</a></div>
-    <div class="grid g2">
-    <a class="card" href="news-destinations.html"><div class="thumb"><img src="images/galerie/02.jpg" alt="" loading="lazy"><span class="badge red">Nouveau</span></div><div class="card-body"><h3>Norfendre, Pandarie, Gilnéas : où ira WoW Forever ?</h3><p>Blizzard évoque les futures destinations possibles, dont un Norfendre de niveau 60 avant l'arrivée du roi-liche.</p><div class="meta">29 octobre · Futur du jeu</div></div></a>
-    <a class="card" href="news-graphismes.html"><div class="thumb"><img src="images/galerie/04.jpg" alt="" loading="lazy"><span class="badge red">Nouveau</span></div><div class="card-body"><h3>Les graphismes de Forever pourraient arriver sur le WoW moderne</h3><p>Brouillard volumétrique, lumière, ombres et eau : Blizzard envisage de les porter sur Retail.</p><div class="meta">29 octobre · Graphismes</div></div></a>
-    <a class="card" href="pvp.html"><div class="thumb"><img src="images/alliance.jpg" alt="" loading="lazy"><span class="badge red">Nouveau</span></div><div class="card-body"><h3>Le guide du PvP : honneur, rangs et champs de bataille</h3><p>Les 14 rangs et leurs récompenses, le PvP sauvage et les quatre champs de bataille, dont les nouvelles Îles des Sombrelances.</p><div class="meta">PvP · Guide</div></div></a>
-    <a class="card" href="article-addons.html"><div class="thumb"><img src="images/galerie/18.jpg" alt="" loading="lazy"><span class="badge red">Nouveau</span></div><div class="card-body"><h3>Les meilleurs addons pour WoW Forever</h3><p>Questie, Polestar, TomTom, EllesmereUI, Auctionator… notre sélection pour bien démarrer le 4 novembre.</p><div class="meta">Addons · Guide</div></div></a>
-      <a class="card" href="calendrier.html"><div class="thumb"><img src="images/raids.jpg" alt="" loading="lazy"><span class="badge green">News</span></div><div class="card-body"><h3>Les raids ouvrent le 9 décembre</h3><p>Un peu plus d'un mois après le lancement, place aux raids 10 et 20 joueurs.</p><div class="meta">Raids · Roadmap</div></div></a>
-      <a class="card" href="calendrier.html"><div class="thumb"><img src="images/hardcore.jpg" alt="" loading="lazy"><span class="badge red">News</span></div><div class="card-body"><h3>Le mode Hardcore prévu cet hiver</h3><p>Une seule vie par personnage, arrivée attendue fin 2026 ou début 2027.</p><div class="meta">Hardcore · Roadmap</div></div></a>
-      <a class="card" href="debuter.html"><div class="thumb"><img src="images/camping.jpg" alt="" loading="lazy"><span class="badge grey">News</span></div><div class="card-body"><h3>Camping et 600 nouvelles recettes</h3><p>Les métiers sont repensés avec un système de camp à construire.</p><div class="meta">Métiers</div></div></a>
-    
-    <a class="card" href="pvp.html"><div class="thumb"><img src="images/jcj.jpg" alt="" loading="lazy"><span class="badge blue">JcJ</span></div><div class="card-body"><h3>Nouveau champ de bataille 15 contre 15</h3><p>Le JcJ est repensé, avec un champ de bataille inédit pour des affrontements Horde contre Alliance.</p><div class="meta">JcJ</div></div></a>
-    </div>
+    <div class="feed" id="feed"></div>
   </div>
   <aside data-sidebar></aside>
 </div>
@@ -71,5 +38,6 @@
 
 <div id="site-footer"></div>
 <script src="js/site.js"></script>
+<script src="js/news.js"></script>
 </body>
 </html>

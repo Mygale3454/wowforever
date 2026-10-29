@@ -437,3 +437,27 @@ input[type=checkbox]{accent-color:#9c6a16;width:16px;height:16px}
 .hbig span{color:var(--muted);font-weight:600}
 @media (max-width:1000px){ .htrees{grid-template-columns:1fr} .hrews{grid-template-columns:repeat(2,1fr)} .hcounter{position:static} }
 @media (max-width:560px){ .hhero-txt b{font-size:1.4rem} .hhero-txt span{font-size:.65rem} .hhero img{aspect-ratio:16/10} .hcat summary img{width:60px;height:44px} }
+
+/* ===== Fil de news ===== */
+.nfilters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.nfilters button{font:inherit;font-size:.85rem;font-weight:600;padding:7px 14px;border-radius:8px;cursor:pointer;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+.nfilters button.on{background:var(--leather);color:#f6e7c4;border-color:#b8893a}
+.feed{display:grid;gap:14px}
+.nitem{display:grid;grid-template-columns:220px 1fr;background:var(--paper),var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.nitem:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(60,40,10,.14)}
+.nthumb{overflow:hidden}
+.nthumb img{width:100%;height:100%;min-height:130px;object-fit:cover;transition:transform .35s}
+.nitem:hover .nthumb img{transform:scale(1.05)}
+.nbody{padding:14px 18px}
+.nmeta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:6px}
+.nnew{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#b8322a}
+.nbody h3{font-family:Cinzel,serif;color:var(--title);font-size:1.08rem;margin-bottom:4px}
+.nbody p{font-size:.9rem;color:var(--text)}
+.nmore{font:inherit;font-weight:700;padding:12px;border-radius:10px;cursor:pointer;background:var(--card);border:1px dashed var(--accent);color:var(--title)}
+.nmore:hover{background:var(--accent-soft)}
+#featured .hero{margin-bottom:8px}
+#featured .hero h1{color:var(--title)}
+@media (max-width:620px){ .nitem{grid-template-columns:1fr} .nthumb img{aspect-ratio:16/8;min-height:0} }
+.tiles{grid-template-columns:repeat(7,1fr)}
+@media (max-width:1000px){ .tiles{grid-template-columns:repeat(4,1fr)} }
+@media (max-width:520px){ .tiles{grid-template-columns:repeat(2,1fr)} }
