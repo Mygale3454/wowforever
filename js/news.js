@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-29", type: "site", lien: "metiers.html", img: "images/camping.jpg",
+    titre: "Nouvelle page Métiers : nouveautés et guides 1 à 300",
+    texte: "Les 12 métiers de Forever, leurs objets de camp, la Faveur marchande et les meilleurs guides pour les monter, en français et en anglais." },
   { date: "2026-10-29", type: "actu", lien: "news-destinations.html", img: "images/galerie/02.jpg",
     titre: "Norfendre, Pandarie, Gilnéas : où ira WoW Forever ?",
     texte: "Les développeurs partagent leurs idées pour les futures destinations du jeu, dont un Norfendre de niveau 60 avant l'arrivée du roi-liche. Rien n'est confirmé, mais les pistes font rêver." },

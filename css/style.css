@@ -461,3 +461,16 @@ input[type=checkbox]{accent-color:#9c6a16;width:16px;height:16px}
 .tiles{grid-template-columns:repeat(7,1fr)}
 @media (max-width:1000px){ .tiles{grid-template-columns:repeat(4,1fr)} }
 @media (max-width:520px){ .tiles{grid-template-columns:repeat(2,1fr)} }
+
+/* ===== Page Métiers ===== */
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin-bottom:10px}
+.mcard{background:var(--paper),var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;scroll-margin-top:70px}
+.mhead{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.mhead .mono{width:46px;height:46px;font-size:1.15rem;background:var(--c)}
+.mhead h3{font-size:1.25rem}
+.mcard>p{font-size:.92rem;margin-bottom:8px}
+.mfacts{list-style:none;font-size:.86rem;border-top:1px dashed var(--line);padding-top:8px;margin-bottom:10px}
+.mfacts li{padding:3px 0}
+.mfacts b{color:var(--title)}
+.mlinks{margin-top:auto}
+.mlinks>span{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
