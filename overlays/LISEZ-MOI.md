@@ -18,7 +18,7 @@ Le dossier `png/` contient les mêmes scènes en images fixes, si tu préfères 
 2. Dans **Sources**, clique sur **+** puis **Navigateur**.
 3. Coche **Fichier local** et choisis `attente.html`,
    ou décoche-le et colle l'adresse en ligne :
-   `https://mygale3454.github.io/wowforever/overlays/attente.html?nom=TonPseudo&min=10`
+   `https://foreverwow.fr/overlays/attente.html?nom=TonPseudo&min=10`
 4. Largeur **1920**, hauteur **1080**, puis **OK**.
 
 Fais pareil pour les autres scènes.
@@ -58,7 +58,7 @@ Pour changer de portrait, remplace l'image `img/mygale.jpg` (format carré).
 1. Sur streamlabs.com : **Paramètres** (ton avatar en haut à droite) → **Paramètres API** → onglet **Jetons API**.
 2. Copie **Ton jeton Socket API** (« Your Socket API Token »).
 3. Dans OBS, mets cette adresse dans la source navigateur de la scène « En jeu » :
-   `https://mygale3454.github.io/wowforever/overlays/jeu.html?slt=TON_JETON`
+   `https://foreverwow.fr/overlays/jeu.html?slt=TON_JETON`
 4. Teste avec les boutons **Test** de la fenêtre d'alerte Streamlabs (abonnement, bits…) : les plaques doivent changer et s'illuminer.
 
 Les derniers noms sont gardés en mémoire par OBS, même après un redémarrage.
@@ -82,4 +82,4 @@ Quatre animations originales de 3 secondes, au fond transparent, pour les alerte
 
 Les versions `.gif` sont fournies pour les logiciels qui ne lisent pas le WebM (moins nettes).
 Dans Streamlabs, champ **Image** de l'alerte → icône d'envoi → **Upload**, ou icône 🔗 avec l'adresse en ligne, par exemple :
-`https://mygale3454.github.io/wowforever/overlays/alertes/rune.webm`
+`https://foreverwow.fr/overlays/alertes/rune.webm`
