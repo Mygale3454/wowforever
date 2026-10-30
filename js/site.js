@@ -2,7 +2,7 @@
    Pour ajouter une page au menu : ajoute une ligne dans MENU ci-dessous. */
 const MENU = [
   ["index.html", "News"],
-  ["debuter.html", "Bien débuter"],
+  ["Bien débuter", [["debuter.html", "Bien débuter"], ["leveling.html", "Leveling 1-60"]]],
   ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["races.html", "Races"]]],
   ["talents.html", "Talents"],
   ["donjons.html", "Donjons & Raids"],
@@ -57,7 +57,7 @@ document.getElementById("site-footer").outerHTML = `
 <footer><div class="wrap">
   <div class="cols">
     <div><div class="logo">wow<span>forever</span></div><p>Guides, actualités et outils en français pour World of Warcraft: Forever.</p></div>
-    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="classes.html">Classes</a><a href="guides.html">Guides de spé</a><a href="talents.html">Calculateur de talents</a><a href="donjons.html">Donjons & Raids</a><a href="pvp.html">PvP</a><a href="metiers.html">Métiers</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
+    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="leveling.html">Leveling 1-60</a><a href="classes.html">Classes</a><a href="guides.html">Guides de spé</a><a href="talents.html">Calculateur de talents</a><a href="donjons.html">Donjons & Raids</a><a href="pvp.html">PvP</a><a href="metiers.html">Métiers</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
     <div><h5>Infos</h5><a href="index.html">News</a><a href="calendrier.html">Calendrier</a><a href="galerie.html">Galerie</a></div>
   </div>
   <div class="legal">wowforever est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Captures et visuels de World of Warcraft © Blizzard Entertainment.</div>

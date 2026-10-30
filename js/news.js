@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-30", type: "guide", lien: "leveling.html", img: "images/galerie/05.jpg",
+    titre: "Leveling 1 à 60 : le parcours zone par zone",
+    texte: "Ta zone de départ, puis les zones à enchaîner par tranche de niveau, pour l'Alliance et la Horde, avec les guides de quêtes Polestar." },
   { date: "2026-10-30", type: "actu", lien: "news-stats-beta.html", img: "images/galerie/08.jpg",
     titre: "Bêta fermée : près de 9 millions de personnages créés",
     texte: "1,9 million d'Éolides, 612 000 paladins morts-vivants et plus d'un million de morts par chute : Blizzard partage les chiffres de la bêta." },
