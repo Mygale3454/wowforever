@@ -24,3 +24,8 @@ Vérifier un build : ouvrir `talents.html#<code>` avec Playwright et lire le com
    `python3 tools/guides.py`, `sh bump-version.sh`, une news en haut de `js/news.js`. Pousser uniquement cette branche.
 5. Envoyer à Mygale un résumé en français : quelles spés changent et comment, et lien de la branche.
    La fusion sur main se fait seulement après son accord.
+
+## Leveling pas à pas (pas-a-pas*.html)
+Générées depuis Polestar (https://github.com/fitzforge/polestar, GPL-3.0) :
+`git clone --depth 1 https://github.com/fitzforge/polestar /tmp/polestar && python3 tools/pas_a_pas.py /tmp/polestar`.
+Les noms de lieux sans traduction dans les données sont dans `tools/lieux_fr.json` ; ceux restés en anglais sont listés dans `tools/lieux_manquants.json`.

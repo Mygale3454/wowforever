@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/05.jpg",
+    titre: "Nouveau : le leveling pas à pas, en français",
+    texte: "Les 8 zones de départ quête par quête, avec cases à cocher, filtre par classe et progression mémorisée." },
   { date: "2026-10-30", type: "guide", lien: "reputations.html", img: "images/galerie/12.jpg",
     titre: "Toutes les réputations de WoW Forever",
     texte: "La Faveur marchande et les caisses égarées, une quinzaine de nouvelles factions et les guides des factions de Classic." },
