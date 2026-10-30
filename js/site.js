@@ -3,8 +3,7 @@
 const MENU = [
   ["index.html", "News"],
   ["Bien débuter", [["debuter.html", "Bien débuter"], ["leveling.html", "Leveling 1-60"]]],
-  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["races.html", "Races"]]],
-  ["talents.html", "Talents"],
+  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["talents.html", "Calculateur de talents"], ["races.html", "Races"]]],
   ["Monde", [["donjons.html", "Donjons & Raids"], ["pvp.html", "PvP"], ["reputations.html", "Réputations"]]],
   ["metiers.html", "Métiers"],
   ["legacy.html", "Legacy"],
