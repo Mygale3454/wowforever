@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-30", type: "actu", lien: "news-stats-beta.html", img: "images/galerie/08.jpg",
+    titre: "Bêta fermée : près de 9 millions de personnages créés",
+    texte: "1,9 million d'Éolides, 612 000 paladins morts-vivants et plus d'un million de morts par chute : Blizzard partage les chiffres de la bêta." },
+  { date: "2026-10-30", type: "guide", lien: "news-montures.html", img: "images/galerie/03.jpg",
+    titre: "Montures : ce qui change dans WoW Forever",
+    texte: "Monte au niveau 40, montures liées au compte, trotteurs des Éolides, kodo de bât et ours spectral : l'essentiel avant de galoper." },
   { date: "2026-10-29", type: "guide", lien: "guides.html", img: "images/classes.jpg",
     titre: "Les guides des 27 spécialisations sont en ligne",
     texte: "Rôle, points forts et faibles, build de talents à ouvrir en un clic dans le calculateur, priorité des statistiques et races conseillées." },
