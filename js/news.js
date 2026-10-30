@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-30", type: "guide", lien: "reputations.html", img: "images/galerie/12.jpg",
+    titre: "Toutes les réputations de WoW Forever",
+    texte: "La Faveur marchande et les caisses égarées, une quinzaine de nouvelles factions et les guides des factions de Classic." },
   { date: "2026-10-30", type: "actu", lien: "races.html", img: "images/skyborne.jpg",
     titre: "Derniers changements des raciaux avant la sortie",
     texte: "Impitoyable passe à 1 %, l'Esprit humain à 10 %, le nain gagne +1 % de toucher, l'orc retrouve Commandement et les Éolides passent à 2 % de hâte. La page Races est à jour." },
