@@ -200,7 +200,7 @@ tbody tr:hover{background:#efdfba}
 /* ----- Bandeau ----- */
 .topbar{background:var(--ink)}
 .banner{position:relative;height:190px;overflow:hidden;background:#5a4a2a}
-.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.banner > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
 .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,18,6,.65) 0%,rgba(30,18,6,.25) 45%,transparent 70%),linear-gradient(transparent 60%,rgba(236,220,184,.9))}
 .banner-in{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center}
 .logo.big{font-size:clamp(2.2rem,6vw,3.6rem);color:#fff6de;text-shadow:0 3px 14px rgba(0,0,0,.6)}
@@ -561,7 +561,7 @@ html[data-theme="gris"]{
 html[data-theme="gris"] body{background:#e8e9eb}
 html[data-theme="gris"] .topbar{background:#111214}
 html[data-theme="gris"] .topbar .live{color:#fff}
-html[data-theme="gris"] .banner{filter:grayscale(.35)}
+html[data-theme="gris"] .banner > img{filter:grayscale(.35)}
 html[data-theme="gris"] .banner::after{background:linear-gradient(90deg,rgba(10,10,12,.7) 0%,rgba(10,10,12,.25) 45%,transparent 70%),linear-gradient(transparent 60%,rgba(232,233,235,.95))}
 html[data-theme="gris"] .logo span,html[data-theme="gris"] .logo.big span{color:#d9dbe0}
 html[data-theme="gris"] header.navbar{background:#1f2124;border-color:#3a3d42}
@@ -699,3 +699,22 @@ html[data-theme="gris"] input[type=checkbox]{accent-color:#111214}
 .pp-card b{font-family:Cinzel,Georgia,serif;font-size:1.1rem}
 @media(max-width:560px){.ppg .k{min-width:0;margin-right:4px}}
 .pp-cards{margin-bottom:22px}
+
+/* ----- Logo ForeverWoW ----- */
+.fwlogo{display:inline-flex;align-items:center;gap:16px;text-decoration:none}
+.fwlogo img{width:clamp(64px,9vw,96px);height:auto;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
+.fw-wm{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.fw-name{font-family:"Cinzel Decorative",Cinzel,serif;font-weight:900;font-size:clamp(2.1rem,6.4vw,4.4rem);letter-spacing:1px;
+ background:linear-gradient(#fff4cf 10%,#e6bd62 48%,#a87726 56%,#f4d98f 95%);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 3px 0 #3a2508) drop-shadow(0 6px 12px rgba(0,0,0,.6))}
+.fw-name .fw-w{background:linear-gradient(#e9f8ff 10%,#9fd8ff 50%,#3f93cf 60%,#c8ecff 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fw-name .fw-tld{font-family:Cinzel,serif;font-size:.46em;font-weight:700;margin-left:4px}
+.fw-tag{margin-top:8px;font-family:Cinzel,serif;font-weight:700;font-size:clamp(.62rem,1.4vw,.95rem);letter-spacing:.25em;color:#efdfb3;text-transform:uppercase;padding-left:4px;text-shadow:0 2px 6px rgba(0,0,0,.7)}
+.fw-tag:before{content:"";display:inline-block;width:34px;height:1px;background:#c9a24f;vertical-align:.3em;margin-right:12px}
+.mini-em{width:26px;height:26px;vertical-align:-6px;margin-right:8px}
+footer .logo .mini-em{width:30px;height:30px}
+.banner-in .fwlogo{align-self:flex-start}
+.mini-logo .mini-em,footer .mini-em{display:inline-block}
+.mini-logo{white-space:nowrap}
+@media (max-width:560px){.fw-tag{display:none}.fwlogo{gap:10px}}
+@media (max-width:560px){.fw-name{font-size:clamp(1.4rem,7.4vw,2.1rem)}.fwlogo img{width:52px}}
