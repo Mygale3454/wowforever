@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /overlays/
+Disallow: /tools/
+
+Sitemap: https://foreverwow.fr/sitemap.xml
