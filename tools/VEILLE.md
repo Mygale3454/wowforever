@@ -31,4 +31,4 @@ Générées depuis Polestar (https://github.com/fitzforge/polestar, GPL-3.0) :
 Les noms de lieux sans traduction dans les données sont dans `tools/lieux_fr.json` ; ceux restés en anglais sont listés dans `tools/lieux_manquants.json`.
 
 ## Après toute génération de pages
-`python3 tools/seo.py` : remet l'adresse officielle et les balises de partage de chaque page, et refait le sitemap.
+`python3 tools/seo.py` : refait aussi le flux RSS (rss.xml) à partir de js/news.js ; remet l'adresse officielle et les balises de partage de chaque page, et refait le sitemap.
