@@ -720,3 +720,4 @@ footer .logo .mini-em{width:30px;height:30px}
 @media (max-width:560px){.fw-name{font-size:clamp(1.4rem,7.4vw,2.1rem)}.fwlogo img{width:52px}}
 .fw-name .fw-tld{font-size:.5em;font-weight:800;margin-left:6px;background:none;-webkit-text-fill-color:#ffe6a0;color:#ffe6a0;letter-spacing:1px}
 .fw-name .fw-tld{font-size:.62em;font-weight:900;-webkit-text-stroke:2px #2a1804;paint-order:stroke fill}
+.pp-fac{margin:16px 0 8px;font-size:1rem;color:var(--muted)}

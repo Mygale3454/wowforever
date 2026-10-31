@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/11.jpg",
+    titre: "Leveling pas à pas : les zones 10 à 30 sont en ligne",
+    texte: "Marche de l'Ouest, Sombrivage, Les Tarides, Pins-Argentés, Orneval… 13 nouvelles zones en français, avec un bouton « zone suivante » pour enchaîner." },
   { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/05.jpg",
     titre: "Nouveau : le leveling pas à pas, en français",
     texte: "Les 8 zones de départ quête par quête, avec cases à cocher, filtre par classe et progression mémorisée." },

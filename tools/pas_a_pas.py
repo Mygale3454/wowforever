@@ -44,6 +44,7 @@ CLASSES = ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", 
 PLACES_EXTRA = {}
 _pe = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_fr.json")
 if os.path.exists(_pe): PLACES_EXTRA = json.load(open(_pe, encoding="utf-8"))
+for _k, _v in PLACES_EXTRA.items(): PLACES.setdefault(_k, _v)
 
 AREA_FR = {}
 
@@ -269,16 +270,45 @@ def page(title, desc, body, extra=""):
 CREDIT = '''<p class="small" style="margin-top:22px">Route et textes : <a href="https://polestar.guide/guides" target="_blank" rel="noopener">Polestar</a>, addon communautaire gratuit (code source sur <a href="https://github.com/fitzforge/polestar" target="_blank" rel="noopener">GitHub</a>), traduction française de ses contributeurs. Ces pages reprennent ses guides et sont donc, comme eux, sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.fr.html" target="_blank" rel="noopener">GNU GPL v3</a>. Noms des quêtes, PNJ et objets : données du jeu © Blizzard Entertainment. Routes de la bêta, susceptibles d'évoluer.</p>'''
 SCRIPTS = '<script src="js/pasapas.js"></script>\n<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false};</script>\n<script src="https://wow.zamimg.com/js/tooltips.js"></script>\n'
 
-cards = {"a": "", "h": ""}
-for slug, guide, race, fac in GUIDES:
+EXTRA = [  # niveaux 10-30 : (slug, guide, public, faction)
+    ("barrens-orc-troll", "forever/horde/orc-troll/02-the-barrens", "Orc et Troll", "h"),
+    ("marche-de-l-ouest", "forever/alliance/02-westfall", "Alliance", "a"),
+    ("sombrivage", "forever/alliance/03-darkshore", "Alliance", "a"),
+    ("carmines", "forever/alliance/04-redridge-mountains", "Alliance", "a"),
+    ("bois-de-la-penombre", "forever/alliance/05-duskwood", "Alliance", "a"),
+    ("orneval-alliance", "forever/alliance/06-ashenvale", "Alliance", "a"),
+    ("mille-pointes-alliance", "forever/alliance/07-thousand-needles", "Alliance", "a"),
+    ("tarides", "forever/horde/02-the-barrens", "Horde", "h"),
+    ("pins-argentes", "forever/horde/03-silverpine-forest", "Horde", "h"),
+    ("tarides-2", "forever/horde/04-the-barrens", "Horde", "h"),
+    ("serres-rocheuses", "forever/horde/05-stonetalon-mountains", "Horde", "h"),
+    ("hautebrande", "forever/horde/06-hillsbrad-foothills", "Horde", "h"),
+    ("orneval-horde", "forever/horde/07-ashenvale", "Horde", "h"),
+]
+ALL = [g + ("depart",) for g in GUIDES] + [g + ("1030",) for g in EXTRA]
+SLUG = {g[1]: g[0] for g in ALL}
+
+def ztitle(t):
+    parts = re.split(r", | & ", t)
+    fr = [ZONES.get(x, PLACES_EXTRA.get(x, x)) for x in parts]
+    return fr[0] if len(fr) == 1 else ", ".join(fr[:-1]) + " et " + fr[-1]
+
+cards = {"depart": {"a": "", "h": ""}, "1030": {"a": "", "h": ""}}
+for slug, guide, race, fac, grp in ALL:
     head, steps = build(slug, guide, race, fac)
-    zone = ZONES.get(head.get("title"), head.get("title"))
+    zone = ztitle(head.get("title", "")) + (" (2e passage)" if slug == "tarides-2" else "")
     lv = head.get("levels", "")
-    nxt = "leveling.html"
+    nx = head.get("next", "")
+    if nx in SLUG:
+        nhead, _ = parse(nx)
+        nxt, nlabel = f"pas-a-pas-{SLUG[nx]}.html", f"Zone suivante : {ztitle(nhead.get('title', ''))} →"
+    else:
+        nxt, nlabel = "leveling.html", "La suite du parcours 1-60 →"
+    lead = "La route complète de ta zone de départ, étape par étape." if grp == "depart" else "La route complète de cette étape du leveling, quête par quête."
     body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › <a href="pas-a-pas.html">Leveling pas à pas</a> › {html.escape(zone)}</div>
 <h1 class="page-title">{html.escape(zone)} <span class="pp-lv">niveaux {lv}</span></h1>
-<p class="page-lead"><span class="race {fac}">{race}</span> La route complète de ta zone de départ, étape par étape. Coche chaque étape terminée : ta progression est gardée dans ton navigateur.</p>
+<p class="page-lead"><span class="race {fac}">{race}</span> {lead} Coche chaque étape terminée : ta progression est gardée dans ton navigateur.</p>
 <div class="pp-bar" data-guide="{slug}">
   <label>Ta classe : <select id="pp-class"><option value="">Toutes</option>{"".join(f'<option value="{c}">{COND[c]}</option>' for c in CLASSES)}</select></label>
   <div class="pp-prog"><div class="pp-fill"></div></div><span class="pp-count"></span>
@@ -286,22 +316,27 @@ for slug, guide, race, fac in GUIDES:
 </div>
 <div class="info">Les coordonnées (comme <span class="xy">48.9, 41.6</span>) se lisent sur la carte du jeu ou avec un addon comme <a href="addons.html">TomTom</a>. Passe la souris sur une quête pour voir sa description.</div>
 <ol class="pp">{steps}</ol>
-<div class="pp-next"><a class="btn-link" href="pas-a-pas.html">← Toutes les zones de départ</a> <a class="btn-link" href="{nxt}">La suite du parcours 1-60 →</a></div>
+<div class="pp-next"><a class="btn-link" href="pas-a-pas.html">← Toutes les zones</a> <a class="btn-link" href="{nxt}">{html.escape(nlabel)}</a></div>
 {CREDIT}
 </div>'''
     open(f"pas-a-pas-{slug}.html", "w", encoding="utf-8").write(page(f"{zone} pas à pas", f"Guide de leveling pas à pas de {zone} ({race}) dans WoW Forever, niveaux {lv}.", body, SCRIPTS))
-    cards[fac] += f'<a class="pp-card" href="pas-a-pas-{slug}.html"><span class="race {fac}">{race}</span><b>{html.escape(zone)}</b><span class="small">niveaux {lv}</span></a>'
+    cards[grp][fac] += f'<a class="pp-card" href="pas-a-pas-{slug}.html"><span class="race {fac}">{race}</span><b>{html.escape(zone)}</b><span class="small">niveaux {lv}</span></a>'
     print(slug, steps.count('class="pp-st"'), "étapes")
 
 hub = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Leveling pas à pas</div>
 <h1 class="page-title">Leveling pas à pas</h1>
-<p class="page-lead">Chaque quête dans le bon ordre, avec les monstres à tuer, les objets à ramasser et les endroits où aller. Choisis ta zone de départ selon ta race. Les zones suivantes arrivent bientôt ; en attendant, le <a href="leveling.html">parcours 1-60</a> te donne l'ordre des zones.</p>
-<h2>Alliance</h2><div class="pp-cards">{cards["a"]}</div>
-<h2>Horde</h2><div class="pp-cards">{cards["h"]}</div>
+<p class="page-lead">Chaque quête dans le bon ordre, avec les monstres à tuer, les objets à ramasser et les endroits où aller. Commence par la zone de départ de ta race : à la fin de chaque page, un bouton t'emmène à la zone suivante. Le <a href="leveling.html">parcours 1-60</a> donne la vue d'ensemble jusqu'au niveau 60.</p>
+<h2>Zones de départ (niveaux 1 à 15)</h2>
+<h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards["depart"]["a"]}</div>
+<h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards["depart"]["h"]}</div>
+<h2>Jusqu'au niveau 30</h2>
+<h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards["1030"]["a"]}</div>
+<h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards["1030"]["h"]}</div>
+<p class="small">Les niveaux 30 à 60 arrivent bientôt.</p>
 <div class="info" style="margin-top:20px">Tu préfères être guidé directement en jeu ? Installe l'addon <a href="addons.html">Polestar</a> : les mêmes routes s'affichent avec une flèche vers chaque objectif.</div>
 {CREDIT}
 </div>'''
-open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever, en français, pour chaque zone de départ.", hub))
+open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever en français : zones de départ et niveaux 10 à 30, pour l'Alliance et la Horde.", hub))
 json.dump(sorted(MISS), open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_manquants.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(len(MISS), "textes restés en anglais (tools/lieux_manquants.json)")
