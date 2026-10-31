@@ -3,7 +3,7 @@
   const bar = document.querySelector(".pp-bar");
   if (!bar) return;
   const KEY = "wowforever-pas-a-pas-" + bar.dataset.guide;
-  const CKEY = "wowforever-pas-a-pas-classe";
+  const CKEY = "wowforever-pas-a-pas-" + (bar.dataset.fkey || "classe");
   const get = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } };
   const set = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   const steps = [...document.querySelectorAll(".pp > .pp-st")];

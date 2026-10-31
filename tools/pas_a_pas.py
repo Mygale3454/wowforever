@@ -37,8 +37,15 @@ ZONES.update({"Westfall": "Marche de l'Ouest", "Redridge Mountains": "Les Carmin
  "Swamp of Sorrows": "Marais des Chagrins", "Blasted Lands": "Terres foudroyées", "Deadwind Pass": "Défilé de Deuillevent", "Dun Morogh": "Dun Morogh", "Loch Modan": "Loch Modan"})
 COND = {"Warrior": "Guerrier", "Paladin": "Paladin", "Hunter": "Chasseur", "Rogue": "Voleur", "Priest": "Prêtre", "Shaman": "Chaman",
  "Mage": "Mage", "Warlock": "Démoniste", "Druid": "Druide", "Human": "Humain", "Dwarf": "Nain", "Gnome": "Gnome", "Night Elf": "Elfe de la nuit",
- "NightElf": "Elfe de la nuit", "Orc": "Orc", "Troll": "Troll", "Tauren": "Tauren", "Undead": "Mort-vivant", "Skyborne": "Éolide"}
+ "NightElf": "Elfe de la nuit", "Orc": "Orc", "Troll": "Troll", "Tauren": "Tauren", "Undead": "Mort-vivant", "Skyborne": "Éolide", "Alliance": "Alliance", "Horde": "Horde"}
 CLASSES = ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid"]
+FILTER = [CLASSES]
+PROF = {"Alchemy": "Alchimie", "Blacksmithing": "Forge", "Cooking": "Cuisine", "Enchanting": "Enchantement", "Engineering": "Ingénierie",
+ "First Aid": "Secourisme", "Fishing": "Pêche", "Herbalism": "Herboristerie", "Leatherworking": "Travail du cuir", "Mining": "Minage",
+ "Skinning": "Dépeçage", "Tailoring": "Couture", "Riding": "Monte"}
+SKILL_FR = {"171": "Alchimie", "164": "Forge", "185": "Cuisine", "333": "Enchantement", "202": "Ingénierie", "129": "Secourisme", "356": "Pêche",
+ "182": "Herboristerie", "165": "Travail du cuir", "186": "Minage", "393": "Dépeçage", "197": "Couture", "762": "Monte"}
+RANK = {"Apprentice": "Apprenti", "Journeyman": "Compagnon", "Expert": "Expert", "Artisan": "Artisan"}
 
 # Lieux sans traduction dans les données (noms français du jeu)
 PLACES_EXTRA = {}
@@ -49,6 +56,8 @@ for _k, _v in PLACES_EXTRA.items(): PLACES.setdefault(_k, _v)
 AREA_FR = {}
 
 # ---------- noms français et anglais ----------
+CRAFT, LEARN = {}, {}
+
 FR = {}
 txt = open(f"{PS}/addon/Polestar_frFR/Names.lua", encoding="utf-8").read()
 for kind, body in re.findall(r'R\("(\w+)",\s*\d+,\s*\d+,\s*\[\[(.*?)\]\]\)', txt, re.S):
@@ -62,6 +71,15 @@ for kind, tab, key in [("quest", "quest", "title"), ("npc", "npc", "name"), ("it
         r = json.loads(line)
         if key in r: EN[(kind, str(r["id"]))] = r[key]
 KMAP = {"zone": "map"}
+import glob as _gl
+for _g in _gl.glob(f"{PS}/addon/Polestar_Guides*/Guides.lua"):
+    _t = open(_g, encoding="utf-8").read()
+    for m in re.finditer(r't = "craft", spell = (\d+), spellName = "[^"]*", item = (\d+)[^\n]*?reagents = \{(.*?)\} \}', _t):
+        CRAFT[m.group(1)] = (m.group(2), re.findall(r"item = (\d+), itemName = \"[^\"]*\", count = (\d+)", m.group(3)))
+    for m in re.finditer(r't = "craft", spell = (\d+), spellName = "[^"]*", item = (\d+)', _t):
+        CRAFT.setdefault(m.group(1), (m.group(2), []))
+    for m in re.finditer(r't = "learn", spell = (\d+), spellName = "([^"]*)"', _t):
+        LEARN[m.group(1)] = m.group(2)
 
 def fr_name(kind, i, fallback=""):
     return FR.get((KMAP.get(kind, kind), str(i))) or FR.get((kind, str(i))) or EN.get((kind, str(i))) or fallback or f"{kind} {i}"
@@ -103,6 +121,8 @@ def render_fr(s, raw=None):
     raw = raw or {}
     def tok(t):
         k, i = t.group(1), t.group(2)
+        if k == "skill":
+            return html.escape(SKILL_FR.get(i, raw.get(t.group(0)) or NAMES_EN.get((k, i)) or f"métier {i}"))
         if k in ("zone", "area"):
             en = NAMES_EN.get((k, i)) or raw.get(t.group(0)) or ""
             n = html.escape(ZONES.get(en) or PLACES_EXTRA.get(en) or PLACES.get(en) or en or f"{k} {i}")
@@ -131,11 +151,23 @@ def T(tr, en):
     for rx, toks, v in PATTERNS.get(CUR[0], []):
         m = rx.match(en)
         if m and len(m.groups()) == len(toks):
-            return render_fr(v, dict(zip(toks, m.groups())))
+            okm = True
+            for tk, cap in zip(toks, m.groups()):
+                kk, ii = re.match(r"\{(\w+):(\d+)\}", tk).groups()
+                known = NAMES_EN.get((kk, ii)) or EN.get((kk, ii))
+                fw = lambda x: re.sub(r"('s|’s|s)$", "", (x.strip().lower().split() or [""])[0])
+                if known and fw(cap) != fw(known) and fw(cap) not in known.lower() and fw(known) not in cap.lower():
+                    okm = False; break
+            if okm:
+                return render_fr(v, dict(zip(toks, m.groups())))
     if en in tr: return render_fr(tr[en])
     r = rev(en)
     if r: return html.escape(r)
     if en in PLACES_EXTRA: return html.escape(PLACES_EXTRA[en])
+    m = re.match(r"^(.+?) & (.+?): (.+?) \((\d+-\d+)\)$", en)
+    if m:
+        a, b, z, r_ = m.groups()
+        return html.escape(f"{rev(a) or a} et {rev(b) or b} : {ZONES.get(z, PLACES_EXTRA.get(z, z))} ({r_})")
     for sep in (": ", ", "):
       if sep in en:
         a, b = en.split(sep, 1)
@@ -210,7 +242,24 @@ def goal(body, comment, tr):
     elif kw == "goto":
         xy = args[0].replace(",", ", ") if args else ""
         h = f'<span class="k go">Aller</span> {("à <b>" + T(tr, quoted) + "</b> ") if quoted else ""}<span class="xy">{xy}</span>{cm}'
+    elif kw == "train" and args and args[0] in PROF:
+        rk = RANK.get(args[1], args[1]) if len(args) > 1 else ""
+        h = f'<span class="k">Apprendre</span> <b>{PROF[args[0]]}</b> ({rk}) auprès d\'un maître du métier{cm}'
     elif kw == "train": h = f'<span class="k">Voir</span> le maître de classe et apprendre les nouveaux sorts{cm}'
+    elif kw == "skill":
+        pr = " ".join(a for a in args if not a.isdigit()); lvn = next((a for a in args if a.isdigit()), "")
+        h = f'<span class="k">Atteindre</span> <b>{PROF.get(pr, pr)} {lvn}</b>{cm}'
+    elif kw == "craft" and ident:
+        it, reag = CRAFT.get(ident, (None, []))
+        nm = html.escape(fr_name("item", it)) if it else f"recette {ident}"
+        till = args[args.index("until") + 1] if "until" in args else None
+        how = f" jusqu'à {till}" if till else (f" ×{num}" if num else "")
+        rg = ", ".join(f"{c} {html.escape(fr_name('item', i))}" for i, c in reag)
+        h = f'<span class="k craft">Fabriquer</span> <b>{nm}</b>{how}' + (f' <span class="gc">(par fabrication : {rg})</span>' if rg else "") + cm
+    elif kw == "learn" and ident:
+        it = CRAFT.get(ident, (None, []))[0]
+        nm = fr_name("item", it) if it else (rev(LEARN.get(ident, "")) or LEARN.get(ident) or f"recette {ident}")
+        h = f'<span class="k">Apprendre</span> la recette <b>{html.escape(nm)}</b>{cm}'
     elif kw == "vendor": h = f'<span class="k">Vendre et réparer</span>{cm}'
     elif kw == "sethome": h = f'<span class="k">Pierre de foyer</span> à lier à {html.escape(PLACES.get(quoted, quoted or ""))}{cm}'
     elif kw == "hearth": h = f'<span class="k">Utiliser</span> la pierre de foyer vers {html.escape(PLACES.get(quoted, quoted or ""))}{cm}'
@@ -247,12 +296,12 @@ def build(slug, guide, race, fac):
             if not g: continue
             h, only = g
             cls = cond_fr(only) if only else []
-            data = " ".join(c for c in (only or "").replace(" ", "").split(",") if c in CLASSES)
+            data = " ".join(c for c in (only or "").replace(" ", "").split(",") if c in FILTER[0])
             used.update(data.split())
             tag = "".join(f'<span class="only">{c}</span>' for c in cls)
             items.append(f'<li{" data-only=\"" + data + "\"" if data else ""}>{h}{tag}</li>')
         if not items and not tips: continue
-        sdata = " ".join(c for c in (step_only or "").replace(" ", "").split(",") if c in CLASSES)
+        sdata = " ".join(c for c in (step_only or "").replace(" ", "").split(",") if c in FILTER[0])
         stag = "".join(f'<span class="only">{c}</span>' for c in cond_fr(step_only)) if step_only else ""
         title = T(tr, s["title"]) if s["title"] else f"Étape {idx}"
         out.append(f'''<li class="pp-st"{" data-only=\"" + sdata + "\"" if sdata else ""}><label class="st-h"><input type="checkbox"><span class="st-n"></span><span class="st-t">{title}</span>{stag}{f' <span class="st-z">{zone}</span>' if zone else ""}</label>
@@ -350,5 +399,48 @@ hub = f'''<main><div class="wrap">
 {CREDIT}
 </div>'''
 open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever en français : du niveau 1 au niveau 60, pour l'Alliance et la Horde.", hub))
+# ---------- Métiers pas à pas ----------
+FILTER[0] = ["Alliance", "Horde"]
+METIERS = [("alchimie", "alchemy", "Alchimie"), ("forge", "blacksmithing", "Forge"), ("enchantement", "enchanting", "Enchantement"),
+ ("ingenierie", "engineering", "Ingénierie"), ("travail-du-cuir", "leatherworking", "Travail du cuir"), ("couture", "tailoring", "Couture"),
+ ("herboristerie", "herbalism", "Herboristerie"), ("minage", "mining", "Minage"), ("depecage", "skinning", "Dépeçage"),
+ ("cuisine", "cooking", "Cuisine"), ("secourisme", "first-aid", "Secourisme"), ("peche", "fishing", "Pêche")]
+ICON = {"alchimie": "alchimie", "forge": "forge", "enchantement": "enchantement", "ingenierie": "ingenierie", "travail-du-cuir": "cuir",
+ "couture": "couture", "herboristerie": "herboristerie", "minage": "minage", "depecage": "depecage", "cuisine": "cuisine", "secourisme": "secourisme", "peche": "peche"}
+mcards = ""
+for slug, src, nom in METIERS:
+    g = f"forever/professions/{src}"
+    if not os.path.exists(f"{PS}/guides/{g}.guide"): continue
+    head, steps = build("metier-" + slug, g, nom, "a")
+    lv = head.get("levels", "")
+    body = f'''<main><div class="wrap">
+<div class="crumbs"><a href="index.html">News</a> › <a href="metiers-pas-a-pas.html">Métiers pas à pas</a> › {nom}</div>
+<h1 class="page-title">{nom} 1-300 <span class="pp-lv">pas à pas</span></h1>
+<p class="page-lead">La montée complète de {nom.lower() if nom != "Ingénierie" else "l'ingénierie"}, de 1 à 300 : où apprendre, quoi acheter ou récolter, et quoi fabriquer à chaque palier. Coche chaque étape terminée : ta progression est gardée dans ton navigateur.</p>
+<div class="pp-bar" data-guide="metier-{slug}" data-fkey="faction">
+  <label>Ta faction : <select id="pp-class"><option value="">Les deux</option><option value="Alliance">Alliance</option><option value="Horde">Horde</option></select></label>
+  <div class="pp-prog"><div class="pp-fill"></div></div><span class="pp-count"></span>
+  <button type="button" id="pp-reset">Tout décocher</button>
+</div>
+<div class="info">Couleur des recettes : <b>orange</b> = un point à chaque fabrication, <b>jaune</b> = souvent, <b>vert</b> = rarement, <b>gris</b> = jamais. Les quantités sont des estimations : garde un peu de marge. Rappel : l'<a href="legacy.html">Héritage</a> récompense les paliers 150, 225 et 300.</div>
+<ol class="pp">{steps}</ol>
+<div class="pp-next"><a class="btn-link" href="metiers-pas-a-pas.html">← Tous les métiers</a> <a class="btn-link" href="metiers.html">La page Métiers →</a></div>
+{CREDIT}
+</div>'''
+    open(f"metier-{slug}.html", "w", encoding="utf-8").write(page(f"{nom} 1-300 pas à pas", f"Guide pas à pas pour monter {nom} de 1 à 300 dans WoW Forever : recettes, composants, où apprendre.", body, SCRIPTS))
+    img = f'<img src="images/metiers/{ICON[slug]}.png" alt="" class="mc-ic">' if os.path.exists(f"images/metiers/{ICON[slug]}.png") else ""
+    nst = steps.count('class="pp-st"')
+    mcards += f'<a class="pp-card" href="metier-{slug}.html">{img}<b>{nom}</b><span class="small">1 à 300 · {nst} étapes</span></a>'
+    print("metier", slug, nst, "étapes")
+hubm = f'''<main><div class="wrap">
+<div class="crumbs"><a href="index.html">News</a> › <a href="metiers.html">Métiers</a> › Métiers pas à pas</div>
+<h1 class="page-title">Métiers pas à pas 1-300</h1>
+<p class="page-lead">Les 12 métiers de WoW Forever, de 1 à 300, étape par étape : où apprendre chaque rang, quels composants acheter ou récolter et quelles recettes fabriquer pour monter au plus vite. Choisis ta faction en haut de chaque guide pour ne voir que tes étapes.</p>
+<div class="pp-cards">{mcards}</div>
+<div class="info" style="margin-top:20px">Les nouveautés des métiers dans Forever (camping, Faveur marchande, objets de camp) sont expliquées sur la page <a href="metiers.html">Métiers</a> et la page <a href="reputations.html">Réputations</a>.</div>
+{CREDIT}
+</div>'''
+open("metiers-pas-a-pas.html", "w", encoding="utf-8").write(page("Métiers pas à pas 1-300", "Guides pas à pas des 12 métiers de WoW Forever, de 1 à 300, en français : alchimie, forge, enchantement, ingénierie, couture, minage...", hubm))
+
 json.dump(sorted(MISS), open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_manquants.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(len(MISS), "textes restés en anglais (tools/lieux_manquants.json)")

@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "guide", lien: "metiers-pas-a-pas.html", img: "images/camping.jpg",
+    titre: "Les 12 métiers de 1 à 300, pas à pas",
+    texte: "Où apprendre, quoi récolter ou acheter, quoi fabriquer à chaque palier, avec les composants par recette et un filtre Alliance / Horde." },
   { date: "2026-10-31", type: "site", lien: "pseudo.html", img: "images/galerie/16.jpg",
     titre: "Nouvel outil : le générateur de pseudo",
     texte: "Des noms originaux pour chaque race, masculins ou féminins, qui respectent les règles du jeu. Prépare tes idées avant le 4 novembre !" },

@@ -741,3 +741,5 @@ footer .logo .mini-em{width:30px;height:30px}
 .ps-fav b{font-family:Cinzel,Georgia,serif}
 .ps-fav .race{font-size:.66rem;padding:1px 6px}
 .ps-fav button{background:var(--bg2);border:0;border-radius:50%;width:22px;height:22px;cursor:pointer;color:inherit}
+.pp-card .mc-ic{width:48px;height:48px;border-radius:8px;align-self:flex-start}
+.ppg .k.craft{color:#8e5ac8}
