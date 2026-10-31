@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "site", lien: "pseudo.html", img: "images/galerie/16.jpg",
+    titre: "Nouvel outil : le générateur de pseudo",
+    texte: "Des noms originaux pour chaque race, masculins ou féminins, qui respectent les règles du jeu. Prépare tes idées avant le 4 novembre !" },
   { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/09.jpg",
     titre: "Le leveling pas à pas va maintenant jusqu'au niveau 60",
     texte: "36 nouvelles zones pour les niveaux 30 à 60, de Désolace à Silithus : 57 zones en tout, en français, à enchaîner de la création du personnage jusqu'au niveau maximum." },
