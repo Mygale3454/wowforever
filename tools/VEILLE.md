@@ -29,3 +29,6 @@ Vérifier un build : ouvrir `talents.html#<code>` avec Playwright et lire le com
 Générées depuis Polestar (https://github.com/fitzforge/polestar, GPL-3.0) :
 `git clone --depth 1 https://github.com/fitzforge/polestar /tmp/polestar && python3 tools/pas_a_pas.py /tmp/polestar`.
 Les noms de lieux sans traduction dans les données sont dans `tools/lieux_fr.json` ; ceux restés en anglais sont listés dans `tools/lieux_manquants.json`.
+
+## Après toute génération de pages
+`python3 tools/seo.py` : remet l'adresse officielle et les balises de partage de chaque page, et refait le sitemap.
