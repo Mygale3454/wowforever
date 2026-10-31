@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "guide", lien: "quetes-de-classe.html", img: "images/classes.jpg",
+    titre: "Toutes les quêtes de classe, pas à pas",
+    texte: "Forme d'ours et de félin, Poisons, totems du chaman, montures du paladin et du démoniste : 66 guides en français, rangés par classe et par niveau." },
   { date: "2026-10-31", type: "guide", lien: "metiers-pas-a-pas.html", img: "images/camping.jpg",
     titre: "Les 12 métiers de 1 à 300, pas à pas",
     texte: "Où apprendre, quoi récolter ou acheter, quoi fabriquer à chaque palier, avec les composants par recette et un filtre Alliance / Horde." },

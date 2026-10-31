@@ -2,7 +2,7 @@
    Pour ajouter une page au menu : ajoute une ligne dans MENU ci-dessous. */
 const MENU = [
   ["index.html", "News"],
-  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["talents.html", "Calculateur de talents"], ["races.html", "Races"]]],
+  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["quetes-de-classe.html", "Quêtes de classe"], ["talents.html", "Calculateur de talents"], ["races.html", "Races"]]],
   ["Leveling", [["leveling.html", "Parcours 1-60"], ["pas-a-pas.html", "Guide pas à pas"]]],
   ["Monde", [["debuter.html", "Bien débuter"], ["donjons.html", "Donjons & Raids"], ["pvp.html", "PvP"], ["reputations.html", "Réputations"]]],
   ["Métiers", [["metiers.html", "Les métiers"], ["metiers-pas-a-pas.html", "Métiers pas à pas 1-300"]]],
@@ -54,7 +54,7 @@ document.getElementById("site-footer").outerHTML = `
 <footer><div class="wrap">
   <div class="cols">
     <div><div class="logo"><img src="images/emblem.svg" alt="" class="mini-em">Forever<span>WoW</span>.fr</div><p>Guides, actualités et outils en français pour World of Warcraft: Forever.</p></div>
-    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="leveling.html">Parcours 1-60</a><a href="pas-a-pas.html">Leveling pas à pas</a><a href="classes.html">Classes</a><a href="guides.html">Guides de spé</a><a href="talents.html">Calculateur de talents</a><a href="donjons.html">Donjons & Raids</a><a href="pvp.html">PvP</a><a href="reputations.html">Réputations</a><a href="metiers.html">Métiers</a><a href="metiers-pas-a-pas.html">Métiers pas à pas</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
+    <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="leveling.html">Parcours 1-60</a><a href="pas-a-pas.html">Leveling pas à pas</a><a href="classes.html">Classes</a><a href="guides.html">Guides de spé</a><a href="quetes-de-classe.html">Quêtes de classe</a><a href="talents.html">Calculateur de talents</a><a href="donjons.html">Donjons & Raids</a><a href="pvp.html">PvP</a><a href="reputations.html">Réputations</a><a href="metiers.html">Métiers</a><a href="metiers-pas-a-pas.html">Métiers pas à pas</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
     <div><h5>Infos</h5><a href="index.html">News</a><a href="calendrier.html">Calendrier</a><a href="galerie.html">Galerie</a></div>
   </div>
   <div class="legal">ForeverWoW.fr est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Captures et visuels de World of Warcraft © Blizzard Entertainment.</div>

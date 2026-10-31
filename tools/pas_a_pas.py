@@ -45,6 +45,11 @@ PROF = {"Alchemy": "Alchimie", "Blacksmithing": "Forge", "Cooking": "Cuisine", "
  "Skinning": "Dépeçage", "Tailoring": "Couture", "Riding": "Monte"}
 SKILL_FR = {"171": "Alchimie", "164": "Forge", "185": "Cuisine", "333": "Enchantement", "202": "Ingénierie", "129": "Secourisme", "356": "Pêche",
  "182": "Herboristerie", "165": "Travail du cuir", "186": "Minage", "393": "Dépeçage", "197": "Couture", "762": "Monte"}
+SPELL_FR = {"10140": "Invocation d'eau", "10797": "Éclats stellaires", "118": "Métamorphose", "13819": "Invocation d'un cheval de guerre",
+ "13896": "Rétroaction", "139": "Rénovation", "1680": "Tourbillon", "18960": "Téléportation : Reflet-de-Lune", "23214": "Invocation d'un destrier",
+ "2458": "Posture berserker", "2651": "Grâce d'Élune", "2652": "Toucher de faiblesse", "2842": "Poisons", "407778": "Tempête divine", "417141": "Berserk",
+ "425121": "Veines glaciales", "5394": "Totem guérisseur", "5487": "Forme d'ours", "71": "Posture défensive", "7328": "Rédemption", "768": "Forme de félin",
+ "8946": "Guérison du poison", "5784": "Invocation d'un palefroi corrompu", "23161": "Invocation d'un destrier de l'effroi"}
 RANK = {"Apprentice": "Apprenti", "Journeyman": "Compagnon", "Expert": "Expert", "Artisan": "Artisan"}
 
 # Lieux sans traduction dans les données (noms français du jeu)
@@ -121,6 +126,8 @@ def render_fr(s, raw=None):
     raw = raw or {}
     def tok(t):
         k, i = t.group(1), t.group(2)
+        if k == "spell":
+            return html.escape(SPELL_FR.get(i) or raw.get(t.group(0)) or NAMES_EN.get((k, i)) or LEARN.get(i) or f"sort {i}")
         if k == "skill":
             return html.escape(SKILL_FR.get(i, raw.get(t.group(0)) or NAMES_EN.get((k, i)) or f"métier {i}"))
         if k in ("zone", "area"):
@@ -441,6 +448,64 @@ hubm = f'''<main><div class="wrap">
 {CREDIT}
 </div>'''
 open("metiers-pas-a-pas.html", "w", encoding="utf-8").write(page("Métiers pas à pas 1-300", "Guides pas à pas des 12 métiers de WoW Forever, de 1 à 300, en français : alchimie, forge, enchantement, ingénierie, couture, minage...", hubm))
+
+# ---------- Quêtes de classe ----------
+TITLE_FR = {"Desperate Prayer and Chastise": "Prière du désespoir et Châtiment", "Touch of Weakness and Dark Sacrifice": "Toucher de faiblesse et Sacrifice sombre",
+ "Hex of Weakness and Shadowguard": "Maléfice de faiblesse et Garde de l'ombre", "Divine Grace and Feedback": "Grâce divine et Rétroaction",
+ "Confounding Flash and Contingency Plan": "Éclair déroutant et Plan de secours", "Cat Form": "Forme de félin", "Cure Poison": "Guérison du poison",
+ "Call of Air and the Tempest's Weapons (Alliance)": "L'appel de l'air et les armes de la Tempête (Alliance)", "Call of Water (Alliance)": "L'appel de l'eau (Alliance)",
+ "Conjure Water (Arcane Refreshment)": "Invocation d'eau (Rafraîchissement des arcanes)", "Polymorph: Pig": "Métamorphose : cochon",
+ "Tyr's Watch and Redemption": "La Garde de Tyr et Rédemption", "Spirit Totem and Da Voodoo": "Le totem des esprits et le vaudou"}
+CLS = [("warrior", "Guerrier"), ("paladin", "Paladin"), ("hunter", "Chasseur"), ("rogue", "Voleur"), ("priest", "Prêtre"),
+       ("shaman", "Chaman"), ("mage", "Mage"), ("warlock", "Démoniste"), ("druid", "Druide")]
+CLSCOL = {"warrior": "#C69B6D", "paladin": "#D9619C", "hunter": "#7FAE3E", "rogue": "#D4B82A", "priest": "#9A9A9A", "shaman": "#0070DD", "mage": "#2BA9CC", "warlock": "#7072D6", "druid": "#E86E08"}
+MOUNTS = {"paladin": ["forever/collectibles/mounts/alliance/paladin-warhorse", "forever/collectibles/mounts/alliance/paladin-charger"],
+          "warlock": ["forever/collectibles/mounts/neutral/warlock-felsteed", "forever/collectibles/mounts/neutral/warlock-dreadsteed"]}
+sections = ""
+for cid, cnom in CLS:
+    gl = sorted(_gl.glob(f"{PS}/guides/forever/class/{cid}/*.guide"))
+    gids = [x[len(PS) + 8:-6] for x in gl] + [m for m in MOUNTS.get(cid, []) if os.path.exists(f"{PS}/guides/{m}.guide")]
+    rows = []
+    for g in gids:
+        head, steps = build("classe-" + g.split("/")[-1], g, cnom, "a")
+        CUR[0] = g; tr = load_tr(g)
+        titre = TITLE_FR.get(head.get("title", "")) or html.unescape(re.sub(r"<[^>]+>", "", T(tr, head.get("title", ""))))
+        why = T(tr, head.get("why", "")) if head.get("why") else ""
+        lv = head.get("levels", ""); lo = int(re.match(r"\d+", lv).group(0)) if lv else 0
+        fac = head.get("faction", "")
+        slug = f"classe-{cid}-{g.split('/')[-1]}"
+        fsel = "" if fac else '<label>Ta faction : <select id="pp-class"><option value="">Les deux</option><option value="Alliance">Alliance</option><option value="Horde">Horde</option></select></label>'
+        if not fsel: fsel = '<select id="pp-class" hidden><option value=""></option></select>'
+        body = f'''<main><div class="wrap">
+<div class="crumbs"><a href="index.html">News</a> › <a href="quetes-de-classe.html">Quêtes de classe</a> › {cnom} › {html.escape(titre)}</div>
+<h1 class="page-title">{html.escape(titre)} <span class="pp-lv">{cnom} · niveaux {lv}</span></h1>
+<p class="page-lead">{('<span class="race ' + ('a' if fac == 'Alliance' else 'h') + '">' + fac + '</span> ') if fac else ''}{why}</p>
+<div class="pp-bar" data-guide="{slug}" data-fkey="faction">
+  {fsel}
+  <div class="pp-prog"><div class="pp-fill"></div></div><span class="pp-count"></span>
+  <button type="button" id="pp-reset">Tout décocher</button>
+</div>
+<ol class="pp">{steps}</ol>
+<div class="pp-next"><a class="btn-link" href="quetes-de-classe.html#{cid}">← Toutes les quêtes de {cnom.lower() if cnom != "Druide" else "druide"}</a> <a class="btn-link" href="guides.html#{cid}">Les guides de spé {cnom} →</a></div>
+{CREDIT}
+</div>'''
+        open(f"{slug}.html", "w", encoding="utf-8").write(page(f"{titre} ({cnom}) pas à pas", f"Quête de classe {cnom} dans WoW Forever : {html.escape(titre)}, niveaux {lv}, étape par étape en français.", body, SCRIPTS))
+        nst = steps.count('class="pp-st"')
+        rows.append((lo, f'<a class="qc" href="{slug}.html"><span class="qc-lv">{lv}</span><span class="qc-b"><b>{html.escape(titre)}</b>{("<span class=race " + ("a" if fac == "Alliance" else "h") + ">" + fac + "</span>") if fac else ""}<span class="qc-w">{why}</span></span></a>'))
+    rows.sort(key=lambda r: r[0])
+    sections += f'<section class="qcs" id="{cid}" style="--c:{CLSCOL[cid]}"><div class="sgc-head"><img src="images/icons/class_{cid}.jpg" alt=""><h2>{cnom}</h2><span class="small">{len(rows)} guides</span></div><div class="qcl">{"".join(r[1] for r in rows)}</div></section>'
+    print("classe", cid, len(rows))
+jumps = "".join(f'<a class="jump" href="#{c}" style="--c:{CLSCOL[c]}">{n}</a>' for c, n in CLS)
+hubq = f'''<main><div class="wrap">
+<div class="crumbs"><a href="index.html">News</a> › <a href="classes.html">Classes</a> › Quêtes de classe</div>
+<h1 class="page-title">Quêtes de classe pas à pas</h1>
+<p class="page-lead">Dans Forever, plusieurs sorts importants ne s'apprennent plus chez le maître : Forme d'ours et de félin, Guérison du poison, Poisons du voleur, totems du chaman… Ils s'obtiennent par des quêtes. Voici toutes les quêtes de classe, rangées par niveau, avec les montures du paladin et du démoniste.</p>
+<nav class="jumps" style="margin-top:14px">{jumps}</nav>
+{sections}
+{CREDIT}
+</div>'''
+open("quetes-de-classe.html", "w", encoding="utf-8").write(page("Quêtes de classe pas à pas", "Toutes les quêtes de classe de WoW Forever en français : formes du druide, poisons du voleur, totems du chaman, montures du paladin et du démoniste...", hubq))
+FILTER[0] = CLASSES
 
 json.dump(sorted(MISS), open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_manquants.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(len(MISS), "textes restés en anglais (tools/lieux_manquants.json)")
