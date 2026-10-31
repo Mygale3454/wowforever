@@ -262,7 +262,7 @@ def build(slug, guide, race, fac):
 def page(title, desc, body, extra=""):
     t = open("legacy.html", encoding="utf-8").read()
     h = t[:t.index("<main>")]
-    h = re.sub(r"<title>.*?</title>", f"<title>{title} – wowforever</title>", h)
+    h = re.sub(r"<title>.*?</title>", f"<title>{title} – ForeverWoW</title>", h)
     h = re.sub(r'name="description" content=".*?"', f'name="description" content="{desc}"', h)
     tail = re.sub(r'<script src="js/heritage\.js[^"]*"></script>\n?', extra, t[t.index("</main>"):])
     return h + body + tail
@@ -285,7 +285,19 @@ EXTRA = [  # niveaux 10-30 : (slug, guide, public, faction)
     ("hautebrande", "forever/horde/06-hillsbrad-foothills", "Horde", "h"),
     ("orneval-horde", "forever/horde/07-ashenvale", "Horde", "h"),
 ]
-ALL = [g + ("depart",) for g in GUIDES] + [g + ("1030",) for g in EXTRA]
+import glob as _glob
+for _fac, _f in (("alliance", "a"), ("horde", "h")):
+    for _t in ("30-40", "40-50", "50-60"):
+        for _p in sorted(_glob.glob(f"{PS}/guides/forever/{_fac}/{_t}/*.guide")):
+            _n = os.path.basename(_p)[:-6]
+            EXTRA.append((f"{_fac}-{_t}-{_n}", f"forever/{_fac}/{_t}/{_n}", "Alliance" if _f == "a" else "Horde", _f))
+
+def tranche(guide):
+    lv = parse(guide)[0].get("levels", "1-1")
+    lo = int(re.match(r"\d+", lv).group(0))
+    return "1530" if lo < 30 else "3040" if lo < 40 else "4050" if lo < 50 else "5060"
+
+ALL = [g + ("depart",) for g in GUIDES] + [g + (tranche(g[1]),) for g in EXTRA]
 SLUG = {g[1]: g[0] for g in ALL}
 
 def ztitle(t):
@@ -293,10 +305,16 @@ def ztitle(t):
     fr = [ZONES.get(x, PLACES_EXTRA.get(x, x)) for x in parts]
     return fr[0] if len(fr) == 1 else ", ".join(fr[:-1]) + " et " + fr[-1]
 
-cards = {"depart": {"a": "", "h": ""}, "1030": {"a": "", "h": ""}}
+GROUPS = [("depart", "Zones de départ (niveaux 1 à 15)"), ("1530", "Niveaux 15 à 30"), ("3040", "Niveaux 30 à 40"), ("4050", "Niveaux 40 à 50"), ("5060", "Niveaux 50 à 60")]
+cards = {g: {"a": "", "h": ""} for g, _ in GROUPS}
+SEEN = {}
 for slug, guide, race, fac, grp in ALL:
     head, steps = build(slug, guide, race, fac)
-    zone = ztitle(head.get("title", "")) + (" (2e passage)" if slug == "tarides-2" else "")
+    zone = ztitle(head.get("title", ""))
+    _k = (fac, zone)
+    if race != "Orc et Troll":
+        SEEN[_k] = SEEN.get(_k, 0) + 1
+        if SEEN[_k] > 1: zone += f" ({SEEN[_k]}e passage)"
     lv = head.get("levels", "")
     nx = head.get("next", "")
     if nx in SLUG:
@@ -327,16 +345,10 @@ hub = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Leveling pas à pas</div>
 <h1 class="page-title">Leveling pas à pas</h1>
 <p class="page-lead">Chaque quête dans le bon ordre, avec les monstres à tuer, les objets à ramasser et les endroits où aller. Commence par la zone de départ de ta race : à la fin de chaque page, un bouton t'emmène à la zone suivante. Le <a href="leveling.html">parcours 1-60</a> donne la vue d'ensemble jusqu'au niveau 60.</p>
-<h2>Zones de départ (niveaux 1 à 15)</h2>
-<h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards["depart"]["a"]}</div>
-<h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards["depart"]["h"]}</div>
-<h2>Jusqu'au niveau 30</h2>
-<h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards["1030"]["a"]}</div>
-<h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards["1030"]["h"]}</div>
-<p class="small">Les niveaux 30 à 60 arrivent bientôt.</p>
+{"".join(f'<h2 id="t{g}">{t}</h2><h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards[g]["a"]}</div><h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards[g]["h"]}</div>' for g, t in GROUPS)}
 <div class="info" style="margin-top:20px">Tu préfères être guidé directement en jeu ? Installe l'addon <a href="addons.html">Polestar</a> : les mêmes routes s'affichent avec une flèche vers chaque objectif.</div>
 {CREDIT}
 </div>'''
-open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever en français : zones de départ et niveaux 10 à 30, pour l'Alliance et la Horde.", hub))
+open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever en français : du niveau 1 au niveau 60, pour l'Alliance et la Horde.", hub))
 json.dump(sorted(MISS), open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_manquants.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(len(MISS), "textes restés en anglais (tools/lieux_manquants.json)")

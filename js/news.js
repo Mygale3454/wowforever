@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/09.jpg",
+    titre: "Le leveling pas à pas va maintenant jusqu'au niveau 60",
+    texte: "36 nouvelles zones pour les niveaux 30 à 60, de Désolace à Silithus : 57 zones en tout, en français, à enchaîner de la création du personnage jusqu'au niveau maximum." },
   { date: "2026-10-31", type: "guide", lien: "pas-a-pas.html", img: "images/galerie/11.jpg",
     titre: "Leveling pas à pas : les zones 10 à 30 sont en ligne",
     texte: "Marche de l'Ouest, Sombrivage, Les Tarides, Pins-Argentés, Orneval… 13 nouvelles zones en français, avec un bouton « zone suivante » pour enchaîner." },

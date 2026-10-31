@@ -111,7 +111,7 @@ body = f'''<main><div class="wrap">
 
 tpl = open("legacy.html").read()
 head = tpl[:tpl.index("<main>")]
-head = re.sub(r"<title>.*?</title>", "<title>Guides des spécialisations – wowforever</title>", head)
+head = re.sub(r"<title>.*?</title>", "<title>Guides des spécialisations – ForeverWoW</title>", head)
 head = re.sub(r'name="description" content=".*?"', 'name="description" content="Guides des 27 spécialisations de WoW Forever : build de talents, priorité des statistiques, races conseillées, points forts et faibles."', head)
 tail = re.sub(r'<script src="js/heritage\.js[^"]*"></script>\n?', '', tpl[tpl.index("</main>"):])
 open("guides.html", "w").write(head + body + tail)
