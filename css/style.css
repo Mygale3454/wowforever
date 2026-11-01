@@ -765,3 +765,7 @@ footer .logo .mini-em{width:30px;height:30px}
 .fwlogo-img img{height:230px;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.55))}
 @media (max-width:860px){.banner{height:190px}.fwlogo-img img{height:175px}}
 @media (max-width:560px){.banner{height:150px}.fwlogo-img{align-self:center}.fwlogo-img img{height:138px}}
+.banner{height:190px}
+.fwlogo-img img{height:172px}
+@media (max-width:860px){.banner{height:160px}.fwlogo-img img{height:145px}}
+@media (max-width:560px){.banner{height:130px}.fwlogo-img img{height:118px}}
