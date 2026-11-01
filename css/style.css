@@ -806,3 +806,6 @@ html[data-theme="gris"] .banner > img{filter:grayscale(.2)}
 html[data-theme="gris"] body{background:url(../images/filigrane-horde-gris.png) left top 60px/var(--fw) auto no-repeat fixed,url(../images/filigrane-alliance-gris.png) right top 60px/var(--fw) auto no-repeat fixed,#fff}
 html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:url(../images/filigrane-horde-parchemin.png),url(../images/filigrane-alliance-parchemin.png),var(--paper),radial-gradient(ellipse at 50% 0%,#f5e8c8 0%,var(--bg) 55%,#dcc595 100%);background-position:left top 60px,right top 60px,0 0,0 0;background-size:var(--fw) auto,var(--fw) auto,auto,auto;background-repeat:no-repeat,no-repeat,repeat,no-repeat;background-attachment:fixed}
 @media (max-width:1380px){html[data-theme="gris"] body{background:#fff}html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:var(--paper),radial-gradient(ellipse at 50% 0%,#f5e8c8 0%,var(--bg) 55%,#dcc595 100%);background-size:auto;background-position:0 0;background-repeat:repeat,no-repeat}}
+.addon-shot{margin:12px 0 10px}
+.addon-shot img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
+.addon-shot figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
