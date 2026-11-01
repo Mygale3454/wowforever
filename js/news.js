@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-01", type: "site", lien: "carte.html", img: "images/galerie/05.jpg",
+    titre: "Nouvel outil : la carte interactive",
+    texte: "50 zones avec les maîtres de classe et de métiers, les maîtres de vol, les aubergistes, les herbes et les filons de minerai, et un bouton pour copier les coordonnées dans TomTom." },
   { date: "2026-11-01", type: "site", lien: "addons.html", img: "images/galerie/18.jpg",
     titre: "Deux addons de plus : ElvUI et Baganator",
     texte: "ElvUI, la célèbre refonte d'interface, prend désormais en charge WoW Forever, et Baganator réunit tous tes sacs dans une seule fenêtre triée." },

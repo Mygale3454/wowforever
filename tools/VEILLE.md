@@ -32,3 +32,6 @@ Les noms de lieux sans traduction dans les données sont dans `tools/lieux_fr.js
 
 ## Après toute génération de pages
 `python3 tools/seo.py` : refait aussi le flux RSS (rss.xml) à partir de js/news.js ; remet l'adresse officielle et les balises de partage de chaque page, et refait le sitemap.
+
+## Carte interactive (carte.html)
+`git clone --depth 1 https://github.com/brouznouf/factoruide /tmp/fact` puis `python3 tools/carte.py /tmp/polestar /tmp/fact` : refait images/cartes/*.webp et data/carte/*.json (Node 22+ requis pour décompresser la base).

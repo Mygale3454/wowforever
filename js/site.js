@@ -8,7 +8,7 @@ const MENU = [
   ["Métiers", [["metiers.html", "Les métiers"], ["metiers-pas-a-pas.html", "Métiers pas à pas 1-300"]]],
   ["legacy.html", "Legacy"],
   ["calendrier.html", "Calendrier"],
-  ["Outils", [["talents.html", "Calculateur de talents"], ["pseudo.html", "Générateur de pseudo"], ["addons.html", "Addons"]]],
+  ["Outils", [["talents.html", "Calculateur de talents"], ["carte.html", "Carte interactive"], ["pseudo.html", "Générateur de pseudo"], ["addons.html", "Addons"]]],
   ["galerie.html", "Galerie"]
 ];
 
