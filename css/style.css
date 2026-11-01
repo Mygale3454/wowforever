@@ -810,3 +810,11 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .addon-shot img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
 .addon-shot figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
 .install-box{margin:18px 0 22px}.install-box h2{margin-top:0}
+.fiche header .cls-ic{width:44px;height:44px;border-radius:9px;border:2px solid var(--c);box-shadow:0 2px 6px rgba(0,0,0,.25);flex:none}
+.fiche header{gap:12px}
+.fiche header h2{flex:1}
+.card-body > .badge:first-child{margin-bottom:6px;display:inline-block}
+.combos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.combos .card{width:auto}
+.combos .card-body .badge{display:inline-block;width:auto;margin-bottom:8px}
+.combos .card-body .badge{justify-self:start;align-self:flex-start}.combos .card-body{display:flex;flex-direction:column;align-items:flex-start}
