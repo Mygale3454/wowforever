@@ -10,6 +10,49 @@ def gitdate(f):
     try: return subprocess.run(["git", "log", "-1", "--format=%cs", "--", f], capture_output=True, text=True).stdout.strip() or str(datetime.date.today())
     except Exception: return str(datetime.date.today())
 LASTMOD = {f: gitdate(f) for f in pages}
+
+# ----- Tampon « Mise à jour le … · Patch … » sous l'introduction de chaque page -----
+# Date = dernier commit qui a vraiment changé le contenu de la page (on ignore les numéros de version ?v=,
+# les balises ajoutées par ce script et le tampon lui-même). Patch = build du jeu en vigueur à cette date.
+PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707")]
+NOSTAMP = {"index.html", "galerie.html", "actualites.html"}
+def _norm(l):
+    l = re.sub(r'<p class="stamp auto">.*?</p>', "", l)
+    if re.search(r'<link rel="canonical"|<meta property="og:|<meta name="twitter:|application/ld\+json|<meta name="robots"|application/rss\+xml', l): return ""
+    return re.sub(r"\?v=\d+", "", l).strip()
+def _real(diff):
+    import collections
+    add, rem = collections.Counter(), collections.Counter()
+    for l in diff.splitlines():
+        if l.startswith(("+++", "---")) or l[:1] not in "+-": continue
+        n = _norm(l[1:])
+        if n: (add if l[0] == "+" else rem)[n] += 1
+    return add != rem
+def contentdate(f):
+    try:
+        if _real(subprocess.run(["git", "diff", "HEAD", "--", f], capture_output=True, text=True).stdout): return str(datetime.date.today())
+        log = subprocess.run(["git", "log", "-p", "--format=@@COMMIT %cs", "--", f], capture_output=True, text=True).stdout
+        for chunk in log.split("@@COMMIT ")[1:]:
+            d, _, diff = chunk.partition("\n")
+            if _real(diff): return d.strip()
+    except Exception: pass
+    return str(datetime.date.today())
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+def stamp(d):
+    patch = "1.60.1 (bêta)"
+    for pd, p in PATCHES:
+        if d >= pd: patch = p
+    a, m, j = d.split("-")
+    return (f'<p class="stamp auto"><span>📅 Mise à jour le <b>{int(j)}{"er" if j == "01" else ""} {MOIS[int(m)-1]} {a}</b></span>'
+            f'<span>🛠 Patch <b>{patch}</b></span></p>')
+for f in pages:
+    if f in NOSTAMP or f.startswith("news-"): continue
+    t = open(f, encoding="utf-8").read()
+    t2 = re.sub(r'\n?<p class="stamp auto">.*?</p>', "", t)
+    m = re.search(r'<p class="page-lead">.*?</p>', t2, re.S)
+    if not m or t2[m.end():m.end() + 40].lstrip().startswith('<p class="stamp'): continue
+    t2 = t2[:m.end()] + "\n" + stamp(contentdate(f)) + t2[m.end():]
+    if t2 != t: open(f, "w", encoding="utf-8").write(t2)
 NOART = {"index.html", "talents.html", "pseudo.html", "galerie.html"}
 def ld(f, t, title, desc, url):
     name = re.sub(r"\s+–\s+ForeverWoW(\.fr)?$", "", title)

@@ -48,7 +48,6 @@ body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Monde › Montures</div>
 <h1 class="page-title">Les montures de WoW Forever</h1>
 <p class="page-lead">Où acheter ta première monture, quelles bêtes chaque race propose, et comment obtenir les montures de classe, de réputation, de JcJ et de donjon. Tous les noms sont ceux du jeu en français.</p>
-<p class="stamp"><span>📅 Mise à jour le <b>1er novembre 2026</b></span><span>🛠 Patch <b>1.60.1.70707</b></span></p>
 
 <div class="article">
   <h2>L'essentiel avant de partir</h2>

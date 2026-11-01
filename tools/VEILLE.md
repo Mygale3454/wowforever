@@ -50,3 +50,8 @@ puis `python3 tools/talents.py --builds` : recalcule les codes de `tools/builds.
 (points perdus, palier ou prérequis non respecté). Corriger ces builds à la main (51 points), mettre à jour `cree`/`patch` des builds modifiés
 et `verifie`/`patch_verif` de tous, puis `python3 tools/guides.py`. Mettre à jour le numéro de patch dans talents.html.
 Les arbres du 1er novembre 2026 viennent du patch 1.60.1.70707.
+
+## Tampon « Mise à jour le … · Patch … » (toutes les pages)
+Ajouté par `tools/seo.py` sous l'introduction (`page-lead`) de chaque page, sauf l'accueil, la galerie et les news.
+La date est celle du dernier commit qui a vraiment changé le contenu de la page (les `?v=` et les balises SEO sont ignorés).
+Le patch vient de la liste `PATCHES` en haut de seo.py : **à chaque nouveau build du jeu, y ajouter (date, numéro)**.
