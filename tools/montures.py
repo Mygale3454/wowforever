@@ -8,7 +8,8 @@ def chips(*noms, swift=False):
     return "".join(f'<li class="mt-m{" sw" if swift else ""}">{n}</li>' for n in noms)
 
 def racial(img, race, fac, pnj, lieu, coords, normales, rapides, note=""):
-    return f'''<article class="mt-card {fac}">
+    pic = f'<img class="mt-pic" src="images/montures/{img}.webp" alt="Monture {race.split(" :")[0].lower()} (illustration)" width="437" height="315" loading="lazy">' if os.path.exists(f"images/montures/{img}.webp") else ""
+    return f'''<article class="mt-card {fac}{" pic" if pic else ""}">{pic}
   <img class="mt-face" src="images/races/{img}.webp" alt="" width="64" height="64">
   <div>
     <h3>{race}</h3>
@@ -112,7 +113,7 @@ body = f'''<main><div class="wrap">
 </div>
 
 <div class="info" style="margin-top:20px">Prix et conditions venant de la bêta : ils peuvent changer à la sortie. Les coordonnées se lisent sur la carte du jeu ou avec <a href="addons.html">TomTom</a>, et les marchands des capitales sont sur notre <a href="carte.html">carte interactive</a>.</div>
-<p class="small">Noms des montures d'après les données du client de WoW Forever, via le projet <a href="https://github.com/fitzforge/polestar" target="_blank" rel="noopener">Polestar</a> (CC BY 4.0). Informations complémentaires : <a href="news-montures.html">notre news sur les montures</a>, le guide de JudgeHype et le <a href="https://www.wowhead.com/forever/fr/guide/collections/mounts-locations-appearances" target="_blank" rel="noopener">guide des apparences de Wowhead</a>. Illustration du trotteur des trombes : Mygale.</p>
+<p class="small">Noms des montures d'après les données du client de WoW Forever, via le projet <a href="https://github.com/fitzforge/polestar" target="_blank" rel="noopener">Polestar</a> (CC BY 4.0). Informations complémentaires : <a href="news-montures.html">notre news sur les montures</a>, le guide de JudgeHype et le <a href="https://www.wowhead.com/forever/fr/guide/collections/mounts-locations-appearances" target="_blank" rel="noopener">guide des apparences de Wowhead</a>. Illustrations des montures : Mygale.</p>
 </div>'''
 
 tpl = open("legacy.html", encoding="utf-8").read()

@@ -881,3 +881,6 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .mt-eol .mt-card{margin-bottom:12px}
 .mt-eol figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
 @media (max-width:860px){.mt-eol{grid-template-columns:1fr}.mt-grid{grid-template-columns:1fr}}
+.mt-card.pic{display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:14px;row-gap:12px;padding-top:0;overflow:hidden}
+.mt-pic{grid-column:1/-1;width:calc(100% + 32px);max-width:none;margin:0 -16px;aspect-ratio:437/315;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.mt-card.pic{align-items:start}
