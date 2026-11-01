@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-01", type: "guide", lien: "montures.html", img: "images/monture-eolide.jpg",
+    titre: "Guide des montures : où les acheter et comment les obtenir",
+    texte: "Montures de chaque race et leurs marchands, trotteurs des trombes des Éolides, montures de classe, de réputation, de JcJ et de raid." },
   { date: "2026-11-01", type: "guide", lien: "talents.html", img: "images/classes.jpg",
     titre: "Calculateur de talents à jour du patch de sortie",
     texte: "Les arbres de talents passent au patch 1.60.1.70707 : talents ajoutés, retirés et retouchés, surtout chez le mage, le chaman élémentaire et le prêtre ombre. Les builds des guides de spé ont été adaptés." },
