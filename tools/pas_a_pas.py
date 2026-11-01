@@ -361,6 +361,13 @@ def ztitle(t):
     fr = [ZONES.get(x, PLACES_EXTRA.get(x, x)) for x in parts]
     return fr[0] if len(fr) == 1 else ", ".join(fr[:-1]) + " et " + fr[-1]
 
+# Portraits des races (images/races/*.webp, dessins fournis par Mygale) pour les zones de départ
+FACES = {"Humain": ["humain"], "Nain et Gnome": ["nain", "gnome"], "Elfe de la nuit": ["elfe"], "Éolide (Alliance)": ["skyborne"],
+         "Éolide (Horde)": ["skyborne"], "Orc et Troll": ["orc", "troll"], "Tauren": ["tauren"], "Mort-vivant": ["mortvivant"]}
+def faces(race, cls="pp-faces"):
+    ids = FACES.get(race)
+    return f'<span class="{cls}">' + "".join(f'<img src="images/races/{i}.webp" alt="" width="56" height="56">' for i in ids) + "</span>" if ids else ""
+
 GROUPS = [("depart", "Zones de départ (niveaux 1 à 15)"), ("1530", "Niveaux 15 à 30"), ("3040", "Niveaux 30 à 40"), ("4050", "Niveaux 40 à 50"), ("5060", "Niveaux 50 à 60")]
 cards = {g: {"a": "", "h": ""} for g, _ in GROUPS}
 SEEN = {}
@@ -381,7 +388,7 @@ for slug, guide, race, fac, grp in ALL:
     lead = "La route complète de ta zone de départ, étape par étape." if grp == "depart" else "La route complète de cette étape du leveling, quête par quête."
     body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › <a href="pas-a-pas.html">Leveling pas à pas</a> › {html.escape(zone)}</div>
-<h1 class="page-title">{html.escape(zone)} <span class="pp-lv">niveaux {lv}</span></h1>
+{faces(race, "pp-faces pp-hfaces") if grp == "depart" else ""}<h1 class="page-title">{html.escape(zone)} <span class="pp-lv">niveaux {lv}</span></h1>
 <p class="page-lead"><span class="race {fac}">{race}</span> {lead} Coche chaque étape terminée : ta progression est gardée dans ton navigateur.</p>
 <div class="pp-bar" data-guide="{slug}">
   <label>Ta classe : <select id="pp-class"><option value="">Toutes</option>{"".join(f'<option value="{c}">{COND[c]}</option>' for c in CLASSES)}</select></label>
@@ -394,7 +401,7 @@ for slug, guide, race, fac, grp in ALL:
 {CREDIT}
 </div>'''
     open(f"pas-a-pas-{slug}.html", "w", encoding="utf-8").write(page(f"{zone} pas à pas, niveaux {lv} ({'Alliance' if fac == 'a' else 'Horde'})", f"Guide de leveling pas à pas de {zone} ({race}) dans WoW Forever, niveaux {lv}.", body, SCRIPTS))
-    cards[grp][fac] += f'<a class="pp-card" href="pas-a-pas-{slug}.html"><span class="race {fac}">{race}</span><b>{html.escape(zone)}</b><span class="small">niveaux {lv}</span></a>'
+    cards[grp][fac] += f'<a class="pp-card {fac}" href="pas-a-pas-{slug}.html">{faces(race) if grp == "depart" else ""}<span class="race {fac}">{race}</span><b>{html.escape(zone)}</b><span class="small">niveaux {lv}</span></a>'
     print(slug, steps.count('class="pp-st"'), "étapes")
 
 hub = f'''<main><div class="wrap">

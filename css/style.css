@@ -849,3 +849,17 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .lv-ban img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
 .lv-ban h2{position:absolute;left:16px;bottom:12px;margin:0;padding:4px 16px;border-radius:6px;color:#fff !important;background:var(--alliance);box-shadow:0 2px 8px rgba(0,0,0,.3)}
 .lv-horde .lv-ban h2{background:var(--horde)}
+
+/* Portraits des races (dessins de Mygale) */
+.rport{background:#fff;display:flex;flex-direction:column}
+.rport img{height:auto !important;min-height:0 !important;aspect-ratio:1/1;object-fit:cover}
+.rico{width:28px;height:28px;border-radius:50%;vertical-align:middle;margin-right:8px;border:1px solid var(--line);background:#fff;object-fit:cover}
+@media (max-width:860px){ .rport{flex-direction:row;justify-content:center} .rport img{width:min(320px,100%) !important;aspect-ratio:1/1 !important} }
+.pp-faces{display:flex;align-self:flex-start}
+.pp-faces img{width:56px;height:56px;border-radius:50%;border:2px solid var(--card);background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.2);object-fit:cover}
+.pp-faces img+img{margin-left:-14px}
+.pp-card.a .pp-faces img{border-color:var(--alliance)}.pp-card.h .pp-faces img{border-color:var(--horde)}
+.pp-hfaces{float:right;margin:0 0 8px 16px}
+.pp-hfaces img{width:84px;height:84px}
+@media (max-width:520px){.pp-hfaces img{width:60px;height:60px}}
+.rtable th.rname img.rico{display:inline-block;margin:0 8px 0 0;width:30px;height:30px}
