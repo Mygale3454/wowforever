@@ -1,0 +1,38 @@
+{
+ "source_commit": "30446eae442e5a97718630bff6ac10ba4d84cd08",
+ "listes": [
+  {"id": "dps", "titre": "Dégâts en donjon et en raid", "cree": "2026-10-01", "patch": "1.60.1.70124", "fiab": "faible",
+   "intro": "Une lettre par spécialisation de dégâts, pour les donjons du niveau 60 et les raids qui ouvrent le 9 décembre. Les tanks et les soigneurs ont leur propre liste.",
+   "base": "Projection au niveau 60 à partir des talents de la bêta et des fiches de chaque spé, recoupée avec les classements publics du moment. Les statistiques des objets n'étaient pas encore visibles : ce n'est pas un relevé de dégâts réels.",
+   "tiers": {
+    "S": [["mage-arcane", "Le choix évident côté mage : en tête de tous les classements."], ["warlock-affliction", "Les meilleurs dégâts sur la durée grâce aux sorts qui s'accumulent."]],
+    "A": [["warrior-fury", "La spé de dégâts du guerrier, devant Armes. Quelques soucis de rage restent à corriger."], ["hunter-beast-mastery", "Le familier et Courroux bestial : la valeur sûre du chasseur."], ["hunter-marksmanship", "Visée et Tir de sniper, de grosses rafales à distance."], ["hunter-survival", "Le plus haut potentiel du chasseur, mais ses talents clés n'ont pas été testés en bêta."], ["rogue-assassination", "Poisons toujours actifs sur un boss immobile : le choix JcE du voleur."], ["priest-shadow", "Forme d'ombre et Tissage de l'ombre, désormais pour lui seul."], ["shaman-elemental", "Faible avant le niveau 40, vraiment fort au 60 avec Explosion de lave."], ["mage-fire", "Enflammer et Combustion : pas encore prouvé, mais pas mauvais."], ["warlock-destruction", "Conflagration et Incinérer. Souffre quand il faut bouger."], ["druid-balance", "Éclipse et aura de critique pour le groupe, un peu juste en zone."]],
+    "B": [["warrior-arms", "Correct en JcE, mais Fureur fait mieux si seuls les dégâts comptent."], ["rogue-combat", "Déluge de lames pour les packs, Assassinat pour les boss."], ["shaman-enhancement", "Entièrement refait, un cran en dessous d'Élémentaire."], ["mage-frost", "Ne finira pas en tête des dégâts, mais Froid hivernal aide tout le raid."], ["druid-feral-combat", "En donjon, le druide farouche sert surtout de tank (ours)."]],
+    "C": [["rogue-subtlety", "Taillé pour l'ouverture en JcJ, pas pour un long combat de boss."], ["warlock-demonology", "Classements très partagés : résultats en dents de scie."], ["paladin-retribution", "A enfin une vraie rotation, mais reste en bas des classements."]]
+   }},
+  {"id": "tanks", "titre": "Tanks", "cree": "2026-10-01", "patch": "1.60.1.70124", "fiab": "faible",
+   "intro": "Qui tient un donjon du niveau 60, et à qui confier les raids du 9 décembre. Trois spés peuvent tanker : c'est toute la liste.",
+   "base": "Projection au niveau 60, d'après la présentation de Blizzard du 30 septembre et les fiches de chaque spé. Aucun raid n'a encore été testé.",
+   "tiers": {
+    "S": [["warrior-protection", "Heurt de bouclier, Dernier rempart et Charge en posture défensive : le tank principal."], ["paladin-protection", "Le Sceau de fureur transforme Jugement en provocation. Excellent en donjon."]],
+    "B": [["druid-feral-combat", "Bon tank en donjon, mais plus exposé aux coups critiques et écrasants. Pas le premier choix en raid."]]
+   }},
+  {"id": "soins", "titre": "Soigneurs", "cree": "2026-10-01", "patch": "1.60.1.70124", "fiab": "faible",
+   "intro": "Cinq soigneurs, une lettre chacun, pour les donjons du niveau 60 et les raids de décembre. Boucliers, soins sur une cible et soins de groupe sont trois métiers différents.",
+   "base": "Projection au niveau 60, d'après les fiches de chaque spé et les guides de la bêta (niveau 20). Aucun relevé de raid n'existe encore.",
+   "tiers": {
+    "S": [["priest-discipline", "Boucliers, Pénitence et Égide divine : à emmener dans tous les donjons."], ["paladin-holy", "Le spécialiste des soins sur le tank, avec de très bonnes bénédictions."]],
+    "A": [["shaman-restoration", "Remous puis Salve de guérison, et Totem de vague de mana pour le groupe."], ["druid-restoration", "Croissance sauvage et Prompte guérison, sans bouclier."]],
+    "B": [["priest-holy", "Prière de guérison quand les dégâts sont répartis ; Discipline fait mieux sur une cible."]]
+   }},
+  {"id": "jcj", "titre": "JcJ (champs de bataille et monde)", "cree": "2026-10-01", "patch": "1.60.1.70124", "fiab": "faible",
+   "intro": "Champs de bataille et JcJ sauvage : pas d'arène ni de classement coté. Chaque spé est jugée sur son rôle réel : porter le drapeau, tenir une base, soigner ou tuer.",
+   "base": "Projection au niveau 60 à partir des talents de la bêta et du verdict JcJ de chaque fiche. Rien n'a encore été joué au niveau 60.",
+   "tiers": {
+    "S": [["druid-feral-combat", "Le porteur de drapeau idéal : félin pour fuir, ours pour encaisser."], ["mage-frost", "Ralentit, gèle et se protège : il arrête les porteurs de drapeau."], ["warrior-arms", "Frappe mortelle réduit les soins de 50 %."]],
+    "A": [["rogue-subtlety", "Ouverture et disparition : gagne les cinq premières secondes."], ["rogue-assassination", "Aiguillon perfide et poisons difficiles à dissiper : tueur de soigneurs."], ["warlock-affliction", "Ses sorts continuent d'agir même s'il est contrôlé, et Peur reste redoutable."], ["hunter-beast-mastery", "Familier, étourdissement et portée : défend une base à distance."], ["hunter-survival", "Chasseur au corps à corps avec pièges : fort s'il arrive au contact."], ["priest-shadow", "Silence, étourdissement et Fouet mental qui ralentit."], ["priest-discipline", "Bouclier et Pénitence : le soigneur qui fait gagner du temps."], ["shaman-elemental", "Explosion de lave et horions, une fois les talents profonds acquis."], ["paladin-protection", "Tient une base grâce à Jugement qui provoque."], ["warrior-protection", "Coup traumatisant, Heurt de bouclier et Charge : garde la salle du drapeau."], ["mage-arcane", "La fenêtre de dégâts la plus forte du mage."]],
+    "B": [["warrior-fury", "Souhait mortel, mais pas de réduction des soins : Armes fait mieux."], ["rogue-combat", "Sprint et Riposte, solide sans pouvoir se camoufler à nouveau."], ["paladin-retribution", "Des dégâts et une purification, sans être un vrai tueur."], ["paladin-holy", "Beaucoup de bénédictions et de bons soins : soigneur de base."], ["shaman-enhancement", "Frappe-tempête, purge et interruption ; les totems meurent vite."], ["shaman-restoration", "Remous et Loup fantôme instantané pour se replacer."], ["warlock-destruction", "Fort s'il peut rester immobile, sinon Affliction fait mieux."], ["hunter-marksmanship", "Grosses rafales, mais moins d'outils que Maîtrise des bêtes."], ["priest-holy", "Prière de guérison sur une base, sans moyen de fuite."], ["druid-restoration", "Soins sur la durée, sans bouclier et avec moins de dissipations."], ["mage-fire", "Vague explosive qui étourdit, mais très fragile."]],
+    "C": [["druid-balance", "Ni ralentissement, ni silence, ni interruption : un vrai problème en champ de bataille."], ["warlock-demonology", "Dépend trop du démon, et non testé au-delà du niveau 35."]]
+   }}
+ ]
+}

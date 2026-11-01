@@ -7,7 +7,9 @@ Dernier commit intégré au site : `tools/forever-meta-commit.txt`.
 - `tools/builds.json` : un build PvE par spé (clé `warrior-arms`, etc.) :
   `code` (hash du calculateur, sans `talents.html#`), `total` (51), `split` ("16/35/0"), `stats` (libellés anglais),
   `races` {alliance, horde} (ids : human, dwarf, night-elf, gnome, orc, undead, tauren, troll), `key` (talents clés),
-  `adapted` (true si le build source a été complété pour atteindre 51 points), `main` (arbre principal).
+  `adapted` (true si le build source a été complété pour atteindre 51 points), `main` (arbre principal),
+  `cree` (date du build, AAAA-MM-JJ), `patch` (build du jeu sur lequel il a été créé), `verifie` / `patch_verif` (dernière vérification).
+  **Tout build modifié doit avoir `cree` et `patch` mis à jour** : ils sont affichés sur chaque carte de guides.html.
 - `tools/guides.py` : génère `guides.html` à partir de `builds.json` (textes FR écrits à la main dans le script, ne pas copier la prose de la source).
   Lancer : `python3 tools/guides.py` depuis la racine du dépôt.
 
@@ -18,7 +20,7 @@ Vérifier un build : ouvrir `talents.html#<code>` avec Playwright et lire le com
 
 ## Procédure (mode prudent : ne jamais pousser sur main)
 1. `git clone --depth 50 https://github.com/snibi/forever-meta` dans un dossier temporaire.
-2. `git diff <commit intégré>..HEAD --stat -- src/content/specs src/data` : s'il n'y a rien, s'arrêter et le signaler brièvement.
+2. `git diff <commit intégré>..HEAD --stat -- src/content/specs src/content/tierlists src/data` : s'il n'y a rien, s'arrêter et le signaler brièvement.
 3. Sinon, pour chaque spé modifiée, comparer le build PvE (talents, stats, races) avec `tools/builds.json`.
 4. Préparer la mise à jour sur une branche `veille-builds-AAAA-MM-JJ` : `builds.json`, `forever-meta-commit.txt`,
    `python3 tools/guides.py`, `sh bump-version.sh`, une news en haut de `js/news.js`. Pousser uniquement cette branche.
@@ -35,3 +37,9 @@ Les noms de lieux sans traduction dans les données sont dans `tools/lieux_fr.js
 
 ## Carte interactive (carte.html)
 `git clone --depth 1 https://github.com/brouznouf/factoruide /tmp/fact` puis `python3 tools/carte.py /tmp/polestar /tmp/fact` : refait images/cartes/*.webp et data/carte/*.json (Node 22+ requis pour décompresser la base).
+
+## Tier lists niveau 60 (tier-list.html)
+Données : `tools/tierlists.json` (classements de Forever Meta, `src/content/tierlists/pve-dps|pve-tank|pve-healer|pvp-overall.json`,
+explications réécrites en français). Chaque liste a `cree` (date du classement source, champ `updatedOn`) et `patch` (build du jeu) :
+**les mettre à jour à chaque changement de classement**. La liste des raciaux de Forever Meta n'est pas reprise (antérieure aux changements raciaux du 26 octobre).
+Lancer : `python3 tools/tierlist.py` puis `python3 tools/seo.py`.
