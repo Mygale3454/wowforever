@@ -818,3 +818,8 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .combos .card{width:auto}
 .combos .card-body .badge{display:inline-block;width:auto;margin-bottom:8px}
 .combos .card-body .badge{justify-self:start;align-self:flex-start}.combos .card-body{display:flex;flex-direction:column;align-items:flex-start}
+
+/* Tableau des sorts raciaux du prêtre */
+.ptab td{vertical-align:top}
+.ptab .pdesc{display:block;font-size:.88em;opacity:.8;margin-top:3px;line-height:1.4}
+.ptab .rtag{font-size:.7em}
