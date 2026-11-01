@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-01", type: "guide", lien: "talents.html", img: "images/classes.jpg",
+    titre: "Calculateur de talents à jour du patch de sortie",
+    texte: "Les arbres de talents passent au patch 1.60.1.70707 : talents ajoutés, retirés et retouchés, surtout chez le mage, le chaman élémentaire et le prêtre ombre. Les builds des guides de spé ont été adaptés." },
   { date: "2026-11-01", type: "guide", lien: "tier-list.html", img: "images/classes.jpg",
     titre: "Tier lists niveau 60 : dégâts, tanks, soigneurs et JcJ",
     texte: "Les spés les plus fortes au niveau 60 d'après la bêta, avec la date et le patch de chaque classement. Les builds affichent aussi leur date de création et leur patch." },

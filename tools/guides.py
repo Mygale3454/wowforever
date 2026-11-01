@@ -74,8 +74,8 @@ MOIS = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct
 def date_fr(d):
     a, m, j = d.split("-"); return f"{int(j)}{'er' if j == '01' else ''} {MOIS[int(m)-1]} {a}"
 def stamp(b):
-    t = f'<span>📅 Build créé le <b>{date_fr(b["cree"])}</b></span><span>🛠 Patch <b>{b["patch"]}</b> (bêta)</span>'
-    if b.get("verifie"): t += f'<span>✔ Vérifié le {date_fr(b["verifie"])} sur la bêta {b["patch_verif"]}</span>'
+    t = f'<span>📅 Build créé le <b>{date_fr(b["cree"])}</b></span><span>🛠 Patch <b>{b["patch"]}</b>{" (bêta)" if b["patch"] < "1.60.1.70700" else ""}</span>'
+    if b.get("verifie"): t += f'<span>✔ Vérifié le {date_fr(b["verifie"])} sur le patch {b["patch_verif"]}</span>'
     return f'<p class="stamp">{t}</p>'
 
 def card(key):
@@ -93,7 +93,7 @@ def card(key):
   </div>
   <h4>Build conseillé pour le niveau 60 (donjons et raids)</h4>
   {stamp(b)}
-  <p class="sg-build"><b>{b["split"]}</b> · talents clés : {key_t}{" · <i>build adapté à la dernière bêta</i>" if b.get("adapted") else ""}</p>
+  <p class="sg-build"><b>{b["split"]}</b> · talents clés : {key_t}{" · <i>build adapté au dernier patch</i>" if b.get("adapted") else ""}</p>
   <a class="btn-link" href="talents.html#{b["code"]}">Ouvrir ce build dans le calculateur ↗</a>
   <h4>Priorité des statistiques</h4><p class="sg-stats">{stats}</p>
   <h4>Races conseillées</h4><p>{races}</p>
@@ -116,7 +116,7 @@ body = f'''<main><div class="wrap">
 <p style="margin-top:12px">Quelle spé est la plus forte au niveau 60 ? Voir les <a href="tier-list.html"><b>tier lists niveau 60</b></a>.</p>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {sections}
-<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, complétés pour respecter les règles de la dernière bêta (build 70291). Noms des talents en anglais.</p>
+<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70707 (1<sup>er</sup> novembre 2026). Noms des talents en anglais.</p>
 </div>'''
 
 tpl = open("legacy.html").read()

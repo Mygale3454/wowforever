@@ -43,3 +43,10 @@ Données : `tools/tierlists.json` (classements de Forever Meta, `src/content/tie
 explications réécrites en français). Chaque liste a `cree` (date du classement source, champ `updatedOn`) et `patch` (build du jeu) :
 **les mettre à jour à chaque changement de classement**. La liste des raciaux de Forever Meta n'est pas reprise (antérieure aux changements raciaux du 26 octobre).
 Lancer : `python3 tools/tierlist.py` puis `python3 tools/seo.py`.
+
+## Arbres de talents (js/talents-data.js)
+`git clone --depth 1 https://github.com/brainw0rm/forge /tmp/forge && python3 tools/talents.py /tmp/forge` (affiche les talents ajoutés, retirés ou modifiés),
+puis `python3 tools/talents.py --builds` : recalcule les codes de `tools/builds.json` sur les nouveaux arbres et liste les builds « À REVOIR »
+(points perdus, palier ou prérequis non respecté). Corriger ces builds à la main (51 points), mettre à jour `cree`/`patch` des builds modifiés
+et `verifie`/`patch_verif` de tous, puis `python3 tools/guides.py`. Mettre à jour le numéro de patch dans talents.html.
+Les arbres du 1er novembre 2026 viennent du patch 1.60.1.70707.
