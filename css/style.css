@@ -898,3 +898,11 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .vid-txt p{margin:0;font-size:.85rem;color:var(--muted);flex:1}
 .vid-txt a{font-size:.8rem;font-weight:600;color:var(--title)}
 .vid-date{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--accent)}
+
+/* Annonces officielles (Roadmap) */
+.ann h2{margin:0 0 4px}
+.ann-list{list-style:none;margin:10px 0;padding:0}
+.ann-list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.ann-list li:last-child{border:0}
+.ann-list a{font-weight:600;color:var(--title)}
+.ann-list span{white-space:nowrap;color:var(--muted);font-size:.8rem}

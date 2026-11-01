@@ -55,3 +55,8 @@ Les arbres du 1er novembre 2026 viennent du patch 1.60.1.70707.
 Ajouté par `tools/seo.py` sous l'introduction (`page-lead`) de chaque page, sauf l'accueil, la galerie et les news.
 La date est celle du dernier commit qui a vraiment changé le contenu de la page (les `?v=` et les balises SEO sont ignorés).
 Le patch vient de la liste `PATCHES` en haut de seo.py : **à chaque nouveau build du jeu, y ajouter (date, numéro)**.
+
+## Annonces officielles de Blizzard (page Roadmap, calendrier.html)
+Liste dans `js/annonces.js` (tableau ANNONCES, la plus récente en haut ; `date` AAAA-MM-JJ ou "" si inconnue ; titres en français, liens fr-fr).
+La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AAAA-MM-JJ` ; on fusionne sur main après l'accord de Mygale
+(lancer `sh bump-version.sh` avant de fusionner pour que les visiteurs reçoivent la nouvelle liste).
