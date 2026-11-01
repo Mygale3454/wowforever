@@ -7,7 +7,7 @@ const MENU = [
   ["Monde", [["debuter.html", "Bien débuter"], ["donjons.html", "Donjons & Raids"], ["pvp.html", "PvP"], ["reputations.html", "Réputations"], ["montures.html", "Montures"]]],
   ["Métiers", [["metiers.html", "Les métiers"], ["metiers-pas-a-pas.html", "Métiers pas à pas 1-300"]]],
   ["legacy.html", "Legacy"],
-  ["calendrier.html", "Calendrier"],
+  ["Officiel", [["calendrier.html", "Roadmap"], ["videos.html", "Vidéos officielles"], ["https://worldofwarcraft.blizzard.com/forever", "Site officiel ↗"]]],
   ["Outils", [["talents.html", "Calculateur de talents"], ["carte.html", "Carte interactive"], ["pseudo.html", "Générateur de pseudo"], ["addons.html", "Addons"]]],
   ["galerie.html", "Galerie"]
 ];
@@ -44,7 +44,7 @@ document.getElementById("site-header").outerHTML = `
   <a class="logo mini-logo" href="index.html"><img src="images/emblem.svg" alt="" class="mini-em">Forever<span>WoW</span></a>
   <nav class="menu" id="menu">
     ${MENU.map(([a, b]) => Array.isArray(b)
-      ? `<div class="sub${b.some(([h]) => h === current) ? " active" : ""}"><button class="subbtn" type="button">${a} ▾</button><div class="subm">${b.map(([h, l]) => `<a href="${h}"${h === current ? ' class="active"' : ""}>${l}</a>`).join("")}</div></div>`
+      ? `<div class="sub${b.some(([h]) => h === current) ? " active" : ""}"><button class="subbtn" type="button">${a} ▾</button><div class="subm">${b.map(([h, l]) => `<a href="${h}"${h === current ? ' class="active"' : ""}${/^https?:/.test(h) ? ' target="_blank" rel="noopener"' : ""}>${l}</a>`).join("")}</div></div>`
       : `<a href="${a}"${a === current ? ' class="active"' : ""}>${b}</a>`).join("")}
   </nav>
   <button class="burger" id="burger" aria-label="Menu">☰</button>
@@ -55,7 +55,7 @@ document.getElementById("site-footer").outerHTML = `
   <div class="cols">
     <div><div class="logo"><img src="images/emblem.svg" alt="" class="mini-em">Forever<span>WoW</span>.fr</div><p>Guides, actualités et outils en français pour World of Warcraft: Forever.</p></div>
     <div><h5>Guides</h5><a href="debuter.html">Bien débuter</a><a href="leveling.html">Parcours 1-60</a><a href="pas-a-pas.html">Leveling pas à pas</a><a href="classes.html">Classes</a><a href="guides.html">Guides de spé</a><a href="tier-list.html">Tier lists 60</a><a href="quetes-de-classe.html">Quêtes de classe</a><a href="talents.html">Calculateur de talents</a><a href="donjons.html">Donjons & Raids</a><a href="pvp.html">PvP</a><a href="reputations.html">Réputations</a><a href="montures.html">Montures</a><a href="metiers.html">Métiers</a><a href="metiers-pas-a-pas.html">Métiers pas à pas</a><a href="legacy.html">Legacy</a><a href="addons.html">Addons</a></div>
-    <div><h5>Infos</h5><a href="index.html">News</a><a href="calendrier.html">Calendrier</a><a href="galerie.html">Galerie</a><a href="rss.xml">Flux RSS des news</a></div>
+    <div><h5>Infos</h5><a href="index.html">News</a><a href="calendrier.html">Roadmap</a><a href="videos.html">Vidéos officielles</a><a href="galerie.html">Galerie</a><a href="rss.xml">Flux RSS des news</a></div>
   </div>
   <div class="legal">ForeverWoW.fr est un site de fan non officiel, sans lien avec Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment, Inc. Captures et visuels de World of Warcraft © Blizzard Entertainment.</div>
 </div></footer>`;
