@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-01", type: "site", lien: "addons.html", img: "images/galerie/18.jpg",
+    titre: "Deux addons de plus : ElvUI et Baganator",
+    texte: "ElvUI, la célèbre refonte d'interface, prend désormais en charge WoW Forever, et Baganator réunit tous tes sacs dans une seule fenêtre triée." },
   { date: "2026-10-31", type: "guide", lien: "quetes-de-classe.html", img: "images/classes.jpg",
     titre: "Toutes les quêtes de classe, pas à pas",
     texte: "Forme d'ours et de félin, Poisons, totems du chaman, montures du paladin et du démoniste : 66 guides en français, rangés par classe et par niveau." },
