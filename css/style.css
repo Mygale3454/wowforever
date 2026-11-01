@@ -809,3 +809,4 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .addon-shot{margin:12px 0 10px}
 .addon-shot img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
 .addon-shot figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
+.install-box{margin:18px 0 22px}.install-box h2{margin-top:0}
