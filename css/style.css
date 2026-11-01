@@ -800,3 +800,7 @@ html[data-theme="gris"] .banner > img{filter:grayscale(.2)}
 .leaflet-popup-content{font-size:.9rem;line-height:1.4}
 .mp-r{color:#666}.mp-xy{font-family:ui-monospace,monospace;font-size:.8rem}
 .mp-copy{margin-top:6px;font:inherit;font-size:.8rem;padding:4px 8px;border-radius:6px;border:1px solid #bbb;background:#f3f3f3;cursor:pointer}
+
+/* ----- Filigrane Alliance / Horde (thème gris) ----- */
+html[data-theme="gris"] body{background:url(../images/filigrane-alliance.svg) left -3vw center/min(30vw,480px) auto no-repeat fixed,url(../images/filigrane-horde.svg) right -3vw center/min(30vw,480px) auto no-repeat fixed,#fff}
+@media (max-width:900px){html[data-theme="gris"] body{background:#fff}}
