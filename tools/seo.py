@@ -1,9 +1,46 @@
 """Remet à jour, sur chaque page, l'adresse officielle (canonical), les balises de partage et le sitemap.
 À lancer après toute génération de pages : python3 tools/seo.py"""
-import glob, html, os, re, datetime
+import glob, html, json, os, re, datetime, subprocess
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 BASE = "https://foreverwow.fr/"
 pages = sorted(f for f in glob.glob("*.html") if f != "actualites.html")
+NEWSDATE = dict((l, d) for d, l in re.findall(r'date:\s*"([^"]+)",\s*type:\s*"[^"]+",\s*lien:\s*"([^"]+)"', open("js/news.js", encoding="utf-8").read()))
+ORG = {"@type": "Organization", "name": "ForeverWoW.fr", "url": BASE, "logo": {"@type": "ImageObject", "url": BASE + "images/logo-carre.png"}}
+def gitdate(f):
+    try: return subprocess.run(["git", "log", "-1", "--format=%cs", "--", f], capture_output=True, text=True).stdout.strip() or str(datetime.date.today())
+    except Exception: return str(datetime.date.today())
+LASTMOD = {f: gitdate(f) for f in pages}
+NOART = {"index.html", "talents.html", "pseudo.html", "galerie.html"}
+def ld(f, t, title, desc, url):
+    name = re.sub(r"\s+–\s+ForeverWoW(\.fr)?$", "", title)
+    if f == "index.html":
+        return [{"@context": "https://schema.org", "@type": "WebSite", "name": "ForeverWoW.fr", "alternateName": "ForeverWoW", "url": BASE, "inLanguage": "fr-FR", "description": desc, "publisher": ORG},
+                dict({"@context": "https://schema.org"}, **ORG)]
+    out = []
+    m = re.search(r'<div class="crumbs">(.*?)</div>', t, re.S)
+    if m:
+        parts = [p.strip() for p in m.group(1).split("›")]
+        items = []
+        for i, p in enumerate(parts, 1):
+            a = re.search(r'href="([^"]+)"', p); nm = html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
+            if not nm: continue
+            it = {"@type": "ListItem", "position": len(items) + 1, "name": "Accueil" if nm == "News" else nm}
+            href = a.group(1) if a else (f if i == len(parts) else None)
+            if not href: continue
+            if href: it["item"] = BASE if href == "index.html" else BASE + href.split("#")[0]
+            items.append(it)
+        if items: out.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items})
+    if f not in NOART:
+        im = re.search(r'<div class="cover"><img src="([^"]+)"', t)
+        d0 = NEWSDATE.get(f)
+        out.append({"@context": "https://schema.org", "@type": "NewsArticle" if f.startswith(("news-", "article-")) else "Article",
+                    "headline": name[:110], "description": desc, "inLanguage": "fr-FR", "mainEntityOfPage": url,
+                    "image": [BASE + (im.group(1) if im else "images/partage.jpg")],
+                    "datePublished": d0 or LASTMOD[f], "dateModified": LASTMOD[f], "author": ORG, "publisher": ORG})
+    else:
+        out.append({"@context": "https://schema.org", "@type": "WebApplication" if f in ("talents.html", "pseudo.html") else "WebPage",
+                    "name": name, "description": desc, "url": url, "inLanguage": "fr-FR", **({"applicationCategory": "GameApplication", "operatingSystem": "Tous navigateurs", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}} if f in ("talents.html", "pseudo.html") else {})})
+    return out
 for f in pages:
     t = open(f, encoding="utf-8").read()
     t = re.sub(r'<link rel="canonical"[^>]*>\n?|<meta property="og:[^>]*>\n?|<meta name="twitter:card"[^>]*>\n?', "", t)
@@ -16,11 +53,19 @@ for f in pages:
             f'<meta property="og:locale" content="fr_FR">\n<meta property="og:title" content="{e(title)}">\n<meta property="og:description" content="{e(desc)}">\n'
             f'<meta property="og:url" content="{url}">\n<meta property="og:image" content="https://foreverwow.fr/images/partage.jpg">\n<meta name="twitter:card" content="summary_large_image">\n')
     t = re.sub(r'<link rel="alternate" type="application/rss\+xml"[^>]*>\n?', "", t)
+    t = re.sub(r'<script type="application/ld\+json">.*?</script>\n?', "", t, flags=re.S)
+    t = re.sub(r'<meta name="robots"[^>]*>\n?', "", t)
+    tags += '<meta name="robots" content="index, follow, max-image-preview:large">\n'
+    tags += '<script type="application/ld+json">' + json.dumps(ld(f, t, title, desc, url), ensure_ascii=False) + '</script>\n'
     tags += '<link rel="alternate" type="application/rss+xml" title="ForeverWoW.fr – News" href="https://foreverwow.fr/rss.xml">\n'
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, re.S)
+    if h1:
+        alt = html.escape(html.unescape(re.sub(r"<[^>]+>", " ", h1.group(1))).split("  ")[0].strip(), quote=True)
+        t = re.sub(r'(<div class="cover"><img src="[^"]+") alt=""', lambda m_: m_.group(1) + f' alt="{alt}"', t)
     t = t.replace("</head>", tags + "</head>", 1)
     open(f, "w", encoding="utf-8").write(t)
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-sm += [f"  <url><loc>{BASE if f == 'index.html' else BASE + f}</loc><lastmod>{datetime.date.today()}</lastmod></url>" for f in pages]
+sm += [f"  <url><loc>{BASE if f == 'index.html' else BASE + f}</loc><lastmod>{LASTMOD[f]}</lastmod></url>" for f in pages]
 open("sitemap.xml", "w").write("\n".join(sm + ["</urlset>"]) + "\n")
 print(len(pages), "pages")
 

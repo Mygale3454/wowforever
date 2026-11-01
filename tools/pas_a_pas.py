@@ -393,7 +393,7 @@ for slug, guide, race, fac, grp in ALL:
 <div class="pp-next"><a class="btn-link" href="pas-a-pas.html">← Toutes les zones</a> <a class="btn-link" href="{nxt}">{html.escape(nlabel)}</a></div>
 {CREDIT}
 </div>'''
-    open(f"pas-a-pas-{slug}.html", "w", encoding="utf-8").write(page(f"{zone} pas à pas", f"Guide de leveling pas à pas de {zone} ({race}) dans WoW Forever, niveaux {lv}.", body, SCRIPTS))
+    open(f"pas-a-pas-{slug}.html", "w", encoding="utf-8").write(page(f"{zone} pas à pas, niveaux {lv} ({'Alliance' if fac == 'a' else 'Horde'})", f"Guide de leveling pas à pas de {zone} ({race}) dans WoW Forever, niveaux {lv}.", body, SCRIPTS))
     cards[grp][fac] += f'<a class="pp-card" href="pas-a-pas-{slug}.html"><span class="race {fac}">{race}</span><b>{html.escape(zone)}</b><span class="small">niveaux {lv}</span></a>'
     print(slug, steps.count('class="pp-st"'), "étapes")
 

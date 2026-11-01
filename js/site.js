@@ -68,7 +68,7 @@ document.querySelectorAll("[data-sidebar]").forEach(a => a.innerHTML = `
   </div>
   <div class="box">
     <h4>Les plus lus</h4>
-    ${POPULAIRES.filter(p => p[0] !== current).map(([h, img, t]) => `<a class="mini" href="${h}"><img src="${img}" alt="">${t}</a>`).join("")}
+    ${POPULAIRES.filter(p => p[0] !== current).map(([h, img, t]) => `<a class="mini" href="${h}"><img src="${img}" alt="" loading="lazy" width="64" height="40">${t}</a>`).join("")}
   </div>
   <div class="box">
     <h4>Thèmes</h4>
