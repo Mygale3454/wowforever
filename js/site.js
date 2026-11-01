@@ -37,7 +37,7 @@ document.getElementById("site-header").outerHTML = `
 <div class="banner">
   <img src="images/bandeau.jpg" alt="">
   <div class="wrap banner-in">
-    <a class="fwlogo" href="index.html" aria-label="ForeverWoW.fr, accueil"><img src="images/emblem.svg" alt=""><span class="fw-wm"><span class="fw-name">Forever<span class="fw-w">WoW</span><span class="fw-tld">.fr</span></span><span class="fw-tag">Guides &amp; outils pour WoW Forever</span></span></a>
+    <a class="fwlogo-img" href="index.html"><img src="images/logo-foreverwow.webp" alt="ForeverWoW.fr – Guides &amp; outils pour WoW Forever" width="900" height="463" fetchpriority="high"></a>
   </div>
 </div>
 <header class="navbar"><div class="wrap">

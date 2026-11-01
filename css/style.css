@@ -757,3 +757,11 @@ footer .logo .mini-em{width:30px;height:30px}
 .qc-w{font-size:.86rem;color:var(--muted)}
 @media(max-width:560px){.qcl{grid-template-columns:1fr}}
 .qc-w b,.page-lead b{font-family:inherit;font-weight:600}
+
+/* ----- Logo illustré (bandeau) ----- */
+.banner{height:250px}
+.banner-in{justify-content:center}
+.fwlogo-img{display:block;align-self:flex-start;line-height:0}
+.fwlogo-img img{height:230px;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.55))}
+@media (max-width:860px){.banner{height:190px}.fwlogo-img img{height:175px}}
+@media (max-width:560px){.banner{height:150px}.fwlogo-img{align-self:center}.fwlogo-img img{height:138px}}
