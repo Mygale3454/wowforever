@@ -769,3 +769,12 @@ footer .logo .mini-em{width:30px;height:30px}
 .fwlogo-img img{height:172px}
 @media (max-width:860px){.banner{height:160px}.fwlogo-img img{height:145px}}
 @media (max-width:560px){.banner{height:130px}.fwlogo-img img{height:118px}}
+/* Bandeau : image entière à droite, fond flouté à gauche */
+.banner{height:165px}
+.banner > img.banner-bg{filter:blur(10px) brightness(.85);transform:scale(1.1)}
+html[data-theme="gris"] .banner > img.banner-bg{filter:blur(10px) brightness(.85) grayscale(.35)}
+.banner > img.banner-full{position:absolute;top:0;right:0;left:auto;height:100%;width:auto;max-width:none;object-fit:contain;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
+html[data-theme="gris"] .banner > img.banner-full{filter:grayscale(.35)}
+.fwlogo-img img{height:150px}
+@media (max-width:860px){.banner{height:145px}.fwlogo-img img{height:130px}}
+@media (max-width:560px){.banner{height:120px}.fwlogo-img img{height:108px}.banner > img.banner-full{opacity:.6}}
