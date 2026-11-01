@@ -35,8 +35,7 @@ document.getElementById("site-header").outerHTML = `
   <span><span class="hide-m">Site de fan non officiel · Guides en français</span><button class="themebtn" id="themebtn" type="button"></button></span>
 </div></div>
 <div class="banner">
-  <img src="images/bandeau.jpg" alt="" class="banner-bg">
-  <img src="images/bandeau.jpg" alt="" class="banner-full">
+  <img src="images/bandeau2.jpg" alt="">
   <div class="wrap banner-in">
     <a class="fwlogo-img" href="index.html"><img src="images/logo-foreverwow.webp" alt="ForeverWoW.fr – Guides &amp; outils pour WoW Forever" width="900" height="468" fetchpriority="high"></a>
   </div>
