@@ -801,6 +801,7 @@ html[data-theme="gris"] .banner > img{filter:grayscale(.2)}
 .mp-r{color:#666}.mp-xy{font-family:ui-monospace,monospace;font-size:.8rem}
 .mp-copy{margin-top:6px;font:inherit;font-size:.8rem;padding:4px 8px;border-radius:6px;border:1px solid #bbb;background:#f3f3f3;cursor:pointer}
 
-/* ----- Filigrane Alliance / Horde (thème gris) ----- */
-html[data-theme="gris"] body{background:url(../images/filigrane-alliance.svg) left -3vw center/min(30vw,480px) auto no-repeat fixed,url(../images/filigrane-horde.svg) right -3vw center/min(30vw,480px) auto no-repeat fixed,#fff}
-@media (max-width:900px){html[data-theme="gris"] body{background:#fff}}
+/* ----- Filigranes Horde / Alliance ----- */
+html[data-theme="gris"] body{background:url(../images/filigrane-horde-gris.png) left top 120px/min(28vw,480px) auto no-repeat fixed,url(../images/filigrane-alliance-gris.png) right top 120px/min(28vw,480px) auto no-repeat fixed,#fff}
+html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:url(../images/filigrane-horde-parchemin.png),url(../images/filigrane-alliance-parchemin.png),var(--paper),radial-gradient(ellipse at 50% 0%,#f5e8c8 0%,var(--bg) 55%,#dcc595 100%);background-position:left top 120px,right top 120px,0 0,0 0;background-size:min(28vw,480px) auto,min(28vw,480px) auto,auto,auto;background-repeat:no-repeat,no-repeat,repeat,no-repeat;background-attachment:fixed}
+@media (max-width:1100px){html[data-theme="gris"] body{background:#fff}html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:var(--paper),radial-gradient(ellipse at 50% 0%,#f5e8c8 0%,var(--bg) 55%,#dcc595 100%);background-size:auto;background-position:0 0;background-repeat:repeat,no-repeat}}
