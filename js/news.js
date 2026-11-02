@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-02", type: "guide", lien: "classes.html#demoniste", img: "images/classes.jpg",
+    titre: "Démoniste : le guide des familiers",
+    texte: "La fiche du démoniste renvoie maintenant vers le guide de JudgeHype sur ses familiers : quel démon invoquer selon la situation et comment s'en servir." },
   { date: "2026-11-01", type: "guide", lien: "montures.html", img: "images/monture-eolide.jpg",
     titre: "Guide des montures : où les acheter et comment les obtenir",
     texte: "Montures de chaque race et leurs marchands, trotteurs des trombes des Éolides, montures de classe, de réputation, de JcJ et de raid." },
