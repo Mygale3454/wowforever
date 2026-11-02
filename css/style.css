@@ -906,3 +906,19 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .ann-list li:last-child{border:0}
 .ann-list a{font-weight:600;color:var(--title)}
 .ann-list span{white-space:nowrap;color:var(--muted);font-size:.8rem}
+
+/* Familiers du démoniste */
+.page-title .dm-ic{display:inline-block;width:44px;height:44px;border-radius:8px;vertical-align:-6px;margin-right:6px}
+.dm{background:var(--card);border:1px solid var(--line);border-left:4px solid #7072D6;border-radius:12px;padding:18px 20px;margin:20px 0;scroll-margin-top:80px}
+.dm-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dm h2{margin:0}
+.dm-en{font-family:Inter,sans-serif;font-size:.8rem;color:var(--muted);font-weight:600;text-transform:none;letter-spacing:0}
+.dm-niv{font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px;background:rgba(112,114,214,.14);color:#4e50b0;white-space:nowrap}
+.dm-role{margin:8px 0}
+.dm-when{background:var(--bg2);border-radius:8px;padding:8px 12px;font-size:.9rem;margin-bottom:6px}
+.dm-s h4{margin:14px 0 4px;font-family:Cinzel,serif;color:var(--title)}
+.dm-s p{margin:0 0 6px;font-size:.9rem}
+.dm-t{margin:6px 0 4px}
+.dm-t table{min-width:0;width:100%}
+.dm-t td,.dm-t th{padding:6px 10px;font-size:.85rem}
+.dm-tal li{margin:6px 0;font-size:.92rem}

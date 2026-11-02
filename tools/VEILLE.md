@@ -60,3 +60,6 @@ Le patch vient de la liste `PATCHES` en haut de seo.py : **à chaque nouveau bui
 Liste dans `js/annonces.js` (tableau ANNONCES, la plus récente en haut ; `date` AAAA-MM-JJ ou "" si inconnue ; titres en français, liens fr-fr).
 La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AAAA-MM-JJ` ; on fusionne sur main après l'accord de Mygale
 (lancer `sh bump-version.sh` avant de fusionner pour que les visiteurs reçoivent la nouvelle liste).
+
+## Familiers du démoniste (familiers-demoniste.html)
+`python3 tools/demons.py` puis `python3 tools/seo.py`. Chiffres des techniques dans le script (source : guide JudgeHype du 30/10/2026), talents d'après js/talents-data.js.
