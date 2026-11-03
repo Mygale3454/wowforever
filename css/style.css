@@ -938,3 +938,23 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .lk-t{display:flex;flex-direction:column;gap:3px}
 .lk-t b{color:var(--title)}
 .lk-t span{font-size:.86rem;color:var(--muted)}
+
+/* Pages de donjon */
+.dj-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:start;margin-bottom:10px}
+.dj-map{position:relative;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.dj-map img{width:100%;display:block}
+.dj-pin{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#d63c2f;border:3px solid #fff;box-shadow:0 0 0 3px rgba(214,60,47,.35),0 2px 6px rgba(0,0,0,.5)}
+.dj-info h2{margin-top:0}
+.dj-facts{list-style:none;padding:0;margin:0 0 10px}
+.dj-facts li{display:flex;align-items:center;gap:10px;padding:5px 0}
+.dj-facts img{width:34px;height:34px}
+.dj-boss,.dj-q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:12px 0}
+.dj-boss h3,.dj-q h3{margin:0 0 4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dj-boss p,.dj-q p{margin:4px 0;font-size:.92rem}
+.dj-n{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--title);color:var(--card);align-items:center;justify-content:center;font-size:.9rem}
+.dj-loot td,.dj-loot th{padding:6px 10px;font-size:.88rem;text-align:left}
+.dj-loot .pct{white-space:nowrap}
+.pbar{display:inline-block;width:70px;height:6px;border-radius:3px;background:var(--bg2);margin-right:8px;vertical-align:middle;overflow:hidden}
+.pbar i{display:block;height:100%;background:#b8892a}
+@media (max-width:860px){.dj-top{grid-template-columns:1fr}}
+.glink.ici{background:var(--title);color:var(--card) !important;border-color:var(--title);font-weight:700}
