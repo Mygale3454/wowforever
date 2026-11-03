@@ -959,3 +959,4 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 @media (max-width:860px){.dj-top{grid-template-columns:1fr}}
 .glink.ici{background:var(--title);color:var(--card) !important;border-color:var(--title);font-weight:700}
 .wh{color:inherit;text-decoration:underline dotted;text-underline-offset:3px}
+.glink-wh{font-size:.68rem;color:var(--muted);margin-left:6px;align-self:center;text-decoration:underline dotted}

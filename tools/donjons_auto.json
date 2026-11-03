@@ -1,0 +1,9247 @@
+{
+"gouffre-de-ragefeu": {
+"nom": "Le Gouffre de Ragefeu",
+"niv": "13 à 18",
+"nouveau": false,
+"intro": "Sous Orgrimmar, des cultistes de la Lame ardente et des troggs ont envahi les cavernes de lave. C'est le premier donjon de la Horde.",
+"boss": [
+[
+"Jergosh l'Invocateur",
+"Jergosh the Invoker",
+[
+[
+"Brassards cavernicoles",
+"Poignets",
+null,
+14147,
+2
+],
+[
+"Robe d'évocation",
+"Torse",
+null,
+14150,
+2
+],
+[
+"Lame chantante",
+"Une main",
+null,
+14151,
+2
+]
+]
+],
+[
+"Taragaman l'Affameur",
+"Taragaman the Hungerer",
+[
+[
+"Lame corrompue maudite",
+"Main droite",
+null,
+14145,
+2
+],
+[
+"Crispins cristallins",
+"Poignets",
+null,
+14148,
+2
+],
+[
+"Cape souterraine",
+"Dos",
+null,
+14149,
+2
+]
+]
+]
+],
+"quetes": [
+[
+"Tester la force de l'ennemi",
+15,
+"Horde",
+"Rahauro (Les Pitons-du-Tonnerre)",
+[]
+],
+[
+"Ennemis cachés",
+16,
+"Horde",
+"Thrall (Orgrimmar)",
+[]
+],
+[
+"Le pouvoir de détruire...",
+16,
+"Horde",
+"Varimathras (Fossoyeuse)",
+[
+[
+"Pantalon fantomatique",
+15449
+],
+[
+"Jambières des vasières",
+15450
+],
+[
+"Jambières des Gargouilles",
+15451
+]
+]
+],
+[
+"Rapporter la sacoche perdue",
+16,
+"Horde",
+"Maur Grimtotem (Gouffre de Ragefeu)",
+[
+[
+"Brassards de plumes perlées",
+15452
+],
+[
+"Brassards de la savane",
+15453
+]
+]
+],
+[
+"Tuer la bête",
+16,
+"Horde",
+"Neeru Fireblade (Orgrimmar)",
+[]
+],
+[
+"À la recherche de la sacoche perdue",
+16,
+"Horde",
+"Rahauro (Les Pitons-du-Tonnerre)",
+[]
+]
+],
+"en": "Ragefire Chasm",
+"zone": "Orgrimmar",
+"carte": 1454,
+"x": 52.6,
+"y": 49.0
+},
+"ruines-de-lordaeron": {
+"nom": "Les Ruines de Lordaeron",
+"niv": "15 à 20",
+"nouveau": true,
+"intro": "Au-dessus de Fossoyeuse, les ruines de la capitale déchue de Lordaeron deviennent un donjon. Nouveau dans Forever, il s'adresse surtout aux joueurs de la Horde.",
+"boss": [],
+"quetes": [
+[
+"Abominable Creatures",
+21,
+"Alliance",
+"Captain Truman (Ruines de Lordaeron)",
+[]
+],
+[
+"Unending Torment",
+21,
+"Horde",
+"en ramassant un objet",
+[]
+],
+[
+"A Frightened Request",
+22,
+"Horde",
+"Tabitha Heartweaver (Forêt des Pins-Argentés)",
+[]
+],
+[
+"Bloodied Insignia",
+22,
+"Alliance",
+"en ramassant un objet",
+[]
+],
+[
+"Crest of Lordaeron",
+22,
+"Alliance",
+"en ramassant un objet",
+[]
+],
+[
+"Crest of Lordaeron",
+22,
+"Horde",
+"en ramassant un objet",
+[]
+],
+[
+"Light's Justice",
+22,
+"Horde",
+"Morbin Lightbane (Fossoyeuse)",
+[]
+],
+[
+"Remember That I Love You",
+22,
+"Alliance",
+"en ramassant un objet",
+[]
+],
+[
+"The New Plague",
+22,
+"Horde",
+"Theodore Griffs (Fossoyeuse)",
+[]
+],
+[
+"The Wrath of Rath'mael",
+22,
+"Horde",
+"Deathguard Kristof (Clairières de Tirisfal)",
+[]
+]
+],
+"en": "Ruins of Lordaeron",
+"zone": "Fossoyeuse",
+"carte": 1458,
+"x": 72.5,
+"y": 11.3
+},
+"mortemines": {
+"nom": "Les Mortemines",
+"niv": "15 à 22",
+"nouveau": false,
+"intro": "Sous Ruisselune, la Confrérie défias d'Edwin VanCleef prépare sa vengeance contre Hurlevent dans une ancienne mine, jusqu'au navire caché au fond.",
+"boss": [
+[
+"Edwin VanCleef",
+"Edwin VanCleef",
+[
+[
+"Cape de la confrérie",
+"Dos",
+null,
+5193,
+3
+],
+[
+"Casaque de corsaire",
+"Torse",
+null,
+5202,
+3
+],
+[
+"Lame de cruauté",
+"Une main",
+null,
+5191,
+3
+],
+[
+"Armure défias noircie",
+"Torse",
+null,
+10399,
+3
+]
+]
+],
+[
+"Déchiqueteur de Sneed",
+"Sneed's Shredder",
+[
+[
+"Coutelas trancheur",
+"Une main",
+null,
+1937,
+2
+]
+]
+],
+[
+"Macaron",
+"Cookie",
+[
+[
+"Attendrisseur de Macaron",
+"Une main",
+null,
+5197,
+2
+],
+[
+"Bâton à touiller de Macaron",
+"Distance",
+null,
+5198,
+3
+]
+]
+],
+[
+"M. Smite",
+"Mr. Smite",
+[
+[
+"Lame du larron",
+"Une main",
+null,
+5192,
+2
+],
+[
+"Hache de Smite",
+"Une main",
+null,
+5196,
+2
+],
+[
+"Puissant marteau de Smite",
+"Deux mains",
+null,
+7230,
+3
+]
+]
+],
+[
+"Capitaine Vertepeau",
+"Captain Greenskin",
+[
+[
+"Bâton de Pierrebraise",
+"Deux mains",
+null,
+5201,
+3
+],
+[
+"Harpon de perforation",
+"Deux mains",
+null,
+5200,
+2
+],
+[
+"Ceinture défias noircie",
+"Taille",
+null,
+10403,
+2
+]
+]
+],
+[
+"Gilnid",
+"Gilnid",
+[
+[
+"Pantalon de fusion",
+"Jambes",
+null,
+5199,
+2
+],
+[
+"Anneau somptueux",
+"Doigt",
+null,
+1156,
+3
+]
+]
+],
+[
+"Mineur Johnson",
+"Miner Johnson",
+[
+[
+"Cape de mineur",
+"Dos",
+null,
+5444,
+2
+],
+[
+"Targe plaquée or",
+"Bouclier",
+null,
+5443,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Les masques rouges en soie",
+17,
+"Alliance",
+"Eclaireur Riell (Marche de l'Ouest)",
+[
+[
+"Epée courte endurcie",
+2074
+],
+[
+"Dague Scrimshaw",
+2089
+],
+[
+"Hache de perforation",
+6094
+]
+]
+],
+[
+"Destruction in Deadmines",
+18,
+"Alliance",
+"Alba Fairmoon (Marche de l'Ouest)",
+[]
+],
+[
+"À la recherche de Cartes du Syndicat des Mineurs",
+18,
+"Alliance",
+"Wilder Crispechardon (Hurlevent)",
+[
+[
+"Gants de mine poussiéreux",
+2036
+],
+[
+"Bottes de tunnelier",
+2037
+]
+]
+],
+[
+"Adieu mon frère…",
+20,
+"Alliance",
+"Wilder Crispechardon (Hurlevent)",
+[
+[
+"Piolet vengeur",
+1893
+]
+]
+],
+[
+"Assaut souterrain",
+20,
+"Alliance",
+"Shoni la Silencieuse (Hurlevent)",
+[
+[
+"Gantelets polaires",
+7606
+],
+[
+"Baguette en martre",
+7607
+]
+]
+],
+[
+"La Confrérie défias",
+22,
+"Alliance",
+"Gryan Stoutmantle (Marche de l'Ouest)",
+[
+[
+"Tunique de la marche de l'Ouest",
+2041
+],
+[
+"Bâton de la marche de l'Ouest",
+2042
+],
+[
+"Chausses de la marche de l'Ouest",
+6087
+]
+]
+]
+],
+"en": "The Deadmines",
+"zone": "Marche de l'Ouest",
+"carte": 1436,
+"x": 42.5,
+"y": 71.7
+},
+"cavernes-des-lamentations": {
+"nom": "Les Cavernes des lamentations",
+"niv": "17 à 24",
+"nouveau": false,
+"intro": "Dans une oasis des Tarides, les druides du Croc ont été corrompus par le Cauchemar. Il faut réveiller Naralex, endormi au fond des cavernes.",
+"boss": [
+[
+"Kresh",
+"Kresh",
+[
+[
+"Carapace de Kresh",
+"Bouclier",
+null,
+13245,
+3
+]
+]
+],
+[
+"Seigneur Cobrahn",
+"Lord Cobrahn",
+[
+[
+"Torsade de Cobrahn",
+"Taille",
+null,
+6460,
+3
+],
+[
+"Robe du mocassin d'eau",
+"Torse",
+null,
+6465,
+2
+],
+[
+"Jambières du Croc",
+"Jambes",
+null,
+10410,
+3
+]
+]
+],
+[
+"Seigneur Pythas",
+"Lord Pythas",
+[
+[
+"Vipère mortelle",
+"Une main",
+null,
+6472,
+3
+],
+[
+"Armure du Croc",
+"Torse",
+null,
+6473,
+2
+]
+]
+],
+[
+"Dame Anacondra",
+"Lady Anacondra",
+[
+[
+"Ceinture du Croc",
+"Taille",
+null,
+10412,
+2
+]
+]
+],
+[
+"Seigneur Serpentis",
+"Lord Serpentis",
+[
+[
+"Gants du serpent",
+"Mains",
+null,
+5970,
+2
+],
+[
+"Trotteurs sauvages",
+"Pieds",
+null,
+6459,
+2
+],
+[
+"Venimeux",
+"Distance",
+null,
+6469,
+3
+],
+[
+"Bottes du Croc",
+"Pieds",
+null,
+10411,
+2
+]
+]
+],
+[
+"Skum",
+"Skum",
+[
+[
+"Dard",
+"Une main",
+null,
+6448,
+2
+],
+[
+"Cape en écailles de lézard luminescentes",
+"Dos",
+null,
+6449,
+3
+]
+]
+],
+[
+"Verdan l'Immortel",
+"Verdan the Everliving",
+[
+[
+"Cape des spores",
+"Dos",
+null,
+6629,
+2
+],
+[
+"Targe de Seedcloud",
+"Bouclier",
+null,
+6630,
+3
+],
+[
+"Racine vivante",
+"Deux mains",
+null,
+6631,
+3
+]
+]
+],
+[
+"Dragon féérique déviant",
+"Deviate Faerie Dragon",
+[
+[
+"Crache-feu",
+"Distance",
+null,
+5243,
+3
+],
+[
+"Cape d'écailles-faë",
+"Dos",
+null,
+6632,
+2
+]
+]
+]
+],
+"quetes": [
+[
+"Hamuul Runetotem",
+16,
+"Horde",
+"Tonga Runetotem (Les Tarides)",
+[]
+],
+[
+"Nara Wildmane",
+16,
+"Horde",
+"Archidruide Hamuul Runetotem (Les Pitons-du-Tonnerre)",
+[]
+],
+[
+"Les peaux communes",
+17,
+"Alliance et Horde",
+"Nalpak (Les Tarides)",
+[
+[
+"Sac en peau de déviant",
+918
+],
+[
+"Jambières luisantes de déviant",
+6480
+]
+]
+],
+[
+"Fleur de serpent",
+18,
+"Horde",
+"Apothicaire Zamah (Les Pitons-du-Tonnerre)",
+[
+[
+"Gants d'apothicaire",
+10919
+]
+]
+],
+[
+"Fuite de porto aux docks",
+18,
+"Alliance et Horde",
+"Grutier Bigglefuzz (Les Tarides)",
+[]
+],
+[
+"Les potions d'intelligence",
+18,
+"Alliance et Horde",
+"Mebok Mizzyrix (Les Tarides)",
+[]
+],
+[
+"L'éradication des Déviants",
+21,
+"Alliance et Horde",
+"Ebru (Les Tarides)",
+[
+[
+"Patron : Ceinture en écailles de déviant",
+6476
+],
+[
+"Gantelets de Dagmire",
+6481
+],
+[
+"Bâton ardent",
+8071
+]
+]
+],
+[
+"Les druides du Croc",
+22,
+"Horde",
+"Nara Wildmane (Les Pitons-du-Tonnerre)",
+[
+[
+"Lame ailée",
+6504
+],
+[
+"Bâton au croissant",
+6505
+]
+]
+],
+[
+"L'Eclat luminescent",
+26,
+"Alliance et Horde",
+"en ramassant Eclat luminescent",
+[]
+]
+],
+"en": "Wailing Caverns",
+"zone": "Les Tarides",
+"carte": 1413,
+"x": 46.0,
+"y": 36.5
+},
+"donjon-d-ombrecroc": {
+"nom": "Le Donjon d'Ombrecroc",
+"niv": "20 à 26",
+"nouveau": false,
+"intro": "Le château d'Arugal, le mage fou de Dalaran, au nord de Pins-Argentés, peuplé de worgens et de morts-vivants.",
+"boss": [
+[
+"Palefroi corrompu",
+"Fel Steed",
+[
+[
+"Lanterne d'écurie sinistre",
+"Main gauche",
+null,
+6341,
+2
+]
+]
+],
+[
+"Capitaine Ligemort",
+"Deathsworn Captain",
+[
+[
+"Lame de hantise",
+"Deux mains",
+null,
+6641,
+2
+],
+[
+"Armure fantôme",
+"Torse",
+null,
+6642,
+3
+]
+]
+],
+[
+"Tranchegriffe le Boucher",
+"Razorclaw the Butcher",
+[
+[
+"Fendoir du Boucher",
+"Une main",
+null,
+1292,
+3
+],
+[
+"Tablier sanglant",
+"Torse",
+null,
+6226,
+2
+],
+[
+"Hachoir du boucher",
+"Une main",
+null,
+6633,
+2
+],
+[
+"Maillet en chêne",
+"Deux mains",
+null,
+3193,
+2
+]
+]
+],
+[
+"Baron d'Argelaine",
+"Baron Silverlaine",
+[
+[
+"Sceau de la famille d'Argelaine",
+"Doigt",
+null,
+6321,
+3
+],
+[
+"Sceptre du baron",
+"Main droite",
+null,
+6323,
+2
+]
+]
+],
+[
+"Maître-loup Nandos",
+"Wolf Master Nandos",
+[
+[
+"Mantelet félin",
+"Épaules",
+null,
+3748,
+3
+],
+[
+"Cape de meneur de loups",
+"Dos",
+null,
+6314,
+2
+],
+[
+"Bouclier fortifié",
+"Bouclier",
+null,
+9816,
+2
+]
+]
+],
+[
+"Fenrus le Dévoreur",
+"Fenrus the Devourer",
+[
+[
+"Brassards du loup noir",
+"Poignets",
+null,
+3230,
+2
+],
+[
+"Peau de Fenrus",
+"Dos",
+null,
+6340,
+2
+]
+]
+],
+[
+"Archimage Arugal",
+"Archmage Arugal",
+[
+[
+"Fragment de météore",
+"Une main",
+null,
+6220,
+3
+],
+[
+"Robe d'Arugal",
+"Torse",
+null,
+6324,
+3
+],
+[
+"Ceinture d'Arugal",
+"Taille",
+null,
+6392,
+3
+]
+]
+],
+[
+"Commandant Springvale",
+"Commander Springvale",
+[
+[
+"Hache de guerre du croissant",
+"Deux mains",
+null,
+3191,
+2
+],
+[
+"Cimier de commandant",
+"Bouclier",
+null,
+6320,
+3
+]
+]
+],
+[
+"Odo l'Aveugle",
+"Odo the Blindwatcher",
+[
+[
+"Bâton d'Odo",
+"Deux mains",
+null,
+6318,
+3
+],
+[
+"Ceinturon du guetteur aveugle",
+"Taille",
+null,
+6319,
+2
+]
+]
+],
+[
+"Sectionneur",
+"Sever",
+[
+[
+"Tranchelard",
+"Deux mains",
+null,
+23171,
+3
+],
+[
+"Jambières en peau d'abomination",
+"Jambes",
+null,
+23173,
+3
+],
+[
+"Mantelet sylvestre en cuir",
+"Épaules",
+null,
+4709,
+2
+]
+]
+]
+],
+"quetes": [
+[
+"Des Traqueurs noirs à Ombrecroc",
+25,
+"Horde",
+"Grand exécuteur Hadrec (Forêt des Pins-Argentés)",
+[
+[
+"Mantelet fantomatique",
+3324
+]
+]
+],
+[
+"Le Livre d'Ur",
+26,
+"Horde",
+"Gardien Bel'dugur (Fossoyeuse)",
+[
+[
+"Brassards cerclés d'acier",
+4534
+],
+[
+"Bottes grisonnante",
+6335
+]
+]
+],
+[
+"Arugal doit mourir",
+27,
+"Horde",
+"Dalar Dawnweaver (Forêt des Pins-Argentés)",
+[
+[
+"Sceau de Sylvanas",
+6414
+]
+]
+]
+],
+"en": "Shadowfang Keep",
+"zone": "Forêt des Pins-Argentés",
+"carte": 1421,
+"x": 44.8,
+"y": 67.8
+},
+"profondeurs-de-brassenoire": {
+"nom": "Les Profondeurs de Brassenoire",
+"niv": "22 à 28",
+"nouveau": false,
+"intro": "Un ancien temple elfique englouti sur la côte d'Orneval, aux mains des Nagas et des adorateurs du Marteau du crépuscule.",
+"boss": [
+[
+"Aku'mai",
+"Aku'mai",
+[
+[
+"Frappe de l'Hydre",
+"Deux mains",
+null,
+6909,
+3
+],
+[
+"Pantalon de sangsue",
+"Jambes",
+null,
+6910,
+3
+],
+[
+"Cordelière de mousse",
+"Taille",
+null,
+6911,
+3
+]
+]
+],
+[
+"Vieux Serra'kis",
+"Old Serra'kis",
+[
+[
+"Cape luminescente du batteur",
+"Dos",
+null,
+6901,
+3
+],
+[
+"Poignets de Serra'kis",
+"Poignets",
+null,
+6902,
+2
+],
+[
+"Morsure de Serra'kis",
+"Une main",
+null,
+6904,
+3
+]
+]
+],
+[
+"Dame Sarevess",
+"Lady Sarevess",
+[
+[
+"Gants de bataille nagas",
+"Mains",
+null,
+888,
+3
+],
+[
+"Perce-coeur naga",
+"Distance",
+null,
+3078,
+2
+],
+[
+"Tulwar des eaux sombres",
+"Main droite",
+null,
+11121,
+2
+]
+]
+],
+[
+"Seigneur du crépuscule Kelris",
+"Twilight Lord Kelris",
+[
+[
+"Bâtonnet du somnanbule",
+"Deux mains",
+null,
+1155,
+3
+],
+[
+"Pantalon du rêveur",
+"Jambes",
+null,
+6903,
+2
+]
+]
+],
+[
+"Ghamoo-ra",
+"Ghamoo-ra",
+[
+[
+"Armure de la tortue",
+"Torse",
+null,
+6907,
+3
+],
+[
+"Lien de Ghamoo-ra",
+"Taille",
+null,
+6908,
+2
+]
+]
+],
+[
+"Gelihast",
+"Gelihast",
+[
+[
+"Hache des récifs",
+"Deux mains",
+null,
+6905,
+2
+],
+[
+"Poings d'algues",
+"Mains",
+null,
+6906,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Allégeance aux Dieux très anciens",
+22,
+"Horde",
+"en ramassant Note humide",
+[]
+],
+[
+"L'Essence d'Aku'Mai",
+22,
+"Horde",
+"Je'neu Sancrea (Orneval)",
+[]
+],
+[
+"Problèmes dans les profondeurs",
+22,
+"Horde",
+"Tsunaman (Les Serres-Rocheuses)",
+[]
+],
+[
+"La connaissance des profondeurs",
+23,
+"Alliance",
+"Gerrig Bonegrip (Forgefer)",
+[
+[
+"Anneau de soutien",
+6743
+]
+]
+],
+[
+"Recherches sur la corruption",
+24,
+"Alliance",
+"Gershala Nightwhisper (Sombrivage)",
+[
+[
+"Pinces de hanneton",
+7003
+],
+[
+"Cape de prélat",
+7004
+]
+]
+],
+[
+"À la recherche de Thaelrid",
+24,
+"Alliance",
+"Veilleur de l'aube Shaedlass (Darnassus)",
+[]
+],
+[
+"Le crépuscule descend",
+25,
+"Alliance",
+"Garde d'argent Manados (Darnassus)",
+[
+[
+"Bottes de la nimbe",
+6998
+],
+[
+"Ceinturon de coeur du bois",
+7000
+]
+]
+],
+[
+"Allégeance aux Dieux très anciens",
+26,
+"Horde",
+"Je'neu Sancrea (Orneval)",
+[
+[
+"Anneau du poing",
+17694
+],
+[
+"Mantelet noisette",
+17695
+]
+]
+],
+[
+"L'infamie de Brassenoire",
+27,
+"Alliance",
+"Garde d’argent Thaelrid (Profondeurs de Brassenoire)",
+[
+[
+"Sceptre du tombeau",
+7001
+],
+[
+"Targe arctique",
+7002
+]
+]
+],
+[
+"L'infamie de Brassenoire",
+27,
+"Horde",
+"Garde d’argent Thaelrid (Profondeurs de Brassenoire)",
+[
+[
+"Sceptre du tombeau",
+7001
+],
+[
+"Targe arctique",
+7002
+]
+]
+],
+[
+"Parmi les ruines",
+27,
+"Horde",
+"Je'neu Sancrea (Orneval)",
+[]
+],
+[
+"Baron Aquanis",
+30,
+"Horde",
+"en ramassant Globe d'eau étrange",
+[
+[
+"Sabre des hors-la-loi",
+16886
+],
+[
+"Doigt de la sorcière",
+16887
+]
+]
+]
+],
+"en": "Blackfathom Deeps",
+"zone": "Orneval",
+"carte": 1440,
+"x": 14.5,
+"y": 14.2
+},
+"site-de-fouilles-des-paluns": {
+"nom": "Le Site de fouilles des Paluns",
+"niv": "24 à 29",
+"nouveau": true,
+"intro": "Un nouveau donjon de Forever, ouvert dans les fouilles naines des Paluns.",
+"boss": [],
+"quetes": [
+[
+"Highland Hides",
+28,
+"Alliance",
+"James Halloran (Les Paluns)",
+[]
+],
+[
+"Changing Tastes",
+31,
+"Horde",
+"Borstan (Orgrimmar)",
+[]
+],
+[
+"Chute dans les marais",
+31,
+"Alliance",
+"Daewyn Songblade",
+[]
+],
+[
+"Dragonmaw Rumors",
+31,
+"Horde",
+"Zaruk (Hautes-terres d'Arathi)",
+[]
+],
+[
+"Earthen Echo",
+31,
+"Horde",
+"Bashana Runetotem (Les Pitons-du-Tonnerre)",
+[]
+],
+[
+"Elder Knowledge",
+31,
+"Horde",
+"en ramassant un objet",
+[]
+],
+[
+"Heartwoven",
+31,
+"Alliance",
+"Ardin Grassman",
+[]
+],
+[
+"Horreurs dans les hautes-terres",
+31,
+"Alliance",
+"Rethiel le Gouverneur vert (Les Paluns)",
+[]
+],
+[
+"Lost Relic Carry",
+31,
+"Alliance",
+"en ramassant un objet",
+[]
+],
+[
+"Lost in the Thicket Things",
+31,
+"Alliance",
+"Caitlin Grassman (Les Paluns)",
+[]
+],
+[
+"Open the Maw",
+31,
+"Horde",
+"Agent Traqueur noir (Les Paluns)",
+[]
+],
+[
+"Prehistoric Prism",
+31,
+"Alliance",
+"Prospecteur Whelgar (Les Paluns)",
+[]
+],
+[
+"Seeking Caitlin",
+31,
+"Alliance",
+"Llana (Orneval)",
+[]
+],
+[
+"Songblade Search",
+31,
+"Alliance",
+"Dorin Songblade (Les Carmines)",
+[]
+]
+],
+"en": "Excavation Site: Wetlands",
+"zone": "Les Paluns",
+"carte": 1437,
+"x": 47.8,
+"y": 56.2
+},
+"la-prison": {
+"nom": "La Prison",
+"niv": "25 à 29",
+"nouveau": false,
+"intro": "La prison de Hurlevent, où les détenus défias se sont révoltés.",
+"boss": [
+[
+"Bruegal Ironknuckle",
+"Bruegal Ironknuckle",
+[
+[
+"Fer de prisonnier",
+"Une main",
+null,
+2941,
+3
+],
+[
+"Coup de poing en fer",
+"Une main",
+null,
+2942,
+3
+],
+[
+"Menottes forcées",
+"Poignets",
+null,
+3228,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Ce qui se passait ailleurs…",
+25,
+"Alliance",
+"Garde Berton (Les Carmines)",
+[
+[
+"Bâton de racine durcie",
+1317
+],
+[
+"Epée longue Lucine",
+3400
+]
+]
+],
+[
+"Crime et Châtiments",
+26,
+"Alliance",
+"Conseiller Millstipe (Bois de la Pénombre)",
+[
+[
+"Bottes de l'Ambassadeur",
+2033
+],
+[
+"Jambières en mailles de Darkshire",
+2906
+]
+]
+],
+[
+"La couleur du Sang",
+26,
+"Alliance",
+"Nikova Raskol (Hurlevent)",
+[]
+],
+[
+"Écraser la rébellion",
+26,
+"Alliance",
+"Gardien Thelwater (Hurlevent)",
+[]
+],
+[
+"Fureur dans les Profondeurs",
+27,
+"Alliance",
+"Motley Garmason (Les Paluns)",
+[
+[
+"Brise-crâne",
+1264
+],
+[
+"Ceinture de justification",
+3562
+]
+]
+],
+[
+"Les Emeutes de la Prison",
+29,
+"Alliance",
+"Gardien Thelwater (Hurlevent)",
+[]
+]
+],
+"en": "The Stockade",
+"zone": "Hurlevent",
+"carte": 1453,
+"x": 52.4,
+"y": 70.0
+},
+"cite-de-dalaran": {
+"nom": "La Cité de Dalaran",
+"niv": "28 à 33",
+"nouveau": true,
+"intro": "Nouveau dans Forever : la cité des mages, cachée derrière son dôme dans les montagnes d'Alterac, devient un donjon.",
+"boss": [],
+"quetes": [
+[
+"A Green Sample",
+33,
+"Alliance",
+"Shylamiir (Hurlevent)",
+[]
+],
+[
+"Heart of Disruption",
+33,
+"Alliance",
+"Image of Archmage Modera (Forêt des Pins-Argentés)",
+[]
+],
+[
+"Heart of Disruption",
+33,
+"Horde",
+"Image of Archmage Modera (Forêt des Pins-Argentés)",
+[]
+],
+[
+"Opportunistic Education",
+33,
+"Horde",
+"Rexxie Copperclutch",
+[]
+],
+[
+"Puissance accablante",
+33,
+"Alliance",
+"Grand sorcier Andromath (Hurlevent)",
+[]
+],
+[
+"Source of Power",
+33,
+"Horde",
+"Docteur Martin Felben (Fossoyeuse)",
+[]
+],
+[
+"Starving Arcane",
+33,
+"Alliance",
+"Image of Archmage Modera (Forêt des Pins-Argentés)",
+[]
+],
+[
+"The Grave Knight",
+33,
+"Horde",
+"Melisara (Contreforts de Hautebrande)",
+[]
+]
+],
+"en": "City of Dalaran",
+"zone": "Montagnes d'Alterac",
+"carte": 1416,
+"x": 8.5,
+"y": 59.2
+},
+"gnomeregan": {
+"nom": "Gnomeregan",
+"niv": "29 à 38",
+"nouveau": false,
+"intro": "L'ancienne capitale des gnomes, irradiée et envahie par les troggs, sous Dun Morogh.",
+"boss": [
+[
+"Ambassadeur Sombrefer",
+"Dark Iron Ambassador",
+[
+[
+"Crispins d'émissaire",
+"Poignets",
+null,
+9455,
+3
+],
+[
+"Crache-verre",
+"Distance",
+null,
+9456,
+3
+],
+[
+"Sceptre diplomatique royal",
+"Une main",
+null,
+9457,
+3
+]
+]
+],
+[
+"Faucheur de foule 9-60",
+"Crowd Pummeler 9-60",
+[
+[
+"Roueur manuel",
+"Deux mains",
+null,
+9449,
+3
+],
+[
+"Bottes d'opération gnomebot",
+"Pieds",
+null,
+9450,
+2
+]
+]
+],
+[
+"Electrocuteur 6000",
+"Electrocutioner 6000",
+[
+[
+"Jambe de l'électrocuteur",
+"Main droite",
+null,
+9446,
+3
+],
+[
+"Boulon de l'électrocuteur",
+"Doigt",
+null,
+9447,
+3
+],
+[
+"Chiffon graisseux de mécano-tank",
+"Poignets",
+null,
+9448,
+2
+]
+]
+],
+[
+"Retombée visqueuse",
+"Viscous Fallout",
+[
+[
+"Hydrocane",
+"Deux mains",
+null,
+9452,
+3
+],
+[
+"Vengeresse empoisonnée",
+"Une main",
+null,
+9453,
+3
+],
+[
+"Botillons acides",
+"Pieds",
+null,
+9454,
+3
+]
+]
+],
+[
+"Mekgénieur Thermaplugg",
+"Mekgineer Thermaplugg",
+[
+[
+"Noyau central de Thermaplugg",
+"Bouclier",
+null,
+9458,
+3
+],
+[
+"Bras gauche de Thermojoncteur",
+"Deux mains",
+null,
+9459,
+3
+],
+[
+"Boulon chargé",
+"Doigt",
+null,
+9461,
+3
+],
+[
+"Réactivateur de gigaflux électromagnétique",
+"Tête",
+null,
+9492,
+3
+]
+]
+]
+],
+"quetes": [],
+"en": "Gnomeregan",
+"zone": "Dun Morogh",
+"carte": 1426,
+"x": 24.3,
+"y": 39.8
+},
+"kraal-de-tranchebauge": {
+"nom": "Le Kraal de Tranchebauge",
+"niv": "29 à 38",
+"nouveau": false,
+"intro": "Le labyrinthe de ronces des huttins, au sud des Tarides.",
+"boss": [
+[
+"Seigneur Brusquebroche",
+"Overlord Ramtusk",
+[
+[
+"Heaume du phacochère",
+"Tête",
+null,
+6686,
+2
+],
+[
+"Démembreur",
+"Deux mains",
+null,
+6687,
+3
+]
+]
+],
+[
+"Charlga Trancheflanc",
+"Charlga Razorflank",
+[
+[
+"Hache à crocs",
+"Une main",
+null,
+6692,
+3
+],
+[
+"Anneau d'Agamaggan",
+"Doigt",
+null,
+6693,
+3
+],
+[
+"Coeur d'Agamaggan",
+"Bouclier",
+null,
+6694,
+3
+]
+]
+],
+[
+"Agathelos l'Enragé",
+"Agathelos the Raging",
+[
+[
+"Jambières de Ferine",
+"Jambes",
+null,
+6690,
+2
+],
+[
+"Croc de swinetusk",
+"Une main",
+null,
+6691,
+3
+]
+]
+],
+[
+"Chasseur aveugle",
+"Blind Hunter",
+[
+[
+"Amulette stygienne en os",
+"Cou",
+null,
+6695,
+3
+],
+[
+"Arc du Traqueur nocturne",
+"Distance",
+null,
+6696,
+3
+],
+[
+"Mantelet d'aile de vampire",
+"Épaules",
+null,
+6697,
+3
+]
+]
+],
+[
+"Nécrorateur Jargba",
+"Death Speaker Jargba",
+[
+[
+"Sceptre de nécrorateur",
+"Main droite",
+null,
+2816,
+3
+],
+[
+"Robe de nécrorateur",
+"Torse",
+null,
+6682,
+2
+],
+[
+"Mantelet de nécrorateur",
+"Épaules",
+null,
+6685,
+2
+]
+]
+],
+[
+"Lanceur de Tranchebauge",
+"Razorfen Spearhide",
+[
+[
+"Perce-fer",
+"Deux mains",
+null,
+6679,
+2
+]
+]
+],
+[
+"Implorateur de la terre Halmgar",
+"Earthcaller Halmgar",
+[
+[
+"Coiffure de Whisperwind",
+"Tête",
+null,
+6688,
+2
+],
+[
+"Bâton d'esprit du vent",
+"Deux mains",
+null,
+6689,
+3
+]
+]
+]
+],
+"quetes": [],
+"en": "Razorfen Kraul",
+"zone": "Les Tarides",
+"carte": 1413,
+"x": 42.9,
+"y": 90.2
+},
+"monastere-ecarlate": {
+"nom": "Le Monastère écarlate",
+"niv": "30 à 46",
+"nouveau": false,
+"intro": "La forteresse de la Croisade écarlate dans les Clairières de Tirisfal, en quatre ailes : cimetière, bibliothèque, armurerie et cathédrale.",
+"boss": [
+[
+"Maître-chien Loksey",
+"Houndmaster Loksey",
+[
+[
+"Bâton d'entraînement de Loksey",
+"Deux mains",
+null,
+7710,
+3
+],
+[
+"Gants de dressage de chien",
+"Mains",
+null,
+7756,
+2
+]
+]
+],
+[
+"Herod",
+"Herod",
+[
+[
+"Ravageuse",
+"Deux mains",
+null,
+7717,
+3
+],
+[
+"Epaulière d'Herod",
+"Épaules",
+null,
+7718,
+3
+],
+[
+"Heaume du berserker enragé",
+"Tête",
+null,
+7719,
+3
+],
+[
+"Jambières écarlates",
+"Jambes",
+null,
+10330,
+3
+]
+]
+],
+[
+"Commandant écarlate Mograine",
+"Scarlet Commander Mograine",
+[
+[
+"Puissance de Mograine",
+"Deux mains",
+null,
+7723,
+3
+],
+[
+"Gantelets de divinité",
+"Mains",
+null,
+7724,
+3
+],
+[
+"Egide du commandant écarlate",
+"Bouclier",
+null,
+7726,
+3
+],
+[
+"Jambières écarlates",
+"Jambes",
+null,
+10330,
+3
+]
+]
+],
+[
+"Grand Inquisiteur Whitemane",
+"High Inquisitor Whitemane",
+[
+[
+"Chapeau de Whitemane",
+"Tête",
+null,
+7720,
+3
+],
+[
+"Main de la droiture",
+"Main droite",
+null,
+7721,
+3
+],
+[
+"Amulette de Triune",
+"Cou",
+null,
+7722,
+3
+]
+]
+],
+[
+"Interrogateur Vishas",
+"Interrogator Vishas",
+[
+[
+"Tisonnier de torture",
+"Une main",
+null,
+7682,
+3
+]
+]
+],
+[
+"Grand Inquisiteur Fairbanks",
+"High Inquisitor Fairbanks",
+[
+[
+"Châle d'inquisiteur",
+"Épaules",
+null,
+19507,
+2
+],
+[
+"Brassards en cuir marqué",
+"Poignets",
+null,
+19508,
+2
+],
+[
+"Bottes poussiéreuses en mailles",
+"Pieds",
+null,
+19509,
+2
+]
+]
+],
+[
+"Mage de sang Thalnos",
+"Bloodmage Thalnos",
+[
+[
+"Mantelet de mage de sang",
+"Épaules",
+null,
+7684,
+2
+],
+[
+"Orbe du Prophète oublié",
+"Main gauche",
+null,
+7685,
+3
+]
+]
+],
+[
+"Arcaniste Doan",
+"Arcanist Doan",
+[
+[
+"Robe de Doan",
+"Torse",
+null,
+7711,
+2
+],
+[
+"Mantelet de Doan",
+"Épaules",
+null,
+7712,
+2
+],
+[
+"Bâtonnet d'illusion",
+"Deux mains",
+null,
+7713,
+3
+],
+[
+"Lame hypnotique",
+"Une main",
+null,
+7714,
+3
+]
+]
+],
+[
+"Champion mort",
+"Fallen Champion",
+[
+[
+"Aube morbide",
+"Deux mains",
+null,
+7689,
+3
+],
+[
+"Cestes d'ébène",
+"Mains",
+null,
+7690,
+3
+],
+[
+"Voile embaumé",
+"Tête",
+null,
+7691,
+3
+]
+]
+],
+[
+"Echine-de-fer",
+"Ironspine",
+[
+[
+"Oeil d'Echine-de-fer",
+"Doigt",
+null,
+7686,
+3
+],
+[
+"Poing d'Echine-de-fer",
+"Une main",
+null,
+7687,
+3
+],
+[
+"Thorax d'Echine-de-fer",
+"Torse",
+null,
+7688,
+3
+]
+]
+],
+[
+"Azshir le Sans-sommeil",
+"Azshir the Sleepless",
+[
+[
+"Baguette de nécromancie",
+"Distance",
+null,
+7708,
+3
+],
+[
+"Jambières flétries",
+"Jambes",
+null,
+7709,
+3
+],
+[
+"Talisman de Ghostshard",
+"Cou",
+null,
+7731,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Des cœurs zélés",
+33,
+"Horde",
+"Maître apothicaire Faranell (Fossoyeuse)",
+[]
+],
+[
+"La vengeance de Vorrel",
+33,
+"Horde",
+"Vorrel Sengutz (Monastère écarlate)",
+[
+[
+"Cape d'acier sinistre",
+4643
+],
+[
+"Mantelet de malédiction",
+7750
+],
+[
+"Bottes de Vorrel",
+7751
+]
+]
+],
+[
+"L'épreuve de la Connaissance",
+36,
+"Horde",
+"Parqual Fintallas (Fossoyeuse)",
+[]
+],
+[
+"Compendium des Déchus",
+38,
+"Horde",
+"Sage Truthseeker (Les Pitons-du-Tonnerre)",
+[
+[
+"Vil Protecteur",
+7747
+],
+[
+"Orbe Oméga",
+7749
+],
+[
+"Targe de Forcestone",
+17508
+]
+]
+],
+[
+"Mythologie des Titans",
+38,
+"Alliance",
+"Bibliothécaire Mae Paledust (Forgefer)",
+[
+[
+"Recommandation de la Ligue des explorateurs",
+7746
+]
+]
+],
+[
+"Past Due",
+38,
+"Alliance",
+"Magus Olvek (Montagnes d'Alterac)",
+[]
+],
+[
+"Au nom de la Lumière",
+40,
+"Alliance",
+"Raleigh le Dévot (Contreforts de Hautebrande)",
+[
+[
+"Epée de sérénité",
+6829
+],
+[
+"Mordos",
+6830
+],
+[
+"Menace noire",
+6831
+],
+[
+"Orbe de Lorica",
+11262
+]
+]
+],
+[
+"Au monastère écarlate",
+42,
+"Horde",
+"Varimathras (Fossoyeuse)",
+[
+[
+"Epée de malédiction",
+6802
+],
+[
+"Canne du Prophète",
+6803
+],
+[
+"Collier du sang de dragon",
+10711
+]
+]
+]
+],
+"en": "Scarlet Monastery",
+"zone": "Clairières de Tirisfal",
+"carte": 1420,
+"x": 82.6,
+"y": 33.8
+},
+"uldaman": {
+"nom": "Uldaman",
+"niv": "36 à 45",
+"nouveau": false,
+"intro": "Un site titan enfoui sous les Terres ingrates, où nains Sombrefer et troggs se disputent les secrets des créateurs.",
+"boss": [
+[
+"Archaedas",
+"Archaedas",
+[
+[
+"Frappe-roche",
+"Deux mains",
+null,
+9413,
+3
+],
+[
+"Déchireuse",
+"Deux mains",
+null,
+9418,
+3
+],
+[
+"Pierre archaïque",
+"Doigt",
+null,
+11118,
+3
+]
+]
+],
+[
+"Grimlok",
+"Grimlok",
+[
+[
+"Jambières en cuir huilé",
+"Jambes",
+null,
+9414,
+2
+],
+[
+"Habit tribal de Grimlok",
+"Torse",
+null,
+9415,
+3
+],
+[
+"Pique de Grimlok",
+"Deux mains",
+null,
+9416,
+3
+]
+]
+],
+[
+"Baelog",
+"Baelog",
+[
+[
+"Sabre nordique",
+"Une main",
+null,
+9401,
+3
+]
+]
+],
+[
+"Eric \"l'Agile\"",
+"Eric \"The Swift\"",
+[
+[
+"Casque viking à cornes",
+"Tête",
+null,
+9394,
+3
+],
+[
+"Bottes de course usées",
+"Pieds",
+null,
+9398,
+2
+]
+]
+],
+[
+"Olaf",
+"Olaf",
+[
+[
+"Bouclier polyvalent d'Olaf",
+"Bouclier",
+null,
+9404,
+3
+]
+]
+],
+[
+"Revelosh",
+"Revelosh",
+[
+[
+"Bottes de Revelosh",
+"Pieds",
+null,
+9387,
+2
+],
+[
+"Garde-bras de Revelosh",
+"Poignets",
+null,
+9388,
+2
+],
+[
+"Spallières de Revelosh",
+"Épaules",
+null,
+9389,
+2
+],
+[
+"Gants de Revelosh",
+"Mains",
+null,
+9390,
+2
+]
+]
+],
+[
+"Ancien Gardien des pierres",
+"Ancient Stone Keeper",
+[
+[
+"Poings de la combe",
+"Mains",
+null,
+9410,
+3
+],
+[
+"Espauliers Rockshard",
+"Épaules",
+null,
+9411,
+2
+]
+]
+],
+[
+"Ironaya",
+"Ironaya",
+[
+[
+"Pantalon Stoneweaver",
+"Jambes",
+null,
+9407,
+3
+],
+[
+"Bâton ferré",
+"Deux mains",
+null,
+9408,
+3
+],
+[
+"Brassards d'Ironaya",
+"Poignets",
+null,
+9409,
+3
+]
+]
+],
+[
+"Galgann Firehammer",
+"Galgann Firehammer",
+[
+[
+"Crache-flammes de Galgann",
+"Distance",
+null,
+9412,
+3
+],
+[
+"Marteau de feu de Galgann",
+"Une main",
+null,
+9419,
+2
+],
+[
+"Mantelet de prophète des flammes",
+"Épaules",
+null,
+11310,
+3
+],
+[
+"Cape en écailles de braise",
+"Dos",
+null,
+11311,
+2
+]
+]
+]
+],
+"quetes": [
+[
+"Un signe d'espoir",
+35,
+"Alliance",
+"Prospecteur Ryedol (Terres ingrates)",
+[]
+],
+[
+"Les pierres de puissance",
+36,
+"Alliance et Horde",
+"Rigglefuzz (Terres ingrates)",
+[
+[
+"Cercle de pierres alimenté",
+9522
+],
+[
+"Brassards de Duracin",
+10358
+],
+[
+"Bottes perdurantes",
+10359
+]
+]
+],
+[
+"Le destin d'Agmond",
+38,
+"Alliance",
+"Prospecteur Ironband (Loch Modan)",
+[
+[
+"Gants de prospecteur",
+4980
+]
+]
+],
+[
+"L'amulette des secrets",
+40,
+"Alliance",
+"Hammertoe Grez (Terres ingrates)",
+[]
+],
+[
+"La Chambre secrète",
+40,
+"Alliance",
+"Baelog (Uldaman)",
+[
+[
+"Pourfendeuse naine",
+9626
+],
+[
+"Lanterne de la Ligue des Explorateurs",
+9627
+]
+]
+],
+[
+"La solution à la malédiction",
+40,
+"Alliance et Horde",
+"Theldurin l’Egaré (Terres ingrates)",
+[
+[
+"Robe d'auspice funeste",
+4746
+]
+]
+],
+[
+"Les nains perdus",
+40,
+"Alliance",
+"Prospecteur Stormpike (Forgefer)",
+[]
+],
+[
+"Le Collier brisé",
+41,
+"Alliance",
+"en ramassant Collier brisé",
+[]
+],
+[
+"Le Prix de la Connaissance",
+41,
+"Alliance",
+"Talvash del Kissel (Forgefer)",
+[]
+],
+[
+"Réparer le Collier",
+41,
+"Horde",
+"Dran Droffers (Orgrimmar)",
+[]
+],
+[
+"Réparer le Collier, deuxième prise",
+41,
+"Horde",
+"Dran Droffers (Orgrimmar)",
+[]
+],
+[
+"La Traduction du Journal",
+42,
+"Horde",
+"Restes d’un paladin (Uldaman)",
+[]
+],
+[
+"La Traduction du Journal",
+42,
+"Horde",
+"Jarkal Mossmeld (Terres ingrates)",
+[]
+],
+[
+"La fiole de remplacement",
+42,
+"Alliance",
+"Talvash del Kissel (Forgefer)",
+[
+[
+"Fiole de divination de Talvash",
+7667
+]
+]
+],
+[
+"Rechercher les composants à Uldaman",
+42,
+"Alliance",
+"Ghak Healtouch (Loch Modan)",
+[
+[
+"Potion de restauration",
+9030
+]
+]
+],
+[
+"Rechercher les composants à Uldaman",
+42,
+"Horde",
+"Jarkal Mossmeld (Terres ingrates)",
+[
+[
+"Potion de restauration",
+9030
+]
+]
+],
+[
+"Retour à Uldaman",
+42,
+"Alliance",
+"Talvash del Kissel (Forgefer)",
+[]
+],
+[
+"Des Trésors à recouvrer",
+43,
+"Alliance",
+"Krom Stoutarm (Forgefer)",
+[]
+],
+[
+"Des Trésors à recouvrer",
+43,
+"Horde",
+"Patrick Garrett (Fossoyeuse)",
+[]
+],
+[
+"Trouver les Gemmes",
+43,
+"Alliance",
+"Restes d’un paladin (Uldaman)",
+[]
+],
+[
+"Livrer les Gemmes",
+44,
+"Horde",
+"Jarkal Mossmeld (Terres ingrates)",
+[]
+],
+[
+"Réparer le Collier",
+44,
+"Alliance",
+"—",
+[]
+],
+[
+"Réparer le Collier",
+44,
+"Alliance",
+"Talvash del Kissel (Forgefer)",
+[
+[
+"Collier d'amélioration de Talvash",
+7673
+]
+]
+],
+[
+"Réparer le collier, troisième prise",
+44,
+"Horde",
+"Dran Droffers (Orgrimmar)",
+[
+[
+"Collier d'amélioration de Jarkal",
+7888
+]
+]
+],
+[
+"Trouver les Gemmes et la Source d'énergie",
+44,
+"Horde",
+"Jarkal Mossmeld (Terres ingrates)",
+[]
+],
+[
+"La tablette de volonté",
+45,
+"Alliance",
+"Conseiller Belgrum (Forgefer)",
+[
+[
+"Médaille de courage",
+6723
+]
+]
+],
+[
+"Les Disques de platine",
+47,
+"Alliance et Horde",
+"—",
+[]
+],
+[
+"Les Disques de platine",
+47,
+"Alliance",
+"—",
+[]
+],
+[
+"Les Disques de platine",
+47,
+"Horde",
+"—",
+[]
+]
+],
+"en": "Uldaman",
+"zone": "Terres ingrates",
+"carte": 1418,
+"x": 44.6,
+"y": 12.1
+},
+"souilles-de-tranchebauge": {
+"nom": "Les Souilles de Tranchebauge",
+"niv": "37 à 46",
+"nouveau": false,
+"intro": "Le cœur des huttins des Tarides, tombé sous la coupe du Fléau.",
+"boss": [
+[
+"Groinfendu",
+"Ragglesnout",
+[
+[
+"X'calibhure",
+"Deux mains",
+null,
+10758,
+3
+],
+[
+"Bouclier du sanglier sauvage",
+"Bouclier",
+null,
+10767,
+3
+],
+[
+"Ceinture de champion sanglier",
+"Taille",
+null,
+10768,
+3
+]
+]
+],
+[
+"Mordresh Oeil-de-feu",
+"Mordresh Fire Eye",
+[
+[
+"Oeil luminescent de Mordresh",
+"Cou",
+null,
+10769,
+3
+],
+[
+"Crâne sans vie de Mordresh",
+"Main gauche",
+null,
+10770,
+3
+],
+[
+"Echarpe de mage mortel",
+"Taille",
+null,
+10771,
+3
+]
+]
+],
+[
+"Amnennar le Porte-froid",
+"Amnennar the Coldbringer",
+[
+[
+"Dague de Coldrage",
+"Une main",
+null,
+10761,
+3
+],
+[
+"Robe de la liche",
+"Torse",
+null,
+10762,
+3
+],
+[
+"Barbute en glace-acier",
+"Tête",
+null,
+10763,
+3
+],
+[
+"Armure de Froidemort",
+"Torse",
+null,
+10764,
+3
+],
+[
+"Doigts-d'os",
+"Mains",
+null,
+10765,
+2
+]
+]
+],
+[
+"Glouton",
+"Glutton",
+[
+[
+"Fendoir de Glouton",
+"Une main",
+null,
+10772,
+2
+],
+[
+"Epaulières Fleur-de-peau",
+"Épaules",
+null,
+10774,
+3
+]
+]
+],
+[
+"Dame Falther'ess",
+"Lady Falther'ess",
+[
+[
+"Doigt de dame Falther'ess",
+"Distance",
+null,
+23177,
+3
+],
+[
+"Mantelet de dame Falther'ess",
+"Dos",
+null,
+23178,
+3
+],
+[
+"Bâtonnet de géomancien",
+"Main gauche",
+null,
+15978,
+2
+]
+]
+]
+],
+"quetes": [
+[
+"L'hôte du mal",
+35,
+"Alliance et Horde",
+"Myriam Moonsinger (Les Tarides)",
+[]
+],
+[
+"Une alliance impie",
+36,
+"Horde",
+"Varimathras (Fossoyeuse)",
+[
+[
+"Casse-tête",
+17039
+],
+[
+"Crache-clous",
+17042
+],
+[
+"Robe de zélote",
+17043
+]
+]
+],
+[
+"Une alliance impie",
+36,
+"Horde",
+"en ramassant Petit parchemin",
+[]
+],
+[
+"L'extinction de l'idole",
+37,
+"Alliance et Horde",
+"Belnistrasz (Souilles de Tranchebauge)",
+[
+[
+"Anneau Dragonclaw",
+10710
+]
+]
+],
+[
+"Le Fléau des Souilles",
+37,
+"Alliance et Horde",
+"Belnistrasz (Souilles de Tranchebauge)",
+[]
+],
+[
+"Apportez la Lumière",
+42,
+"Alliance",
+"Archevêque Benedictus (Hurlevent)",
+[
+[
+"Epée du triomphe",
+10823
+],
+[
+"Talisman de luisambre",
+10824
+]
+]
+],
+[
+"L'anéantissement",
+42,
+"Horde",
+"Andrew Brownell (Fossoyeuse)",
+[
+[
+"Epée du triomphe",
+10823
+],
+[
+"Talisman de luisambre",
+10824
+]
+]
+]
+],
+"en": "Razorfen Downs",
+"zone": "Les Tarides",
+"carte": 1413,
+"x": 49.0,
+"y": 93.9
+},
+"zul-farrak": {
+"nom": "Zul'Farrak",
+"niv": "40 à 47",
+"nouveau": false,
+"intro": "La cité des trolls des sables, au cœur du désert de Tanaris.",
+"boss": [
+[
+"Chef Ukorz Scalpessable",
+"Chief Ukorz Sandscalp",
+[
+[
+"Grands méchants espauliers",
+"Épaules",
+null,
+9476,
+3
+],
+[
+"Massacreur du chef",
+"Deux mains",
+null,
+9477,
+3
+],
+[
+"Refendeuse",
+"Main droite",
+null,
+9478,
+3
+],
+[
+"Etreinte du lycan",
+"Tête",
+null,
+9479,
+3
+],
+[
+"Jang'thraze le Protecteur",
+"Main droite",
+null,
+11086,
+3
+],
+[
+"Coeur flétri",
+"Cou",
+null,
+9243,
+2
+]
+]
+],
+[
+"Sorcier-docteur Zum'rah",
+"Witch Doctor Zum'rah",
+[
+[
+"Canne de Zum'rah",
+"Deux mains",
+null,
+18082,
+3
+],
+[
+"Poignes de Jumanza",
+"Mains",
+null,
+18083,
+3
+],
+[
+"Coeur flétri",
+"Cou",
+null,
+9243,
+2
+]
+]
+],
+[
+"Antu'sul",
+"Antu'sul",
+[
+[
+"Sang'thraze le Déflecteur",
+"Une main",
+null,
+9379,
+3
+],
+[
+"La main d'Antu'sul",
+"Main droite",
+null,
+9639,
+3
+],
+[
+"Poignes de fer",
+"Mains",
+null,
+9640,
+3
+],
+[
+"Amulette vampire",
+"Cou",
+null,
+9641,
+3
+],
+[
+"Coeur flétri",
+"Cou",
+null,
+9243,
+2
+]
+]
+],
+[
+"Zerillis",
+"Zerillis",
+[
+[
+"Protège-chevilles de traqueuse des sables",
+"Pieds",
+null,
+12470,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Agent durcissant troll",
+45,
+"Alliance et Horde",
+"Trenton Lighthammer (Tanaris)",
+[]
+],
+[
+"Le dieu-araignée",
+45,
+"Horde",
+"Maître Gadrin (Durotar)",
+[]
+],
+[
+"Les carapaces de Scarabées",
+45,
+"Alliance et Horde",
+"Tran'rek (Tanaris)",
+[]
+],
+[
+"Tran'rek",
+45,
+"Alliance et Horde",
+"Krazek (Vallée de Strangleronce)",
+[]
+],
+[
+"La mission de Tabetha",
+46,
+"Alliance et Horde",
+"Anastasia Hartwell (Fossoyeuse), Bink (Forgefer), Jennea Cannon (Hurlevent), Deino (Orgrimmar)",
+[]
+],
+[
+"La tiare des abysses",
+46,
+"Alliance et Horde",
+"Tabetha (Marécage d'Âprefange)",
+[
+[
+"Bâtonnet d'altération",
+9527
+],
+[
+"Espauliers de schiste précieux",
+9531
+]
+]
+],
+[
+"La prophétie de Mosh'aru",
+47,
+"Alliance et Horde",
+"Yeh'kinya (Tanaris)",
+[]
+],
+[
+"Le bâtonnet divino-matic",
+47,
+"Alliance et Horde",
+"Ingénieur en chef Bilgewhizzle (Tanaris)",
+[
+[
+"Anneau de la fraternité des maçons",
+9533
+],
+[
+"Couvre-chef de la guilde des ingénieurs",
+9534
+]
+]
+],
+[
+"Médaillon de Nekrum",
+47,
+"Alliance",
+"Thadius Grimshade (Terres foudroyées)",
+[]
+],
+[
+"Gahz'rilla",
+50,
+"Alliance et Horde",
+"Wizzle Brassbolts (Mille pointes)",
+[
+[
+"Carotte et bâton",
+11122
+]
+]
+]
+],
+"en": "Zul'Farrak",
+"zone": "Tanaris",
+"carte": 1446,
+"x": 38.7,
+"y": 20.1
+},
+"maraudon": {
+"nom": "Maraudon",
+"niv": "45 à 51",
+"nouveau": false,
+"intro": "Les grottes sacrées des centaures de Désolace, où repose la princesse Theradras.",
+"boss": [
+[
+"Princesse Theradras",
+"Princess Theradras",
+[
+[
+"Coeur d'éclat de gemme",
+"Cou",
+null,
+17707,
+3
+],
+[
+"Miséricorde de calcinite",
+"Main droite",
+null,
+17710,
+3
+],
+[
+"Jambières élémentaires de Rockridge",
+"Jambes",
+null,
+17711,
+3
+],
+[
+"Anneau de noirepierre",
+"Doigt",
+null,
+17713,
+3
+],
+[
+"Brassards de la princesse de pierre",
+"Poignets",
+null,
+17714,
+3
+],
+[
+"Oeil de Theradras",
+"Tête",
+null,
+17715,
+3
+],
+[
+"Sceptre de la princesse Theradras",
+"Deux mains",
+null,
+17766,
+3
+]
+]
+],
+[
+"Glissement de terrain",
+"Landslide",
+[
+[
+"Heaume de la montagne",
+"Tête",
+null,
+17734,
+3
+],
+[
+"Gantelets poigne-de-roc",
+"Mains",
+null,
+17736,
+3
+],
+[
+"Pierre des nuages",
+"Main gauche",
+null,
+17737,
+3
+],
+[
+"Poing de pierre",
+"Main droite",
+null,
+17943,
+3
+]
+]
+],
+[
+"Celebras le Maudit",
+"Celebras the Cursed",
+[
+[
+"Griffe de Celebras",
+"Main gauche",
+null,
+17738,
+3
+],
+[
+"Drapé de gardien du bosquet",
+"Dos",
+null,
+17739,
+3
+],
+[
+"Coiffure de devin",
+"Tête",
+null,
+17740,
+3
+]
+]
+],
+[
+"Seigneur Vylelangue",
+"Lord Vyletongue",
+[
+[
+"Fouet des satyres",
+"Une main",
+null,
+17752,
+3
+],
+[
+"Jambières des Entourloupeurs infernaux",
+"Jambes",
+null,
+17754,
+3
+],
+[
+"Echarpe en crin de satyre",
+"Taille",
+null,
+17755,
+3
+]
+]
+],
+[
+"Meshlok le Moissonneur",
+"Meshlok the Harvester",
+[
+[
+"Etreinte de la nature",
+"Torse",
+null,
+17741,
+3
+],
+[
+"Armure mycosienne",
+"Torse",
+null,
+17742,
+3
+],
+[
+"Couvre-chef d'efflorescence",
+"Tête",
+null,
+17767,
+3
+]
+]
+],
+[
+"Tranchefouet",
+"Razorlash",
+[
+[
+"Sandales de Vinerot",
+"Pieds",
+null,
+17748,
+3
+],
+[
+"Spallières de peau végétale",
+"Épaules",
+null,
+17749,
+3
+],
+[
+"Ceinturon de chlororésille",
+"Taille",
+null,
+17750,
+2
+],
+[
+"Jambières de Brusslehide",
+"Jambes",
+null,
+17751,
+2
+]
+]
+],
+[
+"Noxxion",
+"Noxxion",
+[
+[
+"Coeur de Noxxion",
+"Bijou",
+null,
+17744,
+3
+],
+[
+"Fusil nuisible",
+"Distance",
+null,
+17745,
+3
+],
+[
+"Menottes de Noxxion",
+"Poignets",
+null,
+17746,
+3
+]
+]
+],
+[
+"Grippe-charogne",
+"Rotgrip",
+[
+[
+"Bottes en écailles de crocilisque albinos",
+"Pieds",
+null,
+17728,
+3
+],
+[
+"Hache Gatorbite",
+"Deux mains",
+null,
+17730,
+3
+],
+[
+"Mantelet de Grippe-charogne",
+"Épaules",
+null,
+17732,
+3
+]
+]
+],
+[
+"Artisan Gizlock",
+"Tinkerer Gizlock",
+[
+[
+"Carabine Mégatir",
+"Distance",
+null,
+17717,
+3
+],
+[
+"Targe Hypertech de Gizlock",
+"Bouclier",
+null,
+17718,
+3
+],
+[
+"Epée focale de l'Inventeur",
+"Une main",
+null,
+17719,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Fragments d'Ombréclat",
+42,
+"Horde",
+"Uthel'nay (Orgrimmar)",
+[
+[
+"Pendentif Ombréclat zélé",
+17772
+],
+[
+"Pendentif Ombréclat prodigieux",
+17773
+]
+]
+],
+[
+"Fragments d'Ombréclat",
+42,
+"Alliance",
+"Archimage Tervosh (Marécage d'Âprefange)",
+[
+[
+"Pendentif Ombréclat zélé",
+17772
+],
+[
+"Pendentif Ombréclat prodigieux",
+17773
+]
+]
+],
+[
+"Forces maléfiques retorses",
+47,
+"Alliance et Horde",
+"Saule (Désolace)",
+[
+[
+"Robe de sagacité",
+17775
+],
+[
+"Casque de Vif-anneau",
+17776
+],
+[
+"Cotte d'anneaux implacable",
+17777
+],
+[
+"Espauliers du colosse de pierre",
+17779
+]
+]
+],
+[
+"La corruption de Vylelangue",
+47,
+"Horde",
+"Vark Battlescar (Désolace)",
+[
+[
+"Anneau Woodseed",
+17768
+],
+[
+"Gantelets griffebranche",
+17770
+],
+[
+"Ceinturon d'armoise",
+17778
+]
+]
+],
+[
+"La corruption de Vylelangue",
+47,
+"Alliance",
+"Talendria (Désolace)",
+[
+[
+"Anneau Woodseed",
+17768
+],
+[
+"Gantelets griffebranche",
+17770
+],
+[
+"Ceinturon d'armoise",
+17778
+]
+]
+],
+[
+"Les instructions du paria",
+48,
+"Alliance et Horde",
+"Paria centaure (Désolace)",
+[
+[
+"Marque de l'Elu",
+17774
+]
+]
+],
+[
+"Le sceptre de Celebras",
+49,
+"Alliance et Horde",
+"Celebras le Racheté (Maraudon)",
+[
+[
+"Sceptre de Celebras",
+17191
+]
+]
+],
+[
+"Légendes de Maraudon",
+49,
+"Alliance et Horde",
+"Cavindra (Désolace)",
+[]
+],
+[
+"Corruption de la terre et de la Graine",
+51,
+"Alliance",
+"Gardien Marandis (Désolace)",
+[
+[
+"Lame de Thrash",
+17705
+],
+[
+"Bâtonnet de résurgence",
+17743
+],
+[
+"Visée des Gardiens verdoyants",
+17753
+]
+]
+],
+[
+"Corruption de la terre et de la graine",
+51,
+"Horde",
+"Selendra (Désolace)",
+[
+[
+"Lame de Thrash",
+17705
+],
+[
+"Bâtonnet de résurgence",
+17743
+],
+[
+"Visée des Gardiens verdoyants",
+17753
+]
+]
+],
+[
+"Graine de vie",
+51,
+"Alliance et Horde",
+"Esprit de Zaetar (Maraudon)",
+[]
+]
+],
+"en": "Maraudon",
+"zone": "Désolace",
+"carte": 1443,
+"x": 29.1,
+"y": 62.5
+},
+"temple-englouti": {
+"nom": "Le Temple englouti",
+"niv": "50 à 55",
+"nouveau": false,
+"intro": "Le temple d'Atal'Hakkar, englouti dans le Marais des Chagrins, où les trolls veulent invoquer le dieu sanguinaire Hakkar.",
+"boss": [
+[
+"Rejeton d'Hakkar",
+"Spawn of Hakkar",
+[
+[
+"Bottes Slitherscale",
+"Pieds",
+null,
+10801,
+3
+],
+[
+"Cape d'Aile-voile",
+"Dos",
+null,
+10802,
+2
+]
+]
+],
+[
+"Ombre d'Eranikus",
+"Shade of Eranikus",
+[
+[
+"Griffe redoutable",
+"Une main",
+null,
+10828,
+3
+],
+[
+"Oeil de dragon",
+"Cou",
+null,
+10829,
+3
+],
+[
+"Cornes d'Eranikus",
+"Tête",
+null,
+10833,
+3
+],
+[
+"Ecusson de suprématie",
+"Bouclier",
+null,
+10835,
+3
+],
+[
+"Bâtonnet de corrosion",
+"Distance",
+null,
+10836,
+3
+],
+[
+"Dent d'Eranikus",
+"Main droite",
+null,
+10837,
+3
+]
+]
+],
+[
+"Jammal'an le prophète",
+"Jammal'an the Prophet",
+[
+[
+"Habit du prophète atal'ai",
+"Torse",
+null,
+10806,
+3
+],
+[
+"Kilt du prophète atal'ai",
+"Jambes",
+null,
+10807,
+3
+],
+[
+"Gants du prophète atal'ai",
+"Mains",
+null,
+10808,
+3
+]
+]
+],
+[
+"Ogom le Misérable",
+"Ogom the Wretched",
+[
+[
+"Lame du Misérable",
+"Main droite",
+null,
+10803,
+2
+],
+[
+"Fracasseuse des damnés",
+"Une main",
+null,
+10804,
+2
+],
+[
+"Déchireuse des morts",
+"Main droite",
+null,
+10805,
+2
+]
+]
+],
+[
+"Atal'alarion",
+"Atal'alarion",
+[
+[
+"Anneau d'Atal'alarion",
+"Taille",
+null,
+10798,
+3
+],
+[
+"Trucideuse",
+"Deux mains",
+null,
+10799,
+3
+],
+[
+"Brassards des eaux sombres",
+"Poignets",
+null,
+10800,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Dans le temple d'Atal'Hakkar",
+50,
+"Alliance",
+"Brohann Caskbelly (Hurlevent)",
+[
+[
+"Talisman de gardien",
+1490
+]
+]
+],
+[
+"Le temple d'Atal'Hakkar",
+50,
+"Horde",
+"Fel'zerul (Marais des Chagrins)",
+[
+[
+"Talisman de gardien",
+1490
+]
+]
+],
+[
+"Dans les profondeurs",
+51,
+"Alliance et Horde",
+"Marvon Rivetseeker (Tanaris)",
+[]
+],
+[
+"Le Temple englouti",
+51,
+"Horde",
+"Sorcier-docteur Uzer'i (Féralas)",
+[]
+],
+[
+"Le secret du cercle",
+51,
+"Alliance et Horde",
+"Marvon Rivetseeker (Tanaris)",
+[
+[
+"Urne hakkari",
+10773
+]
+]
+],
+[
+"Jammal'an le Prophète",
+53,
+"Alliance et Horde",
+"Exilé atal'ai (Les Hinterlands)",
+[
+[
+"Jambières de cavalier de la pluie",
+11123
+],
+[
+"Heaume d'exil",
+11124
+]
+]
+],
+[
+"Le dieu Hakkar",
+53,
+"Alliance et Horde",
+"Yeh'kinya (Tanaris)",
+[
+[
+"Heaume de l'Avant-garde",
+10749
+],
+[
+"Miséricorde de force vitale",
+10750
+],
+[
+"Diadème suprême",
+10751
+]
+]
+],
+[
+"L'Essence d'Eranikus",
+55,
+"Alliance et Horde",
+"en ramassant Essence d'Eranikus",
+[
+[
+"Essence d'Eranikus enchaînée",
+10455
+]
+]
+],
+[
+"Eranikus, le tyran du Rêve",
+60,
+"Alliance et Horde",
+"Malfurion Stormrage (Le temple d'Atal'Hakkar)",
+[]
+]
+],
+"en": "The Temple of Atal'Hakkar",
+"zone": "Marais des Chagrins",
+"carte": 1435,
+"x": 69.9,
+"y": 53.5
+},
+"profondeurs-de-rochenoire": {
+"nom": "Les Profondeurs de Rochenoire",
+"niv": "52 à 60",
+"nouveau": false,
+"intro": "La cité des nains Sombrefer au cœur du Mont Rochenoire, le plus grand donjon du jeu.",
+"boss": [
+[
+"Panzor l'Invincible",
+"Panzor the Invincible",
+[
+[
+"Bouclier du Golem de roche",
+"Bouclier",
+null,
+11785,
+3
+],
+[
+"Pierre de la Terre",
+"Deux mains",
+null,
+11786,
+3
+],
+[
+"Bottes Shalehusk",
+"Pieds",
+null,
+11787,
+3
+],
+[
+"Chaussures encroûtées de suie",
+"Pieds",
+null,
+22245,
+3
+]
+]
+],
+[
+"Princesse Moira Bronzebeard",
+"Princess Moira Bronzebeard",
+[
+[
+"Bouquet de roses rouges",
+"Main gauche",
+null,
+22206,
+2
+],
+[
+"Bottes du marcheur vif",
+"Pieds",
+null,
+12553,
+3
+],
+[
+"Gants du héraut exalté",
+"Mains",
+null,
+12554,
+3
+],
+[
+"Bottes de la grande prêtresse",
+"Pieds",
+null,
+12556,
+3
+],
+[
+"Spallières d'acier ébène",
+"Épaules",
+null,
+12557,
+3
+]
+]
+],
+[
+"Seigneur golem Argelmach",
+"Golem Lord Argelmach",
+[
+[
+"Anneau des grandes arcanes",
+"Doigt",
+null,
+11669,
+3
+],
+[
+"Second souffle",
+"Bijou",
+null,
+11819,
+3
+],
+[
+"Bottes de concentration",
+"Pieds",
+null,
+11822,
+3
+],
+[
+"Kilt d'illumination",
+"Jambes",
+null,
+11823,
+3
+]
+]
+],
+[
+"Bael'Gar",
+"Bael'Gar",
+[
+[
+"Jambières de force volcanique",
+"Jambes",
+null,
+11802,
+3
+],
+[
+"Force du magma",
+"Deux mains",
+null,
+11803,
+3
+],
+[
+"Marteau de rubidium",
+"Main droite",
+null,
+11805,
+3
+],
+[
+"Echarpe du coeur ardent",
+"Taille",
+null,
+11807,
+3
+]
+]
+],
+[
+"Seigneur Incendius",
+"Lord Incendius",
+[
+[
+"Brachiales en peau cendrée",
+"Poignets",
+null,
+11764,
+3
+],
+[
+"Garde-poignets en pyromailles",
+"Poignets",
+null,
+11765,
+3
+],
+[
+"Crispins de tisse-flammes",
+"Poignets",
+null,
+11766,
+3
+],
+[
+"Garde-bras en plaques de braise",
+"Poignets",
+null,
+11767,
+3
+]
+]
+],
+[
+"Grand Interrogateur Gerstahn",
+"High Interrogator Gerstahn",
+[
+[
+"Amict d'illumination",
+"Épaules",
+null,
+11624,
+3
+],
+[
+"Sphère des Exaltés",
+"Main gauche",
+null,
+11625,
+3
+],
+[
+"Cape du voile noir",
+"Dos",
+null,
+11626,
+3
+],
+[
+"Grèves du désespoir cinglant",
+"Pieds",
+null,
+22240,
+3
+]
+]
+],
+[
+"Empereur Dagran Thaurissan",
+"Emperor Dagran Thaurissan",
+[
+[
+"Chapeau d'hiver rouge",
+"Tête",
+null,
+21524,
+2
+],
+[
+"Robe de la couronne royale",
+"Torse",
+null,
+11924,
+3
+],
+[
+"Sceptre royal de Thaurissan",
+"Main gauche",
+null,
+11928,
+3
+],
+[
+"Bâton guide de sagesse",
+"Deux mains",
+null,
+11932,
+3
+],
+[
+"Sceau de l'Empereur",
+"Doigt",
+null,
+11934,
+3
+],
+[
+"Echarpe de la Grande chasse",
+"Taille",
+null,
+22207,
+3
+],
+[
+"Main de justice",
+"Bijou",
+null,
+11815,
+3
+],
+[
+"La cape neuve de l'Empereur",
+"Dos",
+null,
+11930,
+3
+],
+[
+"Vengeresse d'effroi",
+"Deux mains",
+null,
+11931,
+3
+],
+[
+"Joyau impérial",
+"Cou",
+null,
+11933,
+3
+],
+[
+"Bracelets de renom",
+"Poignets",
+null,
+22204,
+3
+]
+]
+],
+[
+"Pyromancien Loregrain",
+"Pyromancer Loregrain",
+[
+[
+"Robe de marcheur des flammes",
+"Torse",
+null,
+11747,
+3
+],
+[
+"Caducée de Pyric",
+"Distance",
+null,
+11748,
+3
+],
+[
+"Jambières ardentes",
+"Jambes",
+null,
+11749,
+3
+],
+[
+"Bâton de pyromancien",
+"Deux mains",
+null,
+11750,
+3
+]
+]
+],
+[
+"Seigneur Roccor",
+"Lord Roccor",
+[
+[
+"Bouclier de garde renforcée",
+"Bouclier",
+null,
+11631,
+3
+],
+[
+"Epaulières du terril",
+"Épaules",
+null,
+11632,
+3
+],
+[
+"Mantelet de l'espoir perdu",
+"Épaules",
+null,
+22234,
+3
+],
+[
+"Idole de férocité",
+"Relique",
+null,
+22397,
+3
+]
+]
+],
+[
+"Général Forgehargne",
+"General Angerforge",
+[
+[
+"Force de volonté",
+"Bijou",
+null,
+11810,
+3
+],
+[
+"Hache de guerre de Forgehargne",
+"Deux mains",
+null,
+11816,
+3
+],
+[
+"Epée du seigneur général",
+"Main droite",
+null,
+11817,
+3
+],
+[
+"Armure décorée royale",
+"Torse",
+null,
+11820,
+3
+],
+[
+"Jambières d'acrobate",
+"Jambes",
+null,
+11821,
+3
+]
+]
+],
+[
+"Gardien Stilgiss",
+"Warder Stilgiss",
+[
+[
+"Mantelet boréal",
+"Épaules",
+null,
+11782,
+3
+],
+[
+"Ceinturon d'acier glacé",
+"Taille",
+null,
+11783,
+3
+],
+[
+"Lame de l'arbitre",
+"Main droite",
+null,
+11784,
+3
+],
+[
+"Espauliers du Sombre gardien",
+"Épaules",
+null,
+22241,
+3
+]
+]
+],
+[
+"Verek",
+"Verek",
+[
+[
+"Collier de Verek",
+"Cou",
+null,
+11755,
+3
+],
+[
+"Laisse de Verek",
+"Taille",
+null,
+22242,
+3
+]
+]
+],
+[
+"Fineous Darkvire",
+"Fineous Darkvire",
+[
+[
+"Monocle d'architecte en chef",
+"Tête",
+null,
+11839,
+3
+],
+[
+"Pantalon du grand concepteur",
+"Jambes",
+null,
+11841,
+3
+],
+[
+"Mantelet de géomètre en chef",
+"Épaules",
+null,
+11842,
+3
+],
+[
+"Protège-tête de contremaître",
+"Tête",
+null,
+22223,
+3
+]
+]
+],
+[
+"Ambassadeur Cinglefouet",
+"Ambassador Flamelash",
+[
+[
+"Courroux des flammes",
+"Deux mains",
+null,
+11809,
+3
+],
+[
+"Cape de la salamandre de feu",
+"Dos",
+null,
+11812,
+3
+],
+[
+"Poings de la fournaise",
+"Mains",
+null,
+11814,
+3
+],
+[
+"Bijou de connaissance",
+"Bijou",
+null,
+11832,
+3
+],
+[
+"Cercle de flammes",
+"Tête",
+null,
+11808,
+4
+]
+]
+],
+[
+"Maître-chien Grebmar",
+"Houndmaster Grebmar",
+[
+[
+"Cape de l'esprit follet",
+"Dos",
+null,
+11623,
+3
+],
+[
+"Bottes de sagacité",
+"Pieds",
+null,
+11627,
+3
+],
+[
+"Arc du chef de meute",
+"Distance",
+null,
+11628,
+3
+],
+[
+"Carabine de maître-chien",
+"Distance",
+null,
+11629,
+3
+]
+]
+],
+[
+"Plugger Spazzring",
+"Plugger Spazzring",
+[
+[
+"Tesson du tavernier",
+"Main droite",
+null,
+12791,
+3
+],
+[
+"Tunique de mixologue",
+"Torse",
+null,
+12793,
+3
+]
+]
+],
+[
+"Phalange",
+"Phalanx",
+[
+[
+"Poing de sang",
+"Une main",
+null,
+11744,
+3
+],
+[
+"Poings de la Phalange",
+"Mains",
+null,
+11745,
+3
+],
+[
+"Espauliers de golem ajustés",
+"Épaules",
+null,
+22212,
+3
+]
+]
+],
+[
+"Magmus",
+"Magmus",
+[
+[
+"Heaume du crâne de golem",
+"Tête",
+null,
+11746,
+3
+],
+[
+"Pierre de Magmus",
+"Main gauche",
+null,
+11935,
+3
+],
+[
+"Marteau en pierre de lave",
+"Deux mains",
+null,
+22208,
+3
+],
+[
+"Totem de rage",
+"Relique",
+null,
+22395,
+3
+],
+[
+"Libram de vérité",
+"Relique",
+null,
+22400,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"La bière de Rocknot",
+1,
+"Alliance et Horde",
+"Soldat Rocknot (Profondeurs de Blackrock)",
+[]
+],
+[
+"Héritage Sombrefer",
+52,
+"Alliance et Horde",
+"Franclorn Forgewright (Steppes ardentes)",
+[]
+],
+[
+"Héritage Sombrefer",
+52,
+"Alliance et Horde",
+"Franclorn Forgewright (Steppes ardentes)",
+[
+[
+"Clé ombreforge",
+11000
+]
+]
+],
+[
+"Le commandant Gor'shak",
+52,
+"Horde",
+"Galamav le Tireur d'élite (Terres ingrates)",
+[]
+],
+[
+"TUER A VUE : nains Sombrefer",
+52,
+"Horde",
+"—",
+[]
+],
+[
+"Ribbly Screwspigot",
+53,
+"Alliance et Horde",
+"Yuka Screwspigot (Steppes ardentes)",
+[
+[
+"Bottes de rancune",
+11865
+],
+[
+"Spallières de pénitence",
+11963
+],
+[
+"Armure d'acier éclissé",
+12049
+]
+]
+],
+[
+"Yuka Screwspigot",
+53,
+"Alliance et Horde",
+"Yorba Screwspigot (Tanaris)",
+[]
+],
+[
+"Espoir abandonné",
+54,
+"Alliance",
+"Maréchal Windsor (Profondeurs de Blackrock)",
+[
+[
+"Heaume de conservateur",
+12018
+],
+[
+"Bottillons renforcés",
+12021
+],
+[
+"Jambières de Windshear",
+12041
+]
+]
+],
+[
+"Le dernier élément",
+54,
+"Horde",
+"Ombremage Vivian Lagrave (Terres ingrates)",
+[
+[
+"Sceau de Lagrave",
+12038
+]
+]
+],
+[
+"Le philtre d'amour",
+54,
+"Alliance et Horde",
+"Gouvernante Nagmara (Profondeurs de Blackrock)",
+[
+[
+"Ceinture de Nagmara",
+11866
+],
+[
+"Bracelets de prisonnier",
+11962
+]
+]
+],
+[
+"Les Royaumes de l'est",
+54,
+"Horde",
+"Thrall (Orgrimmar)",
+[]
+],
+[
+"Maréchal Windsor",
+54,
+"Alliance",
+"Maréchal Maxwell (Steppes ardentes)",
+[]
+],
+[
+"Que se passe-t-il ?",
+54,
+"Horde",
+"Commandant Gor'shak (Profondeurs de Blackrock)",
+[]
+],
+[
+"Que se passe-t-il ?",
+54,
+"Horde",
+"Commandant Gor'shak (Profondeurs de Blackrock)",
+[]
+],
+[
+"TUER A VUE : Officiers de haut rang Sombrefer",
+54,
+"Horde",
+"—",
+[]
+],
+[
+"Hurley Blackbreath",
+55,
+"Alliance",
+"Ragnar Thunderbrew (Dun Morogh)",
+[
+[
+"Masse de frappe rapide",
+11964
+],
+[
+"Tranche-tailleuse",
+12000
+],
+[
+"Bière brune naine",
+12003
+]
+]
+],
+[
+"La recette perdue de Thunderbrew",
+55,
+"Horde",
+"Ombremage Vivian Lagrave (Terres ingrates)",
+[
+[
+"Potion de soins excellente",
+3928
+],
+[
+"Potion de mana supérieure",
+6149
+],
+[
+"Masse de frappe rapide",
+11964
+],
+[
+"Tranche-tailleuse",
+12000
+]
+]
+],
+[
+"Le Calice spectral",
+55,
+"Alliance et Horde",
+"—",
+[]
+],
+[
+"Le Coeur de la montagne",
+55,
+"Alliance et Horde",
+"Maxwort Uberglint (Steppes ardentes)",
+[]
+],
+[
+"Ragnar Thunderbrew",
+55,
+"Alliance",
+"Enohar Thunderbrew (Terres foudroyées)",
+[]
+],
+[
+"Vivian Lagrave",
+55,
+"Horde",
+"Apothicaire Zinge (Fossoyeuse)",
+[]
+],
+[
+"Discordance des flammes",
+56,
+"Horde",
+"Thunderheart (Terres ingrates)",
+[
+[
+"Brassards de démon des cryptes",
+12112
+],
+[
+"Cape de l'hélionaute",
+12113
+],
+[
+"Gants crépusculaires",
+12114
+],
+[
+"Etreinte loyale",
+12115
+]
+]
+],
+[
+"Du beau matériel",
+56,
+"Alliance",
+"Oralius (Steppes ardentes)",
+[
+[
+"Une sacoche surprise",
+11883
+]
+]
+],
+[
+"Incendius !",
+56,
+"Alliance",
+"Jalinda Sprig (Steppes ardentes)",
+[
+[
+"Brassards de démon des cryptes",
+12112
+],
+[
+"Cape de l'hélionaute",
+12113
+],
+[
+"Gants crépusculaires",
+12114
+],
+[
+"Etreinte loyale",
+12115
+]
+]
+],
+[
+"Evasion !",
+58,
+"Alliance",
+"Maréchal Windsor (Profondeurs de Blackrock)",
+[
+[
+"Lame de rétorsion",
+12061
+],
+[
+"Dague de maîtrise",
+12062
+],
+[
+"Gardien des éléments",
+12065
+]
+]
+],
+[
+"Grark Lorkrub",
+58,
+"Horde",
+"Lexlort (Terres ingrates)",
+[]
+],
+[
+"La révolte des machines",
+58,
+"Horde",
+"Lotwil Veriatus (Terres ingrates)",
+[
+[
+"Broigne basaltique",
+12108
+],
+[
+"Amict de lune azur",
+12109
+],
+[
+"Drapé de pluviomancien",
+12110
+],
+[
+"Gantelets volcaniques",
+12111
+]
+]
+],
+[
+"Opération : Mort à Forgehargne",
+58,
+"Horde",
+"Chef de guerre Goretooth (Terres ingrates)",
+[
+[
+"Médaillon du Conquérant",
+12059
+]
+]
+],
+[
+"Situation précaire",
+58,
+"Horde",
+"Grark Lorkrub (Steppes ardentes)",
+[]
+],
+[
+"Un espoir en lambeaux",
+58,
+"Alliance",
+"Maréchal Windsor (Profondeurs de Blackrock)",
+[]
+],
+[
+"Un goût de flammes",
+58,
+"Alliance et Horde",
+"Cyrus Therepentous (Steppes ardentes)",
+[
+[
+"Cape peau-de-schiste",
+12066
+],
+[
+"Spallières en peau de wyrm",
+12082
+],
+[
+"Echarpe valconienne",
+12083
+]
+]
+],
+[
+"Une Note chiffonnée",
+58,
+"Alliance",
+"en ramassant Une note chiffonnée",
+[]
+],
+[
+"Kharan Mighthammer",
+59,
+"Alliance",
+"Roi Magni Bronzebeard (Forgefer)",
+[]
+],
+[
+"La surprise de la Princesse",
+59,
+"Alliance",
+"Princesse Moira Bronzebeard (Profondeurs de Blackrock)",
+[
+[
+"Pierre chantante d'Ironforge",
+12543
+],
+[
+"Volonté de Magni",
+12548
+]
+]
+],
+[
+"Le destin du Royaume",
+59,
+"Alliance",
+"Roi Magni Bronzebeard (Forgefer)",
+[]
+],
+[
+"Le porteur des mauvaises nouvelles",
+59,
+"Alliance",
+"Kharan Mighthammer (Profondeurs de Blackrock)",
+[]
+],
+[
+"Légende de Kharan",
+59,
+"Alliance",
+"Kharan Mighthammer (Profondeurs de Blackrock)",
+[]
+],
+[
+"Un sauvetage royal",
+59,
+"Horde",
+"Thrall (Orgrimmar)",
+[]
+],
+[
+"La Princesse sauvée ?",
+60,
+"Horde",
+"Princesse Moira Bronzebeard (Profondeurs de Blackrock)",
+[
+[
+"Résolution de Thrall",
+12544
+],
+[
+"Oeil d'Orgrimmar",
+12545
+]
+]
+],
+[
+"Le défi",
+60,
+"Alliance et Horde",
+"Falrin Treeshaper (Hache-tripes)",
+[]
+],
+[
+"Un contrat contraignant",
+60,
+"Alliance et Horde",
+"en ramassant Contrat de la Confrérie du Thorium",
+[
+[
+"Plans : Marteau en sulfuron",
+18592
+]
+]
+]
+],
+"en": "Blackrock Depths",
+"zone": "Gorge des Vents brûlants",
+"carte": 1427,
+"x": 34.8,
+"y": 85.3
+},
+"pic-rochenoire": {
+"nom": "Le Pic Rochenoire",
+"niv": "57 à 60",
+"nouveau": false,
+"intro": "Le sommet du Mont Rochenoire, en deux parties : le pic inférieur (orcs et ogres) et le pic supérieur (le chef de guerre Rend et les dragons).",
+"boss": [
+[
+"Généralissime Omokk",
+"Highlord Omokk",
+[
+[
+"Epaulières Claque-feu",
+"Épaules",
+null,
+13166,
+3
+],
+[
+"Poing d'Omokk",
+"Deux mains",
+null,
+13167,
+3
+],
+[
+"Harnois du roi-chaman",
+"Torse",
+null,
+13168,
+3
+],
+[
+"Jambières des grands esprits",
+"Jambes",
+null,
+13169,
+3
+],
+[
+"Pantalon du voile céleste",
+"Jambes",
+null,
+13170,
+3
+],
+[
+"Bottes des éléments",
+"Pieds",
+null,
+16670,
+3
+]
+]
+],
+[
+"Seigneur magus Pierre-du-pic",
+"Spirestone Lord Magus",
+[
+[
+"Globe de D'sak",
+"Main gauche",
+null,
+13261,
+3
+],
+[
+"Bottes des prophètes",
+"Pieds",
+null,
+13282,
+3
+],
+[
+"Anneau de magus",
+"Doigt",
+null,
+13283,
+3
+]
+]
+],
+[
+"Seigneur de guerre Pierre-du-pic",
+"Spirestone Battle Lord",
+[
+[
+"Tranchoir rochenoire",
+"Deux mains",
+null,
+13285,
+3
+],
+[
+"Bottes de guerre agile",
+"Pieds",
+null,
+13284,
+3
+]
+]
+],
+[
+"Boucher Pierre-du-pic",
+"Spirestone Butcher",
+[
+[
+"Tablier de boucher",
+"Dos",
+null,
+12608,
+3
+],
+[
+"Transperçante",
+"Une main",
+null,
+13286,
+3
+]
+]
+],
+[
+"Chasseresse des ombres Vosh'gajin",
+"Shadow Hunter Vosh'gajin",
+[
+[
+"Crispins funéraires",
+"Poignets",
+null,
+12626,
+3
+],
+[
+"Corbeau noir",
+"Distance",
+null,
+12651,
+3
+],
+[
+"Arracheur",
+"Distance",
+null,
+12653,
+3
+],
+[
+"Gantelets du trait précis",
+"Mains",
+null,
+13255,
+3
+],
+[
+"Spallières de runes démoniaques",
+"Épaules",
+null,
+13257,
+3
+],
+[
+"Gants Sombreruse",
+"Mains",
+null,
+16712,
+3
+],
+[
+"Heaume d'émeraude",
+"Tête",
+null,
+10279,
+2
+]
+]
+],
+[
+"Maître de guerre Voone",
+"War Master Voone",
+[
+[
+"Hache volante",
+"Jet",
+null,
+13173,
+3
+],
+[
+"Chapeau d'hiver rouge",
+"Tête",
+null,
+21524,
+2
+],
+[
+"Keris de Zul'Serak",
+"Une main",
+null,
+12582,
+3
+],
+[
+"Talisman d'évasion",
+"Cou",
+null,
+13177,
+3
+],
+[
+"Anneau de rosette",
+"Doigt",
+null,
+13178,
+3
+],
+[
+"Garde-bras coeur-d'airain",
+"Poignets",
+null,
+13179,
+3
+],
+[
+"Gants de bestiaire",
+"Mains",
+null,
+16676,
+3
+],
+[
+"Bottes de précision de Kayser",
+"Pieds",
+null,
+22231,
+3
+]
+]
+],
+[
+"Seigneur Wyrmthalak",
+"Overlord Wyrmthalak",
+[
+[
+"Congélatrice",
+"Deux mains",
+null,
+13148,
+3
+],
+[
+"Bâton du refuge",
+"Deux mains",
+null,
+13161,
+3
+],
+[
+"Griffes de rapineur",
+"Mains",
+null,
+13162,
+3
+],
+[
+"Grande fossoyeuse",
+"Deux mains",
+null,
+13163,
+3
+],
+[
+"Coeur de l'Ecaille",
+"Bijou",
+null,
+13164,
+3
+],
+[
+"Mantelet de bestiaire",
+"Épaules",
+null,
+16679,
+3
+],
+[
+"Coeur de Wyrmthalak",
+"Bijou",
+null,
+22321,
+3
+],
+[
+"Mantelet élégant",
+"Épaules",
+null,
+10210,
+2
+],
+[
+"Diadème élégant",
+"Tête",
+null,
+10219,
+2
+],
+[
+"Marque du seigneur dragon",
+"Doigt",
+null,
+13143,
+4
+]
+]
+],
+[
+"Ghok Bashguud",
+"Ghok Bashguud",
+[
+[
+"Ecraseur de Hurd",
+"Une main",
+null,
+13198,
+3
+],
+[
+"Cape d'éveil aux armes",
+"Dos",
+null,
+13203,
+3
+],
+[
+"Bashguuder",
+"Une main",
+null,
+13204,
+3
+]
+]
+],
+[
+"Intendant Zigris",
+"Quartermaster Zigris",
+[
+[
+"Ceinturon de funambule",
+"Taille",
+null,
+13252,
+3
+],
+[
+"Mains de puissance",
+"Mains",
+null,
+13253,
+3
+]
+]
+],
+[
+"Pyrogarde Prophète ardent",
+"Pyroguard Emberseer",
+[
+[
+"Cape du feu de brousse",
+"Dos",
+null,
+12905,
+3
+],
+[
+"Anneau enflammé",
+"Doigt",
+null,
+12926,
+3
+],
+[
+"Epaulières de précision",
+"Épaules",
+null,
+12927,
+3
+],
+[
+"Talisman Emberfury",
+"Cou",
+null,
+12929,
+3
+],
+[
+"Gantelets des éléments",
+"Mains",
+null,
+16672,
+3
+]
+]
+],
+[
+"Halycon",
+"Halycon",
+[
+[
+"Bottes du loup terrifiant",
+"Pieds",
+null,
+13210,
+3
+],
+[
+"Brassards griffes-tranchantes",
+"Poignets",
+null,
+13211,
+3
+],
+[
+"Collier clouté d'Halycon",
+"Cou",
+null,
+13212,
+3
+],
+[
+"Brassards Tisse-fer",
+"Poignets",
+null,
+22313,
+3
+]
+]
+],
+[
+"Général Drakkisath",
+"General Drakkisath",
+[
+[
+"Tome des Egarés",
+"Main gauche",
+null,
+22253,
+3
+],
+[
+"Turban de tisse-sort",
+"Tête",
+null,
+22267,
+3
+],
+[
+"Emblème draconique imprégné",
+"Bijou",
+null,
+22268,
+3
+],
+[
+"Cape de rôdeur des ombres",
+"Dos",
+null,
+22269,
+3
+],
+[
+"Déflecteur draconien",
+"Bouclier",
+null,
+12602,
+3
+],
+[
+"Anneau de puissance mortelle",
+"Doigt",
+null,
+13098,
+3
+],
+[
+"Dent de Gnarr",
+"Cou",
+null,
+13141,
+3
+],
+[
+"Ceinturon de Brigam",
+"Taille",
+null,
+13142,
+3
+],
+[
+"Haubergeon des éléments",
+"Torse",
+null,
+16666,
+3
+],
+[
+"Tunique de bestiaire",
+"Torse",
+null,
+16674,
+3
+],
+[
+"Robe de magistère",
+"Torse",
+null,
+16688,
+3
+],
+[
+"Robe de dévot",
+"Torse",
+null,
+16690,
+3
+],
+[
+"Robe de Brume-funeste",
+"Torse",
+null,
+16700,
+3
+],
+[
+"Gilet du Coeur-sauvage",
+"Torse",
+null,
+16706,
+3
+],
+[
+"Tunique Sombreruse",
+"Torse",
+null,
+16721,
+3
+],
+[
+"Cuirasse de Sancteforge",
+"Torse",
+null,
+16726,
+3
+],
+[
+"Cuirasse de vaillance",
+"Torse",
+null,
+16730,
+3
+]
+]
+],
+[
+"Croc cristallin",
+"Crystal Fang",
+[
+[
+"Manicles frôle-chute",
+"Mains",
+null,
+13184,
+3
+],
+[
+"Mantelet du prophète démembré",
+"Épaules",
+null,
+13185,
+3
+],
+[
+"Croc de l'araignée de cristal",
+"Une main",
+null,
+13218,
+3
+]
+]
+],
+[
+"Chef de guerre Rend Blackhand",
+"Warchief Rend Blackhand",
+[
+[
+"Oeil de Rend",
+"Tête",
+null,
+12587,
+3
+],
+[
+"Jambières du Chef de guerre",
+"Jambes",
+null,
+12935,
+3
+],
+[
+"Bottes de monteur de dragon",
+"Pieds",
+null,
+18102,
+3
+],
+[
+"Anneau de rumination",
+"Doigt",
+null,
+18103,
+3
+],
+[
+"Bracières du champ d'honneur",
+"Poignets",
+null,
+12936,
+3
+],
+[
+"Spallières de vaillance",
+"Épaules",
+null,
+16733,
+3
+],
+[
+"Ceinturon de sauvagerie",
+"Taille",
+null,
+18104,
+3
+],
+[
+"Bottes de guérisseur miraculeux",
+"Pieds",
+null,
+22247,
+3
+],
+[
+"Massacreuse Blackhand",
+"Deux mains",
+null,
+12583,
+3
+],
+[
+"Gardienne tribale de Dal'Rend",
+"Main gauche",
+null,
+12939,
+3
+],
+[
+"Charge sacrée de Dal'Rend",
+"Main droite",
+null,
+12940,
+3
+]
+]
+],
+[
+"La Bête",
+"The Beast",
+[
+[
+"Dépeceuse de Pépin",
+"Main droite",
+null,
+12709,
+3
+],
+[
+"Jambières de maître-lames",
+"Jambes",
+null,
+12963,
+3
+],
+[
+"Jambières de Tristam",
+"Jambes",
+null,
+12964,
+3
+],
+[
+"Jambières des voiles spirituels",
+"Jambes",
+null,
+12965,
+3
+],
+[
+"Garde-bras de la brume noire",
+"Poignets",
+null,
+12966,
+3
+],
+[
+"Cape de la lune sanguine",
+"Dos",
+null,
+12967,
+3
+],
+[
+"Cape de tisseur de givre",
+"Dos",
+null,
+12968,
+3
+],
+[
+"Masse suintante",
+"Deux mains",
+null,
+12969,
+3
+],
+[
+"Spallières de Sancteforge",
+"Épaules",
+null,
+16729,
+3
+],
+[
+"Bottes Tisse-fer",
+"Pieds",
+null,
+22311,
+3
+]
+]
+],
+[
+"Jed Runewatcher",
+"Jed Runewatcher",
+[
+[
+"Tiare du feu des étoiles",
+"Tête",
+null,
+12604,
+3
+],
+[
+"Ecrâneur serpent",
+"Distance",
+null,
+12605,
+3
+],
+[
+"Pipeau de bruyère",
+"Bijou",
+null,
+12930,
+3
+]
+]
+],
+[
+"Matriarche Couveuse",
+"Mother Smolderweb",
+[
+[
+"Crachevenin",
+"Une main",
+null,
+13183,
+3
+],
+[
+"Oeil de Couveuse",
+"Bijou",
+null,
+13213,
+3
+],
+[
+"Gantelets dorés",
+"Mains",
+null,
+13244,
+3
+],
+[
+"Bottes du Coeur-sauvage",
+"Pieds",
+null,
+16715,
+3
+]
+]
+],
+[
+"Goraluk Anvilcrack",
+"Goraluk Anvilcrack",
+[
+[
+"Chapeau d'hiver vert",
+"Tête",
+null,
+21525,
+2
+],
+[
+"Jambières de maître forgeron",
+"Jambes",
+null,
+13498,
+3
+],
+[
+"Ceinturon de maître forgeron",
+"Taille",
+null,
+13502,
+3
+],
+[
+"Marcheflammes",
+"Pieds",
+null,
+18047,
+3
+],
+[
+"Marteau du maître-forgeron",
+"Main droite",
+null,
+18048,
+3
+]
+]
+],
+[
+"Seigneur Valthalak",
+"Lord Valthalak",
+[
+[
+"Capuche Tisse-fer",
+"Tête",
+null,
+22302,
+3
+],
+[
+"Bâton de commandement du seigneur Valthalak",
+"Deux mains",
+null,
+22335,
+3
+],
+[
+"Egide draconien de la légion",
+"Bouclier",
+null,
+22336,
+3
+],
+[
+"Voile de domination",
+"Dos",
+null,
+22337,
+3
+],
+[
+"Anneau runique de sorcellerie",
+"Doigt",
+null,
+22339,
+3
+],
+[
+"Pendentif de célérité",
+"Cou",
+null,
+22340,
+3
+],
+[
+"Jambières de tourment",
+"Jambes",
+null,
+22342,
+3
+],
+[
+"Garde-mains de sauvagerie",
+"Mains",
+null,
+22343,
+3
+]
+]
+],
+[
+"Mor Grayhoof",
+"Mor Grayhoof",
+[
+[
+"Ceinture Tisse-fer",
+"Taille",
+null,
+22306,
+3
+],
+[
+"Tome de droit divin",
+"Main gauche",
+null,
+22319,
+3
+],
+[
+"Le Bourre-pif",
+"Une main",
+null,
+22322,
+3
+],
+[
+"Ceinture de l'Entourloupeur",
+"Taille",
+null,
+22325,
+3
+],
+[
+"Idole de récupération",
+"Relique",
+null,
+22398,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Les dernières tablettes",
+58,
+"Alliance et Horde",
+"Prospecteur Ironboot (Tanaris)",
+[]
+],
+[
+"Abattez-la",
+59,
+"Alliance",
+"Helendis Riverhorn (Steppes ardentes)",
+[
+[
+"Robe d'Astoria",
+15824
+],
+[
+"Pourpoint bec-de-corbin",
+15825
+],
+[
+"Cuirasse d'écailles de jade",
+15827
+]
+]
+],
+[
+"Agent Bijou",
+59,
+"Horde",
+"Lexlort (Terres ingrates)",
+[]
+],
+[
+"La maîtresse de meute",
+59,
+"Horde",
+"Galamav le Tireur d'élite (Terres ingrates)",
+[
+[
+"Robe d'Astoria",
+15824
+],
+[
+"Pourpoint bec-de-corbin",
+15825
+],
+[
+"Cuirasse d'écailles de jade",
+15827
+]
+]
+],
+[
+"Les animaux exotiques de Kibler",
+59,
+"Alliance et Horde",
+"Kibler (Steppes ardentes)",
+[
+[
+"Caisse de worg",
+12264
+]
+]
+],
+[
+"Les effets de Bijou",
+59,
+"Horde",
+"Bijou (Pic Blackrock)",
+[]
+],
+[
+"Les effets de Bijou",
+59,
+"Alliance",
+"Bijou (Pic Blackrock)",
+[]
+],
+[
+"Mauvais",
+59,
+"Alliance et Horde",
+"Kibler (Steppes ardentes)",
+[
+[
+"Caisse de Couveuse",
+12529
+]
+]
+],
+[
+"Message à Maxwell",
+59,
+"Alliance",
+"Bijou (Pic Blackrock)",
+[]
+],
+[
+"Rapport de reconnaissance de Bijou",
+59,
+"Horde",
+"Bijou (Pic Blackrock)",
+[
+[
+"Gants de Librevent",
+15858
+],
+[
+"Ceinturon de l'escale",
+15859
+]
+]
+],
+[
+"Amulette drakefeu",
+60,
+"Alliance",
+"Haleh (Berceau-de-l'Hiver)",
+[
+[
+"Amulette drakefeu",
+16309
+]
+]
+],
+[
+"Illusions d'Occulus",
+60,
+"Horde",
+"Myranda la Mégère (Maleterres de l'Ouest)",
+[]
+],
+[
+"La collecte d'oeufs",
+60,
+"Alliance et Horde",
+"Tinkee Steamboil (Steppes ardentes)",
+[]
+],
+[
+"La forge démoniaque",
+60,
+"Alliance et Horde",
+"Lorax (Berceau-de-l'Hiver)",
+[
+[
+"Elixir de Tueur de démons",
+9224
+],
+[
+"Plans : Cuirasse démoniaque",
+12696
+],
+[
+"Sac embrassé par un démon",
+12849
+]
+]
+],
+[
+"La livraison à Ridgewell",
+60,
+"Alliance",
+"Mayara Brightwing (Steppes ardentes)",
+[
+[
+"Garde-bras de frappe aveugle",
+15860
+],
+[
+"Bottes de Swiftfoot",
+15861
+]
+]
+],
+[
+"La reddition du général Drakkisath",
+60,
+"Alliance",
+"Maréchal Maxwell (Steppes ardentes)",
+[
+[
+"Plaque de Blackhand",
+13965
+],
+[
+"Marque de tyrannie",
+13966
+],
+[
+"Oeil de la Bête",
+13968
+]
+]
+],
+[
+"La tablette de Darkstone",
+60,
+"Horde",
+"Ombremage Vivian Lagrave (Terres ingrates)",
+[
+[
+"Garde-bras de frappe aveugle",
+15860
+],
+[
+"Bottes de Swiftfoot",
+15861
+]
+]
+],
+[
+"Le Protectorat de la matrone",
+60,
+"Alliance et Horde",
+"Awbee (Pic Blackrock)",
+[]
+],
+[
+"Le fermoir de Doomrigger",
+60,
+"Alliance",
+"Mayara Brightwing (Steppes ardentes)",
+[]
+],
+[
+"Le lait matriarcal",
+60,
+"Alliance et Horde",
+"John le Loqueteux (Steppes ardentes)",
+[
+[
+"Chope sans fin de John le Loqueteux",
+15873
+]
+]
+],
+[
+"Le morceau droit de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le morceau gauche de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le sang du champion des dragons noirs",
+60,
+"Horde",
+"Rexxar (Désolace)",
+[
+[
+"Amulette drakefeu",
+16309
+]
+]
+],
+[
+"Le sceau de l'ascension",
+60,
+"Alliance et Horde",
+"Infiltrateur du Bouclier balafré (Pic Blackrock)",
+[]
+],
+[
+"Le sceau de l'ascension",
+60,
+"Alliance et Horde",
+"Infiltrateur du Bouclier balafré (Pic Blackrock)",
+[
+[
+"Sceau d'ascension",
+12344
+]
+]
+],
+[
+"Les ordres de Blackhand",
+60,
+"Alliance et Horde",
+"en ramassant Instructions de Blackhand",
+[]
+],
+[
+"Mayara Brightwing",
+60,
+"Alliance",
+"Comte Remington Ridgewell (Hurlevent)",
+[]
+],
+[
+"Mea culpa, seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Mission de Maxwell",
+60,
+"Alliance",
+"Maréchal Maxwell (Steppes ardentes)",
+[
+[
+"Menottes de Wyrmthalak",
+13958
+],
+[
+"Corset d'Omokk",
+13959
+],
+[
+"Muselière d'Halycon",
+13961
+],
+[
+"Bande de Vosh'gajin",
+13962
+],
+[
+"Poignes de fer de Voone",
+13963
+]
+]
+],
+[
+"Ordre du chef de guerre",
+60,
+"Horde",
+"en ramassant Ordres du seigneur de guerre Goretooth, Chef de guerre Goretooth (Terres ingrates)",
+[
+[
+"Menottes de Wyrmthalak",
+13958
+],
+[
+"Corset d'Omokk",
+13959
+],
+[
+"Muselière d'Halycon",
+13961
+],
+[
+"Bande de Vosh'gajin",
+13962
+],
+[
+"Poignes de fer de Voone",
+13963
+]
+]
+],
+[
+"Ordres du général Drakkisath",
+60,
+"Alliance",
+"en ramassant Ordres du général Drakkisath",
+[]
+],
+[
+"Pour la Horde !",
+60,
+"Horde",
+"Thrall (Orgrimmar)",
+[
+[
+"Plaque de Blackhand",
+13965
+],
+[
+"Marque de tyrannie",
+13966
+],
+[
+"Oeil de la Bête",
+13968
+]
+]
+],
+[
+"Pépin Preste-Jugeote, à votre service !",
+60,
+"Alliance et Horde",
+"Pépin Preste-Jugeote (Pic Blackrock)",
+[]
+],
+[
+"Tinkee Steamboil",
+60,
+"Alliance et Horde",
+"Felnok Steelspring (Berceau-de-l'Hiver)",
+[]
+],
+[
+"Un oeuf congelé",
+60,
+"Alliance et Horde",
+"Tinkee Steamboil (Steppes ardentes)",
+[
+[
+"Oeufilloscope",
+12144
+]
+]
+],
+[
+"Urok Hurleruine",
+60,
+"Alliance et Horde",
+"Warosh (Pic Blackrock)",
+[
+[
+"Charme prismatique",
+15867
+]
+]
+],
+[
+"Vivian Lagrave et la tablette de Darkstone",
+60,
+"Horde",
+"Apothicaire Zinge (Fossoyeuse)",
+[]
+]
+],
+"en": "Blackrock Spire",
+"zone": "Gorge des Vents brûlants",
+"carte": 1427,
+"x": 34.8,
+"y": 85.3
+},
+"hache-tripes": {
+"nom": "Hache-Tripes",
+"niv": "58 à 60",
+"nouveau": false,
+"intro": "L'ancienne cité elfe d'Eldre'Thalas, au cœur de Féralas, en trois ailes : Est, Nord et Ouest.",
+"boss": [
+[
+"Tsu'zee",
+"Tsu'zee",
+[
+[
+"Anneau murmurant",
+"Doigt",
+null,
+18345,
+2
+],
+[
+"Pantalon élimé",
+"Jambes",
+null,
+18346,
+2
+],
+[
+"Gants d'étincelles",
+"Mains",
+null,
+18387,
+3
+]
+]
+],
+[
+"Prince Tortheldrin",
+"Prince Tortheldrin",
+[
+[
+"Chapeau d'hiver vert",
+"Tête",
+null,
+21525,
+2
+],
+[
+"Pansière de tranquillité",
+"Torse",
+null,
+18373,
+3
+],
+[
+"Brassards de l'éclipse",
+"Poignets",
+null,
+18375,
+3
+],
+[
+"Masse usée",
+"Une main",
+null,
+18376,
+3
+],
+[
+"Jambières de Lune-d'argent",
+"Jambes",
+null,
+18378,
+3
+],
+[
+"Jambières indicibles",
+"Jambes",
+null,
+18380,
+3
+],
+[
+"Cape fluctuante",
+"Dos",
+null,
+18382,
+3
+],
+[
+"Brisepierre",
+"Distance",
+null,
+18388,
+3
+],
+[
+"Dague de distraction",
+"Main gauche",
+null,
+18392,
+3
+],
+[
+"Anneau de flamme émeraude",
+"Doigt",
+null,
+18395,
+3
+],
+[
+"Découpe-esprit",
+"Main droite",
+null,
+18396,
+3
+]
+]
+],
+[
+"Magistère Kalendris",
+"Magister Kalendris",
+[
+[
+"Cape d'amplification",
+"Dos",
+null,
+18350,
+2
+],
+[
+"Brassards magiquement scellés",
+"Poignets",
+null,
+18351,
+2
+],
+[
+"Talisman d'ouvresprit",
+"Bijou",
+null,
+18371,
+3
+],
+[
+"Epaulières ardentes",
+"Épaules",
+null,
+18374,
+3
+],
+[
+"Pendentif d'ancien magus",
+"Cou",
+null,
+18397,
+3
+]
+]
+],
+[
+"Illyanna Ravenoak",
+"Illyanna Ravenoak",
+[
+[
+"Bouquet de roses rouges",
+"Main gauche",
+null,
+22206,
+2
+],
+[
+"Hache bien équilibrée",
+"Une main",
+null,
+18347,
+2
+],
+[
+"Gantelets de précision",
+"Mains",
+null,
+18349,
+2
+],
+[
+"Gantelets imprégnés de force",
+"Mains",
+null,
+18383,
+3
+],
+[
+"Pantalon du Padre",
+"Jambes",
+null,
+18386,
+3
+]
+]
+],
+[
+"Tendris Crochebois",
+"Tendris Warpwood",
+[
+[
+"Bouclier d'écorce pétrifiée",
+"Bouclier",
+null,
+18352,
+2
+],
+[
+"Bâton de fleur-pierre",
+"Deux mains",
+null,
+18353,
+2
+],
+[
+"Jambières d'Enchevêtre",
+"Jambes",
+null,
+18390,
+3
+],
+[
+"Cordon de Crochebois",
+"Taille",
+null,
+18393,
+3
+]
+]
+],
+[
+"Zevrim Thornhoof",
+"Zevrim Thornhoof",
+[
+[
+"Gants de la brume ombreuse",
+"Mains",
+null,
+18306,
+2
+],
+[
+"Chapeau astucieux",
+"Tête",
+null,
+18308,
+2
+],
+[
+"Casque de vigilance",
+"Tête",
+null,
+18313,
+3
+],
+[
+"Camail fervent",
+"Tête",
+null,
+18319,
+3
+],
+[
+"Arc du satyre",
+"Distance",
+null,
+18323,
+3
+]
+]
+],
+[
+"Alzzin le Modeleur",
+"Alzzin the Wildshaper",
+[
+[
+"Gants de restauration",
+"Mains",
+null,
+18309,
+3
+],
+[
+"Machette démoniaque",
+"Une main",
+null,
+18310,
+3
+],
+[
+"Pansière énergétique",
+"Torse",
+null,
+18312,
+3
+],
+[
+"Anneau de fourberie démoniaque",
+"Doigt",
+null,
+18314,
+3
+],
+[
+"Anneau de puissance démoniaque",
+"Doigt",
+null,
+18315,
+3
+],
+[
+"Grèves miséricordieuses",
+"Pieds",
+null,
+18318,
+3
+],
+[
+"Bâtonnet énergétique",
+"Main droite",
+null,
+18321,
+3
+],
+[
+"Gantelets-rasoirs",
+"Mains",
+null,
+18326,
+3
+],
+[
+"Corde de vigne-fouet",
+"Taille",
+null,
+18327,
+3
+],
+[
+"Cape d'ombrebois",
+"Dos",
+null,
+18328,
+3
+]
+]
+],
+[
+"Immol'thar",
+"Immol'thar",
+[
+[
+"Charme de vigilance",
+"Bijou",
+null,
+18370,
+3
+],
+[
+"Lame de la Nouvelle lune",
+"Main droite",
+null,
+18372,
+3
+],
+[
+"Gants de tir rapide",
+"Mains",
+null,
+18377,
+3
+],
+[
+"Grèves odieuses",
+"Pieds",
+null,
+18379,
+3
+],
+[
+"Pendentif de mauvais oeil",
+"Cou",
+null,
+18381,
+3
+],
+[
+"Spallières gravées à la bile",
+"Épaules",
+null,
+18384,
+3
+],
+[
+"Robe de la nuit éternelle",
+"Torse",
+null,
+18385,
+3
+],
+[
+"Cape du cosmos",
+"Dos",
+null,
+18389,
+3
+],
+[
+"Corde de pédoncule",
+"Taille",
+null,
+18391,
+3
+],
+[
+"Garde-poignets de Hurledémon",
+"Poignets",
+null,
+18394,
+3
+]
+]
+],
+[
+"Roi Gordok",
+"King Gordok",
+[
+[
+"Lame barbare",
+"Deux mains",
+null,
+18520,
+3
+],
+[
+"Bottes en métal sales",
+"Pieds",
+null,
+18521,
+3
+],
+[
+"Anneau du roi ogre",
+"Doigt",
+null,
+18522,
+3
+],
+[
+"Pierre étincelante",
+"Main gauche",
+null,
+18523,
+3
+],
+[
+"Jambières de destruction",
+"Jambes",
+null,
+18524,
+3
+],
+[
+"Brassards de prospérité",
+"Poignets",
+null,
+18525,
+3
+],
+[
+"Couronne du roi des ogres",
+"Tête",
+null,
+18526,
+3
+],
+[
+"Gantelets d'harmonie",
+"Mains",
+null,
+18527,
+3
+]
+]
+],
+[
+"Hydrogénos",
+"Hydrospawn",
+[
+[
+"Jambière des brisants",
+"Jambes",
+null,
+18305,
+2
+],
+[
+"Chaussures de la marée",
+"Pieds",
+null,
+18307,
+2
+],
+[
+"Talisman de tempête",
+"Cou",
+null,
+18317,
+3
+],
+[
+"Bottes de la gouttière",
+"Pieds",
+null,
+18322,
+3
+],
+[
+"Tranchevague",
+"Deux mains",
+null,
+18324,
+3
+]
+]
+],
+[
+"Garde Fengus",
+"Guard Fengus",
+[
+[
+"Robe de combustion",
+"Torse",
+null,
+18450,
+2
+],
+[
+"Ceinture en peau de hyène",
+"Taille",
+null,
+18451,
+2
+],
+[
+"Garde-bras quelconques",
+"Poignets",
+null,
+18458,
+2
+],
+[
+"Garde-poignets galants",
+"Poignets",
+null,
+18459,
+2
+],
+[
+"Canon à main de base",
+"Distance",
+null,
+18460,
+2
+],
+[
+"Poing d'os dentelé",
+"Main droite",
+null,
+18462,
+2
+],
+[
+"Canif ogre",
+"Une main",
+null,
+18463,
+2
+],
+[
+"Anneau de nez gordok",
+"Doigt",
+null,
+18464,
+2
+]
+]
+],
+[
+"Kreeg le Marteleur",
+"Stomper Kreeg",
+[
+[
+"Chope de Kreeg",
+"Main gauche",
+null,
+18425,
+2
+]
+]
+],
+[
+"Cho'Rush l'Observateur",
+"Cho'Rush the Observer",
+[
+[
+"Baguette de canalisation de mana",
+"Distance",
+null,
+18483,
+3
+],
+[
+"Lame de Cho'Rush",
+"Une main",
+null,
+18484,
+3
+],
+[
+"Bouclier de l'Observateur",
+"Bouclier",
+null,
+18485,
+3
+],
+[
+"Chaperon de perspicacité",
+"Tête",
+null,
+18490,
+3
+]
+]
+],
+[
+"Capitaine Kromcrush",
+"Captain Kromcrush",
+[
+[
+"Vouge monstrueuse",
+"Deux mains",
+null,
+18502,
+3
+],
+[
+"Pansière de Kromcrush",
+"Torse",
+null,
+18503,
+3
+],
+[
+"Ceinture de l'agresseur",
+"Taille",
+null,
+18505,
+3
+],
+[
+"Bottes de la Pleine lune",
+"Pieds",
+null,
+18507,
+3
+]
+]
+],
+[
+"Lethtendris",
+"Lethtendris",
+[
+[
+"Baguette de Lethtendris",
+"Distance",
+null,
+18301,
+2
+],
+[
+"Anneau de Vigueur",
+"Doigt",
+null,
+18302,
+2
+],
+[
+"Bâtonnet de canalisation de Quel'dorai",
+"Deux mains",
+null,
+18311,
+3
+],
+[
+"Cagoule en gangrecuir",
+"Tête",
+null,
+18325,
+3
+]
+]
+],
+[
+"Pimgib",
+"Pimgib",
+[
+[
+"Collier de Pimgib",
+"Bijou",
+null,
+18354,
+3
+]
+]
+],
+[
+"Revanchion",
+"Revanchion",
+[
+[
+"Cape de Revanchion",
+"Dos",
+null,
+23127,
+3
+],
+[
+"L'Etreinte de l'ombre",
+"Mains",
+null,
+23128,
+3
+],
+[
+"Brassards de guérison",
+"Poignets",
+null,
+23129,
+3
+]
+]
+],
+[
+"Isalien",
+"Isalien",
+[
+[
+"Gants Tisse-fer",
+"Mains",
+null,
+22304,
+3
+],
+[
+"Harpon de veneur",
+"Deux mains",
+null,
+22314,
+3
+],
+[
+"Marteau de revitalisation",
+"Main droite",
+null,
+22315,
+3
+],
+[
+"Totem de renaissance",
+"Relique",
+null,
+22345,
+3
+],
+[
+"Libram d'espoir",
+"Relique",
+null,
+22401,
+3
+],
+[
+"Bottes de férocité",
+"Pieds",
+null,
+22472,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Camp Mojache",
+57,
+"Horde",
+"Messager Balthazad (Fossoyeuse), Gorlach le Hurleguerre (Orgrimmar), Messager de Thunder Bluff Windstrider (Les Pitons-du-Tonnerre)",
+[]
+],
+[
+"Le bastion de Feathermoon",
+57,
+"Alliance",
+"Crieur Goodman (Hurlevent), Messager Hammerfall (Forgefer), Héraut Moonstalker (Darnassus)",
+[]
+],
+[
+"Le filet de Lethtendris",
+57,
+"Alliance",
+"Latronicus Moonspear (Féralas)",
+[
+[
+"Tisse-savoir",
+18491
+]
+]
+],
+[
+"Le filet de Lethtendris",
+57,
+"Horde",
+"Talo Thornhoof (Féralas)",
+[
+[
+"Tisse-savoir",
+18491
+]
+]
+],
+[
+"Pusillin et l'Ancien Azj'Tordin",
+58,
+"Alliance et Horde",
+"Azj'Tordin (Féralas)",
+[
+[
+"Epée du coureur",
+18410
+],
+[
+"Bottes de vivacité",
+18411
+]
+]
+],
+[
+"Affaires inachevées chez les Gordok",
+60,
+"Alliance et Horde",
+"Capitaine Kromcrush (Hache-tripes)",
+[
+[
+"Garde-mains gordoks",
+18366
+],
+[
+"Gantelets gordoks",
+18367
+],
+[
+"Gants gordoks",
+18368
+],
+[
+"Protège-mains gordoks",
+18369
+]
+]
+],
+[
+"Contrôler les ombres",
+60,
+"Alliance et Horde",
+"en ramassant Contrôler les ombres",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18467
+]
+]
+],
+[
+"Folie intérieure",
+60,
+"Alliance et Horde",
+"Ancienne de Shen'Dralar (Hache-tripes)",
+[]
+],
+[
+"Forger Quel'Serrar",
+60,
+"Alliance et Horde",
+"en ramassant Une lame elfique inachevée",
+[]
+],
+[
+"Garona : une étude en discrétion et en trahison",
+60,
+"Alliance et Horde",
+"en ramassant Garona : une étude en discrétion et en trahison",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18465
+]
+]
+],
+[
+"L'enchantement du provocateur",
+60,
+"Alliance et Horde",
+"Falrin Treeshaper (Hache-tripes)",
+[]
+],
+[
+"La dégustation gordok",
+60,
+"Alliance et Horde",
+"Kreeg le Marteleur (Hache-tripes)",
+[
+[
+"Grog vert gordok",
+18269
+],
+[
+"Bière-massue de Kreeg",
+18284
+]
+]
+],
+[
+"La lumière et comment l'altérer",
+60,
+"Alliance et Horde",
+"en ramassant La lumière et comment l'altérer",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18472
+]
+]
+],
+[
+"La plus grande race de chasseurs",
+60,
+"Alliance et Horde",
+"en ramassant La plus grande race de chasseurs",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18473
+]
+]
+],
+[
+"La tenue d'ogre gordok",
+60,
+"Alliance et Horde",
+"Knot Thimblejack (Hache-tripes)",
+[
+[
+"Tenue d'ogre gordok",
+18258
+]
+]
+],
+[
+"La tenue d'ogre gordok",
+60,
+"Alliance et Horde",
+"Knot Thimblejack (Hache-tripes)",
+[
+[
+"Tenue d'ogre gordok",
+18258
+]
+]
+],
+[
+"La vendetta de Falrin",
+60,
+"Alliance et Horde",
+"Falrin Treeshaper (Hache-tripes)",
+[
+[
+"Perles de mojo ogre",
+22149
+],
+[
+"Perles de puissance ogre",
+22150
+]
+]
+],
+[
+"Le Horion de givre et vous",
+60,
+"Alliance et Horde",
+"en ramassant Le Horion de givre et vous",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18471
+]
+]
+],
+[
+"Le Rêve d'Emeraude…",
+60,
+"Alliance et Horde",
+"en ramassant Le Rêve d'Emeraude",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18470
+]
+]
+],
+[
+"Le codex de défense",
+60,
+"Alliance et Horde",
+"en ramassant Le codex de défense",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18466
+]
+]
+],
+[
+"Le guide de Dagharn",
+60,
+"Alliance et Horde",
+"en ramassant Le guide de Nostro du tueur de dragons",
+[]
+],
+[
+"Le morceau droit de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le morceau gauche de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le trésor des Shen'dralar",
+60,
+"Alliance et Horde",
+"Ancienne de Shen'Dralar (Hache-tripes)",
+[
+[
+"Broie-les-os",
+18420
+],
+[
+"Casque des taillis",
+18421
+],
+[
+"Bottes de carex",
+18424
+]
+]
+],
+[
+"Le vieil ami d'Anthion",
+60,
+"Alliance et Horde",
+"Anthion Harmon (Maleterres de l'Est)",
+[]
+],
+[
+"Les recettes de l’arcaniste",
+60,
+"Alliance et Horde",
+"en ramassant Les recettes de l’arcaniste",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18468
+]
+]
+],
+[
+"Libram de Protection",
+60,
+"Alliance et Horde",
+"Gardien du savoir Lydros (Hache-tripes)",
+[
+[
+"Arcanum de protection",
+18331
+]
+]
+],
+[
+"Libram de Rapidité",
+60,
+"Alliance et Horde",
+"Gardien du savoir Lydros (Hache-tripes)",
+[
+[
+"Arcanum de rapidité",
+18329
+]
+]
+],
+[
+"Libram de focalisation",
+60,
+"Alliance et Horde",
+"Gardien du savoir Lydros (Hache-tripes)",
+[
+[
+"Arcanum de focalisation",
+18330
+]
+]
+],
+[
+"Libérez Knot !",
+60,
+"Alliance et Horde",
+"Knot Thimblejack (Hache-tripes)",
+[]
+],
+[
+"Libérez Knot !",
+60,
+"Alliance et Horde",
+"Knot Thimblejack (Hache-tripes)",
+[]
+],
+[
+"Légendes elfiques",
+60,
+"Horde",
+"Sage Korolusk (Féralas)",
+[]
+],
+[
+"Légendes elfiques",
+60,
+"Alliance",
+"Erudite Runethorn (Féralas)",
+[]
+],
+[
+"Sainte Bolognaise : Ce que la lumière ne vous dit pas",
+60,
+"Alliance et Horde",
+"en ramassant Sainte Bolognaise : Ce que la lumière ne vous dit pas",
+[
+[
+"Sceau royal d'Eldre'Thalas",
+18469
+]
+]
+],
+[
+"Un piège cassé",
+60,
+"Alliance et Horde",
+"—",
+[]
+]
+],
+"en": "Dire Maul",
+"zone": "Féralas",
+"carte": 1444,
+"x": 59.2,
+"y": 45.1
+},
+"stratholme": {
+"nom": "Stratholme",
+"niv": "58 à 60",
+"nouveau": false,
+"intro": "La ville martyre des Maleterres de l'Est, partagée entre le Fléau du baron Vaillefendre et la Croisade écarlate.",
+"boss": [
+[
+"Krân",
+"Skul",
+[
+[
+"Etreinte glaciale de Krân",
+"Torse",
+null,
+13394,
+3
+],
+[
+"Griffes d'osselets de Krân",
+"Mains",
+null,
+13395,
+3
+],
+[
+"Idole glaciale de Krân",
+"Distance",
+null,
+13396,
+3
+]
+]
+],
+[
+"Magistrat Barthilas",
+"Magistrate Barthilas",
+[
+[
+"Cape du tribunal royal",
+"Dos",
+null,
+13376,
+3
+],
+[
+"Poignes de mort",
+"Mains",
+null,
+18722,
+3
+],
+[
+"Conciliateur",
+"Deux mains",
+null,
+18725,
+3
+],
+[
+"Crispins de magistrat",
+"Poignets",
+null,
+18726,
+3
+],
+[
+"Chapeau de feutre cramoisi",
+"Tête",
+null,
+18727,
+3
+],
+[
+"Idole de brutalité",
+"Relique",
+null,
+23198,
+3
+]
+]
+],
+[
+"Baronne Anastari",
+"Baroness Anastari",
+[
+[
+"Doigt de Banshee",
+"Distance",
+null,
+13534,
+3
+],
+[
+"Cafetan fantomatique de la Main froide",
+"Torse",
+null,
+13535,
+2
+],
+[
+"Brassards glace-cuir",
+"Poignets",
+null,
+13537,
+2
+],
+[
+"Epaulettes du hurlevent",
+"Épaules",
+null,
+13538,
+2
+],
+[
+"Toucher de la banshee",
+"Mains",
+null,
+13539,
+2
+],
+[
+"Sandales de Brume-funeste",
+"Pieds",
+null,
+16704,
+3
+],
+[
+"Héritage d'Anastari",
+"Cou",
+null,
+18728,
+3
+],
+[
+"Arc strident",
+"Distance",
+null,
+18729,
+3
+],
+[
+"Protège-mains lacés de ténèbres",
+"Mains",
+null,
+18730,
+3
+]
+]
+],
+[
+"Nerub'enkan",
+"Nerub'enkan",
+[
+[
+"Carcasse de Nerub'enkan",
+"Bouclier",
+null,
+13529,
+3
+],
+[
+"Bottines de Fangdrip",
+"Pieds",
+null,
+13530,
+2
+],
+[
+"Jambières des cryptes",
+"Jambes",
+null,
+13531,
+2
+],
+[
+"Griffes de la sombre fileuse",
+"Mains",
+null,
+13532,
+2
+],
+[
+"Espauliers décorés d'eaux-fortes",
+"Épaules",
+null,
+13533,
+2
+],
+[
+"Bottes de bestiaire",
+"Pieds",
+null,
+16675,
+3
+],
+[
+"Arbalète en écaille centrale de carapace",
+"Distance",
+null,
+18738,
+3
+],
+[
+"Cuissards en plaques chitineuses",
+"Jambes",
+null,
+18739,
+3
+],
+[
+"Echarpe de Thuzadin",
+"Taille",
+null,
+18740,
+3
+]
+]
+],
+[
+"Maleki le Blafard",
+"Maleki the Pallid",
+[
+[
+"Crâne des ténèbres ardentes",
+"Main gauche",
+null,
+13524,
+3
+],
+[
+"Doigts du sombre lien",
+"Mains",
+null,
+13525,
+2
+],
+[
+"Ceinturon ardent",
+"Taille",
+null,
+13526,
+2
+],
+[
+"Jambières des flammes",
+"Pieds",
+null,
+13527,
+2
+],
+[
+"Brassards du vide ténébreux",
+"Poignets",
+null,
+13528,
+2
+],
+[
+"Sandales de dévot",
+"Pieds",
+null,
+16691,
+3
+],
+[
+"Cape de la lune blafarde",
+"Dos",
+null,
+18734,
+3
+],
+[
+"Bottines de Maleki",
+"Pieds",
+null,
+18735,
+3
+],
+[
+"Hachette tranche-os",
+"Une main",
+null,
+18737,
+3
+]
+]
+],
+[
+"Baron Rivendare",
+"Baron Rivendare",
+[
+[
+"Baguette de mauvais mojo de Ritssyn",
+"Distance",
+null,
+22408,
+3
+],
+[
+"Tunique du croissant de lune",
+"Torse",
+null,
+22409,
+3
+],
+[
+"Gantelets d'adresse",
+"Mains",
+null,
+22410,
+3
+],
+[
+"Heaume de l'Exécuteur",
+"Tête",
+null,
+22411,
+3
+],
+[
+"Mantelet de Thuzadin",
+"Épaules",
+null,
+22412,
+3
+],
+[
+"Cape du baron noir",
+"Dos",
+null,
+13340,
+3
+],
+[
+"Gantelets dracoriens",
+"Mains",
+null,
+13344,
+3
+],
+[
+"Sceau de Rivendare",
+"Doigt",
+null,
+13345,
+3
+],
+[
+"Robe de l'exalté",
+"Torse",
+null,
+13346,
+3
+],
+[
+"Sceptre de l'Impie",
+"Main droite",
+null,
+13349,
+3
+],
+[
+"Déchireuse de Stratholme",
+"Une main",
+null,
+13361,
+3
+],
+[
+"Lacéreuse",
+"Une main",
+null,
+13368,
+3
+],
+[
+"Kilt des éléments",
+"Jambes",
+null,
+16668,
+3
+],
+[
+"Pantalon de bestiaire",
+"Jambes",
+null,
+16678,
+3
+],
+[
+"Jambières de magistère",
+"Jambes",
+null,
+16687,
+3
+],
+[
+"Pantalon de dévot",
+"Jambes",
+null,
+16694,
+3
+],
+[
+"Jambières de Brume-funeste",
+"Jambes",
+null,
+16699,
+3
+],
+[
+"Pantalon Sombreruse",
+"Jambes",
+null,
+16709,
+3
+],
+[
+"Kilt du Coeur-sauvage",
+"Jambes",
+null,
+16719,
+3
+],
+[
+"Jambières de Sancteforge",
+"Jambes",
+null,
+16728,
+3
+],
+[
+"Jambières de vaillance",
+"Jambes",
+null,
+16732,
+3
+]
+]
+],
+[
+"Hearthsinger Forresten",
+"Hearthsinger Forresten",
+[
+[
+"Chemisette de l'oiseau chanteur",
+"Torse",
+null,
+13378,
+3
+],
+[
+"Piccolo des feux ardents",
+"Bijou",
+null,
+13379,
+3
+],
+[
+"Jambières du ménestrel",
+"Jambes",
+null,
+13383,
+3
+],
+[
+"Ceinturon arc-en-ciel",
+"Taille",
+null,
+13384,
+3
+],
+[
+"Bottes de magistère",
+"Pieds",
+null,
+16682,
+3
+]
+]
+],
+[
+"Echine-de-pierre",
+"Stonespine",
+[
+[
+"Cape de la gargouille peau-de-pierre",
+"Dos",
+null,
+13397,
+3
+],
+[
+"Serre de dilacération",
+"Main gauche",
+null,
+13399,
+3
+],
+[
+"Bottes verdoyantes",
+"Pieds",
+null,
+13954,
+3
+]
+]
+],
+[
+"Archiviste Galford",
+"Archivist Galford",
+[
+[
+"Bouquet de roses rouges",
+"Main gauche",
+null,
+22206,
+2
+],
+[
+"Tome de connaissance",
+"Main gauche",
+null,
+13385,
+3
+],
+[
+"Cape d'archiviste",
+"Dos",
+null,
+13386,
+3
+],
+[
+"Ceinturon de prévoyance",
+"Taille",
+null,
+13387,
+3
+],
+[
+"Gants de dévot",
+"Mains",
+null,
+16692,
+3
+],
+[
+"Bottes couvertes de cendres",
+"Pieds",
+null,
+18716,
+3
+]
+]
+],
+[
+"Grand croisé Dathrohan",
+"Grand Crusader Dathrohan",
+[
+[
+"Etoile de Mystaria",
+"Cou",
+null,
+12103,
+3
+],
+[
+"Fléau démoniaque",
+"Deux mains",
+null,
+13348,
+3
+],
+[
+"Epaulières Langue-de-wyrm",
+"Épaules",
+null,
+13358,
+3
+],
+[
+"Heaume de tyrannie",
+"Tête",
+null,
+13359,
+3
+],
+[
+"Don des magi elfes",
+"Une main",
+null,
+13360,
+3
+],
+[
+"Bottines des esprits enflammés",
+"Pieds",
+null,
+13369,
+3
+],
+[
+"Bottes de Sancteforge",
+"Pieds",
+null,
+16725,
+3
+],
+[
+"Marteau du Grand croisé",
+"Deux mains",
+null,
+18717,
+3
+],
+[
+"Heaume du Grand croisé",
+"Tête",
+null,
+18718,
+3
+],
+[
+"Voile du Nathrezim",
+"Épaules",
+null,
+18720,
+3
+]
+]
+],
+[
+"Maître canonnier Willey",
+"Cannon Master Willey",
+[
+[
+"Chapeau d'hiver rouge",
+"Tête",
+null,
+21524,
+2
+],
+[
+"Obusier portatif de Willey",
+"Distance",
+null,
+13380,
+3
+],
+[
+"Bottes de maître canonnier",
+"Pieds",
+null,
+13381,
+3
+],
+[
+"Messager du boulet de canon",
+"Bijou",
+null,
+13382,
+3
+],
+[
+"Spallières Sombreruse",
+"Épaules",
+null,
+16708,
+3
+],
+[
+"Ceinturon du barrage",
+"Taille",
+null,
+18721,
+3
+],
+[
+"Collier de coquillages nacrés",
+"Cou",
+null,
+22403,
+3
+],
+[
+"Gratte-dos de Willey",
+"Main droite",
+null,
+22404,
+3
+],
+[
+"Mantelet de la Croisade écarlate",
+"Épaules",
+null,
+22405,
+3
+],
+[
+"Rédemption",
+"Deux mains",
+null,
+22406,
+3
+],
+[
+"Casque de la nouvelle lune",
+"Tête",
+null,
+22407,
+3
+]
+]
+],
+[
+"Balzaphon",
+"Balzaphon",
+[
+[
+"Bâton de Balzaphon",
+"Deux mains",
+null,
+23124,
+3
+],
+[
+"Chaînes de la liche",
+"Cou",
+null,
+23125,
+3
+],
+[
+"Baudrier de Balzaphon",
+"Taille",
+null,
+23126,
+3
+]
+]
+],
+[
+"Jarien",
+"Jarien",
+[
+[
+"Amulette du Racheté",
+"Cou",
+null,
+22327,
+3
+],
+[
+"Sceptre de focalisation interminable",
+"Main gauche",
+null,
+22329,
+3
+],
+[
+"Anneau de guérison",
+"Doigt",
+null,
+22334,
+3
+]
+]
+],
+[
+"Sothos",
+"Sothos",
+[
+[
+"Robe Tisse-fer",
+"Torse",
+null,
+22301,
+3
+],
+[
+"Cuissards de vigilance",
+"Jambes",
+null,
+22328,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"Au-dessus et au-delà",
+60,
+"Alliance et Horde",
+"Duc Nicholas Zverenhoff (Maleterres de l'Est)",
+[]
+],
+[
+"De l'amour et de la famille",
+60,
+"Alliance et Horde",
+"Artiste Renfray (Maleterres de l'Ouest)",
+[]
+],
+[
+"L'agent actif",
+60,
+"Alliance et Horde",
+"Betina Bigglezink (Maleterres de l'Est)",
+[
+[
+"Sceau de l'Aube",
+13209
+],
+[
+"Rune de l'Aube",
+19812
+]
+]
+],
+[
+"L'archiviste",
+60,
+"Alliance et Horde",
+"Duc Nicholas Zverenhoff (Maleterres de l'Est)",
+[]
+],
+[
+"L'estimation d'Aurius",
+60,
+"Alliance et Horde",
+"Aurius (Stratholme)",
+[
+[
+"Volonté du Martyr",
+17044
+],
+[
+"Sang du Martyr",
+17045
+]
+]
+],
+[
+"La chair ne ment pas",
+60,
+"Alliance et Horde",
+"Betina Bigglezink (Maleterres de l'Est)",
+[]
+],
+[
+"La supplique du mort",
+60,
+"Alliance et Horde",
+"Anthion Harmon (Maleterres de l'Est)",
+[
+[
+"Sacoche d'Ysida",
+22137
+]
+]
+],
+[
+"La vérité vient du ciel",
+60,
+"Alliance et Horde",
+"en ramassant Tête de Balnazzar",
+[]
+],
+[
+"Le cadeau de Menethil",
+60,
+"Alliance et Horde",
+"Leonid Barthalomew le Révéré (Maleterres de l'Est)",
+[]
+],
+[
+"Le grand Ezra Grimm",
+60,
+"Alliance et Horde",
+"Smokey LaRue (Maleterres de l'Est)",
+[
+[
+"Briquet de Smokey",
+13171
+]
+]
+],
+[
+"Le morceau droit de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le morceau gauche de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le médaillon de foi",
+60,
+"Alliance et Horde",
+"Aurius (Stratholme)",
+[]
+],
+[
+"Les demeures du Sacré",
+60,
+"Alliance et Horde",
+"Leonid Barthalomew le Révéré (Maleterres de l'Est)",
+[
+[
+"Potion de soins excellente",
+3928
+],
+[
+"Potion de mana supérieure",
+6149
+],
+[
+"Couronne du pénitent",
+13216
+],
+[
+"Anneau du pénitent",
+13217
+]
+]
+],
+[
+"Ramstein",
+60,
+"Horde",
+"Nathanos le Flétrisseur (Maleterres de l'Est)",
+[
+[
+"Cercle élémentaire",
+17001
+],
+[
+"Sceau royal d'Alexis",
+18022
+]
+]
+],
+[
+"Âmes tourmentées",
+60,
+"Alliance et Horde",
+"Egan (Maleterres de l'Est)",
+[]
+]
+],
+"en": "Stratholme",
+"zone": "Maleterres de l'Est",
+"carte": 1423,
+"x": 26.5,
+"y": 10.4
+},
+"scholomance": {
+"nom": "Scholomance",
+"niv": "58 à 60",
+"nouveau": false,
+"intro": "L'école de nécromancie du Fléau, dans les cryptes de Caer Darrow, aux Maleterres de l'Ouest.",
+"boss": [
+[
+"Jandice Barov",
+"Jandice Barov",
+[
+[
+"Epée de la famille Barov",
+"Deux mains",
+null,
+14541,
+3
+],
+[
+"Jambières du fléau spectral",
+"Jambes",
+null,
+14545,
+3
+],
+[
+"Spallières royales",
+"Épaules",
+null,
+14548,
+3
+],
+[
+"Mantelet de Brume-funeste",
+"Épaules",
+null,
+16701,
+3
+],
+[
+"Cape fantasmatique",
+"Dos",
+null,
+18689,
+3
+],
+[
+"Jambières d’âme en peine en plaques",
+"Jambes",
+null,
+18690,
+3
+],
+[
+"Bâton de métanoïa",
+"Deux mains",
+null,
+22394,
+3
+]
+]
+],
+[
+"Ras Murmegivre",
+"Ras Frostwhisper",
+[
+[
+"Trancheuse glaciale",
+"Main droite",
+null,
+13952,
+3
+],
+[
+"Robe de la liche glaciale",
+"Torse",
+null,
+14340,
+3
+],
+[
+"Marteau Os-transis",
+"Une main",
+null,
+14487,
+3
+],
+[
+"Ceinturon de givre",
+"Taille",
+null,
+14502,
+3
+],
+[
+"Etreinte de la Mort",
+"Épaules",
+null,
+14503,
+3
+],
+[
+"Jambières du maelstrom",
+"Jambes",
+null,
+14522,
+3
+],
+[
+"Gantelets de l'étreinte osseuse",
+"Mains",
+null,
+14525,
+3
+],
+[
+"Mantelet de magistère",
+"Épaules",
+null,
+16689,
+3
+],
+[
+"Protège-mains fébriles",
+"Mains",
+null,
+18693,
+3
+],
+[
+"Grèves de mailles des ténèbres",
+"Pieds",
+null,
+18694,
+3
+],
+[
+"Tome envoûté",
+"Main gauche",
+null,
+18695,
+3
+],
+[
+"Bouclier aux runes complexes",
+"Bouclier",
+null,
+18696,
+3
+],
+[
+"Etreinte d'Alanna",
+"Torse",
+null,
+13314,
+4
+]
+]
+],
+[
+"Gardien du savoir Polkelt",
+"Lorekeeper Polkelt",
+[
+[
+"Bouquet de roses rouges",
+"Main gauche",
+null,
+22206,
+2
+],
+[
+"Protège-mains de Brume-funeste",
+"Mains",
+null,
+16705,
+3
+]
+]
+],
+[
+"Docteur Theolen Krastinov",
+"Doctor Theolen Krastinov",
+[
+[
+"Gants de magistère",
+"Mains",
+null,
+16684,
+3
+]
+]
+],
+[
+"Cliquettripes",
+"Rattlegore",
+[
+[
+"Targe de Cliquethorax",
+"Bouclier",
+null,
+14528,
+3
+],
+[
+"Brise-crâne de l'effroi",
+"Deux mains",
+null,
+14531,
+3
+],
+[
+"Grèves Corpselight",
+"Pieds",
+null,
+14537,
+3
+],
+[
+"Mantelet du marchemort",
+"Épaules",
+null,
+14538,
+3
+],
+[
+"Casque d'anneaux d'os",
+"Tête",
+null,
+14539,
+3
+],
+[
+"Bottes Sombreruse",
+"Pieds",
+null,
+16711,
+3
+],
+[
+"Epaulières de golem d'os",
+"Épaules",
+null,
+18686,
+3
+]
+]
+],
+[
+"Seigneur Noirbois",
+"Lord Blackwood",
+[
+[
+"Lame du seigneur Noirbois",
+"Une main",
+null,
+23132,
+3
+],
+[
+"Targe du seigneur Noirbois",
+"Bouclier",
+null,
+23139,
+3
+],
+[
+"Fémur de Noirbois",
+"Main gauche",
+null,
+23156,
+3
+]
+]
+],
+[
+"Kormok",
+"Kormok",
+[
+[
+"Pantalon Tisse-fer",
+"Jambes",
+null,
+22303,
+3
+],
+[
+"Anneau d'amalgame",
+"Doigt",
+null,
+22326,
+3
+],
+[
+"Anneau du héros inébranlable",
+"Doigt",
+null,
+22331,
+3
+],
+[
+"Lame de nécromancie",
+"Main droite",
+null,
+22332,
+3
+],
+[
+"Marteau de puissance divine",
+"Deux mains",
+null,
+22333,
+3
+]
+]
+]
+],
+"quetes": [
+[
+"L'écaille de dragon luisante",
+58,
+"Alliance et Horde",
+"en ramassant Ecaille de dragon luisante",
+[]
+],
+[
+"Portée contaminée",
+58,
+"Alliance et Horde",
+"Betina Bigglezink (Maleterres de l'Est)",
+[]
+],
+[
+"A More Fitting Reward",
+60,
+"Horde",
+"Sagorne Creststrider (Orgrimmar)",
+[
+[
+"Casque Fureur-du-ciel",
+20134
+]
+]
+],
+[
+"Betina Bigglezink",
+60,
+"Alliance et Horde",
+"Leonid Barthalomew le Révéré (Maleterres de l'Est)",
+[]
+],
+[
+"Docteur Theolen Krastinov, le boucher",
+60,
+"Alliance et Horde",
+"Eva Sarkhoff (Maleterres de l'Ouest)",
+[]
+],
+[
+"Fortune de la famille Barov",
+60,
+"Horde",
+"Alexi Barov (Clairières de Tirisfal)",
+[]
+],
+[
+"Fortune de la famille Barov",
+60,
+"Alliance",
+"Weldon Barov (Maleterres de l'Ouest)",
+[]
+],
+[
+"Kirtonos le héraut",
+60,
+"Alliance et Horde",
+"Eva Sarkhoff (Maleterres de l'Ouest)",
+[
+[
+"Essence spectrale",
+13544
+],
+[
+"Rose de Pénélope",
+15805
+],
+[
+"Chanson de Mirah",
+15806
+]
+]
+],
+[
+"La Liche, Ras Murmegivre",
+60,
+"Alliance et Horde",
+"Magistrat Marduke (Maleterres de l'Ouest)",
+[
+[
+"Lame de guerre de Caer Darrow",
+13982
+],
+[
+"Darrowspike",
+13984
+],
+[
+"Couronne de Caer Darrow",
+13986
+],
+[
+"Protecteur du Darrowshire",
+14002
+]
+]
+],
+[
+"Le gambit de l'aube",
+60,
+"Alliance et Horde",
+"Betina Bigglezink (Maleterres de l'Est)",
+[
+[
+"Arrachevent",
+15853
+],
+[
+"Bâton des esprits dansants",
+15854
+]
+]
+],
+[
+"Le morceau droit de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Le morceau gauche de l'amulette du seigneur Valthalak",
+60,
+"Alliance et Horde",
+"Bodley ()",
+[]
+],
+[
+"Sac des horreurs de Krastinov",
+60,
+"Alliance et Horde",
+"Eva Sarkhoff (Maleterres de l'Ouest)",
+[]
+]
+],
+"en": "Scholomance",
+"zone": "Maleterres de l'Ouest",
+"carte": 1422,
+"x": 69.7,
+"y": 73.2
+}
+}

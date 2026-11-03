@@ -5,8 +5,9 @@ Lancer : python3 tools/donjons_pages.py puis python3 tools/seo.py"""
 import re, os, html
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 e = html.escape
-def item(n):
-    i = ITEMS.get(n)
+QCOL = {2: "#1eff00", 3: "#0070dd", 4: "#a335ee", 5: "#ff8000"}
+def item(n, i=None):
+    i = i or ITEMS.get(n)
     return f'<a class="wh" href="https://www.wowhead.com/forever/fr/item={i}" target="_blank" rel="noopener" data-wowhead="item={i}&domain=fr.forever">{e(n)}</a>' if i else e(n)
 
 # Identifiants des objets (données du jeu) : servent aux liens et aux info-bulles Wowhead
@@ -47,48 +48,80 @@ DONJONS = {
 }
 
 def page(slug, d):
+    auto = d.get("auto")
     boss = ""
-    for i, (fr, en, desc, loot) in enumerate(d["boss"], 1):
-        rows = "".join(f'<tr><td><b>{item(n)}</b></td><td>{e(t)}</td><td class="pct"><span class="pbar"><i style="width:{p}%"></i></span>{str(p).replace(".", ",")} %</td></tr>' for n, t, p in loot)
-        tab = f'<div class="table-wrap"><table class="rtable dj-loot"><thead><tr><th>Objet</th><th>Type</th><th>Chance</th></tr></thead><tbody>{rows}</tbody></table></div>' if loot else '<p class="small">Pas de butin relevé pendant la bêta.</p>'
-        boss += f'<div class="dj-boss"><h3><span class="dj-n">{i}</span> {e(fr)} <span class="dm-en">{e(en)}</span></h3><p>{e(desc)}</p>{tab}</div>'
+    for i, b in enumerate(d["boss"], 1):
+        if auto:
+            fr, en, loot = b; desc = ""
+            loot = [(n, t, None, iid) for n, t, _, iid, ql in loot]
+        else:
+            fr, en, desc, loot = b
+            loot = [(n, t, p, None) for n, t, p in loot]
+        pc = any(p is not None for _, _, p, _ in loot)
+        rows = "".join(f'<tr><td><b>{item(n, iid)}</b></td><td>{e(t)}</td>' + (f'<td class="pct"><span class="pbar"><i style="width:{p}%"></i></span>{str(p).replace(".", ",")} %</td>' if pc else "") + '</tr>' for n, t, p, iid in loot)
+        head = '<th>Objet</th><th>Type</th>' + ('<th>Chance</th>' if pc else '')
+        tab = f'<div class="table-wrap"><table class="rtable dj-loot"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>' if loot else '<p class="small">Pas de butin relevé pendant la bêta.</p>'
+        boss += f'<div class="dj-boss"><h3><span class="dj-n">{i}</span> {e(fr)}' + (f' <span class="dm-en">{e(en)}</span>' if en != fr else '') + f'</h3>{f"<p>{e(desc)}</p>" if desc else ""}{tab}</div>'
     qs = ""
-    for n, niv, camp, de, obj, rec, rep, note in d["quetes"]:
+    for qd in d["quetes"]:
+        if auto:
+            n, niv, camp, de, rec = qd; obj = rep = note = ""
+            recs = " · ".join(item(r, iid) for r, iid in rec)
+        else:
+            n, niv, camp, de, obj, rec, rep, note = qd
+            recs = " · ".join(item(r) for r in rec)
         cls = "a" if camp == "Alliance" else ("h" if camp == "Horde" else "s")
         qs += f'''<div class="dj-q"><h3>{e(n)} <span class="pp-lv">niveau {niv}</span> <span class="race {cls}">{e(camp)}</span></h3>
-  <p><b>Donnée par :</b> {e(de)}</p><p><b>Objectif :</b> {e(obj)}</p>
-  <p><b>Récompense au choix :</b> {" · ".join(item(r) for r in rec)}{f" · réputation {e(rep)}" if rep else ""}</p>{f'<p class="small">{e(note)}</p>' if note else ""}</div>'''
-    tips = "".join(f"<li>{e(t)}</li>" for t in d["conseils"])
-    src = ", ".join(f'<a href="{u}" target="_blank" rel="noopener">{e(n)}</a>' for n, u in d["sources"])
+  <p><b>Donnée par :</b> {e(de)}</p>{f"<p><b>Objectif :</b> {e(obj)}</p>" if obj else ""}
+  {f"<p><b>Récompense :</b> {recs}{f' · réputation {e(rep)}' if rep else ''}</p>" if recs else ""}{f'<p class="small">{e(note)}</p>' if note else ""}</div>'''
+    tips = "".join(f"<li>{e(t)}</li>" for t in d.get("conseils", []))
+    src = ", ".join(f'<a href="{u}" target="_blank" rel="noopener">{e(n)}</a>' for n, u in d.get("sources", []))
+    carte = (f'<div class="dj-map"><img src="images/cartes/{d["carte"]}.webp" alt="Carte : {e(d["zone"])}" loading="lazy"><span class="dj-pin" style="left:{d["x"]}%;top:{d["y"]}%" title="Entrée"></span></div>'
+             if d.get("carte") else '<div class="dj-map dj-nomap"><img src="images/ico/lib/carte.webp" alt="" width="96" height="96"><p>Emplacement exact à venir.</p></div>')
+    entree = f'{e(d.get("zone", "À confirmer"))}' + (f' <span class="xy">{d["x"]}, {d["y"]}</span>' if d.get("carte") else "")
+    acces = d.get("acces") or ("Le point rouge marque l'entrée du donjon." if d.get("carte") else "")
+    if auto:
+        bnote = ("Butin d'après les données de WoW Classic : Forever a ajouté de nouveaux objets dans les donjons, la liste sera complétée en jeu. "
+                 "Seuls les objets de qualité inhabituelle et mieux sont listés.")
+        if not d["boss"]: bnote = "Le butin de ce nouveau donjon sera ajouté dès qu'il sera connu."
+        qnote = "" if d["quetes"] else '<p class="small">Pas de quête connue pour ce donjon pour l\'instant.</p>'
+    else:
+        bnote, qnote = d["butin_note"], ""
+    bloc_tips = f'<div class="article" style="margin-top:18px"><h2>Conseils</h2><ul>{tips}</ul></div>' if tips else ""
     return f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › <a href="donjons.html">Donjons &amp; Raids</a> › {e(d["nom"])}</div>
-<h1 class="page-title">{e(d["nom"])} <span class="pp-lv">niveaux {e(d["niv"])}</span></h1>
+<h1 class="page-title">{e(d["nom"])} <span class="pp-lv">niveaux {e(d["niv"])}</span>{' <span class="badge">Nouveau</span>' if d.get("nouveau") else ''}</h1>
 <p class="page-lead">{e(d["intro"])}</p>
 <div class="dj-top">
-  <div class="dj-map"><img src="images/cartes/{d["carte"]}.webp" alt="Carte de {e(d["zone"])}" loading="lazy"><span class="dj-pin" style="left:{d["x"]}%;top:{d["y"]}%" title="Entrée"></span></div>
+  {carte}
   <div class="article dj-info">
     <h2>Accès</h2>
-    <ul class="dj-facts"><li><img src="images/ico/lib/boussole.webp" alt=""> <span><b>Entrée</b> {e(d["zone"])} <span class="xy">{d["x"]}, {d["y"]}</span></span></li>
-      <li><img src="images/ico/lib/groupe.webp" alt=""> <span><b>{d["joueurs"]} joueurs</b> · niveaux {e(d["niv"])}</span></li>
-      <li><img src="images/ico/lib/quete.webp" alt=""> <span><b>{len(d["quetes"])} quêtes</b> · {len(d["boss"])} boss</span></li></ul>
-    <p>{e(d["acces"])}</p>
-    <p class="small">Le point rouge marque l'entrée. Toutes les zones sont sur notre <a href="carte.html">carte interactive</a>.</p>
+    <ul class="dj-facts"><li><img src="images/ico/lib/boussole.webp" alt=""> <span><b>Entrée</b> {entree}</span></li>
+      <li><img src="images/ico/lib/groupe.webp" alt=""> <span><b>{d.get("joueurs", 5)} joueurs</b> · niveaux {e(d["niv"])}</span></li>
+      <li><img src="images/ico/lib/quete.webp" alt=""> <span><b>{len(d["quetes"])} quête{"s" if len(d["quetes"]) > 1 else ""}</b> · {len(d["boss"])} boss</span></li></ul>
+    <p>{e(acces)}</p>
+    <p class="small">Toutes les zones sont sur notre <a href="carte.html">carte interactive</a>.</p>
   </div>
 </div>
 <div class="sec-title"><h2>Les boss et leur butin</h2></div>
 {boss}
-<p class="small">{e(d["butin_note"])} Passe la souris sur un objet pour voir ses caractéristiques (info-bulle Wowhead), ou clique pour ouvrir sa fiche.</p>
+<p class="small">{e(bnote)} Passe la souris sur un objet pour voir ses caractéristiques (info-bulle Wowhead), ou clique pour ouvrir sa fiche.</p>
 <div class="sec-title"><h2>Les quêtes du donjon</h2></div>
-{qs}
-<div class="article" style="margin-top:18px"><h2>Conseils</h2><ul>{tips}</ul></div>
-<p class="small">Noms des quêtes, des PNJ et des objets d'après les données du jeu (Polestar, CC BY 4.0). Butin et informations complémentaires : {src}.</p>
+{qs}{qnote}
+{bloc_tips}
+<p class="small">Noms des quêtes, des PNJ et des objets d'après les données du jeu (Polestar, CC BY 4.0, et Factoruide/Questie){f" ; butin et informations complémentaires : {src}" if src else ""}.</p>
 </div>'''
 
+import json
+AUTO = json.load(open("tools/donjons_auto.json", encoding="utf-8"))
+for k, v in AUTO.items():
+    if k not in DONJONS:
+        v["auto"] = True; DONJONS[k] = v
 tpl = open("legacy.html", encoding="utf-8").read()
 for slug, d in DONJONS.items():
     head = tpl[:tpl.index("<main>")]
     head = re.sub(r"<title>.*?</title>", f"<title>{e(d['nom'])} : guide du donjon de WoW Forever – ForeverWoW</title>", head)
-    head = re.sub(r'name="description" content=".*?"', f'name="description" content="{e(d["nom"])} ({d["en"]}), donjon de WoW Forever niveaux {d["niv"]} : emplacement, boss et butin, quêtes et conseils."', head)
+    head = re.sub(r'name="description" content=".*?"', f'name="description" content="{e(d["nom"])} ({d.get("en", d["nom"])}), donjon de WoW Forever niveaux {d["niv"]} : emplacement, boss et butin, quêtes et conseils."', head)
     tail = re.sub(r'<script src="js/heritage\.js[^"]*"></script>\n?', '', tpl[tpl.index("</main>"):])
     tail = tail.replace("</body>", '<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false, iconSize: "small"};</script>\n<script src="https://wow.zamimg.com/js/tooltips.js"></script>\n</body>', 1)
     open(f"donjon-{slug}.html", "w", encoding="utf-8").write(head + page(slug, d) + tail)

@@ -69,3 +69,8 @@ La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AA
 
 ## Google AdSense
 Le code AdSense (ca-pub-5144798644718811) est ajouté dans le <head> de chaque page par `tools/seo.py`, et `ads.txt` est à la racine. Ne pas le retirer des pages à la main : relancer seo.py suffit.
+
+## Pages de donjon (donjon-*.html)
+1. `python3 tools/donjons_extract.py <f.sqlite Factoruide> <clone Polestar>` → tools/donjons_auto.json (entrée, boss et butin Classic, quêtes).
+2. `python3 tools/donjons_pages.py` (les donjons écrits à la main dans DONJONS, comme la Salle des Thanes, passent avant les données auto), puis `python3 tools/seo.py`.
+Dans donjons.html, un donjon qui a sa page a comme liens « Notre guide » (ICI) + un petit lien Wowhead (WH).
