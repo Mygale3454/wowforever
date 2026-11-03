@@ -92,6 +92,8 @@ def builds():
         c, a = decode(old, b["code"])
         ids = {(ti, t["id"]) for ti, tr in enumerate(new[c]["trees"]) for t in tr["t"]}
         mx = {(ti, t["id"]): t["m"] for ti, tr in enumerate(new[c]["trees"]) for t in tr["t"]}
+        where = {t["id"]: ti for ti, tr in enumerate(new[c]["trees"]) for t in tr["t"]}
+        a = {(kk if kk in ids else (where.get(kk[1], kk[0]), kk[1])): v for kk, v in a.items()}  # talent passé dans un autre arbre
         lost = {kk: v for kk, v in a.items() if kk not in ids}
         na = {kk: min(v, mx[kk]) for kk, v in a.items() if kk in ids}
         total = sum(na.values()); errs = check(new, c, na)

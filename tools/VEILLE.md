@@ -49,7 +49,7 @@ Lancer : `python3 tools/tierlist.py` puis `python3 tools/seo.py`.
 puis `python3 tools/talents.py --builds` : recalcule les codes de `tools/builds.json` sur les nouveaux arbres et liste les builds « À REVOIR »
 (points perdus, palier ou prérequis non respecté). Corriger ces builds à la main (51 points), mettre à jour `cree`/`patch` des builds modifiés
 et `verifie`/`patch_verif` de tous, puis `python3 tools/guides.py`. Mettre à jour le numéro de patch dans talents.html.
-Les arbres du 1er novembre 2026 viennent du patch 1.60.1.70707.
+Arbres actuels : patch 1.60.1.70753 (notes de lancement du 2 novembre 2026).
 
 ## Tampon « Mise à jour le … · Patch … » (toutes les pages)
 Ajouté par `tools/seo.py` sous l'introduction (`page-lead`) de chaque page, sauf l'accueil, la galerie et les news.

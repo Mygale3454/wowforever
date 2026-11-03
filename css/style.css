@@ -922,3 +922,10 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .dm-t table{min-width:0;width:100%}
 .dm-t td,.dm-t th{padding:6px 10px;font-size:.85rem}
 .dm-tal li{margin:6px 0;font-size:.92rem}
+
+/* Notes de lancement */
+.nl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:10px 0}
+.nl-c{border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--card)}
+.nl-c h3{margin:0 0 4px;font-size:1.02rem;display:flex;align-items:center;gap:8px}
+.nl-c h3 img{border-radius:5px}
+.nl-c p{margin:0;font-size:.88rem}

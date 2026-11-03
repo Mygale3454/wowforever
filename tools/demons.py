@@ -105,7 +105,8 @@ body = f'''<main><div class="wrap">
   <div class="table-wrap dm-t"><table class="rtable"><thead><tr><th>Situation</th><th>Démon conseillé</th></tr></thead><tbody>{choix}</tbody></table></div>
   <ul>
     <li>Dans Forever, <b>tes démons profitent de tes caractéristiques</b> : mieux tu es équipé, plus ils sont forts.</li>
-    <li>Les techniques s'achètent sous forme de <b>grimoires</b> chez le maître des démons, en général à côté de ton maître des démonistes. Les prix ci-dessous sont sans réduction de réputation.</li>
+    <li>Les techniques s'achètent sous forme de <b>grimoires</b> chez le maître des démons, en général à côté de ton maître des démonistes. Les prix ci-dessous sont sans réduction de réputation. Depuis les notes de lancement, le prix des grimoires est déduit du coût d'entraînement du démoniste.</li>
+    <li>Depuis les notes de lancement, chaque point d'Endurance donne <b>2 points de vie</b> à tes démons (7,5 auparavant) : ils sont moins résistants qu'en bêta.</li>
     <li>Les valeurs indiquées sont celles de base, sans talents ni équipement ; le niveau est celui où le rang devient disponible.</li>
   </ul>
 </div>

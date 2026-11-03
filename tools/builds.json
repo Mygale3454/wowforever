@@ -27,13 +27,13 @@
   "main": "Balance",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "druid-feral-combat": {
-  "code": "druid--55232332120132012551-03",
+  "code": "druid--5323233212310212551-05",
   "total": 51,
-  "split": "0/48/3",
+  "split": "0/46/5",
   "bad": [],
   "stats": [
    "Defense",
@@ -53,18 +53,17 @@
    "Leader of the Pack",
    "Natural Instinct",
    "Natural Reaction",
-   "Rend and Tear",
-   "Berserk"
+   "Rend and Tear"
   ],
   "adapted": true,
   "main": "Feral Combat",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "druid-restoration": {
-  "code": "druid-55002001--5050035153113051",
+  "code": "druid-55002001--5053005153113051",
   "total": 51,
   "split": "13/0/38",
   "bad": [],
@@ -86,12 +85,12 @@
    "Improved Regrowth",
    "Wild Growth"
   ],
-  "adapted": false,
+  "adapted": true,
   "main": "Restoration",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "hunter-beast-mastery": {
   "code": "hunter-5520001505101051-0053552-",
@@ -120,8 +119,8 @@
   "main": "Beast Mastery",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "hunter-marksmanship": {
   "code": "hunter-5-3053552511523051-",
@@ -151,8 +150,8 @@
   "main": "Marksmanship",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "hunter-survival": {
   "code": "hunter-5-005005001-500250230050222151",
@@ -185,8 +184,8 @@
   "main": "Survival",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "mage-arcane": {
   "code": "mage-251225223122311531-5-003",
@@ -217,8 +216,8 @@
   "main": "Arcane",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "mage-fire": {
   "code": "mage-002-55523331232133131-003",
@@ -249,8 +248,8 @@
   "main": "Fire",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "mage-frost": {
   "code": "mage-050005003--053530030121331251",
@@ -279,13 +278,13 @@
   "main": "Frost",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "paladin-holy": {
-  "code": "paladin-05320113225101051-500250002-05",
+  "code": "paladin-50320215202101251-501220005-04",
   "total": 51,
-  "split": "32/14/5",
+  "split": "32/15/4",
   "bad": [],
   "stats": [
    "Bonus Healing",
@@ -305,17 +304,17 @@
    "Holy Power",
    "Light's Vigil"
   ],
-  "adapted": false,
+  "adapted": true,
   "main": "Holy",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "paladin-protection": {
-  "code": "paladin--5530513321301551-0512",
+  "code": "paladin--35302132513521531-051",
   "total": 51,
-  "split": "0/43/8",
+  "split": "0/45/6",
   "bad": [],
   "stats": [
    "Spell Power",
@@ -339,17 +338,17 @@
    "Iron Creed",
    "Holy Shield"
   ],
-  "adapted": false,
+  "adapted": true,
   "main": "Protection",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "paladin-retribution": {
-  "code": "paladin-55003002--05225331201330321",
+  "code": "paladin-050230002-5-05233301221301341",
   "total": 51,
-  "split": "15/0/36",
+  "split": "12/5/34",
   "bad": [],
   "stats": [
    "Weapon DPS",
@@ -371,16 +370,14 @@
   "key": [
    "Two-Handed Weapon Specialization",
    "Vengeance",
-   "Champion of the Light",
-   "Instrument of Law",
-   "Twist of Light"
+   "Champion of the Light"
   ],
-  "adapted": false,
+  "adapted": true,
   "main": "Retribution",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "priest-discipline": {
   "code": "priest-005305031330011531-335050000001-",
@@ -406,12 +403,12 @@
    "Divine Aegis",
    "Power Infusion"
   ],
-  "adapted": false,
+  "adapted": true,
   "main": "Discipline",
-  "cree": "2026-10-01",
-  "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "priest-holy": {
   "code": "priest-00530200033-03525103032101531-",
@@ -438,10 +435,10 @@
   ],
   "adapted": true,
   "main": "Holy",
-  "cree": "2026-11-01",
-  "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "cree": "2026-11-03",
+  "patch": "1.60.1.70753",
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "priest-shadow": {
   "code": "priest-10532001003--50552201201302251",
@@ -470,8 +467,8 @@
   "main": "Shadow",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "rogue-assassination": {
   "code": "rogue-22532310551521031-025003-",
@@ -500,8 +497,8 @@
   "main": "Assassination",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "rogue-combat": {
   "code": "rogue-00532-32533321121515211-",
@@ -531,8 +528,8 @@
   "main": "Combat",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "rogue-subtlety": {
   "code": "rogue-00532--2223223310213211551",
@@ -563,8 +560,8 @@
   "main": "Subtlety",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "shaman-elemental": {
   "code": "shaman-5502331003001351-05-053050001",
@@ -588,15 +585,14 @@
   "conf": "low",
   "key": [
    "Lightning Overload",
-   "Elemental Fury",
-   "Lava Burst"
+   "Elemental Fury"
   ],
   "adapted": true,
   "main": "Elemental",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "shaman-enhancement": {
   "code": "shaman-053-055030031005102251-05005",
@@ -630,8 +626,8 @@
   "main": "Enhancement",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "shaman-restoration": {
   "code": "shaman---5533523315513151",
@@ -660,8 +656,8 @@
   "main": "Restoration",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warlock-affliction": {
   "code": "warlock-25500323035201351-0050203001-",
@@ -692,8 +688,8 @@
   "main": "Affliction",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warlock-demonology": {
   "code": "warlock-2-0055003201221001351-0550305",
@@ -724,8 +720,8 @@
   "main": "Demonology",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warlock-destruction": {
   "code": "warlock-1-005020320122-0550305103101351",
@@ -756,8 +752,8 @@
   "main": "Destruction",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warrior-arms": {
   "code": "warrior-30305213132515231-050501-",
@@ -790,8 +786,8 @@
   "main": "Arms",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warrior-fury": {
   "code": "warrior-33-55053105152212521-",
@@ -822,8 +818,8 @@
   "main": "Fury",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  },
  "warrior-protection": {
   "code": "warrior-35--250533122231221351",
@@ -853,7 +849,7 @@
   "main": "Protection",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-01",
-  "patch_verif": "1.60.1.70707"
+  "verifie": "2026-11-03",
+  "patch_verif": "1.60.1.70753"
  }
 }

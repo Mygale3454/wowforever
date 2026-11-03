@@ -14,7 +14,7 @@ LASTMOD = {f: gitdate(f) for f in pages}
 # ----- Tampon « Mise à jour le … · Patch … » sous l'introduction de chaque page -----
 # Date = dernier commit qui a vraiment changé le contenu de la page (on ignore les numéros de version ?v=,
 # les balises ajoutées par ce script et le tampon lui-même). Patch = build du jeu en vigueur à cette date.
-PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707")]
+PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707"), ("2026-11-02", "1.60.1.70753")]
 NOSTAMP = {"index.html", "galerie.html", "actualites.html"}
 def _norm(l):
     l = re.sub(r'<p class="stamp auto">.*?</p>', "", l)

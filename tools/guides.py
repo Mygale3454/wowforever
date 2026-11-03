@@ -40,11 +40,11 @@ G = {
  ["Redoutable en JcJ","Beaucoup de contrôle","Très mobile"],["Plus faible en donjon","Demande de l'expérience"]),
 "priest-discipline":("Discipline","Soins","Le prêtre protecteur : boucliers, prévention des dégâts et nouveaux sorts comme Penance. Très efficace en donjon pour empêcher les dégâts avant même qu'ils n'arrivent.",
  ["Boucliers très puissants","Excellent en donjon","Bonne gestion du mana"],["Moins de soins de groupe que le Sacré","Demande d'anticiper"]),
-"priest-holy":("Sacré","Soins","Le soigneur de groupe par excellence : soins de zone, Prière de soins et nouveaux sorts comme Prayer of Mending ou Binding Heal. L'un des meilleurs soigneurs de Forever.",
+"priest-holy":("Sacré","Soins","Le soigneur de groupe par excellence : soins de zone, Prière de soins et nouveaux sorts comme Prayer of Mending et Holy Binding (qui remplace Binding Heal au lancement). L'un des meilleurs soigneurs de Forever.",
  ["Soins de groupe excellents","Très polyvalent","Recherché en raid"],["Fragile en solo","Lent pour monter de niveau"]),
 "priest-shadow":("Ombre","Dégâts à distance","Le prêtre de l'ombre : dégâts sur la durée, Fouet mental et forme d'ombre. Il rend du mana et de la vie à son groupe et reste très agréable pour progresser seul.",
  ["Bon en solo","Soutien en mana et en vie au groupe","Solide en JcJ"],["Moins de dégâts immédiats","Dépend de la durée des combats"]),
-"shaman-elemental":("Élémentaire","Dégâts à distance","Le chaman des éclairs : Éclair, Chaîne d'éclairs et Lava Burst, avec de très gros coups critiques. Des dégâts de sorts élevés et des totems utiles à tout le groupe.",
+"shaman-elemental":("Élémentaire","Dégâts à distance","Le chaman des éclairs : Éclair et Chaîne d'éclairs, renforcés par les notes de lancement (Éclair +80 %, Surcharge de foudre jusqu'à 30 %), avec de très gros coups critiques. Des dégâts de sorts élevés et des totems utiles à tout le groupe.",
  ["Gros dégâts de sorts","Totems utiles au groupe","Peut soigner en dépannage"],["Gourmand en mana","Peu mobile pendant les incantations"]),
 "shaman-enhancement":("Amélioration","Dégâts en mêlée","Le chaman au corps à corps : Frappe-tempête, armes enchantées et Maelstrom Weapon pour lancer des sorts instantanés. Des dégâts explosifs et un style très apprécié.",
  ["Dégâts explosifs","Très populaire","Polyvalent"],["Dépend de la chance (Windfury, critiques)","Gourmand en mana en solo"]),
@@ -116,7 +116,7 @@ body = f'''<main><div class="wrap">
 <p style="margin-top:12px">Quelle spé est la plus forte au niveau 60 ? Voir les <a href="tier-list.html"><b>tier lists niveau 60</b></a>.</p>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {sections}
-<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70707 (1<sup>er</sup> novembre 2026). Noms des talents en anglais.</p>
+<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70753 (notes de lancement du 2 novembre 2026). Noms des talents en anglais.</p>
 </div>'''
 
 tpl = open("legacy.html").read()

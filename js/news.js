@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-03", type: "actu", lien: "news-notes-lancement.html", img: "images/une.jpg",
+    titre: "Notes de lancement : toutes les classes renforcées",
+    texte: "223 changements avant la sortie : poisons du voleur doublés, Explosion de lave retirée au chaman, gros bonus pour le druide farouche… Calculateur de talents et builds déjà à jour." },
   { date: "2026-11-02", type: "guide", lien: "familiers-demoniste.html", img: "images/montures/demoniste.webp",
     titre: "Guide des familiers du démoniste",
     texte: "Diablotin, marcheur du Vide, succube, nouvel incube, chasseur corrompu, infernal et garde funeste : à quoi sert chaque démon, ses sorts, le prix des grimoires et les talents qui le renforcent." },
