@@ -5,6 +5,12 @@ Lancer : python3 tools/donjons_pages.py puis python3 tools/seo.py"""
 import re, os, html
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 e = html.escape
+def item(n):
+    i = ITEMS.get(n)
+    return f'<a class="wh" href="https://www.wowhead.com/forever/fr/item={i}" target="_blank" rel="noopener" data-wowhead="item={i}&domain=fr.forever">{e(n)}</a>' if i else e(n)
+
+# Identifiants des objets (données du jeu) : servent aux liens et aux info-bulles Wowhead
+ITEMS = {'Drapé spectresprit': 271097, 'Sautoir éphémère': 270227, 'Brassards brindecieux': 271096, 'Canne cœur-de-golem': 270228, 'Bottines du golem protecteur': 270229, 'Plastron de garde golem': 271098, 'Hache-croissant de Durgen': 270256, 'Jambières de Dirgehammer': 270260, 'Robe de thane déshonoré': 270261, 'Tête de Durgen Mornemartel': 274286, 'Tromblon calibré': 279894, 'Grand marteau de Forgefer': 279895, 'Cœur-de-brasier': 279896, 'Ceinture poussiéreuse': 279897, 'Brassards du marcheur des cryptes': 280095, 'Tome nain': 279898, 'Gants de pillage de tombes': 280096, 'Cape des catacombes': 279899, 'Chausses creuses-tombes': 279900}
 
 DONJONS = {
 "salle-des-thanes": {
@@ -19,7 +25,7 @@ DONJONS = {
     ("Pilleur", "Plunder", "Le troisième boss, dont le butin est taillé dans des pièces de golem gardien.",
      [("Canne cœur-de-golem", "Bâton", 37.3), ("Bottines du golem protecteur", "Pieds", 34.1), ("Plastron de garde golem", "Torse", 28.6)]),
     ("Durgen Mornemartel", "Durgen Dirgehammer", "Le chef des pilleurs, dernier boss. Sa tête est demandée par le roi Magni.",
-     [("Hache-croissant de Durgen", "Arme", 28.5), ("Jambières de Mornemartel", "Jambes", 24.6), ("Robe de thane déshonoré", "Torse", 21.5), ("Tête de Durgen Mornemartel", "Objet de quête", 58.5)]),
+     [("Hache-croissant de Durgen", "Arme", 28.5), ("Jambières de Dirgehammer", "Jambes", 24.6), ("Robe de thane déshonoré", "Torse", 21.5), ("Tête de Durgen Mornemartel", "Objet de quête", 58.5)]),
   ],
   "butin_note": "Taux relevés sur 126 à 157 victoires pendant la bêta (build 1.60.1.70205) : ils donnent un ordre d'idée et peuvent changer. Emplacements déduits des noms des objets.",
   "quetes": [
@@ -43,7 +49,7 @@ DONJONS = {
 def page(slug, d):
     boss = ""
     for i, (fr, en, desc, loot) in enumerate(d["boss"], 1):
-        rows = "".join(f'<tr><td><b>{e(n)}</b></td><td>{e(t)}</td><td class="pct"><span class="pbar"><i style="width:{p}%"></i></span>{str(p).replace(".", ",")} %</td></tr>' for n, t, p in loot)
+        rows = "".join(f'<tr><td><b>{item(n)}</b></td><td>{e(t)}</td><td class="pct"><span class="pbar"><i style="width:{p}%"></i></span>{str(p).replace(".", ",")} %</td></tr>' for n, t, p in loot)
         tab = f'<div class="table-wrap"><table class="rtable dj-loot"><thead><tr><th>Objet</th><th>Type</th><th>Chance</th></tr></thead><tbody>{rows}</tbody></table></div>' if loot else '<p class="small">Pas de butin relevé pendant la bêta.</p>'
         boss += f'<div class="dj-boss"><h3><span class="dj-n">{i}</span> {e(fr)} <span class="dm-en">{e(en)}</span></h3><p>{e(desc)}</p>{tab}</div>'
     qs = ""
@@ -51,7 +57,7 @@ def page(slug, d):
         cls = "a" if camp == "Alliance" else ("h" if camp == "Horde" else "s")
         qs += f'''<div class="dj-q"><h3>{e(n)} <span class="pp-lv">niveau {niv}</span> <span class="race {cls}">{e(camp)}</span></h3>
   <p><b>Donnée par :</b> {e(de)}</p><p><b>Objectif :</b> {e(obj)}</p>
-  <p><b>Récompense au choix :</b> {" · ".join(e(r) for r in rec)}{f" · réputation {e(rep)}" if rep else ""}</p>{f'<p class="small">{e(note)}</p>' if note else ""}</div>'''
+  <p><b>Récompense au choix :</b> {" · ".join(item(r) for r in rec)}{f" · réputation {e(rep)}" if rep else ""}</p>{f'<p class="small">{e(note)}</p>' if note else ""}</div>'''
     tips = "".join(f"<li>{e(t)}</li>" for t in d["conseils"])
     src = ", ".join(f'<a href="{u}" target="_blank" rel="noopener">{e(n)}</a>' for n, u in d["sources"])
     return f'''<main><div class="wrap">
@@ -71,7 +77,7 @@ def page(slug, d):
 </div>
 <div class="sec-title"><h2>Les boss et leur butin</h2></div>
 {boss}
-<p class="small">{e(d["butin_note"])}</p>
+<p class="small">{e(d["butin_note"])} Passe la souris sur un objet pour voir ses caractéristiques (info-bulle Wowhead), ou clique pour ouvrir sa fiche.</p>
 <div class="sec-title"><h2>Les quêtes du donjon</h2></div>
 {qs}
 <div class="article" style="margin-top:18px"><h2>Conseils</h2><ul>{tips}</ul></div>
@@ -84,5 +90,6 @@ for slug, d in DONJONS.items():
     head = re.sub(r"<title>.*?</title>", f"<title>{e(d['nom'])} : guide du donjon de WoW Forever – ForeverWoW</title>", head)
     head = re.sub(r'name="description" content=".*?"', f'name="description" content="{e(d["nom"])} ({d["en"]}), donjon de WoW Forever niveaux {d["niv"]} : emplacement, boss et butin, quêtes et conseils."', head)
     tail = re.sub(r'<script src="js/heritage\.js[^"]*"></script>\n?', '', tpl[tpl.index("</main>"):])
+    tail = tail.replace("</body>", '<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false, iconSize: "small"};</script>\n<script src="https://wow.zamimg.com/js/tooltips.js"></script>\n</body>', 1)
     open(f"donjon-{slug}.html", "w", encoding="utf-8").write(head + page(slug, d) + tail)
 print(len(DONJONS), "donjon(s)")
