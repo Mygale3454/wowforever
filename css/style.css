@@ -960,3 +960,8 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .glink.ici{background:var(--title);color:var(--card) !important;border-color:var(--title);font-weight:700}
 .wh{color:inherit;text-decoration:underline dotted;text-underline-offset:3px}
 .glink-wh{font-size:.68rem;color:var(--muted);margin-left:6px;align-self:center;text-decoration:underline dotted}
+.dname{font-weight:700;color:var(--title);text-decoration:none}
+.dname:hover{text-decoration:underline}
+#dtable tr.dlink{cursor:pointer}
+#dtable tr.dlink:hover td{background:var(--bg2)}
+.dnew{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#fff;background:#3c7a3a;border-radius:4px;padding:1px 4px;margin-left:4px;vertical-align:super}

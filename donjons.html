@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Cinzel+Decorative:wght@900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202611040014">
+<link rel="stylesheet" href="css/style.css?v=202611040043">
 <link rel="canonical" href="https://foreverwow.fr/donjons.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ForeverWoW.fr">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://foreverwow.fr/images/partage.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://foreverwow.fr/"}, {"@type": "ListItem", "position": 2, "name": "Donjons & Raids", "item": "https://foreverwow.fr/donjons.html"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Donjons & Raids", "description": "Liste des donjons et raids de WoW Forever avec niveaux et emplacements.", "inLanguage": "fr-FR", "mainEntityOfPage": "https://foreverwow.fr/donjons.html", "image": ["https://foreverwow.fr/images/donjons.jpg"], "datePublished": "2026-10-26", "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}, "publisher": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://foreverwow.fr/"}, {"@type": "ListItem", "position": 2, "name": "Donjons & Raids", "item": "https://foreverwow.fr/donjons.html"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Donjons & Raids", "description": "Liste des donjons et raids de WoW Forever avec niveaux et emplacements.", "inLanguage": "fr-FR", "mainEntityOfPage": "https://foreverwow.fr/donjons.html", "image": ["https://foreverwow.fr/images/donjons.jpg"], "datePublished": "2026-10-26", "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}, "publisher": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}}]</script>
 <link rel="alternate" type="application/rss+xml" title="ForeverWoW.fr – News" href="https://foreverwow.fr/rss.xml">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5144798644718811" crossorigin="anonymous"></script>
 </head>
@@ -40,7 +40,7 @@
   <button data-f="classic">Classic</button>
 </div>
 <div class="table-wrap"><table>
-  <thead><tr><th>Donjon</th><th>Niveaux</th><th>Zone</th><th>Type</th><th>Guides</th></tr></thead>
+  <thead><tr><th>Donjon</th><th>Niveaux</th><th>Zone</th><th>Guides externes</th></tr></thead>
   <tbody id="dtable"></tbody>
 </table></div>
 <p class="small">Niveaux indicatifs, susceptibles d'évoluer. Les guides s'ouvrent dans un nouvel onglet : <b>FR</b> = en français, <b>EN</b> = en anglais. « Classic » signale un guide écrit pour WoW Classic, en attendant une version Forever.</p>
@@ -116,7 +116,9 @@ function guides(g){
 }
 function afficher(f){
   document.getElementById("dtable").innerHTML = DONJONS.filter(d => f==="all" || d[3]===f).map(d =>
-    `<tr><td><b>${d[0]}</b></td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td>${d[3]==="new" ? '<span class="badge">Nouveau</span>' : '<span class="badge grey">Classic</span>'}</td><td class="guides">${guides(d[4])}</td></tr>`).join("");
+    { const ici = d[4].find(g => g[2]==="ICI"), nom = `${d[0]}${d[3]==="new" ? '<sup class="dnew">New</sup>' : ''}`;
+      return `<tr${ici ? ` class="dlink" data-href="${ici[1]}"` : ""}><td>${ici ? `<a class="dname" href="${ici[1]}">${nom}</a>` : `<b>${nom}</b>`}</td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td class="guides">${ici ? '' : guides(d[4])}</td></tr>`; }).join("");
+  document.querySelectorAll("#dtable tr.dlink").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) location.href = tr.dataset.href; }));
 }
 afficher("all");
 document.getElementById("dfilters").addEventListener("click", e => {
@@ -128,6 +130,6 @@ document.getElementById("dfilters").addEventListener("click", e => {
 </div></main>
 
 <div id="site-footer"></div>
-<script src="js/site.js?v=202611040014"></script>
+<script src="js/site.js?v=202611040043"></script>
 </body>
 </html>
