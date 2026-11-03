@@ -66,3 +66,6 @@ La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AA
 
 ## Banque d'icônes (images/ico/lib/)
 90 icônes 96x96 à fond transparent, découpées dans la planche de Mygale. Catalogue (nom → numéro) : `tools/icones.json`. Les 10 icônes avec un emblème de Blizzard (lion, Horde, W, drapeaux) sont listées dans « exclues » et ne sont pas copiées. À utiliser à la place de toute icône faite de lettres.
+
+## Google AdSense
+Le code AdSense (ca-pub-5144798644718811) est ajouté dans le <head> de chaque page par `tools/seo.py`, et `ads.txt` est à la racine. Ne pas le retirer des pages à la main : relancer seo.py suffit.

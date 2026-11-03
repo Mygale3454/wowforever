@@ -98,9 +98,11 @@ for f in pages:
     t = re.sub(r'<link rel="alternate" type="application/rss\+xml"[^>]*>\n?', "", t)
     t = re.sub(r'<script type="application/ld\+json">.*?</script>\n?', "", t, flags=re.S)
     t = re.sub(r'<meta name="robots"[^>]*>\n?', "", t)
+    t = re.sub(r'<script async src="https://pagead2\.googlesyndication\.com[^>]*></script>\n?', "", t)
     tags += '<meta name="robots" content="index, follow, max-image-preview:large">\n'
     tags += '<script type="application/ld+json">' + json.dumps(ld(f, t, title, desc, url), ensure_ascii=False) + '</script>\n'
     tags += '<link rel="alternate" type="application/rss+xml" title="ForeverWoW.fr – News" href="https://foreverwow.fr/rss.xml">\n'
+    tags += '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5144798644718811" crossorigin="anonymous"></script>\n'
     h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, re.S)
     if h1:
         alt = html.escape(html.unescape(re.sub(r"<[^>]+>", " ", h1.group(1))).split("  ")[0].strip(), quote=True)
