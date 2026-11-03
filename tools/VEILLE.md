@@ -63,3 +63,6 @@ La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AA
 
 ## Familiers du démoniste (familiers-demoniste.html)
 `python3 tools/demons.py` puis `python3 tools/seo.py`. Chiffres des techniques dans le script (source : guide JudgeHype du 30/10/2026), talents d'après js/talents-data.js.
+
+## Banque d'icônes (images/ico/lib/)
+90 icônes 96x96 à fond transparent, découpées dans la planche de Mygale. Catalogue (nom → numéro) : `tools/icones.json`. Les 10 icônes avec un emblème de Blizzard (lion, Horde, W, drapeaux) sont listées dans « exclues » et ne sont pas copiées. À utiliser à la place de toute icône faite de lettres.
