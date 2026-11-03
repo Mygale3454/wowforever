@@ -94,7 +94,7 @@ function render() {
       const state = r === t.m ? "max" : r ? "part" : canAdd(ti, t) ? "open" : "lock";
       return `<button class="tal ${state}${t.a ? " active" : ""}" data-k="${k}" data-ti="${ti}" data-id="${t.id}"
         style="grid-row:${t.r + 1};grid-column:${t.c + 1}" aria-label="${t.n}, rang ${r} sur ${t.m}">
-        <img src="images/icons/${t.i}.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="ini">${initials(t.n)}</span><span class="rk">${r}/${t.m}</span>
+        <img src="images/icons/${t.i}.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/ico/talent.webp'"><span class="rk">${r}/${t.m}</span>
         ${t.s === "new" ? '<i class="dot" title="Nouveau"></i>' : ""}</button>`;
     }).join("");
     const arrows = tr.t.flatMap(t => t.p.map(([id]) => {
@@ -124,7 +124,7 @@ function showTip(k, keep) {
   const cur = r ? t.t[r - 1] : null, next = r < t.m ? t.t[r] : null;
   $("#tip").innerHTML = `
     <button class="tclose" aria-label="Fermer">×</button>
-    <div class="thead"><img src="images/icons/${t.i}.jpg" alt=""><h3>${t.n}</h3></div>
+    <div class="thead"><img src="images/icons/${t.i}.jpg" alt="" onerror="this.onerror=null;this.src='images/ico/talent.webp'"><h3>${t.n}</h3></div>
     <div class="trank">Rang ${r}/${t.m}${t.a ? " · Sort actif" : ""}${st ? ` · <span class="st ${st[1]}">${st[0]}</span>` : ""}</div>
     ${reqs.length ? `<div class="treq">Requiert : ${reqs.join(", ")}</div>` : ""}
     ${t.q ? `<div class="treq">${t.q}</div>` : ""}
