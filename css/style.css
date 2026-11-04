@@ -965,3 +965,6 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 #dtable tr.dlink{cursor:pointer}
 #dtable tr.dlink:hover td{background:var(--bg2)}
 .dnew{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#fff;background:#3c7a3a;border-radius:4px;padding:1px 4px;margin-left:4px;vertical-align:super}
+.htree-img h3{text-shadow:-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff,0 0 4px #fff}
+.hrew-img.ic{background:#1d1712;display:flex;align-items:center;justify-content:center;aspect-ratio:16/10}
+.hrew-img.ic img{width:auto;height:78%;aspect-ratio:auto;object-fit:contain;border-radius:8px}
