@@ -987,3 +987,9 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .bs-src a{color:#e8d6a8}
 .bs.empty{opacity:.5}
 @media (max-width:860px){.bisd{grid-template-columns:1fr}.bfig{order:-1}.bfig img{max-height:320px}}
+.lc-cover{position:relative}
+.lc-box{position:absolute;left:5%;top:50%;transform:translateY(-50%);background:rgba(20,14,8,.88);border:3px solid #d6aa50;border-radius:16px;padding:14px 22px;color:#fff0cd;display:flex;flex-direction:column;gap:2px;font-family:Cinzel,serif}
+.lc-box b{font-size:clamp(1.4rem,4vw,2.6rem);color:#ffd26e;font-variant-numeric:tabular-nums}
+.lc-box small{font-family:Inter,sans-serif;font-size:.75rem;color:#d9c9a8}
+.lv-order{columns:2;font-size:.92rem}
+@media (max-width:520px){.lv-order{columns:1}}

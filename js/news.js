@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-04", type: "guide", lien: "news-build-mage.html", img: "images/news/build-mage.jpg",
+    titre: "Mon build de leveling : mage Arcanes 36/12/3",
+    texte: "Le build que je vais suivre dès ce soir, d'après JudgeHype : ordre des talents, rotation et conseils. Sortie de WoW Forever à minuit !" },
   { date: "2026-11-04", type: "site", lien: "bis.html", img: "images/bis/mage.webp",
     titre: "Nouveau menu Équipement : le BiS du niveau 60",
     texte: "Pour chaque classe, la meilleure pièce de chaque emplacement avant les raids, où l'obtenir, et les caractéristiques au survol." },
