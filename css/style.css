@@ -993,3 +993,12 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .lc-box small{font-family:Inter,sans-serif;font-size:.75rem;color:#d9c9a8}
 .lv-order{columns:2;font-size:.92rem}
 @media (max-width:520px){.lv-order{columns:1}}
+
+/* Contact */
+.ct{display:flex;flex-direction:column;gap:12px;max-width:640px}
+.ct label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.9rem}
+.ct input,.ct select,.ct textarea{font:inherit;font-weight:400;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
+.ct textarea{resize:vertical}
+.ct-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.ct-btn{align-self:flex-start;cursor:pointer}
+.ct-msg{min-height:1.2em;font-weight:600;margin:0}

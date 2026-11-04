@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – ForeverWoW</title>
+<meta name="description" content="Contacter ForeverWoW.fr : une question, une erreur dans un guide ou une idée pour le site ? Écris-nous.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Cinzel+Decorative:wght@900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=202611042215">
+<link rel="canonical" href="https://foreverwow.fr/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ForeverWoW.fr">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact – ForeverWoW">
+<meta property="og:description" content="Contacter ForeverWoW.fr : une question, une erreur dans un guide ou une idée pour le site ? Écris-nous.">
+<meta property="og:url" content="https://foreverwow.fr/contact.html">
+<meta property="og:image" content="https://foreverwow.fr/images/partage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://foreverwow.fr/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://foreverwow.fr/contact.html"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Contact", "description": "Contacter ForeverWoW.fr : une question, une erreur dans un guide ou une idée pour le site ? Écris-nous.", "inLanguage": "fr-FR", "mainEntityOfPage": "https://foreverwow.fr/contact.html", "image": ["https://foreverwow.fr/images/partage.jpg"], "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}, "publisher": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}}]</script>
+<link rel="alternate" type="application/rss+xml" title="ForeverWoW.fr – News" href="https://foreverwow.fr/rss.xml">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5144798644718811" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main><div class="wrap">
+<div class="crumbs"><a href="index.html">News</a> › Communauté › Contact</div>
+<h1 class="page-title">Contact</h1>
+<p class="page-lead">Une question, une erreur repérée dans un guide, une capture à partager ou une idée pour le site ? Écris-nous, on lit tout et on répond dès que possible.</p>
+<p class="stamp auto"><span>📅 Mise à jour le <b>4 novembre 2026</b></span><span>🛠 Patch <b>1.60.1.70755</b></span></p>
+<form class="ct article" id="ct-form" novalidate>
+  <input type="hidden" name="access_key" value="446cfdfa-9242-463c-b84e-ccf38e95efe0">
+  <input type="hidden" name="subject" value="Nouveau message depuis foreverwow.fr">
+  <input type="hidden" name="from_name" value="ForeverWoW.fr">
+  <input type="checkbox" name="botcheck" class="ct-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label>Ton pseudo<input name="name" required maxlength="60" autocomplete="nickname"></label>
+  <label>Ton e-mail (pour te répondre)<input type="email" name="email" required maxlength="120" autocomplete="email"></label>
+  <label>Sujet<select name="sujet"><option>Question</option><option>Erreur dans un guide</option><option>Idée pour le site</option><option>Capture ou contenu à partager</option><option>Autre</option></select></label>
+  <label>Message<textarea name="message" required minlength="10" maxlength="4000" rows="7"></textarea></label>
+  <button type="submit" class="btn-link ct-btn">Envoyer</button>
+  <p class="ct-msg" id="ct-msg" role="status"></p>
+  <p class="small">Ton adresse sert uniquement à te répondre : elle n'est ni publiée ni transmise à qui que ce soit.</p>
+</form>
+</div>
+<script>(()=>{const f=document.getElementById("ct-form"),m=document.getElementById("ct-msg"),t0=Date.now();
+f.addEventListener("submit",async e=>{e.preventDefault();
+ if(f.botcheck.checked||Date.now()-t0<4000){m.textContent="Message envoyé, merci !";return}
+ if(!f.checkValidity()){m.textContent="Remplis ton pseudo, ton e-mail et un message d'au moins 10 caractères.";return}
+ const b=f.querySelector("button");b.disabled=true;m.textContent="Envoi en cours…";
+ try{const r=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Accept":"application/json"},body:new FormData(f)});const j=await r.json();
+  if(j.success){f.reset();m.textContent="Message envoyé, merci ! On te répond très vite.";}else throw 0}
+ catch(_){m.textContent="Oups, l'envoi a échoué. Réessaie dans un moment."}
+ b.disabled=false})})();</script></main>
+
+<div id="site-footer"></div>
+<script src="js/site.js?v=202611042215"></script>
+</body>
+</html>
