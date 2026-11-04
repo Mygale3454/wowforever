@@ -1,377 +1,125 @@
 {
- "source": "Planche de 100 icônes dessinées par l'IA d'images de Mygale (3 novembre 2026), découpées en 96x96, fond transparent.",
+ "source": "30 icônes HD dessinées par l'IA d'images de Mygale (4 novembre 2026), 128x128, fond transparent.",
  "icones": {
-  "portail-bleu": {
-   "n": 4,
-   "fichier": "images/ico/lib/portail-bleu.webp"
-  },
-  "chateau-alliance": {
-   "n": 5,
-   "fichier": "images/ico/lib/chateau-alliance.webp"
-  },
-  "forteresse-horde": {
-   "n": 6,
-   "fichier": "images/ico/lib/forteresse-horde.webp"
-  },
-  "chateau": {
-   "n": 7,
-   "fichier": "images/ico/lib/chateau.webp"
-  },
-  "forteresse-rouge": {
-   "n": 8,
-   "fichier": "images/ico/lib/forteresse-rouge.webp"
-  },
-  "arbre-monde": {
-   "n": 9,
-   "fichier": "images/ico/lib/arbre-monde.webp"
-  },
-  "portail-gangrene": {
-   "n": 10,
-   "fichier": "images/ico/lib/portail-gangrene.webp"
-  },
-  "humain": {
-   "n": 13,
-   "fichier": "images/ico/lib/humain.webp"
-  },
-  "nain": {
-   "n": 14,
-   "fichier": "images/ico/lib/nain.webp"
-  },
-  "elfe-nuit": {
-   "n": 15,
-   "fichier": "images/ico/lib/elfe-nuit.webp"
-  },
-  "gnome": {
-   "n": 16,
-   "fichier": "images/ico/lib/gnome.webp"
-  },
-  "orc": {
-   "n": 17,
-   "fichier": "images/ico/lib/orc.webp"
-  },
-  "tauren": {
-   "n": 18,
-   "fichier": "images/ico/lib/tauren.webp"
-  },
-  "troll": {
-   "n": 19,
-   "fichier": "images/ico/lib/troll.webp"
-  },
-  "mort-vivant": {
-   "n": 20,
-   "fichier": "images/ico/lib/mort-vivant.webp"
-  },
-  "elfe-blonde": {
-   "n": 21,
-   "fichier": "images/ico/lib/elfe-blonde.webp"
-  },
-  "aigle": {
-   "n": 22,
-   "fichier": "images/ico/lib/aigle.webp"
-  },
-  "griffon": {
-   "n": 23,
-   "fichier": "images/ico/lib/griffon.webp"
-  },
-  "cheval": {
-   "n": 24,
-   "fichier": "images/ico/lib/cheval.webp"
-  },
-  "casque": {
-   "n": 25,
-   "fichier": "images/ico/lib/casque.webp"
-  },
-  "armure": {
-   "n": 26,
-   "fichier": "images/ico/lib/armure.webp"
-  },
-  "gantelet": {
-   "n": 27,
-   "fichier": "images/ico/lib/gantelet.webp"
-  },
-  "bottes": {
-   "n": 28,
-   "fichier": "images/ico/lib/bottes.webp"
-  },
-  "epee": {
-   "n": 31,
-   "fichier": "images/ico/lib/epee.webp"
-  },
-  "hache": {
-   "n": 32,
-   "fichier": "images/ico/lib/hache.webp"
-  },
-  "sceptre": {
-   "n": 33,
-   "fichier": "images/ico/lib/sceptre.webp"
-  },
-  "arc": {
-   "n": 34,
-   "fichier": "images/ico/lib/arc.webp"
-  },
-  "grimoire": {
-   "n": 35,
-   "fichier": "images/ico/lib/grimoire.webp"
-  },
-  "oeil-arcane": {
-   "n": 36,
-   "fichier": "images/ico/lib/oeil-arcane.webp"
-  },
-  "boule-feu": {
-   "n": 37,
-   "fichier": "images/ico/lib/boule-feu.webp"
-  },
-  "cristal-givre": {
-   "n": 38,
-   "fichier": "images/ico/lib/cristal-givre.webp"
-  },
-  "dague-poison": {
-   "n": 39,
-   "fichier": "images/ico/lib/dague-poison.webp"
-  },
-  "soin": {
-   "n": 40,
-   "fichier": "images/ico/lib/soin.webp"
-  },
-  "patte": {
-   "n": 41,
-   "fichier": "images/ico/lib/patte.webp"
-  },
-  "bois-cerf": {
-   "n": 42,
-   "fichier": "images/ico/lib/bois-cerf.webp"
-  },
-  "crane": {
-   "n": 43,
-   "fichier": "images/ico/lib/crane.webp"
-  },
-  "demon": {
-   "n": 44,
-   "fichier": "images/ico/lib/demon.webp"
-  },
-  "potion-rouge": {
-   "n": 45,
-   "fichier": "images/ico/lib/potion-rouge.webp"
-  },
-  "potion-bleue": {
-   "n": 46,
-   "fichier": "images/ico/lib/potion-bleue.webp"
-  },
-  "potion-violette": {
-   "n": 47,
-   "fichier": "images/ico/lib/potion-violette.webp"
-  },
-  "viande": {
-   "n": 48,
-   "fichier": "images/ico/lib/viande.webp"
-  },
-  "fromage": {
-   "n": 49,
-   "fichier": "images/ico/lib/fromage.webp"
-  },
-  "pain": {
-   "n": 50,
-   "fichier": "images/ico/lib/pain.webp"
-  },
-  "bandage": {
-   "n": 51,
-   "fichier": "images/ico/lib/bandage.webp"
-  },
-  "quete": {
-   "n": 52,
-   "fichier": "images/ico/lib/quete.webp"
-  },
-  "quete-question": {
-   "n": 53,
-   "fichier": "images/ico/lib/quete-question.webp"
-  },
-  "coffre": {
-   "n": 54,
-   "fichier": "images/ico/lib/coffre.webp"
-  },
-  "bourse": {
-   "n": 55,
-   "fichier": "images/ico/lib/bourse.webp"
-  },
-  "pieces-or": {
-   "n": 56,
-   "fichier": "images/ico/lib/pieces-or.webp"
-  },
-  "enclume": {
-   "n": 57,
-   "fichier": "images/ico/lib/enclume.webp"
-  },
-  "pioche": {
-   "n": 58,
-   "fichier": "images/ico/lib/pioche.webp"
-  },
-  "fleur": {
-   "n": 59,
-   "fichier": "images/ico/lib/fleur.webp"
-  },
-  "fiole-verte": {
-   "n": 60,
-   "fichier": "images/ico/lib/fiole-verte.webp"
-  },
-  "cuir": {
-   "n": 61,
-   "fichier": "images/ico/lib/cuir.webp"
-  },
-  "tissu": {
-   "n": 62,
-   "fichier": "images/ico/lib/tissu.webp"
-  },
-  "lingots": {
-   "n": 63,
-   "fichier": "images/ico/lib/lingots.webp"
-  },
-  "gemme-rouge": {
-   "n": 64,
-   "fichier": "images/ico/lib/gemme-rouge.webp"
-  },
-  "gemme-bleue": {
-   "n": 65,
-   "fichier": "images/ico/lib/gemme-bleue.webp"
-  },
-  "gemme-violette": {
-   "n": 66,
-   "fichier": "images/ico/lib/gemme-violette.webp"
-  },
-  "vortex": {
-   "n": 67,
-   "fichier": "images/ico/lib/vortex.webp"
-  },
-  "engrenage": {
-   "n": 68,
-   "fichier": "images/ico/lib/engrenage.webp"
-  },
-  "cheval-monture": {
-   "n": 69,
-   "fichier": "images/ico/lib/cheval-monture.webp"
-  },
-  "loup": {
-   "n": 70,
-   "fichier": "images/ico/lib/loup.webp"
-  },
-  "tigre": {
-   "n": 71,
-   "fichier": "images/ico/lib/tigre.webp"
-  },
-  "raptor": {
-   "n": 72,
-   "fichier": "images/ico/lib/raptor.webp"
-  },
-  "belier": {
-   "n": 73,
-   "fichier": "images/ico/lib/belier.webp"
-  },
-  "sanglier": {
-   "n": 74,
-   "fichier": "images/ico/lib/sanglier.webp"
-  },
-  "dragon-bleu": {
-   "n": 75,
-   "fichier": "images/ico/lib/dragon-bleu.webp"
-  },
-  "aigle-2": {
-   "n": 76,
-   "fichier": "images/ico/lib/aigle-2.webp"
-  },
-  "dragon-violet": {
-   "n": 77,
-   "fichier": "images/ico/lib/dragon-violet.webp"
-  },
-  "gyrocoptere": {
-   "n": 78,
-   "fichier": "images/ico/lib/gyrocoptere.webp"
-  },
-  "bateau": {
-   "n": 79,
-   "fichier": "images/ico/lib/bateau.webp"
-  },
-  "feu-de-camp": {
-   "n": 81,
-   "fichier": "images/ico/lib/feu-de-camp.webp"
-  },
-  "tente": {
-   "n": 82,
-   "fichier": "images/ico/lib/tente.webp"
-  },
-  "tente-bleue": {
-   "n": 83,
-   "fichier": "images/ico/lib/tente-bleue.webp"
-  },
-  "tente-rouge": {
-   "n": 84,
-   "fichier": "images/ico/lib/tente-rouge.webp"
-  },
-  "griffon-statue": {
-   "n": 86,
-   "fichier": "images/ico/lib/griffon-statue.webp"
-  },
-  "ponton": {
-   "n": 87,
-   "fichier": "images/ico/lib/ponton.webp"
-  },
-  "quai": {
-   "n": 88,
-   "fichier": "images/ico/lib/quai.webp"
-  },
-  "mine": {
-   "n": 89,
-   "fichier": "images/ico/lib/mine.webp"
-  },
-  "crevasse-violette": {
-   "n": 90,
-   "fichier": "images/ico/lib/crevasse-violette.webp"
-  },
-  "cascade": {
-   "n": 91,
-   "fichier": "images/ico/lib/cascade.webp"
-  },
   "carte": {
-   "n": 92,
+   "n": 1,
    "fichier": "images/ico/lib/carte.webp"
   },
-  "boussole": {
-   "n": 93,
-   "fichier": "images/ico/lib/boussole.webp"
+  "communaute": {
+   "n": 2,
+   "fichier": "images/ico/lib/communaute.webp"
   },
-  "groupe": {
-   "n": 95,
-   "fichier": "images/ico/lib/groupe.webp"
+  "oeil": {
+   "n": 3,
+   "fichier": "images/ico/lib/oeil.webp"
   },
   "discussion": {
-   "n": 96,
+   "n": 4,
    "fichier": "images/ico/lib/discussion.webp"
   },
+  "hauts-faits": {
+   "n": 5,
+   "fichier": "images/ico/lib/hauts-faits.webp"
+  },
+  "monde": {
+   "n": 6,
+   "fichier": "images/ico/lib/monde.webp"
+  },
   "trophee": {
-   "n": 97,
+   "n": 7,
    "fichier": "images/ico/lib/trophee.webp"
   },
-  "lauriers": {
-   "n": 98,
-   "fichier": "images/ico/lib/lauriers.webp"
+  "epees": {
+   "n": 8,
+   "fichier": "images/ico/lib/epees.webp"
   },
-  "calendrier": {
-   "n": 99,
-   "fichier": "images/ico/lib/calendrier.webp"
+  "bouclier": {
+   "n": 9,
+   "fichier": "images/ico/lib/bouclier.webp"
   },
   "sablier": {
-   "n": 100,
+   "n": 10,
    "fichier": "images/ico/lib/sablier.webp"
+  },
+  "grimoire": {
+   "n": 11,
+   "fichier": "images/ico/lib/grimoire.webp"
+  },
+  "quete": {
+   "n": 12,
+   "fichier": "images/ico/lib/quete.webp"
+  },
+  "donjon": {
+   "n": 13,
+   "fichier": "images/ico/lib/donjon.webp"
+  },
+  "raid": {
+   "n": 14,
+   "fichier": "images/ico/lib/raid.webp"
+  },
+  "monture": {
+   "n": 15,
+   "fichier": "images/ico/lib/monture.webp"
+  },
+  "portail": {
+   "n": 16,
+   "fichier": "images/ico/lib/portail.webp"
+  },
+  "alchimie": {
+   "n": 17,
+   "fichier": "images/ico/lib/alchimie.webp"
+  },
+  "couture": {
+   "n": 18,
+   "fichier": "images/ico/lib/couture.webp"
+  },
+  "forge": {
+   "n": 19,
+   "fichier": "images/ico/lib/forge.webp"
+  },
+  "mine": {
+   "n": 20,
+   "fichier": "images/ico/lib/mine.webp"
+  },
+  "herboristerie": {
+   "n": 21,
+   "fichier": "images/ico/lib/herboristerie.webp"
+  },
+  "enchantement": {
+   "n": 22,
+   "fichier": "images/ico/lib/enchantement.webp"
+  },
+  "ingenierie": {
+   "n": 23,
+   "fichier": "images/ico/lib/ingenierie.webp"
+  },
+  "cuisine": {
+   "n": 24,
+   "fichier": "images/ico/lib/cuisine.webp"
+  },
+  "peche": {
+   "n": 25,
+   "fichier": "images/ico/lib/peche.webp"
+  },
+  "or": {
+   "n": 26,
+   "fichier": "images/ico/lib/or.webp"
+  },
+  "sac": {
+   "n": 27,
+   "fichier": "images/ico/lib/sac.webp"
+  },
+  "talents": {
+   "n": 28,
+   "fichier": "images/ico/lib/talents.webp"
+  },
+  "actualites": {
+   "n": 29,
+   "fichier": "images/ico/lib/actualites.webp"
+  },
+  "infinite": {
+   "n": 30,
+   "fichier": "images/ico/lib/infinite.webp"
   }
- },
- "exclues": {
-  "001": "lion de l'Alliance",
-  "002": "emblème de la Horde",
-  "003": "logo W",
-  "011": "bannière Alliance",
-  "012": "bannière Horde",
-  "029": "cape avec lion",
-  "030": "bouclier avec lion",
-  "080": "zeppelin avec emblème Horde",
-  "085": "boîte aux lettres avec emblème",
-  "094": "drapeaux de faction"
  }
 }

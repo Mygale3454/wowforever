@@ -77,7 +77,7 @@ def page(slug, d):
     tips = "".join(f"<li>{e(t)}</li>" for t in d.get("conseils", []))
     src = ", ".join(f'<a href="{u}" target="_blank" rel="noopener">{e(n)}</a>' for n, u in d.get("sources", []))
     carte = (f'<div class="dj-map"><img src="images/cartes/{d["carte"]}.webp" alt="Carte : {e(d["zone"])}" loading="lazy"><span class="dj-pin" style="left:{d["x"]}%;top:{d["y"]}%" title="Entrée"></span></div>'
-             if d.get("carte") else '<div class="dj-map dj-nomap"><img src="images/ico/lib/carte.webp" alt="" width="96" height="96"><p>Emplacement exact à venir.</p></div>')
+             if d.get("carte") else '<div class="dj-map dj-nomap"><img src="images/ico/lib/monde.webp" alt="" width="96" height="96"><p>Emplacement exact à venir.</p></div>')
     entree = f'{e(d.get("zone", "À confirmer"))}' + (f' <span class="xy">{d["x"]}, {d["y"]}</span>' if d.get("carte") else "")
     acces = d.get("acces") or ("Le point rouge marque l'entrée du donjon." if d.get("carte") else "")
     if auto:
@@ -96,8 +96,8 @@ def page(slug, d):
   {carte}
   <div class="article dj-info">
     <h2>Accès</h2>
-    <ul class="dj-facts"><li><img src="images/ico/lib/boussole.webp" alt=""> <span><b>Entrée</b> {entree}</span></li>
-      <li><img src="images/ico/lib/groupe.webp" alt=""> <span><b>{d.get("joueurs", 5)} joueurs</b> · niveaux {e(d["niv"])}</span></li>
+    <ul class="dj-facts"><li><img src="images/ico/lib/carte.webp" alt=""> <span><b>Entrée</b> {entree}</span></li>
+      <li><img src="images/ico/lib/communaute.webp" alt=""> <span><b>{d.get("joueurs", 5)} joueurs</b> · niveaux {e(d["niv"])}</span></li>
       <li><img src="images/ico/lib/quete.webp" alt=""> <span><b>{len(d["quetes"])} quête{"s" if len(d["quetes"]) > 1 else ""}</b> · {len(d["boss"])} boss</span></li></ul>
     <p>{e(acces)}</p>
     <p class="small">Toutes les zones sont sur notre <a href="carte.html">carte interactive</a>.</p>

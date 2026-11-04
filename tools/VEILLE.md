@@ -65,7 +65,7 @@ La veille quotidienne ajoute les nouvelles annonces sur une branche `annonces-AA
 `python3 tools/demons.py` puis `python3 tools/seo.py`. Chiffres des techniques dans le script (source : guide JudgeHype du 30/10/2026), talents d'après js/talents-data.js.
 
 ## Banque d'icônes (images/ico/lib/)
-90 icônes 96x96 à fond transparent, découpées dans la planche de Mygale. Catalogue (nom → numéro) : `tools/icones.json`. Les 10 icônes avec un emblème de Blizzard (lion, Horde, W, drapeaux) sont listées dans « exclues » et ne sont pas copiées. À utiliser à la place de toute icône faite de lettres.
+30 icônes HD 128x128 à fond transparent (planche de Mygale du 4 novembre 2026). Catalogue : `tools/icones.json`. À utiliser à la place de toute icône faite de lettres.
 
 ## Google AdSense
 Le code AdSense (ca-pub-5144798644718811) est ajouté dans le <head> de chaque page par `tools/seo.py`, et `ads.txt` est à la racine. Ne pas le retirer des pages à la main : relancer seo.py suffit.
