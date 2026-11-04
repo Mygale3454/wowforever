@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-04", type: "site", lien: "bis.html", img: "images/bis/mage.webp",
+    titre: "Nouveau menu Équipement : le BiS du niveau 60",
+    texte: "Pour chaque classe, la meilleure pièce de chaque emplacement avant les raids, où l'obtenir, et les caractéristiques au survol." },
   { date: "2026-11-03", type: "actu", lien: "news-notes-lancement.html", img: "images/une.jpg",
     titre: "Notes de lancement : toutes les classes renforcées",
     texte: "223 changements avant la sortie : poisons du voleur doublés, Explosion de lave retirée au chaman, gros bonus pour le druide farouche… Calculateur de talents et builds déjà à jour." },
