@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-05", type: "guide", lien: "news-quete-grands-espaces.html", img: "images/news/quete-grands-espaces.jpg",
+    titre: "Astuce : la quête « Les grands espaces sauvages »",
+    texte: "Bloqué sur « S'asseoir près du feu de camp » ? /sit seul ne suffit pas : tape /lay puis /sit près du feu pour valider l'objectif." },
+  { date: "2026-11-05", type: "actu", lien: "news-lancement.html", img: "images/races-cover.jpg",
+    titre: "C'est parti : WoW Forever est lancé !",
+    texte: "Les serveurs ont ouvert cette nuit, et les joueurs les plus rapides sont déjà niveau 20. Bon jeu à tous !" },
   { date: "2026-11-04", type: "guide", lien: "news-build-mage.html", img: "images/news/build-mage.jpg",
     titre: "Mon build de leveling : mage Arcanes 36/12/3",
     texte: "Le build que je vais suivre dès ce soir, d'après JudgeHype : ordre des talents, rotation et conseils. Sortie de WoW Forever à minuit !" },
