@@ -6,7 +6,7 @@ const NEWS = [
   { date: "2026-11-05", type: "guide", lien: "news-quete-grands-espaces.html", img: "images/news/quete-grands-espaces.jpg",
     titre: "Astuce : la quête « Les grands espaces sauvages »",
     texte: "Bloqué sur « S'asseoir près du feu de camp » ? /sit seul ne suffit pas : tape /lay puis /sit près du feu pour valider l'objectif." },
-  { date: "2026-11-05", type: "actu", lien: "news-lancement.html", img: "images/races-cover.jpg",
+  { date: "2026-11-05", type: "actu", lien: "news-lancement.html", img: "images/news/lancement.jpg",
     titre: "C'est parti : WoW Forever est lancé !",
     texte: "Les serveurs ont ouvert cette nuit, et les joueurs les plus rapides sont déjà niveau 20. Bon jeu à tous !" },
   { date: "2026-11-04", type: "guide", lien: "news-build-mage.html", img: "images/news/build-mage.jpg",
