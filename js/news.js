@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-06", type: "actu", lien: "news-armurerie.html", img: "images/news/armurerie.jpg",
+    titre: "L'Armurerie de WoW Forever est en ligne",
+    texte: "Équipement, collections, JcJ et réputations : consulte n'importe quel personnage depuis ton navigateur, comme celui de votre créateur." },
   { date: "2026-11-06", type: "actu", lien: "news-premiers-bugs.html", img: "images/zeppelin.jpg",
     titre: "Premiers bugs : bateaux, zeppelins et villes trop vides",
     texte: "Transports perdus dans le Maelström (des portails les remplacent en attendant) et villes qui semblent désertes : Blizzard corrige." },
