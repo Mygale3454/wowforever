@@ -1002,3 +1002,9 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .ct-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .ct-btn{align-self:flex-start;cursor:pointer}
 .ct-msg{min-height:1.2em;font-weight:600;margin:0}
+.box.live-box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:18px 12px;
+  background:radial-gradient(circle at 50% 30%,rgba(60,170,90,.18),transparent 70%),var(--card)}
+.live-box img{width:96px;height:96px;filter:drop-shadow(0 0 12px rgba(60,200,110,.55));animation:lbglow 3s ease-in-out infinite}
+.live-box small{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.live-box b{font-family:Cinzel,serif;font-size:1.9rem;font-weight:900;color:#2f8f4e;text-shadow:0 2px 0 rgba(0,0,0,.08)}
+@keyframes lbglow{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}

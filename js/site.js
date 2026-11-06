@@ -97,8 +97,12 @@ function tick() {
   const diff = target - Date.now();
   const top = document.getElementById("topbar-cd");
   if (diff <= 0) {
-    top.textContent = "WoW Forever est disponible !";
-    document.querySelectorAll("[data-cd]").forEach(c => c.innerHTML = '<div style="grid-column:1/-1"><b>Disponible !</b></div>');
+    top.textContent = "WoW Forever est disponible : let's go !";
+    document.querySelectorAll("[data-cd]").forEach(c => {
+      const box = c.closest(".box");
+      box.classList.add("live-box");
+      box.innerHTML = '<img src="images/ico/lib/infinite.webp" alt="" width="96" height="96"><small>Disponible depuis le 5 novembre</small><b>Let&#39;s go !</b>';
+    });
     return clearInterval(timer);
   }
   const v = [Math.floor(diff / 864e5), pad(Math.floor(diff / 36e5) % 24), pad(Math.floor(diff / 6e4) % 60), pad(Math.floor(diff / 1e3) % 60)];
