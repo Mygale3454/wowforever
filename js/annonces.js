@@ -3,6 +3,7 @@
    La veille quotidienne prépare ces lignes sur une branche ; elles sont publiées après l'accord de Mygale. */
 const ANNONCES = [
   { date: "2026-11-05", titre: "World of Warcraft: Forever – Découvrez la vidéo « Forging Forever »", url: "https://worldofwarcraft.blizzard.com/fr-fr/news/24317865/world-of-warcraft-forever-d%C3%A9couvrez-la-vid%C3%A9o-forging-forever" },
+  { date: "2026-11-03", titre: "Explorez WoW: Forever à une manette", url: "https://worldofwarcraft.blizzard.com/fr-fr/news/24316974/explorez-wow-forever-%C3%A0-une-manette" },
   { date: "", titre: "Préparez-vous pour Forever : le résumé hebdomadaire de World of Warcraft", url: "https://news.blizzard.com/fr-fr/article/24316094" },
   { date: "", titre: "World of Warcraft: Forever sort partout dans le monde le 5 novembre !", url: "https://news.blizzard.com/fr-fr/article/24315820" },
   { date: "", titre: "Retournez sur Azeroth dans World of Warcraft: Forever", url: "https://worldofwarcraft.blizzard.com/fr-fr/news/24315643" },

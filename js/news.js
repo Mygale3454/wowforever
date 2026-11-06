@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-06", type: "guide", lien: "news-manette.html", img: "images/news/manette.jpg",
+    titre: "WoW Forever se joue à la manette",
+    texte: "Comment activer la manette, les commandes principales, les barres d'actions et les limites actuelles, d'après Blizzard." },
   { date: "2026-11-06", type: "actu", lien: "news-addons-ia.html", img: "images/news/addons-ia.jpg",
     titre: "Les addons créés par IA se multiplient",
     texte: "Copies d'addons connus, développeurs qui protègent leur code, Warcraft Logs qui limite l'aspiration de données : nos conseils pour bien choisir tes addons." },
