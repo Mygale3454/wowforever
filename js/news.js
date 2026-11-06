@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-06", type: "actu", lien: "news-premiers-bugs.html", img: "images/zeppelin.jpg",
+    titre: "Premiers bugs : bateaux, zeppelins et villes trop vides",
+    texte: "Transports perdus dans le Maelström (des portails les remplacent en attendant) et villes qui semblent désertes : Blizzard corrige." },
   { date: "2026-11-05", type: "actu", lien: "news-niveau-35.html", img: "images/news/niveau-35.jpg",
     titre: "21 heures de jeu : déjà des joueurs niveau 35 !",
     texte: "Moins d'une journée après le lancement, les plus rapides sont déjà niveau 35… et votre créateur vient de passer niveau 14 !" },
