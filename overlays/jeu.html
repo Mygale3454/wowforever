@@ -3,36 +3,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="overlay.css">
 <style>
-  /* Encadré en bas à gauche : portrait de l'éolide + derniers soutiens */
-  .panel{position:absolute;left:28px;bottom:28px;display:flex;align-items:flex-end;gap:0}
-  .portrait{position:relative;z-index:2;width:250px;height:250px;margin-right:-34px}
-  .portrait .ring{position:absolute;inset:0;border-radius:50%;padding:7px;
-    background:conic-gradient(from 210deg,#8a5d16,#f2c25a,#fff2c4,#c9922e,#8a5d16,#f2c25a,#8a5d16);
-    box-shadow:0 0 0 5px #2b1d0e,0 0 0 7px #8a5d16,0 0 30px rgba(120,190,255,.45),0 14px 30px rgba(0,0,0,.6)}
-  .portrait img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid #2b1d0e}
-  .portrait .glow{position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(130,200,255,.0) 55%,rgba(130,200,255,.35) 70%,transparent 74%);animation:pulse 3.5s ease-in-out infinite}
-  @keyframes pulse{0%,100%{opacity:.4;transform:scale(.98)}50%{opacity:1;transform:scale(1.02)}}
-  .portrait .gem{position:absolute;left:50%;top:-12px;transform:translateX(-50%) rotate(45deg);width:26px;height:26px;background:linear-gradient(135deg,#bfe6ff,#4f8fd9);border:3px solid #f2c25a;box-shadow:0 0 12px #7fc4ff}
-  .portrait .who{position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);white-space:nowrap;
-    padding:5px 18px;border-radius:9px;background:linear-gradient(#4a3119,#3a2614);border:2px solid #c9922e;
-    font-family:Cinzel,serif;font-weight:800;font-size:19px;color:#f6e7c4;box-shadow:0 6px 14px rgba(0,0,0,.5)}
-  .portrait .who span{color:#9fd4ff}
+  /* Encadré en bas à gauche : héros + derniers soutiens, bien contrasté sur le jeu */
+  .panel{position:absolute;left:24px;bottom:24px;display:flex;align-items:flex-end}
+  .hero{position:relative;z-index:3;width:230px;height:330px;margin-right:-70px;margin-bottom:-6px;
+    display:flex;align-items:flex-end;justify-content:center}
+  .hero img{max-width:100%;max-height:100%;object-fit:contain;
+    filter:drop-shadow(0 0 2px #000) drop-shadow(0 0 14px rgba(255,200,90,.55)) drop-shadow(0 12px 18px rgba(0,0,0,.8))}
+  .hero .aura{position:absolute;left:10%;right:10%;bottom:0;height:60%;border-radius:50%;
+    background:radial-gradient(ellipse at 50% 70%,rgba(255,190,70,.55),rgba(255,190,70,0) 70%);animation:pulse 3.5s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
 
-  .board{position:relative;z-index:1;width:330px;padding:14px 18px 14px 54px;border-radius:14px;
-    background:linear-gradient(rgba(43,29,14,.92),rgba(30,20,9,.94));border:3px solid #c9922e;
-    box-shadow:inset 0 0 0 2px rgba(242,194,90,.25),0 12px 30px rgba(0,0,0,.55)}
-  .board::before{content:"";position:absolute;left:12px;right:12px;top:6px;height:2px;background:linear-gradient(90deg,transparent,#f2c25a,transparent)}
-  .row{padding:7px 12px 8px;margin:6px 0;border-radius:8px;
-    background:linear-gradient(90deg,rgba(242,194,90,.14),rgba(242,194,90,.04));border:1px solid rgba(201,146,46,.55)}
-  .row small{display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#c9b07a}
-  .row b{display:block;font-family:Cinzel,serif;font-weight:900;font-size:24px;color:#fff3d6;line-height:1.15;
-    text-shadow:0 2px 6px rgba(0,0,0,.7);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .row:nth-child(1) b{color:#f2c25a}
-
-  /* Cadre webcam facultatif (?cam=1) au-dessus de l'encadré */
+  .board{position:relative;z-index:1;width:440px;padding:0 18px 16px 82px;border-radius:16px;
+    background:linear-gradient(180deg,#1c120a 0%,#120b05 100%);
+    border:4px solid #f2c25a;outline:2px solid #5a3a12;outline-offset:3px;
+    box-shadow:inset 0 0 0 2px #7a5218,inset 0 0 40px rgba(242,194,90,.12),0 0 24px rgba(242,194,90,.35),0 16px 34px rgba(0,0,0,.85)}
+  .title{margin:0 -18px 10px -82px;padding:10px 18px 9px 82px;border-radius:11px 11px 0 0;
+    background:linear-gradient(90deg,#8a5d16,#e3b04b 55%,#8a5d16);color:#1c120a;
+    font-family:Cinzel,serif;font-weight:900;font-size:20px;letter-spacing:.5px;white-space:nowrap;text-shadow:0 1px 0 rgba(255,240,200,.6)}
+  .who{font-family:Cinzel,serif;font-weight:800;font-size:15px;color:#9fd4ff;margin:-4px 0 8px;letter-spacing:.5px}
+  .row{display:flex;align-items:center;gap:12px;padding:8px 12px;margin:7px 0;border-radius:10px;
+    background:linear-gradient(90deg,rgba(242,194,90,.22),rgba(242,194,90,.06));border:1px solid rgba(242,194,90,.7)}
+  .row img{width:42px;height:42px;flex:0 0 42px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.7))}
+  .row div{min-width:0}
+  .row small{display:block;font-size:13px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:#f2d38f}
+  .row b{display:block;font-family:Cinzel,serif;font-weight:900;font-size:27px;color:#fff;line-height:1.1;
+    text-shadow:0 0 2px #000,0 2px 6px #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .row.flash{animation:flash 1.6s ease-out}
-  @keyframes flash{0%{background:rgba(242,194,90,.75);transform:scale(1.04)}100%{transform:scale(1)}}
-  #cam{display:none;left:28px;bottom:300px;width:320px;height:180px}
+  @keyframes flash{0%{background:rgba(242,194,90,.9);transform:scale(1.05)}100%{transform:scale(1)}}
+  #cam{display:none;left:28px;bottom:330px;width:320px;height:180px}
   body.cam #cam{display:block}
 </style></head>
 <body>
@@ -40,16 +38,13 @@
 <div class="frame" id="cam"></div>
 
 <div class="panel">
-  <div class="portrait">
-    <div class="glow"></div>
-    <div class="ring"><img src="img/mygale.jpg" alt=""></div>
-    <div class="gem"></div>
-    <div class="who" data-perso>Mygale <span>Araneae</span></div>
-  </div>
+  <div class="hero"><div class="aura"></div><img src="img/heros.webp" alt="" data-img></div>
   <div class="board">
-    <div class="row"><small>Dernier abonné</small><b data-k="sub">—</b></div>
-    <div class="row"><small>Derniers abos offerts</small><b data-k="gift">—</b></div>
-    <div class="row"><small>Derniers bits</small><b data-k="bits">—</b></div>
+    <div class="title">Merci pour le soutien !</div>
+    <div class="who" data-perso>Mygale <span>Araneae</span></div>
+    <div class="row"><img src="img/ic-hauts-faits.webp" alt=""><div><small>Dernier abonné</small><b data-k="sub">—</b></div></div>
+    <div class="row"><img src="img/ic-trophee.webp" alt=""><div><small>Derniers abos offerts</small><b data-k="gift">—</b></div></div>
+    <div class="row"><img src="img/ic-or.webp" alt=""><div><small>Derniers bits</small><b data-k="bits">—</b></div></div>
   </div>
 </div>
 
@@ -65,14 +60,15 @@
     if (!v) return;
     const el = document.querySelector(`[data-k="${k}"]`);
     el.textContent = v;
-    el.parentElement.classList.remove("flash"); void el.offsetWidth; el.parentElement.classList.add("flash");
+    const r = el.closest(".row"); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
     if (save) { mem[k] = v; try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch (e) {} }
   };
   ["sub", "gift", "bits"].forEach(k => { const v = q.get(k) || mem[k]; if (v) document.querySelector(`[data-k="${k}"]`).textContent = v; });
   if (q.get("cam") === "1") document.body.classList.add("cam");
+  if (q.get("img")) document.querySelector("[data-img]").src = q.get("img");
   if (q.get("perso")) {
     const [a, ...b] = q.get("perso").split(" ");
-    document.querySelector("[data-perso]").innerHTML = `${a} <span>${b.join(" ")}</span>`;
+    document.querySelector("[data-perso]").textContent = q.get("perso");
   }
 
   /* ----- Connexion à Streamlabs (événements en direct) ----- */

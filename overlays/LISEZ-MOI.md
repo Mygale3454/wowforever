@@ -42,7 +42,7 @@ Le compte à rebours repart de zéro à chaque fois que la scène est rechargée
 1. Ajoute d'abord la **Capture de jeu** de WoW.
 2. Ajoute `jeu.html` en source Navigateur **tout en haut de la liste** : son fond est transparent.
 
-En bas à gauche s'affichent le médaillon de ton éolide et trois plaques : dernier abonné,
+En bas à gauche s'affichent un héros (le mage gnome) et un tableau « Merci pour le soutien ! » avec trois lignes :
 derniers abonnements offerts et derniers bits. Tu les remplis avec l'adresse :
 
 `jeu.html?sub=Pseudo1&gift=Pseudo2&bits=Pseudo3`
@@ -51,7 +51,7 @@ Autres réglages possibles :
 - `&cam=1` : affiche aussi un cadre webcam au-dessus du médaillon (320 x 180, à 28 px du bord gauche et 300 px du bas)
 - `&perso=Prénom Nom` : change le nom affiché sous le portrait (par défaut « Mygale Araneae »)
 
-Pour changer de portrait, remplace l'image `img/mygale.jpg` (format carré).
+Pour changer de héros : remplace `img/heros.webp` (image détourée, fond transparent) ou ajoute `&img=img/autre.webp` à l'adresse.
 
 ### Mise à jour automatique avec Streamlabs
 
