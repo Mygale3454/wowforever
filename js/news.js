@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-07", type: "actu", lien: "news-interview-marche-noir.html", img: "images/raids-ragnaros.jpg",
+    titre: "Marché noir, raids et aide aux quêtes : les devs répondent",
+    texte: "Ce que vend l'hôtel des ventes du marché noir, la difficulté des raids du 9 décembre, une aide aux quêtes intégrée et le dépôt de l'HV qui revient à 1 pc." },
   { date: "2026-11-07", type: "actu", lien: "news-equilibrage-10-novembre.html", img: "images/classes-cover.jpg",
     titre: "Équilibrage du 10 novembre : démoniste, familiers et chaman",
     texte: "Blizzard annonce ses premiers changements de classes : Affliction revue, familiers plus solides, et la Force pour le chaman Amélioration." },
