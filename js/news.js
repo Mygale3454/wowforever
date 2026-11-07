@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-07", type: "actu", lien: "news-resume-semaine-1.html", img: "https://i.ytimg.com/vi/mFOkBPMKJhc/hqdefault.jpg",
+    titre: "Le résumé de la semaine : Discord, Twitch et Taldramir",
+    texte: "Discussion de guilde synchronisée avec Discord, Bourse de poussière pourpre à récupérer sur Twitch jusqu'au 13 novembre, et l'arme légendaire Taldramir." },
   { date: "2026-11-06", type: "guide", lien: "news-manette.html", img: "images/news/manette.jpg",
     titre: "WoW Forever se joue à la manette",
     texte: "Comment activer la manette, les commandes principales, les barres d'actions et les limites actuelles, d'après Blizzard." },
