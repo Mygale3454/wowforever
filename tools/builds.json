@@ -27,8 +27,8 @@
   "main": "Balance",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "druid-feral-combat": {
   "code": "druid--5323233212310212551-05",
@@ -59,8 +59,8 @@
   "main": "Feral Combat",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "druid-restoration": {
   "code": "druid-55002001--5053005153113051",
@@ -89,8 +89,8 @@
   "main": "Restoration",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "hunter-beast-mastery": {
   "code": "hunter-5520001505101051-0053552-",
@@ -119,8 +119,8 @@
   "main": "Beast Mastery",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "hunter-marksmanship": {
   "code": "hunter-5-3053552511523051-",
@@ -150,8 +150,8 @@
   "main": "Marksmanship",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "hunter-survival": {
   "code": "hunter-5-005005001-500250230050222151",
@@ -184,8 +184,8 @@
   "main": "Survival",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "mage-arcane": {
   "code": "mage-251225223122311531-5-003",
@@ -216,8 +216,8 @@
   "main": "Arcane",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "mage-fire": {
   "code": "mage-002-55523331232133131-003",
@@ -248,8 +248,8 @@
   "main": "Fire",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "mage-frost": {
   "code": "mage-050005003--053530030121331251",
@@ -278,8 +278,8 @@
   "main": "Frost",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "paladin-holy": {
   "code": "paladin-50320215202101251-501220005-04",
@@ -308,8 +308,8 @@
   "main": "Holy",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "paladin-protection": {
   "code": "paladin--35302132513521531-051",
@@ -342,8 +342,8 @@
   "main": "Protection",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "paladin-retribution": {
   "code": "paladin-050230002-5-05233301221301341",
@@ -376,8 +376,8 @@
   "main": "Retribution",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "priest-discipline": {
   "code": "priest-005305031330011531-335050000001-",
@@ -407,8 +407,8 @@
   "main": "Discipline",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "priest-holy": {
   "code": "priest-00530200033-03525103032101531-",
@@ -437,8 +437,8 @@
   "main": "Holy",
   "cree": "2026-11-03",
   "patch": "1.60.1.70753",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "priest-shadow": {
   "code": "priest-10532001003--50552201201302251",
@@ -467,8 +467,8 @@
   "main": "Shadow",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "rogue-assassination": {
   "code": "rogue-22532310551521031-025003-",
@@ -497,8 +497,8 @@
   "main": "Assassination",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "rogue-combat": {
   "code": "rogue-00532-32533321121515211-",
@@ -528,8 +528,8 @@
   "main": "Combat",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "rogue-subtlety": {
   "code": "rogue-00532--2223223310213211551",
@@ -560,8 +560,8 @@
   "main": "Subtlety",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "shaman-elemental": {
   "code": "shaman-5502331003001351-05-053050001",
@@ -591,8 +591,8 @@
   "main": "Elemental",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "shaman-enhancement": {
   "code": "shaman-053-055030031005102251-05005",
@@ -626,8 +626,8 @@
   "main": "Enhancement",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "shaman-restoration": {
   "code": "shaman---5533523315513151",
@@ -656,8 +656,8 @@
   "main": "Restoration",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warlock-affliction": {
   "code": "warlock-25500323035201351-0050203001-",
@@ -688,8 +688,8 @@
   "main": "Affliction",
   "cree": "2026-11-01",
   "patch": "1.60.1.70707",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warlock-demonology": {
   "code": "warlock-2-0055003201221001351-0550305",
@@ -720,8 +720,8 @@
   "main": "Demonology",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warlock-destruction": {
   "code": "warlock-1-005020320122-0550305103101351",
@@ -752,8 +752,8 @@
   "main": "Destruction",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warrior-arms": {
   "code": "warrior-30305213132515231-050501-",
@@ -786,8 +786,8 @@
   "main": "Arms",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warrior-fury": {
   "code": "warrior-33-55053105152212521-",
@@ -818,8 +818,8 @@
   "main": "Fury",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  },
  "warrior-protection": {
   "code": "warrior-35--250533122231221351",
@@ -849,7 +849,7 @@
   "main": "Protection",
   "cree": "2026-10-01",
   "patch": "1.60.1.70124",
-  "verifie": "2026-11-04",
-  "patch_verif": "1.60.1.70755"
+  "verifie": "2026-11-07",
+  "patch_verif": "1.60.1.70862"
  }
 }
