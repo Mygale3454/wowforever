@@ -1008,3 +1008,6 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .live-box small{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
 .live-box b{font-family:Cinzel,serif;font-size:1.9rem;font-weight:900;color:#2f8f4e;text-shadow:0 2px 0 rgba(0,0,0,.08)}
 @keyframes lbglow{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+/* Fil noir autour des images */
+.cover,.thumb,.hero img,.tile,.hhero img,.mini img,.article img,.gal-item img{outline:2px solid #111;outline-offset:-2px}
