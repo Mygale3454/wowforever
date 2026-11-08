@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Cinzel+Decorative:wght@900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202611082144">
+<link rel="stylesheet" href="css/style.css?v=202611082158">
 <link rel="canonical" href="https://foreverwow.fr/feu-de-camp.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ForeverWoW.fr">
@@ -41,7 +41,7 @@
 <div class="dp-v"><b>Feu de Camp H</b><span class="small">Pour les membres de <b>Horadrim Legacy</b> : réservé à la guilde, commande <b>/dispo</b>.</span><a class="btn-link" href="telechargements/FeuDeCamp_H.zip" download>Télécharger · ma guilde Horadrim</a></div>
 <div class="dp-v"><b>Feu de Camp</b><span class="small">Pour <b>toutes les autres guildes</b> : ouvert à tous, guilde obligatoire, commande <b>/dispo</b>.</span><a class="btn-link" href="telechargements/FeuDeCamp.zip" download>Télécharger · autre guilde</a></div>
 </div>
-<p class="small">Version 1.5.0-beta · WoW Forever (patch 1.60.1) · 13 Ko chacune. Les deux versions sont indépendantes : tu peux installer les deux.</p>
+<p class="small">Version 1.6.0-beta · WoW Forever (patch 1.60.1) · 13 Ko chacune. Les deux versions sont indépendantes : tu peux installer les deux.</p>
 <h2>Un planificateur d'activités</h2>
 <p>Feu de Camp sert à organiser <b>toutes les activités de groupe</b> :</p>
 <ul class="dp-acts"><li><b>Donjons</b> : un sous-menu avec les 32 donjons de WoW Forever, des anciens aux nouveaux, dont les 4 ailes du Monastère écarlate.</li>
@@ -60,11 +60,10 @@
 <li>Les inscriptions des jours passés s'effacent toutes seules.</li></ul>
 <h2>En images</h2>
 <div class="dp-shots">
-<figure><img src="images/dungeon-planner/inscription.webp" alt="Onglet M'inscrire de Feu de Camp : rôle, jour, horaires, activité et note" width="663" height="453" loading="lazy"><figcaption>L'onglet « M'inscrire » : rôle, jour, horaires, donjon et une note.</figcaption></figure>
-<figure><img src="images/dungeon-planner/filtre-donjon.webp" alt="Onglet Qui est dispo ? filtré sur les Profondeurs de Brassenoire aujourd'hui" width="671" height="457" loading="lazy"><figcaption>« Qui est dispo ? » filtré sur un donjon et un jour, avec le compteur tanks / soins / dégâts.</figcaption></figure>
-<figure><img src="images/dungeon-planner/liste-vide.webp" alt="Onglet Qui est dispo ? de Feu de Camp" width="680" height="453" loading="lazy"><figcaption>La vue d'ensemble : toutes les activités de la semaine.</figcaption></figure>
+<figure><img src="images/dungeon-planner/inscription-h.webp" alt="Onglet M'inscrire de Feu de Camp H : rôle, jour, horaires, activité, note et Mes inscriptions" width="682" height="497" loading="lazy"><figcaption>L'onglet « M'inscrire » : rôle, jour, horaires, activité et note, puis la liste de tes inscriptions.</figcaption></figure>
+<figure><img src="images/dungeon-planner/liste-mortemines.webp" alt="Onglet Qui est dispo ? de Feu de Camp H filtré sur les Mortemines" width="656" height="482" loading="lazy"><figcaption>« Qui est dispo ? » : choisis une activité (ou tout un menu) et un jour, avec le compteur tanks / soins / dégâts.</figcaption></figure>
+<figure><img src="images/dungeon-planner/filtre-donjon.webp" alt="Onglet Qui est dispo ? filtré sur les Profondeurs de Brassenoire aujourd'hui" width="671" height="457" loading="lazy"><figcaption>Le filtre par donjon et par jour (capture de la première version de test).</figcaption></figure>
 </div>
-<p class="small">Captures de la première version de test, quand l'addon s'appelait encore « Horadrim Dispo ».</p>
 <h2>Installation</h2>
 <ol><li>Ferme le jeu et télécharge la version qui te concerne (Horadrim Legacy ou autre guilde).</li>
 <li>Décompresse-le et copie le dossier <b>FeuDeCamp_H</b> ou <b>FeuDeCamp</b> dans <code>World of Warcraft\_forever_\Interface\AddOns\</code>.</li>
@@ -79,6 +78,12 @@
 <li>Les inscriptions s'échangent entre <b>joueurs connectés</b> qui ont l'addon. À la connexion, l'addon récupère aussi celles des joueurs hors ligne auprès de ceux qui les connaissent déjà.</li>
 <li>Rien n'est envoyé en dehors du jeu : pas de compte, pas de site, pas de serveur.</li></ul>
 
+<h2>Sécurité</h2>
+<ul><li><b>Tout est vérifié à la réception</b> : classe, niveau (1 à 60), rôle, jour (dans les 7 prochains jours), horaires et activité doivent être valides, sinon l'inscription est ignorée.</li>
+<li><b>Aucun code caché</b> : les notes et les noms de guilde sont nettoyés de tout code d'interface (couleurs, images, liens) et limités en longueur.</li>
+<li><b>Anti-spam</b> : un joueur qui envoie trop de messages est ignoré pendant 5 minutes, et chacun est limité à 15 inscriptions actives.</li>
+<li><b>Personne ne parle à ta place</b> : une inscription transmise par un autre joueur ne peut jamais remplacer ou effacer ce que tu as envoyé toi-même.</li>
+<li><b>Feu de Camp H</b> vérifie en plus, dans la liste de la guilde, que l'auteur de chaque message est bien membre de Horadrim Legacy.</li></ul>
 <h2>À venir</h2>
 <p>Selon vos retours : un bouton près de la minicarte, les raids à partir du 9 décembre, une alerte quand un groupe est complet… Dis-nous ce qui te manque via la page <a href="contact.html">Contact</a>.</p>
     </div>
@@ -88,7 +93,7 @@
 </div></main>
 
 <div id="site-footer"></div>
-<script src="js/site.js?v=202611082144"></script>
+<script src="js/site.js?v=202611082158"></script>
 
 </body>
 </html>
