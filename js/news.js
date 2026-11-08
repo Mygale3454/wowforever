@@ -4,8 +4,8 @@
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
   { date: "2026-11-08", type: "site", lien: "feu-de-camp.html", img: "images/dungeon-planner/inscription.webp",
-    titre: "Feu de Camp : notre addon pour organiser tes donjons (bêta)",
-    texte: "Indique ton rôle, tes horaires et le donjon que tu veux faire, et vois en un clic qui est dispo, guilde par guilde. À télécharger en version bêta." },
+    titre: "Feu de Camp : notre planificateur d'activités en jeu (bêta)",
+    texte: "Donjons, quêtes élites ou autres sorties : indique ton rôle et tes horaires, et vois en un clic qui est dispo, guilde par guilde. Deux versions à télécharger." },
   { date: "2026-11-08", type: "actu", lien: "news-ou-sont-les-francais.html", img: "images/debuter-regles.jpg",
     titre: "Où sont les joueurs français sur WoW Forever ?",
     texte: "Pas de royaume français : comment marchent les ensembles de règles, et le réglage « Langue en ligne préférée » à vérifier." },

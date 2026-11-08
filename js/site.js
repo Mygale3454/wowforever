@@ -8,7 +8,7 @@ const MENU = [
   ["Métiers", [["metiers.html", "Les métiers"], ["metiers-pas-a-pas.html", "Métiers pas à pas 1-300"]]],
   ["Équipement", [["bis.html", "BiS niveau 60"]]],
   ["Officiel", [["calendrier.html", "Roadmap"], ["videos.html", "Vidéos officielles"], ["https://worldofwarcraft.blizzard.com/forever", "Site officiel ↗"]]],
-  ["Outils", [["talents.html", "Calculateur de talents"], ["carte.html", "Carte interactive"], ["pseudo.html", "Générateur de pseudo"], ["addons.html", "Addons"], ["feu-de-camp.html", "Feu de Camp <sup class=\"dbeta\">Bêta</sup>"]]],
+  ["Outils", [["talents.html", "Calculateur de talents"], ["carte.html", "Carte interactive"], ["pseudo.html", "Générateur de pseudo"], ["addons.html", "Addons"], ["feu-de-camp.html", "Feu de Camp · planificateur <sup class=\"dbeta\">Bêta</sup>"]]],
   ["Communauté", [["galerie.html", "Galerie"], ["liens.html", "Liens & chaînes"], ["contact.html", "Contact"]]]
 ];
 
