@@ -3,7 +3,7 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
-  { date: "2026-11-08", type: "site", lien: "feu-de-camp.html", img: "images/dungeon-planner/inscription.webp",
+  { date: "2026-11-08", type: "site", lien: "feu-de-camp.html", img: "images/dungeon-planner/inscription-h.webp",
     titre: "Feu de Camp : notre planificateur d'activités en jeu (bêta)",
     texte: "Donjons, quêtes élites ou autres sorties : indique ton rôle et tes horaires, et vois en un clic qui est dispo, guilde par guilde. Deux versions à télécharger." },
   { date: "2026-11-08", type: "actu", lien: "news-ou-sont-les-francais.html", img: "images/debuter-regles.jpg",
