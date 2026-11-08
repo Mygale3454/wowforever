@@ -1038,3 +1038,10 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .rc td a.race,.rc td a.race:hover{color:#fff}
 
 .races a.race,.races a.race:hover{color:#fff;text-decoration:none}.races a.race:hover{filter:brightness(1.15)}
+
+/* Dungeon Planner (bêta) */
+.dbeta{font-size:.55em;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#fff;background:#d9822b;border-radius:4px;padding:2px 5px;margin-left:4px;vertical-align:super;font-family:Inter,system-ui,sans-serif}
+.subm .dbeta{font-size:.6rem;padding:1px 4px;vertical-align:middle}
+.dp-dl{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:18px 0}
+.dp-shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.dp-shots figure{margin:0}.dp-shots img{width:100%;height:auto;border-radius:10px;outline:2px solid #111;outline-offset:-2px}
