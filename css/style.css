@@ -1036,3 +1036,5 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .poll-see{background:none;border:0;color:var(--muted);font-size:.78rem;text-decoration:underline;cursor:pointer;padding:0}
 .poll-res{align-self:stretch}
 .rc td a.race,.rc td a.race:hover{color:#fff}
+
+.races a.race,.races a.race:hover{color:#fff;text-decoration:none}.races a.race:hover{filter:brightness(1.15)}
