@@ -1011,3 +1011,28 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 
 /* Fil noir autour des images */
 .cover,.thumb,.hero img,.tile,.hhero img,.mini img,.article img,.gal-item img{outline:2px solid #111;outline-offset:-2px}
+
+/* Races conseillées (page Classes) */
+.rc table{font-size:.86rem}.rc th small{font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted)}
+.rc tbody th{white-space:nowrap;text-align:left;width:1%}.rc td a.race{display:inline-block;margin:2px 3px 2px 0;text-decoration:none}
+.rc .rc-n{font-size:.76rem;color:var(--muted);margin:0 2px}.rc .rc-sep{color:var(--muted);margin:0 6px}
+
+/* Sondage Horde / Alliance (colonne de droite) */
+.box.poll-box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:16px 14px}
+.poll-box>small{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.poll-q{font-family:Cinzel,serif;font-size:1.15rem;font-weight:800;line-height:1.25}
+.poll-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.poll-btns[hidden],.poll-res[hidden],.poll-see[hidden]{display:none}
+.pb{position:relative;aspect-ratio:5/4;border:0;border-radius:10px;overflow:hidden;cursor:pointer;background:center/cover no-repeat;outline:2px solid #111;outline-offset:-2px;transition:transform .2s,box-shadow .2s}
+.pb.h{background-image:linear-gradient(to top,rgba(140,20,20,.85),rgba(140,20,20,0) 60%),url(../images/sondage-horde.webp)}
+.pb.a{background-image:linear-gradient(to top,rgba(25,60,140,.85),rgba(25,60,140,0) 60%),url(../images/sondage-alliance.webp)}
+.pb span{position:absolute;left:0;right:0;bottom:8px;color:#fff;font-family:Cinzel,serif;font-weight:900;font-size:1.05rem;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.pb:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.18)}.pb:disabled{opacity:.6;cursor:wait}
+.poll-res{width:100%}
+.pl-bar{display:flex;height:14px;border-radius:99px;overflow:hidden;background:var(--bg2);outline:1px solid #111}
+.pl-bar i{display:block;height:100%;transition:width .6s}.pl-bar i.h{background:var(--horde)}.pl-bar i.a{background:var(--alliance)}
+.plab{display:flex;justify-content:space-between;font-weight:700;font-size:.85rem;margin-top:6px}.plab .ph{color:var(--horde)}.plab .pa{color:var(--alliance)}
+.ptot{display:block;margin-top:4px;font-size:.78rem;color:var(--muted)}
+.poll-see{background:none;border:0;color:var(--muted);font-size:.78rem;text-decoration:underline;cursor:pointer;padding:0}
+.poll-res{align-self:stretch}
+.rc td a.race,.rc td a.race:hover{color:#fff}

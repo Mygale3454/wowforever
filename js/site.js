@@ -100,8 +100,12 @@ function tick() {
     top.textContent = "WoW Forever est disponible : let's go !";
     document.querySelectorAll("[data-cd]").forEach(c => {
       const box = c.closest(".box");
-      box.classList.add("live-box");
-      box.innerHTML = '<img src="images/ico/lib/infinite.webp" alt="" width="96" height="96"><small>Disponible depuis le 5 novembre</small><b>Let&#39;s go !</b>';
+      box.classList.add("poll-box");
+      box.innerHTML = '<small>Sondage</small><b class="poll-q">Tu joues Horde ou Alliance&nbsp;?</b>'
+        + '<div class="poll-btns"><button type="button" class="pb h" data-v="horde"><span>Horde</span></button><button type="button" class="pb a" data-v="alliance"><span>Alliance</span></button></div>'
+        + '<div class="poll-res" hidden><div class="pl-bar"><i class="h"></i><i class="a"></i></div><div class="plab"><span class="ph"></span><span class="pa"></span></div><small class="ptot"></small></div>'
+        + '<button type="button" class="poll-see">Voir les résultats</button>';
+      poll(box);
     });
     return clearInterval(timer);
   }
@@ -110,3 +114,39 @@ function tick() {
   top.textContent = `Sortie de WoW Forever dans ${v[0]} j ${v[1]} h ${v[2]} min`;
 }
 const timer = setInterval(tick, 1000); tick();
+
+/* ----- Sondage « Horde ou Alliance ? » (colonne de droite) -----
+   Compteur gratuit abacus.jasoncameron.dev (sans compte). Un vote par navigateur (mémorisé localement). */
+function poll(box) {
+  const API = "https://abacus.jasoncameron.dev", NS = "foreverwow-fr", KEY = { horde: "faction-horde", alliance: "faction-alliance" };
+  const VK = "fw_vote_faction";
+  let mine = null; try { mine = localStorage.getItem(VK); } catch (e) {}
+  const res = box.querySelector(".poll-res"), btns = box.querySelector(".poll-btns"), see = box.querySelector(".poll-see");
+  const get = k => fetch(`${API}/get/${NS}/${KEY[k]}`).then(r => r.ok ? r.json() : { value: 0 }).then(j => j.value || 0).catch(() => null);
+  function show(h, a, msg) {
+    btns.hidden = true; see.hidden = true; res.hidden = false;
+    const tot = (h || 0) + (a || 0);
+    if (h === null || a === null || !tot) {
+      res.querySelector(".pl-bar").hidden = true; res.querySelector(".plab").hidden = true;
+      res.querySelector(".ptot").textContent = msg || "Résultats indisponibles pour le moment.";
+      return;
+    }
+    const ph = Math.round(h * 100 / tot);
+    res.querySelector("i.h").style.width = ph + "%"; res.querySelector("i.a").style.width = (100 - ph) + "%";
+    res.querySelector(".ph").textContent = `Horde ${ph} %`; res.querySelector(".pa").textContent = `${100 - ph} % Alliance`;
+    res.querySelector(".ptot").textContent = `${tot} vote${tot > 1 ? "s" : ""}` + (msg ? ` · ${msg}` : "");
+  }
+  const load = msg => Promise.all([get("horde"), get("alliance")]).then(([h, a]) => show(h, a, msg));
+  if (mine) load(mine === "horde" ? "Pour la Horde !" : "Pour l'Alliance !");
+  see.onclick = () => load("");
+  btns.querySelectorAll(".pb").forEach(b => b.onclick = () => {
+    const v = b.dataset.v;
+    btns.querySelectorAll(".pb").forEach(x => x.disabled = true);
+    try { localStorage.setItem(VK, v); } catch (e) {}
+    const merci = v === "horde" ? "Pour la Horde !" : "Pour l'Alliance !";
+    fetch(`${API}/hit/${NS}/${KEY[v]}`).then(r => r.json()).then(j => {
+      const other = v === "horde" ? "alliance" : "horde";
+      return get(other).then(o => v === "horde" ? show(j.value, o, merci) : show(o, j.value, merci));
+    }).catch(() => show(null, null, "Merci pour ton vote ! " + merci));
+  });
+}
