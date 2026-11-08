@@ -3,9 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
-  { date: "2026-11-08", type: "site", lien: "dungeon-planner.html", img: "images/dungeon-planner/inscription.webp",
-    titre: "Dungeon Planner : l'addon de guilde pour organiser tes donjons (bêta)",
-    texte: "Indique ton rôle, tes horaires et le donjon que tu veux faire, et vois en un clic qui est dispo dans la guilde. À télécharger en version bêta." },
+  { date: "2026-11-08", type: "site", lien: "feu-de-camp.html", img: "images/dungeon-planner/inscription.webp",
+    titre: "Feu de Camp : notre addon pour organiser tes donjons (bêta)",
+    texte: "Indique ton rôle, tes horaires et le donjon que tu veux faire, et vois en un clic qui est dispo, guilde par guilde. À télécharger en version bêta." },
   { date: "2026-11-08", type: "actu", lien: "news-ou-sont-les-francais.html", img: "images/debuter-regles.jpg",
     titre: "Où sont les joueurs français sur WoW Forever ?",
     texte: "Pas de royaume français : comment marchent les ensembles de règles, et le réglage « Langue en ligne préférée » à vérifier." },

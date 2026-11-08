@@ -3,7 +3,7 @@
 import glob, html, json, os, re, datetime, subprocess
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 BASE = "https://foreverwow.fr/"
-pages = sorted(f for f in glob.glob("*.html") if f != "actualites.html")
+pages = sorted(f for f in glob.glob("*.html") if f != "actualites.html" and 'http-equiv="refresh"' not in open(f, encoding="utf-8").read())
 NEWSDATE = dict((l, d) for d, l in re.findall(r'date:\s*"([^"]+)",\s*type:\s*"[^"]+",\s*lien:\s*"([^"]+)"', open("js/news.js", encoding="utf-8").read()))
 ORG = {"@type": "Organization", "name": "ForeverWoW.fr", "url": BASE, "logo": {"@type": "ImageObject", "url": BASE + "images/logo-carre.png"}}
 def gitdate(f):
