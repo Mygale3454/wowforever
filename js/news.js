@@ -3,6 +3,15 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-09", type: "actu", lien: "news-raids-difficulte-unique.html", img: "images/raids.jpg",
+    titre: "Raids : trois raids, une seule difficulté",
+    texte: "Profondeurs des Saisons (10), Sommet d'Hyjal (20) et Repaire d'Onyxia (40) ouvrent le 9 décembre, avec boss cachés et butin secret." },
+  { date: "2026-11-09", type: "actu", lien: "news-foire-sombrelune.html", img: "images/alliance.jpg",
+    titre: "La Foire de Sombrelune arrive en forêt d'Elwynn",
+    texte: "Première foire de WoW Forever, du 9 au 15 novembre en Elwynn, puis en Mulgore en décembre : fortunes de Sayge, tickets et cartes." },
+  { date: "2026-11-09", type: "actu", lien: "news-xp-donjons.html", img: "images/donjons-cover.jpg",
+    titre: "+50 % d'XP pour les monstres de donjon",
+    texte: "Depuis le correctif du 8 novembre, les monstres tués en donjon rapportent 50 % d'expérience en plus." },
   { date: "2026-11-08", type: "site", lien: "feu-de-camp.html", img: "images/dungeon-planner/inscription-h.webp",
     titre: "Feu de Camp : notre planificateur d'activités en jeu (bêta)",
     texte: "Donjons, quêtes élites ou autres sorties : indique ton rôle et tes horaires, et vois en un clic qui est dispo, guilde par guilde. Deux versions à télécharger." },
