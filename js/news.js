@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-10", type: "actu", lien: "news-correctifs-9-novembre.html", img: "images/classes.jpg",
+    titre: "Correctifs du 9 novembre : Cité engloutie, classes et quêtes",
+    texte: "La Cité engloutie devient moins punitive, plusieurs classes sont corrigées, Alcaz et la Terrasse du Façonneur lâchent leur butin." },
+  { date: "2026-11-10", type: "actu", lien: "news-equilibre-factions-jcj.html", img: "images/pvp-cover.jpg",
+    titre: "Équilibre des factions : création plus difficile dans la faction la plus peuplée",
+    texte: "Sur les ensembles de règles JcJ, Blizzard vise le 50/50 : en Europe, c'est l'Alliance du JcJ Jeu de rôle qui est concernée." },
   { date: "2026-11-09", type: "actu", lien: "news-raids-difficulte-unique.html", img: "images/raids.jpg",
     titre: "Raids : trois raids, une seule difficulté",
     texte: "Profondeurs des Saisons (10), Sommet d'Hyjal (20) et Repaire d'Onyxia (40) ouvrent le 9 décembre, avec boss cachés et butin secret." },
