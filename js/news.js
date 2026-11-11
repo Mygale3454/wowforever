@@ -3,7 +3,7 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
-  { date: "2026-11-11", type: "actu", lien: "news-premier-60-jokerd.html", img: "images/news/niveau-35.jpg",
+  { date: "2026-11-11", type: "actu", lien: "news-premier-60-jokerd.html", img: "images/news/niveau-60.jpg",
     titre: "Premier niveau 60 : Jokerd remet ça, sept ans après",
     texte: "La Team Jokerd (cinq joueurs Horde) atteint la première le niveau 60 de WoW Forever, environ 52 heures après la sortie." },
   { date: "2026-11-10", type: "actu", lien: "news-correctifs-9-novembre.html", img: "images/classes.jpg",
