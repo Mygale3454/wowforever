@@ -116,7 +116,7 @@ body = f'''<main><div class="wrap">
 <p style="margin-top:12px">Quelle spé est la plus forte au niveau 60 ? Voir les <a href="tier-list.html"><b>tier lists niveau 60</b></a>.</p>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {sections}
-<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70862 (vérifiés le 7 novembre 2026). Noms des talents en anglais.</p>
+<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70888 (vérifiés le 11 novembre 2026). Noms des talents en anglais.</p>
 </div>'''
 
 tpl = open("legacy.html").read()

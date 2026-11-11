@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-11", type: "actu", lien: "news-maj-11-novembre.html", img: "images/classes-cover.jpg",
+    titre: "Mise à jour du 11 novembre : chaman, démoniste, chasseur et or des quêtes",
+    texte: "Chaman Amélioration revu, nouvelle rotation Affliction, démons et familiers plus solides, de l'or pour les quêtes de niveau 48+ et le dépôt de l'HV à 1 pc." },
   { date: "2026-11-11", type: "actu", lien: "news-premier-60-jokerd.html", img: "images/news/niveau-60.jpg",
     titre: "Premier niveau 60 : Jokerd remet ça, sept ans après",
     texte: "La Team Jokerd (cinq joueurs Horde) atteint la première le niveau 60 de WoW Forever, environ 52 heures après la sortie." },

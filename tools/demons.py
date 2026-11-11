@@ -106,7 +106,7 @@ body = f'''<main><div class="wrap">
   <ul>
     <li>Dans Forever, <b>tes démons profitent de tes caractéristiques</b> : mieux tu es équipé, plus ils sont forts.</li>
     <li>Les techniques s'achètent sous forme de <b>grimoires</b> chez le maître des démons, en général à côté de ton maître des démonistes. Les prix ci-dessous sont sans réduction de réputation. Depuis les notes de lancement, le prix des grimoires est déduit du coût d'entraînement du démoniste.</li>
-    <li>Depuis les notes de lancement, chaque point d'Endurance donne <b>2 points de vie</b> à tes démons (7,5 auparavant) : ils sont moins résistants qu'en bêta. Le correctif du 6 novembre a ajouté environ <b>40 points de vie de base</b> au marcheur du Vide, et Blizzard prévoit de rendre les familiers plus solides (proches de Classic Era) avec l'équilibrage du 11 novembre.</li>
+    <li>Depuis les notes de lancement, chaque point d'Endurance donne <b>2 points de vie</b> à tes démons (7,5 auparavant) : ils sont moins résistants qu'en bêta. Le correctif du 6 novembre a ajouté environ <b>40 points de vie de base</b> au marcheur du Vide, puis la mise à jour du 11 novembre a donné environ <b>15 % de points de vie de base en plus</b> au diablotin, au marcheur du Vide, à la succube et à l'incube. Les premiers rangs de l'Éclair de feu du diablotin frappent aussi plus fort.</li>
     <li>Les valeurs indiquées sont celles de base, sans talents ni équipement ; le niveau est celui où le rang devient disponible.</li>
   </ul>
 </div>
