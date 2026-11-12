@@ -1,4 +1,4 @@
-"""Génère les pages « Leveling pas à pas » à partir des guides de Polestar (GPL-3.0).
+"""Génère les pages du « Guide de leveling » (pas à pas) à partir des guides de Polestar (GPL-3.0).
 
 Usage : python3 tools/pas_a_pas.py <chemin du clone de https://github.com/fitzforge/polestar>
 Les textes des guides et leur traduction française viennent de Polestar ; les noms
@@ -387,7 +387,7 @@ for slug, guide, race, fac, grp in ALL:
         nxt, nlabel = "leveling.html", "La suite du parcours 1-60 →"
     lead = "La route complète de ta zone de départ, étape par étape." if grp == "depart" else "La route complète de cette étape du leveling, quête par quête."
     body = f'''<main><div class="wrap">
-<div class="crumbs"><a href="index.html">News</a> › <a href="pas-a-pas.html">Leveling pas à pas</a> › {html.escape(zone)}</div>
+<div class="crumbs"><a href="index.html">News</a> › <a href="pas-a-pas.html">Guide de leveling</a> › {html.escape(zone)}</div>
 {faces(race, "pp-faces pp-hfaces") if grp == "depart" else ""}<h1 class="page-title">{html.escape(zone)} <span class="pp-lv">niveaux {lv}</span></h1>
 <p class="page-lead"><span class="race {fac}">{race}</span> {lead} Coche chaque étape terminée : ta progression est gardée dans ton navigateur.</p>
 <div class="pp-bar" data-guide="{slug}">
@@ -405,14 +405,14 @@ for slug, guide, race, fac, grp in ALL:
     print(slug, steps.count('class="pp-st"'), "étapes")
 
 hub = f'''<main><div class="wrap">
-<div class="crumbs"><a href="index.html">News</a> › Leveling pas à pas</div>
-<h1 class="page-title">Leveling pas à pas</h1>
+<div class="crumbs"><a href="index.html">News</a> › Guide de leveling</div>
+<h1 class="page-title">Guide de leveling WoW Forever <span class="pp-lv">1 à 60, pas à pas</span></h1>
 <p class="page-lead">Chaque quête dans le bon ordre, avec les monstres à tuer, les objets à ramasser et les endroits où aller. Commence par la zone de départ de ta race : à la fin de chaque page, un bouton t'emmène à la zone suivante. Le <a href="leveling.html">parcours 1-60</a> donne la vue d'ensemble jusqu'au niveau 60.</p>
 {"".join(f'<h2 id="t{g}">{t}</h2><h3 class="pp-fac">Alliance</h3><div class="pp-cards">{cards[g]["a"]}</div><h3 class="pp-fac">Horde</h3><div class="pp-cards">{cards[g]["h"]}</div>' for g, t in GROUPS)}
 <div class="info" style="margin-top:20px">Tu préfères être guidé directement en jeu ? Installe l'addon <a href="addons.html">Polestar</a> : les mêmes routes s'affichent avec une flèche vers chaque objectif.</div>
 {CREDIT}
 </div>'''
-open("pas-a-pas.html", "w", encoding="utf-8").write(page("Leveling pas à pas", "Guides de leveling pas à pas de WoW Forever en français : du niveau 1 au niveau 60, pour l'Alliance et la Horde.", hub))
+open("pas-a-pas.html", "w", encoding="utf-8").write(page("Guide de leveling WoW Forever : 1 à 60 pas à pas", "Guide de leveling WoW Forever en français : toutes les quêtes du niveau 1 au niveau 60 dans le bon ordre, zone par zone, pour l'Alliance et la Horde.", hub))
 # ---------- Métiers pas à pas ----------
 FILTER[0] = ["Alliance", "Horde"]
 METIERS = [("alchimie", "alchemy", "Alchimie"), ("forge", "blacksmithing", "Forge"), ("enchantement", "enchanting", "Enchantement"),
