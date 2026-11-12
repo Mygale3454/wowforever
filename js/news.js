@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-12", type: "guide", lien: "news-sac-14-places-sombrelune.html", img: "images/alliance.jpg",
+    titre: "Foire de Sombrelune : le sac de 14 places pour 50 tickets",
+    texte: "Comment réunir 50 tickets chez Yebb Neblegear avant le 15 novembre, avec la route des plumes de Mille pointes." },
+  { date: "2026-11-12", type: "actu", lien: "news-correctifs-11-novembre.html", img: "images/metiers-couture.jpg",
+    titre: "Correctifs du 11 novembre : Jugement du paladin, sacs de couture",
+    texte: "Le Jugement du paladin devient une attaque à distance, les sacs de couture coûtent plus d'étoffe et la récupération d'objets est suspendue." },
   { date: "2026-11-11", type: "actu", lien: "news-maj-11-novembre.html", img: "images/classes-cover.jpg",
     titre: "Mise à jour du 11 novembre : chaman, démoniste, chasseur et or des quêtes",
     texte: "Chaman Amélioration revu, nouvelle rotation Affliction, démons et familiers plus solides, de l'or pour les quêtes de niveau 48+ et le dépôt de l'HV à 1 pc." },
