@@ -80,7 +80,7 @@ body = f'''<main><div class="wrap">
 <div class="mt-grid">
   <article class="mt-card pic"><img class="mt-pic" src="images/montures/paladin.webp" alt="Monture de classe (illustration)" width="643" height="284" style="aspect-ratio:643/284" loading="lazy"><img class="mt-face" src="images/icons/class_paladin.jpg" alt="" width="64" height="64"><div><h3>Paladin</h3>
     <ul class="mt-list"><li class="mt-m">Cheval de guerre (quête, niveau 40)</li><li class="mt-m sw">Destrier (longue quête, niveau 60)</li></ul>
-    <p class="small">Le <b>paladin mort-vivant</b>, nouveau dans Forever, a sa propre monture et ses propres quêtes.</p></div></article>
+    <p class="small">Le <b>paladin mort-vivant</b>, nouveau dans Forever, a sa propre monture et ses propres quêtes. Côté Alliance, toutes les étapes du destrier sont dans <a href="news-destrier-paladin.html">notre guide</a>.</p></div></article>
   <article class="mt-card pic"><img class="mt-pic" src="images/montures/demoniste.webp" alt="Monture de classe (illustration)" width="665" height="284" style="aspect-ratio:665/284" loading="lazy"><img class="mt-face" src="images/icons/class_warlock.jpg" alt="" width="64" height="64"><div><h3>Démoniste</h3>
     <ul class="mt-list"><li class="mt-m">Palefroi corrompu (quête, niveau 40)</li><li class="mt-m sw">Destrier de l'effroi (longue quête, niveau 60)</li></ul>
     <p class="small">Ces montures s'invoquent comme des sorts : rien à acheter, mais la quête du niveau 60 coûte cher en composants.</p></div></article>

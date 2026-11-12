@@ -3,6 +3,18 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-12", type: "actu", lien: "news-podcast-lore-forever.html", img: "images/skyborne.jpg",
+    titre: "Le podcast des développeurs : lore, Rives Claires, Éolides et Norfendre",
+    texte: "Une continuité propre à Forever, des scénarios alternatifs, Arthas au Norfendre et l'Outreterre pas exclue." },
+  { date: "2026-11-12", type: "guide", lien: "news-ensembles-t0.html", img: "images/donjons.jpg",
+    titre: "Ensembles T0 : les pièces, les bonus et les donjons",
+    texte: "Les neuf ensembles de donjon du niveau 60, leurs nouveaux bonus de 2 à 6 pièces et les boss qui les lâchent." },
+  { date: "2026-11-12", type: "guide", lien: "news-destrier-paladin.html", img: "images/montures/paladin.webp",
+    titre: "Monture épique du paladin (Alliance) : le guide du destrier",
+    texte: "Composants, 350 pièces d'or et combat final en Scholomance : toutes les étapes de la quête du destrier." },
+  { date: "2026-11-12", type: "actu", lien: "news-double-specialisation.html", img: "images/news/talents.jpg",
+    titre: "Double spécialisation : 50 pièces d'or au niveau 40",
+    texte: "Un second arbre de talents chez ton maître de classe dès le niveau 40. Avec la monture, prévois environ 150 po." },
   { date: "2026-11-12", type: "guide", lien: "news-sac-14-places-sombrelune.html", img: "images/alliance.jpg",
     titre: "Foire de Sombrelune : le sac de 14 places pour 50 tickets",
     texte: "Comment réunir 50 tickets chez Yebb Neblegear avant le 15 novembre, avec la route des plumes de Mille pointes." },
