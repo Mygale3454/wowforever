@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-13", type: "actu", lien: "news-patch-70938.html", img: "images/classes-cover.jpg",
+    titre: "Patch 1.60.1.70938 : Surcharge du chaman, Calvaire et Croissance sauvage",
+    texte: "La Surcharge du chaman Élémentaire frappe bien plus fort, Croissance sauvage profite mieux des soins, et l'hôtel des ventes attendra le 17 novembre." },
   { date: "2026-11-12", type: "actu", lien: "news-podcast-lore-forever.html", img: "images/skyborne.jpg",
     titre: "Le podcast des développeurs : lore, Rives Claires, Éolides et Norfendre",
     texte: "Une continuité propre à Forever, des scénarios alternatifs, Arthas au Norfendre et l'Outreterre pas exclue." },
@@ -23,7 +26,7 @@ const NEWS = [
     texte: "Le Jugement du paladin devient une attaque à distance, les sacs de couture coûtent plus d'étoffe et la récupération d'objets est suspendue." },
   { date: "2026-11-11", type: "actu", lien: "news-maj-11-novembre.html", img: "images/classes-cover.jpg",
     titre: "Mise à jour du 11 novembre : chaman, démoniste, chasseur et or des quêtes",
-    texte: "Chaman Amélioration revu, nouvelle rotation Affliction, démons et familiers plus solides, de l'or pour les quêtes de niveau 48+ et le dépôt de l'HV à 1 pc." },
+    texte: "Chaman Amélioration revu, nouvelle rotation Affliction, démons et familiers plus solides, et de l'or pour les quêtes de niveau 48+ (le dépôt de l'HV à 1 pc est repoussé)." },
   { date: "2026-11-11", type: "actu", lien: "news-premier-60-jokerd.html", img: "images/news/niveau-60.jpg",
     titre: "Premier niveau 60 : Jokerd remet ça, sept ans après",
     texte: "La Team Jokerd (cinq joueurs Horde) atteint la première le niveau 60 de WoW Forever, environ 52 heures après la sortie." },
