@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-14", type: "guide", lien: "news-double-spe-barres.html", img: "images/news/talents.jpg",
+    titre: "Double spécialisation : protège tes barres d'action",
+    texte: "Un bug vide parfois les barres ou les raccourcis au changement de spé. Comment sauvegarder tes barres avant d'acheter." },
+  { date: "2026-11-14", type: "actu", lien: "news-quete-hebdo-60.html", img: "images/donjons-cover.jpg",
+    titre: "Quête hebdomadaire du niveau 60 : jusqu'à 100 po à Hache-Tripes",
+    texte: "Trois objets à récupérer dans les trois ailes de Hache-Tripes, pour une sacoche qui vaut de 10 à 100 pièces d'or." },
   { date: "2026-11-13", type: "actu", lien: "news-patch-70938.html", img: "images/classes-cover.jpg",
     titre: "Patch 1.60.1.70938 : Surcharge du chaman, Calvaire et Croissance sauvage",
     texte: "La Surcharge du chaman Élémentaire frappe bien plus fort, Croissance sauvage profite mieux des soins, et l'hôtel des ventes attendra le 17 novembre." },
