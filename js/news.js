@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-14", type: "actu", lien: "news-correctifs-13-novembre.html", img: "images/classes.jpg",
+    titre: "Correctifs du 13 novembre : double spé réparée, Furie-des-vents, XP en donjon",
+    texte: "Le bug des barres d'action de la double spécialisation est corrigé, et les monstres de donjon trop bas niveau ne donnent plus d'XP." },
   { date: "2026-11-14", type: "guide", lien: "news-double-spe-barres.html", img: "images/news/talents.jpg",
     titre: "Double spécialisation : protège tes barres d'action",
     texte: "Un bug vide parfois les barres ou les raccourcis au changement de spé. Comment sauvegarder tes barres avant d'acheter." },

@@ -1,3 +1,8 @@
+/* Icône absente de notre banque (talent ajouté par un patch) : on la prend chez Wowhead, sinon icône générique. */
+function icoFallback(img) {
+  if (!img.dataset.tried && img.dataset.i) { img.dataset.tried = 1; img.src = "https://wow.zamimg.com/images/wow/icons/large/" + img.dataset.i + ".jpg"; }
+  else { img.onerror = null; img.src = "images/ico/talent.webp"; }
+}
 /* ===== Calculateur de talents wowforever ===== */
 (() => {
 const CLASSES = [
@@ -94,7 +99,7 @@ function render() {
       const state = r === t.m ? "max" : r ? "part" : canAdd(ti, t) ? "open" : "lock";
       return `<button class="tal ${state}${t.a ? " active" : ""}" data-k="${k}" data-ti="${ti}" data-id="${t.id}"
         style="grid-row:${t.r + 1};grid-column:${t.c + 1}" aria-label="${t.n}, rang ${r} sur ${t.m}">
-        <img src="images/icons/${t.i}.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/ico/talent.webp'"><span class="rk">${r}/${t.m}</span>
+        <img src="images/icons/${t.i}.jpg" alt="" loading="lazy" data-i="${t.i}" onerror="icoFallback(this)"><span class="rk">${r}/${t.m}</span>
         ${t.s === "new" ? '<i class="dot" title="Nouveau"></i>' : ""}</button>`;
     }).join("");
     const arrows = tr.t.flatMap(t => t.p.map(([id]) => {
@@ -102,7 +107,7 @@ function render() {
       return `<line x1="${p.c + .5}" y1="${p.r + .5}" x2="${t.c + .5}" y2="${t.r + .5}" class="${on ? "on" : ""}"/>`;
     })).join("");
     return `<section class="tree">
-      <header>${tr.i ? `<img class="ticon" src="images/icons/${tr.i}.jpg" alt="">` : ""}<h2>${TREE_FR[tr.n] || tr.n}</h2><span class="tp">${treeSpent(ti)}</span>
+      <header>${tr.i ? `<img class="ticon" src="images/icons/${tr.i}.jpg" alt="" data-i="${tr.i}" onerror="icoFallback(this)">` : ""}<h2>${TREE_FR[tr.n] || tr.n}</h2><span class="tp">${treeSpent(ti)}</span>
         <button class="treset" data-ti="${ti}" title="Vider cet arbre">↺</button></header>
       <div class="grid" style="--cols:${tr.cols};--rows:${tr.rows}">
         <svg class="arrows" viewBox="0 0 ${tr.cols} ${tr.rows}" preserveAspectRatio="none">${arrows}</svg>

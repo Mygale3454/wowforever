@@ -1048,3 +1048,6 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .dp-dls{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0 6px}
 .dp-v{display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
 .dp-v>b{font-family:Cinzel,serif;font-size:1.1rem}.dp-v .btn-link{align-self:flex-start;background:linear-gradient(#f2c25a,#c9922e);color:var(--ink)}
+
+/* Mobile : un tableau large défile dans son cadre au lieu d'élargir toute la page */
+.layout>*,.fiches>*,.fiche,.article{min-width:0}
