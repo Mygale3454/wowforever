@@ -135,7 +135,7 @@ tbody tr:hover{background:#fbf8f2}
 
 /* ----- Pied de page ----- */
 footer{background:var(--text);color:#cfc5b2;padding:42px 0 28px;font-size:.86rem}
-footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;margin-bottom:24px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;margin-bottom:24px}
 footer .logo{color:#fff;margin-bottom:8px}
 footer h5{color:#fff;margin-bottom:10px;font-size:.9rem}
 footer a{display:block;padding:3px 0}

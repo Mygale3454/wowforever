@@ -15,7 +15,7 @@ LASTMOD = {f: gitdate(f) for f in pages}
 # Date = dernier commit qui a vraiment changé le contenu de la page (on ignore les numéros de version ?v=,
 # les balises ajoutées par ce script et le tampon lui-même). Patch = build du jeu en vigueur à cette date.
 PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707"), ("2026-11-02", "1.60.1.70753"), ("2026-11-04", "1.60.1.70755"), ("2026-11-07", "1.60.1.70862"), ("2026-11-11", "1.60.1.70888"), ("2026-11-13", "1.60.1.70938")]
-NOSTAMP = {"index.html", "galerie.html", "actualites.html"}
+NOSTAMP = {"index.html", "galerie.html", "actualites.html", "a-propos.html", "mentions-legales.html", "confidentialite.html", "contact.html"}
 def _norm(l):
     l = re.sub(r'<p class="stamp auto">.*?</p>', "", l)
     if re.search(r'<link rel="canonical"|<meta property="og:|<meta name="twitter:|application/ld\+json|<meta name="robots"|application/rss\+xml', l): return ""
@@ -53,7 +53,7 @@ for f in pages:
     if not m or t2[m.end():m.end() + 40].lstrip().startswith('<p class="stamp'): continue
     t2 = t2[:m.end()] + "\n" + stamp(contentdate(f)) + t2[m.end():]
     if t2 != t: open(f, "w", encoding="utf-8").write(t2)
-NOART = {"index.html", "talents.html", "pseudo.html", "galerie.html"}
+NOART = {"index.html", "talents.html", "pseudo.html", "galerie.html", "a-propos.html", "mentions-legales.html", "confidentialite.html", "contact.html"}
 def ld(f, t, title, desc, url):
     name = re.sub(r"\s+–\s+ForeverWoW(\.fr)?$", "", title)
     if f == "index.html":
@@ -141,3 +141,34 @@ for i, (d, lien, img, titre, texte, typ) in enumerate(items[:40]):
 out += ["</channel>", "</rss>"]
 open("rss.xml", "w", encoding="utf-8").write("\n".join(out) + "\n")
 print(len(items), "news dans le flux RSS (40 max)")
+
+# ----- Version sans JavaScript (robots, lecteurs) : menu, pied de page et news de l'accueil écrits en dur -----
+# Le JavaScript du site remplace ces blocs par la version interactive ; les robots qui n'exécutent pas
+# le JavaScript voient quand même la navigation et le contenu.
+menu_src = open("js/site.js", encoding="utf-8").read()
+links = re.findall(r'\["([a-z0-9-]+\.html)", "([^"]+?)"\]', menu_src[:menu_src.index("const POPULAIRES")])
+nav = " · ".join(f'<a href="{h}">{html.escape(re.sub(r"<[^>]+>", "", l).strip())}</a>' for h, l in dict.fromkeys(links))
+foot = ('<a href="a-propos.html">À propos</a> · <a href="contact.html">Contact</a> · <a href="mentions-legales.html">Mentions légales</a> · '
+        '<a href="confidentialite.html">Confidentialité</a> · ForeverWoW.fr est un site de fan non officiel, sans lien avec Blizzard Entertainment.')
+for f in pages:
+    s = open(f, encoding="utf-8").read()
+    s2 = re.sub(r'<div id="site-header">.*?</div><!--/site-header-->|<div id="site-header"></div>',
+                f'<div id="site-header"><noscript><nav><a href="index.html">ForeverWoW.fr</a> · {nav}</nav></noscript></div><!--/site-header-->', s, count=1, flags=re.S)
+    s2 = re.sub(r'<div id="site-footer">.*?</div><!--/site-footer-->|<div id="site-footer"></div>',
+                f'<div id="site-footer"><noscript><p>{foot}</p></noscript></div><!--/site-footer-->', s2, count=1, flags=re.S)
+    if f == "index.html":
+        MOISF = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+        fmt = lambda d: f"{int(d[8:])} {MOISF[int(d[5:7]) - 1]} {d[:4]}"
+        TYP = {"actu": ("Actu", "red"), "guide": ("Guide", ""), "site": ("Nouveau sur le site", "green")}
+        order = sorted(enumerate(items), key=lambda p: (p[1][0], -p[0]), reverse=True)
+        lst = [it for _, it in order]
+        badge = lambda typ: f'<span class="badge {TYP[typ][1]}">{TYP[typ][0]}</span>'
+        d0, l0, i0, t0, x0, y0 = lst[0]
+        feat = (f'<a class="hero" href="{l0}"><img src="{i0}" alt=""><div class="hero-body">{badge(y0)} <span class="date">{fmt(d0)}</span>'
+                f'<h1>{html.escape(t0)}</h1><p>{html.escape(x0)}</p></div></a>')
+        feed = "".join(f'<a class="nitem" href="{l}"><div class="nthumb"><img src="{i}" alt="" loading="lazy"></div><div class="nbody"><div class="nmeta">{badge(y)}<span class="date">{fmt(d)}</span></div><h3>{html.escape(ti)}</h3><p>{html.escape(tx)}</p></div></a>'
+                       for d, l, i, ti, tx, y in lst[1:9])
+        s2 = re.sub(r'<div id="featured">.*?</div><!--/featured-->|<div id="featured"></div>', f'<div id="featured">{feat}</div><!--/featured-->', s2, count=1, flags=re.S)
+        s2 = re.sub(r'<div class="feed" id="feed">.*?</div><!--/feed-->|<div class="feed" id="feed"></div>', f'<div class="feed" id="feed">{feed}</div><!--/feed-->', s2, count=1, flags=re.S)
+    if s2 != s: open(f, "w", encoding="utf-8").write(s2)
+print("navigation sans JavaScript ajoutée")
