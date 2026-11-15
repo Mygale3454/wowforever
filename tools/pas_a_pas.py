@@ -427,6 +427,10 @@ for slug, src, nom in METIERS:
     if not os.path.exists(f"{PS}/guides/{g}.guide"): continue
     head, steps = build("metier-" + slug, g, nom, "a")
     lv = head.get("levels", "")
+    if slug == "secourisme":
+        old = '<p class="pp-tip">Secourisme (Expert)</p><ul class="ppg">'
+        assert old in steps
+        steps = steps.replace(old, '<p class="pp-tip">Pour dépasser 150, aucun maître ne suffit : il faut acheter et lire le livre « Expert First Aid - Under Wraps » (utilisable dès 125 en secourisme). Il monte ta limite à 225. Le même marchand vend les deux manuels de bandages : prends tout en une fois.</p><ul class="ppg"><li data-only="Alliance"><span class="k">Acheter</span> le livre et les manuels chez <b>Deneb Walker</b>, à Stromgarde (Hautes-terres d\'Arathi, vers 27, 59)<span class="only">Alliance</span></li><li data-only="Horde"><span class="k">Acheter</span> le livre et les manuels chez <b>Balai Lok\'Wein</b>, au Mur-de-Fougères (Marécage d\'Âprefange)<span class="only">Horde</span></li>')
     body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › <a href="metiers-pas-a-pas.html">Métiers pas à pas</a> › {nom}</div>
 <h1 class="page-title">{nom} 1-300 <span class="pp-lv">pas à pas</span></h1>
