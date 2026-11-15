@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-15", type: "guide", lien: "news-riverglades-leveling.html", img: "images/news/carte.jpg",
+    titre: "Riverglades : la zone idéale pour monter du niveau 38 au 44",
+    texte: "Comment aller dans la nouvelle zone, pourquoi ses quêtes s'enchaînent si bien, et le Bastion de Krol'dok avec son ensemble qui transforme en ogre." },
   { date: "2026-11-14", type: "actu", lien: "news-correctifs-13-novembre.html", img: "images/classes.jpg",
     titre: "Correctifs du 13 novembre : double spé réparée, Furie-des-vents, XP en donjon",
     texte: "Le bug des barres d'action de la double spécialisation est corrigé, et les monstres de donjon trop bas niveau ne donnent plus d'XP." },
