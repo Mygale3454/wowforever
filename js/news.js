@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-16", type: "guide", lien: "news-quetes-de-classe.html", img: "images/news/quetes-de-classe.jpg",
+    titre: "Quêtes de classe : les sorts et objets à ne pas rater",
+    texte: "Forme d'ours, Poisons, totems, montures… Dans Forever, ils se gagnent par des quêtes. Comment les trouver en jeu et lesquelles faire en priorité, classe par classe." },
+  { date: "2026-11-16", type: "guide", lien: "news-gelkis-ou-magram.html", img: "images/news/carte.jpg",
+    titre: "Gelkis ou Magram : quel clan centaure choisir ?",
+    texte: "En Désolace, aider un clan te fâche avec l'autre. Armes de niveau 35, recettes de métier : ce que chacun offre, et pourquoi il vaut mieux choisir une fois pour toutes." },
   { date: "2026-11-16", type: "guide", lien: "news-sacs-gratuits-quetes.html", img: "images/alliance.jpg",
     titre: "Sacs gratuits : les quêtes qui donnent un sac",
     texte: "De 8 à 18 places : la liste des quêtes qui offrent un sac, avec leur zone et leur niveau, et les boss qui en lâchent souvent. De quoi garder ton or pour la monture." },
