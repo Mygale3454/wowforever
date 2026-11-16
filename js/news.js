@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-16", type: "guide", lien: "news-sac-de-couchage-douillet.html", img: "images/news/quete-grands-espaces.jpg",
+    titre: "Sac de couchage douillet : la chaîne de quêtes pas à pas",
+    texte: "+3 % d'expérience et du repos n'importe où, dès le niveau 14 et sans combat. Les 5 étapes pour l'Alliance et la Horde, avec un sac de 12 places en chemin." },
   { date: "2026-11-16", type: "guide", lien: "news-quetes-de-classe.html", img: "images/news/quetes-de-classe.jpg",
     titre: "Quêtes de classe : les sorts et objets à ne pas rater",
     texte: "Forme d'ours, Poisons, totems, montures… Dans Forever, ils se gagnent par des quêtes. Comment les trouver en jeu et lesquelles faire en priorité, classe par classe." },
