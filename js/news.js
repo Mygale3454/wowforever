@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-16", type: "guide", lien: "news-sacs-gratuits-quetes.html", img: "images/alliance.jpg",
+    titre: "Sacs gratuits : les quêtes qui donnent un sac",
+    texte: "De 8 à 18 places : la liste des quêtes qui offrent un sac, avec leur zone et leur niveau, et les boss qui en lâchent souvent. De quoi garder ton or pour la monture." },
   { date: "2026-11-15", type: "actu", lien: "news-xp-donjons-12-niveaux.html", img: "images/donjons-cover.jpg",
     titre: "XP en donjon : la règle anti-boost assouplie",
     texte: "L'expérience n'est plus coupée que si un membre du groupe a 12 niveaux ou plus au-dessus des monstres. Jusqu'à 11 niveaux d'écart, tout le monde gagne son XP." },
