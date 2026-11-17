@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-17", type: "actu", lien: "news-correctifs-16-novembre.html", img: "images/classes.jpg",
+    titre: "Correctifs du 16 novembre : Furie-des-vents, Étreinte vampirique et pêche",
+    texte: "Le Totem Furie-des-vents est corrigé, l'Étreinte vampirique soigne moins le groupe, le guerrier Fureur est réparé et plusieurs quêtes pénibles deviennent plus simples." },
+  { date: "2026-11-17", type: "actu", lien: "news-arnaque-faux-liens.html", img: "images/alliance.jpg",
+    titre: "Arnaque : attention aux faux liens d'objets en message privé",
+    texte: "Un personnage de niveau 1 t'envoie un lien d'objet ? C'est une pub pour un vendeur d'or. Comment la reconnaître et la signaler." },
   { date: "2026-11-16", type: "guide", lien: "news-sac-de-couchage-douillet.html", img: "images/news/quete-grands-espaces.jpg",
     titre: "Sac de couchage douillet : la chaîne de quêtes pas à pas",
     texte: "+3 % d'expérience et du repos n'importe où, dès le niveau 14 et sans combat. Les 5 étapes pour l'Alliance et la Horde, avec un sac de 12 places en chemin." },
