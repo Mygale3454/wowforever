@@ -1026,13 +1026,18 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .rc tbody th{white-space:nowrap;text-align:left;width:1%}.rc td a.race{display:inline-block;margin:2px 3px 2px 0;text-decoration:none}
 .rc .rc-n{font-size:.76rem;color:var(--muted);margin:0 2px}.rc .rc-sep{color:var(--muted);margin:0 6px}
 
-/* Encadré « Le saviez-vous ? » (colonne de droite) */
-.box.lore-box{display:flex;flex-direction:column;gap:8px;padding:16px 18px}
-.lore-box>small{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
-.lore-nom{font-family:Cinzel,serif;font-size:1.12rem;font-weight:800;line-height:1.25;color:var(--title)}
-.lore-box p{font-size:.9rem;line-height:1.5;margin:0}
-.lore-next{align-self:flex-end;background:none;border:0;color:var(--muted);font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;padding:2px 0;text-decoration:underline}
-.lore-next:hover{color:var(--title)}
+/* Encadré « Le saviez-vous ? » (colonne de droite) : fond imagé teinté selon le sujet */
+.box.lore-box{display:flex;flex-direction:column;gap:8px;padding:18px;color:#fff;border:0;outline:2px solid #111;outline-offset:-2px;background:center/cover no-repeat;transition:background-image .3s}
+.lore-box[data-f="astuce"]{background-image:linear-gradient(rgba(70,45,10,.78),rgba(35,22,6,.92)),url(../images/feu-de-camp.jpg)}
+.lore-box[data-f="h"]{background-image:linear-gradient(rgba(120,18,18,.72),rgba(50,8,8,.92)),url(../images/sondage-horde.webp)}
+.lore-box[data-f="a"]{background-image:linear-gradient(rgba(22,52,125,.72),rgba(10,22,60,.92)),url(../images/sondage-alliance.webp)}
+.lore-box[data-f="n"]{background-image:linear-gradient(rgba(55,30,85,.75),rgba(20,10,35,.93)),url(../images/donjons.jpg)}
+.lore-box[data-f="r"]{background-image:linear-gradient(rgba(120,40,10,.7),rgba(45,12,4,.93)),url(../images/raids-ragnaros.jpg)}
+.lore-box>small{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.75)}
+.lore-nom{font-family:Cinzel,serif;font-size:1.12rem;font-weight:800;line-height:1.25;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.lore-box p{font-size:.9rem;line-height:1.5;margin:0;color:#f3ead9;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.lore-next{align-self:flex-end;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);border-radius:99px;color:#fff;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;padding:4px 12px}
+.lore-next:hover{background:rgba(255,255,255,.25)}
 .rc td a.race,.rc td a.race:hover{color:#fff}
 
 .races a.race,.races a.race:hover{color:#fff;text-decoration:none}.races a.race:hover{filter:brightness(1.15)}
