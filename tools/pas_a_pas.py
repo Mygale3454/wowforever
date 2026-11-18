@@ -427,6 +427,14 @@ for slug, src, nom in METIERS:
     if not os.path.exists(f"{PS}/guides/{g}.guide"): continue
     head, steps = build("metier-" + slug, g, nom, "a")
     lv = head.get("levels", "")
+    if slug == "cuisine":
+        old = '<li><span class="k">Apprendre</span> <b>Cuisine</b> (Expert) auprès d\'un maître du métier</li>'
+        assert old in steps
+        steps = steps.replace(old, '<li><span class="k">Acheter</span> et lire le livre <b>Expert Cookbook</b> (dès 125 en cuisine) : aucun maître n\'enseigne ce rang.</li><li data-only="Alliance"><span class="k">Acheter</span> le livre chez <b>Shandrina</b>, au lac Mystral (Orneval, vers 49.5, 67)<span class="only">Alliance</span></li><li data-only="Horde"><span class="k">Acheter</span> le livre chez <b>Wulan</b>, à Shadowprey Village (Désolace, vers 26, 70)<span class="only">Horde</span></li>')
+    if slug == "peche":
+        old = '<li><span class="k">Apprendre</span> <b>Pêche</b> (Expert) auprès d\'un maître du métier</li>'
+        assert old in steps
+        steps = steps.replace(old, '<li><span class="k">Acheter</span> et lire le livre <b>Expert Fishing - The Bass and You</b> (niveau 20, dès 125 en pêche) chez le <b>Vieux Heming</b>, à Baie-du-Butin (Strangleronce), en bas de la ville près des quais. Aucun maître n\'enseigne ce rang.</li>')
     if slug == "secourisme":
         old = '<p class="pp-tip">Secourisme (Expert)</p><ul class="ppg">'
         assert old in steps
