@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-18", type: "actu", lien: "news-patch-70959.html", img: "images/news/talents.jpg",
+    titre: "Patch 1.60.1.70959 : le chaman Amélioration revu à la baisse",
+    texte: "Frappe-tempête passe de 150 % à 100 % des dégâts de l'arme et l'Intelligence donne moins de puissance d'attaque. Le seul changement de ce petit patch." },
+  { date: "2026-11-18", type: "actu", lien: "news-blackmaw-hold-sanctions.html", img: "images/donjons-cover.jpg",
+    titre: "Repaire des Noiregueules : Blizzard reprend l'or des gros farmeurs",
+    texte: "Une erreur de butin rapportait plus de 100 po par heure. Or retiré et suspensions pour quelques centaines de joueurs. Et les nouveaux chiffres du lancement." },
   { date: "2026-11-17", type: "actu", lien: "news-correctifs-16-novembre.html", img: "images/classes.jpg",
     titre: "Correctifs du 16 novembre : Furie-des-vents, Étreinte vampirique et pêche",
     texte: "Le Totem Furie-des-vents est corrigé, l'Étreinte vampirique soigne moins le groupe, le guerrier Fureur est réparé et plusieurs quêtes pénibles deviennent plus simples." },
