@@ -112,11 +112,11 @@ body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Classes / Races › Guides de spé</div>
 <h1 class="page-title">Guides des spécialisations</h1>
 <p class="page-lead">Les 27 spécialisations de WoW Forever en un coup d'œil : rôle, points forts et faibles, build de talents pour le niveau 60, priorité des statistiques et races conseillées. Chaque build s'ouvre en un clic dans notre calculateur de talents.</p>
-<div class="info">Ces conseils viennent de la bêta : les valeurs exactes ne seront connues qu'au niveau 60, après la sortie. Prends-les comme une base solide, à ajuster selon ton style de jeu.</div>
+<div class="info">Builds mis à jour le 18 novembre 2026 pour le niveau 60, sur le patch 1.60.1.70959. Les premiers raids n'ouvrent que le 9 décembre : en attendant de vrais résultats de raid, ces builds restent de la théorie. Prends-les comme une base solide, à ajuster selon ton style de jeu.</div>
 <p style="margin-top:12px">Quelle spé est la plus forte au niveau 60 ? Voir les <a href="tier-list.html"><b>tier lists niveau 60</b></a>.</p>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {sections}
-<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les builds ont été vérifiés et, si besoin, adaptés aux arbres de talents du patch 1.60.1.70938 (vérifiés le 13 novembre 2026). Noms des talents en anglais.</p>
+<p class="small">Répartitions de talents, priorités de statistiques et races d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a>, qui s'appuie notamment sur les guides d'Icy Veins et les présentations de Blizzard. Les arbres des voleurs et des guerriers ont été retravaillés début novembre et l'Élémentaire a perdu deux talents : ces six builds (Assassinat, Combat, Finesse, Armes, Fureur et Élémentaire) ont été refaits le 18 novembre sur les nouveaux arbres. Tous les builds ont été vérifiés sur le patch 1.60.1.70959 (51 points sur 51). Noms des talents en anglais.</p>
 </div>'''
 
 tpl = open("legacy.html").read()

@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-18", type: "site", lien: "guides.html", img: "images/news/niveau-60.jpg",
+    titre: "Builds niveau 60 mis à jour pour les 27 spés",
+    texte: "Tous les builds vérifiés sur le patch 1.60.1.70959. Les six spés touchées par les refontes de novembre (voleur, Armes, Fureur, Élémentaire) ont un nouveau build." },
   { date: "2026-11-17", type: "actu", lien: "news-correctifs-16-novembre.html", img: "images/classes.jpg",
     titre: "Correctifs du 16 novembre : Furie-des-vents, Étreinte vampirique et pêche",
     texte: "Le Totem Furie-des-vents est corrigé, l'Étreinte vampirique soigne moins le groupe, le guerrier Fureur est réparé et plusieurs quêtes pénibles deviennent plus simples." },
