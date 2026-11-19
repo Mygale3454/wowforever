@@ -2,7 +2,7 @@
 Données : dictionnaire DONJONS ci-dessous. Noms des quêtes, PNJ et objets en français d'après Polestar (données du jeu, CC BY 4.0) ;
 taux de butin relevés pendant la bêta (sources citées dans chaque entrée).
 Lancer : python3 tools/donjons_pages.py puis python3 tools/seo.py"""
-import re, os, html
+import re, os, html, json
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 e = html.escape
 QCOL = {2: "#1eff00", 3: "#0070dd", 4: "#a335ee", 5: "#ff8000"}
@@ -46,6 +46,41 @@ DONJONS = {
   "sources": [("Kami Labs", "https://kami-labs.fr/la-salle-des-thanes-wow-forever/")],
 },
 }
+
+OBJ = json.load(open("tools/donjons_objets.json", encoding="utf-8")) if os.path.exists("tools/donjons_objets.json") else {}
+# Repères de parcours ajoutés à la main (indices des quêtes, mécanismes)
+PARCOURS = {
+ "uldaman": ["Le Bâton de la Préhistoire ouvre la salle d'Ironaya : assemble la Hampe de Tsol (sur Revelosh) et le Médaillon de Gni'kiv (coffre de Baelog), puis utilise-le près de la maquette, dans la grande salle ronde.",
+             "D'après le journal de quête : le rubis est dans une zone barricadée des nains Ombreforge, le topaze dans une urne d'une zone de troggs près des nains de l'Alliance, et le saphir sur Grimlok, le chef des troggs.",
+             "Les restes du paladin (quête « Retour à Uldaman ») sont un squelette à cliquer, au sol, à l'intérieur de l'instance."],
+}
+
+def parcours(slug, d):
+    o = OBJ.get(slug, {})
+    noms = [b[0] for b in d["boss"]]
+    ordre = "".join(f"<li>{e(n)}</li>" for n in noms)
+    rows = ""
+    for r in o.get("objets", []):
+        cls = {"Alliance": "a", "Horde": "h"}.get(r["camp"], "s")
+        camp = r["camp"] or "Les deux"
+        nb = f'{r["nb"]} × ' if r["nb"] > 1 else ""
+        rows += f'<tr><td><b>{nb}{item(r["objet"], r["id"])}</b></td><td>{e(", ".join(r["sur"]))}</td><td>{e(" · ".join(r["quetes"]))} <span class="race {cls}">{e(camp)}</span></td></tr>'
+    tab = (f'<h3>Objets de quête à trouver dans l\'instance</h3><div class="table-wrap"><table class="rtable"><thead><tr><th>Objet</th><th>Sur quoi / sur qui</th><th>Quête</th></tr></thead><tbody>{rows}</tbody></table></div>') if rows else ""
+    notes = "".join(f"<li>{e(t)}</li>" for t in PARCOURS.get(slug, []))
+    img = f"images/donjons/{slug}.webp"
+    if os.path.exists(img):
+        carte = f'<figure class="dj-plan"><img src="{img}" alt="Carte du donjon {e(d["nom"])}" loading="lazy"><figcaption>Carte du donjon en jeu.</figcaption></figure>'
+    else:
+        carte = '<p class="small">Plan du donjon en jeu : capture à venir.</p>'
+    wh = ""
+    if not d.get("nouveau") and o.get("zone"):
+        wh = f'<p>Carte interactive du donjon : <a href="https://www.wowhead.com/classic/fr/zone={o["zone"]}" target="_blank" rel="noopener">voir sur Wowhead</a> (version Classic, le plan est le même).</p>'
+    return f'''<div class="sec-title"><h2>Carte et parcours</h2></div>
+<div class="article">
+{carte}{wh}
+{f"<ul>{notes}</ul>" if notes else ""}
+{tab}
+</div>'''
 
 def page(slug, d):
     auto = d.get("auto")
@@ -103,6 +138,7 @@ def page(slug, d):
     <p class="small">Toutes les zones sont sur notre <a href="carte.html">carte interactive</a>.</p>
   </div>
 </div>
+{parcours(slug, d)}
 <div class="sec-title"><h2>Les boss et leur butin</h2></div>
 {boss}
 <p class="small">{e(bnote)} Passe la souris sur un objet pour voir ses caractéristiques (info-bulle Wowhead), ou clique pour ouvrir sa fiche.</p>

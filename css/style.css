@@ -1054,3 +1054,4 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 
 /* Mobile : un tableau large défile dans son cadre au lieu d'élargir toute la page */
 .layout>*,.fiches>*,.fiche,.article{min-width:0}
+.dj-plan{margin:0 0 14px}.dj-plan img{width:100%;height:auto;display:block;border-radius:6px}.dj-plan figcaption{font-size:.85em;opacity:.75;margin-top:4px}
