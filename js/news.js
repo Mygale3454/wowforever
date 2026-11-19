@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-19", type: "actu", lien: "news-jcj-rattrapage-rang-14.html", img: "images/pvp-cover.jpg",
+    titre: "JcJ : le rattrapage des quêtes et le rang 14 vers la semaine 8",
+    texte: "Arriver en retard ne fait rien perdre : les étapes du parcours JcJ se rattrapent. D'où viennent les points de rang, et quand viser le rang 14." },
+  { date: "2026-11-19", type: "actu", lien: "news-correctifs-17-novembre.html", img: "images/donjons-cover.jpg",
+    titre: "Correctifs du 17 novembre : pic Rochenoire, sac de couchage et paladin tank",
+    texte: "Le pic Rochenoire supérieur redevient difficile, le sac de couchage donne l'aura Reposé et l'armure d'Âmeforge passe à la puissance des sorts." },
   { date: "2026-11-18", type: "actu", lien: "news-patch-70959.html", img: "images/news/talents.jpg",
     titre: "Patch 1.60.1.70959 : le chaman Amélioration revu à la baisse",
     texte: "Frappe-tempête passe de 150 % à 100 % des dégâts de l'arme et l'Intelligence donne moins de puissance d'attaque. Le seul changement de ce petit patch." },
