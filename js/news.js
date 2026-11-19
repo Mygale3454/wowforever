@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-19", type: "actu", lien: "news-hotel-des-ventes-depot.html", img: "images/news/metiers.jpg",
+    titre: "Hôtel des ventes : le dépôt minimum enfin baissé",
+    texte: "Fini le dépôt d'1 pièce d'argent pour le moindre objet : le minimum est descendu à 10 pièces de cuivre. De quoi revendre enfin les petits objets." },
   { date: "2026-11-19", type: "actu", lien: "news-jcj-rattrapage-rang-14.html", img: "images/pvp-cover.jpg",
     titre: "JcJ : le rattrapage des quêtes et le rang 14 vers la semaine 8",
     texte: "Arriver en retard ne fait rien perdre : les étapes du parcours JcJ se rattrapent. D'où viennent les points de rang, et quand viser le rang 14." },
