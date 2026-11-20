@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-20", type: "actu", lien: "news-correctifs-19-novembre.html", img: "images/monture-eolide.jpg",
+    titre: "Correctifs du 19 novembre : monture des Éolides, Hybrideur de graines et paladin Vindicte",
+    texte: "La réduction de 10 % fonctionne enfin chez l'instructeur de monte des Éolides, l'Hybrideur de graines revient et le paladin Vindicte frappe plus fort à deux mains." },
   { date: "2026-11-20", type: "actu", lien: "news-podcast-episode-8-classes.html", img: "images/classes-cover.jpg",
     titre: "Podcast épisode 8 : ce que Blizzard prévoit pour les classes",
     texte: "Plus de puissance des sorts entre 15 et 40, des sacs plus grands, voleurs, druides Équilibre, guerriers Armes, chasseurs… Le résumé du podcast." },

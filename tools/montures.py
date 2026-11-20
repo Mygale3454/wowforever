@@ -57,7 +57,7 @@ body = f'''<main><div class="wrap">
   </tbody></table></div>
   <ul>
     <li><b>Ta première monture est offerte</b> quand tu apprends la monte : le gros de la dépense, c'est l'apprentissage.</li>
-    <li><b>-10 % avec la réduction de réputation</b> (confirmé en jeu) : 90 po au lieu de 100 pour la monte, 900 po au lieu de 1 000 pour la monte rapide. Un Éolide l'obtient chez Genn Beautemps même en étant seulement Amical avec l'Ordre suprême : la faction qui compte reste à confirmer.</li>
+    <li><b>-10 % avec la réduction de réputation</b> (confirmé en jeu) : 90 po au lieu de 100 pour la monte, 900 po au lieu de 1 000 pour la monte rapide. Pour les Éolides, la réduction s'applique chez Genn Beautemps depuis le correctif du 19 novembre ; elle a été constatée en jeu avec l'Ordre suprême seulement Amical, la faction exacte qui compte reste donc à confirmer.</li>
     <li><b>Les montures sont liées au compte</b>, mais chaque personnage doit remplir les conditions (niveau, rang de monte, classe, faction).</li>
     <li><b>Plus de restriction de taille</b> : un gnome peut monter un sabre ou un bélier. Pour les montures d'une autre race de ta faction, il faut en général être <b>Exalté</b> auprès de sa capitale.</li>
     <li>Les montures « rapides » demandent la monte de niveau 60.</li>
