@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-20", type: "actu", lien: "news-podcast-episode-8-classes.html", img: "images/classes-cover.jpg",
+    titre: "Podcast épisode 8 : ce que Blizzard prévoit pour les classes",
+    texte: "Plus de puissance des sorts entre 15 et 40, des sacs plus grands, voleurs, druides Équilibre, guerriers Armes, chasseurs… Le résumé du podcast." },
+  { date: "2026-11-20", type: "guide", lien: "news-insigne-agent-alcaz.html", img: "images/donjons-cover.jpg",
+    titre: "Insigne d'agent d'Alcaz : le jouet qui te déguise en Défias",
+    texte: "Six fragments à réunir, un par personnage : la chaîne de quêtes de la Prison d'Alcaz pour te transformer en agent défias." },
   { date: "2026-11-19", type: "actu", lien: "news-hotel-des-ventes-depot.html", img: "images/news/metiers.jpg",
     titre: "Hôtel des ventes : le dépôt minimum enfin baissé",
     texte: "Fini le dépôt d'1 pièce d'argent pour le moindre objet : le minimum est descendu à 10 pièces de cuivre. De quoi revendre enfin les petits objets." },
