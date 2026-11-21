@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-21", type: "actu", lien: "news-factions-marchandes-recettes.html", img: "images/news/metiers.jpg",
+    titre: "Factions marchandes : les recettes bientôt plus faciles à obtenir ?",
+    texte: "Caisses, commandes et réputation : comment débloquer les 600 nouvelles recettes de Forever, et ce que Blizzard veut simplifier." },
   { date: "2026-11-21", type: "actu", lien: "news-patch-71037-correctifs-20-novembre.html", img: "images/donjons-cover.jpg",
     titre: "Patch 1.60.1.71037 : donjons limités à 5 par heure",
     texte: "Nouveau patch et correctifs du 20 novembre : 5 entrées de donjon par heure au lieu de 10, Étreinte vampirique, voleur Combat, démoniste et Recherche de groupe." },
