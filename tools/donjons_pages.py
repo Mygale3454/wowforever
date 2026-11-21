@@ -55,6 +55,16 @@ PARCOURS = {
              "Les restes du paladin (quête « Retour à Uldaman ») sont un squelette à cliquer, au sol, à l'intérieur de l'instance."],
 }
 
+# Vidéos de nos sorties (chaîne Mygale TV)
+VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon complet, avec les 4 boss")}
+
+def video(slug):
+    if slug not in VIDEOS: return ""
+    vid, titre = VIDEOS[slug]
+    return f'''<div class="sec-title"><h2>La vidéo du donjon</h2></div>
+<div class="article"><a class="dj-video" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="Vidéo : {e(titre)}" loading="lazy" width="480" height="360"><span class="vid-btn" aria-hidden="true">▶</span></a>
+<p><b>{e(titre)}</b>, sur la chaîne YouTube Mygale TV. Toutes nos vidéos sont sur la page <a href="videos.html">Vidéos</a>.</p></div>'''
+
 def parcours(slug, d):
     o = OBJ.get(slug, {})
     noms = [b[0] for b in d["boss"]]
@@ -139,6 +149,7 @@ def page(slug, d):
   </div>
 </div>
 {parcours(slug, d)}
+{video(slug)}
 <div class="sec-title"><h2>Les boss et leur butin</h2></div>
 {boss}
 <p class="small">{e(bnote)} Passe la souris sur un objet pour voir ses caractéristiques (info-bulle Wowhead), ou clique pour ouvrir sa fiche.</p>

@@ -1057,3 +1057,4 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .dj-plan{margin:0 0 14px}.dj-plan img{width:100%;height:auto;display:block;border-radius:6px}.dj-plan figcaption{font-size:.85em;opacity:.75;margin-top:4px}
 .qc-soon{display:block;padding:6px 10px;border:1px dashed var(--line,#ccc);border-radius:6px;font-style:italic;opacity:.8}
 .qc-w b{font-size:inherit}
+.dj-video{position:relative;display:block;max-width:640px;margin:0 0 10px}.dj-video img{width:100%;height:auto;display:block;border-radius:8px}.dj-video .vid-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}

@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-22", type: "site", lien: "news-video-salle-des-thanes.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : la Salle des Thanes en entier",
+    texte: "Première vidéo sur la chaîne Mygale TV : le nouveau donjon des niveaux 13 à 18 du début à la fin, avec ses 4 boss." },
   { date: "2026-11-21", type: "actu", lien: "news-factions-marchandes-recettes.html", img: "images/news/metiers.jpg",
     titre: "Factions marchandes : les recettes bientôt plus faciles à obtenir ?",
     texte: "Caisses, commandes et réputation : comment débloquer les 600 nouvelles recettes de Forever, et ce que Blizzard veut simplifier." },
