@@ -63,7 +63,7 @@ def video(slug):
     vid, titre = VIDEOS[slug]
     return f'''<div class="sec-title"><h2>La vidéo du donjon</h2></div>
 <div class="article"><a class="dj-video" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="Vidéo : {e(titre)}" loading="lazy" width="480" height="360"><span class="vid-btn" aria-hidden="true">▶</span></a>
-<p><b>{e(titre)}</b>, sur la chaîne YouTube Mygale TV. Toutes nos vidéos sont sur la page <a href="videos.html">Vidéos</a>.</p></div>'''
+<p><b>{e(titre)}</b>, sur la chaîne YouTube <a href="https://www.youtube.com/@mygaletv8715" target="_blank" rel="noopener">Mygale TV</a>. Toutes nos vidéos sont sur la page <a href="videos.html">Vidéos</a>.</p></div>'''
 
 def parcours(slug, d):
     o = OBJ.get(slug, {})
