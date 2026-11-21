@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-21", type: "actu", lien: "news-patch-71037-correctifs-20-novembre.html", img: "images/donjons-cover.jpg",
+    titre: "Patch 1.60.1.71037 : donjons limités à 5 par heure",
+    texte: "Nouveau patch et correctifs du 20 novembre : 5 entrées de donjon par heure au lieu de 10, Étreinte vampirique, voleur Combat, démoniste et Recherche de groupe." },
   { date: "2026-11-20", type: "actu", lien: "news-correctifs-19-novembre.html", img: "images/monture-eolide.jpg",
     titre: "Correctifs du 19 novembre : monture des Éolides, Hybrideur de graines et paladin Vindicte",
     texte: "La réduction de 10 % fonctionne enfin chez l'instructeur de monte des Éolides, l'Hybrideur de graines revient et le paladin Vindicte frappe plus fort à deux mains." },
