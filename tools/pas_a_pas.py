@@ -510,7 +510,11 @@ for cid, cnom in CLS:
 </div>'''
         open(f"{slug}.html", "w", encoding="utf-8").write(page(f"{titre} ({cnom}) pas à pas", f"Quête de classe {cnom} dans WoW Forever : {html.escape(titre)}, niveaux {lv}, étape par étape en français.", body, SCRIPTS))
         nst = steps.count('class="pp-st"')
-        rows.append((lo, f'<a class="qc" href="{slug}.html"><span class="qc-lv">{lv}</span><span class="qc-b"><b>{html.escape(titre)}</b>{("<span class=race " + ("a" if fac == "Alliance" else "h") + ">" + fac + "</span>") if fac else ""}<span class="qc-w">{why}</span></span></a>'))
+        why_card = re.sub(r"</?a\b[^>]*>", "", why)  # pas de lien dans une carte déjà cliquable (sinon le navigateur casse la grille)
+        why_card = re.sub(r"<(\w+)[^>]*>\s*</\1>", "", why_card)
+        why_card = why_card.strip() or '<span class="qc-soon">Détails pas encore disponibles.</span>'
+        badge = f'<span class="race {"a" if fac == "Alliance" else "h"}">{fac}</span>' if fac else ""
+        rows.append((lo, f'<a class="qc" href="{slug}.html"><span class="qc-lv">{lv}</span><span class="qc-b"><b>{html.escape(titre)}</b>{badge}<span class="qc-w">{why_card}</span></span></a>'))
     rows.sort(key=lambda r: r[0])
     sections += f'<section class="qcs" id="{cid}" style="--c:{CLSCOL[cid]}"><div class="sgc-head"><img src="images/icons/class_{cid}.jpg" alt=""><h2>{cnom}</h2><span class="small">{len(rows)} guides</span></div><div class="qcl">{"".join(r[1] for r in rows)}</div></section>'
     print("classe", cid, len(rows))
@@ -526,5 +530,11 @@ hubq = f'''<main><div class="wrap">
 open("quetes-de-classe.html", "w", encoding="utf-8").write(page("Quêtes de classe pas à pas", "Toutes les quêtes de classe de WoW Forever en français : formes du druide, poisons du voleur, totems du chaman, montures du paladin et du démoniste...", hubq))
 FILTER[0] = CLASSES
 
+# Noms de donjons restés en anglais dans les textes de Polestar
+_DJ = {"Sunken Temple": "Temple englouti", "Shadowfang Keep": "Donjon d'Ombrecroc", "Scarlet Monastery": "Monastère écarlate", "Ravenholdt Manor": "Manoir de Ravenholdt"}
+for _f in _glob.glob("classe-*.html") + ["quetes-de-classe.html"]:
+    _t = open(_f, encoding="utf-8").read(); _o = _t
+    for _en, _fr in _DJ.items(): _t = re.sub(r"(?<![\w\-/=\"])" + re.escape(_en) + r"(?![\w\-])", _fr, _t)
+    if _t != _o: open(_f, "w", encoding="utf-8").write(_t)
 json.dump(sorted(MISS), open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "lieux_manquants.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(len(MISS), "textes restés en anglais (tools/lieux_manquants.json)")
