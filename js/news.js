@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-22", type: "actu", lien: "news-champs-de-bataille-bloques-quete-rochenoire.html", img: "images/pvp-cover.jpg",
+    titre: "Champs de bataille bloqués en Europe, et la quête hebdo passe à Rochenoire",
+    texte: "Des joueurs européens n'entrent plus en champ de bataille ni ne gagnent d'honneur, sans réponse de Blizzard. Et la quête d'or de la semaine se fait maintenant à Rochenoire." },
   { date: "2026-11-22", type: "site", lien: "armes.html", img: "images/classes-cover.jpg",
     titre: "Nouveau : les armes utilisables par classe",
     texte: "Un tableau clair des armes que chaque classe peut porter dans Forever, avec les nouveautés (haches du voleur, deux mains du chaman) et tous les maîtres d'armes." },
