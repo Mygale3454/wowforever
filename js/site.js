@@ -2,7 +2,7 @@
    Pour ajouter une page au menu : ajoute une ligne dans MENU ci-dessous. */
 const MENU = [
   ["index.html", "News"],
-  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["tier-list.html", "Tier lists niveau 60"], ["quetes-de-classe.html", "Quêtes de classe"], ["talents.html", "Calculateur de talents"], ["races.html", "Races"]]],
+  ["Classes / Races", [["classes.html", "Classes"], ["guides.html", "Guides de spé"], ["tier-list.html", "Tier lists niveau 60"], ["quetes-de-classe.html", "Quêtes de classe"], ["armes.html", "Armes par classe"], ["talents.html", "Calculateur de talents"], ["races.html", "Races"]]],
   ["Leveling", [["leveling.html", "Parcours 1-60"], ["pas-a-pas.html", "Guide de leveling 1-60"]]],
   ["Monde", [["debuter.html", "Bien débuter"], ["donjons.html", "Donjons & Raids"], ["pvp.html", "PvP"], ["reputations.html", "Réputations"], ["montures.html", "Montures"], ["legacy.html", "Héritage (Legacy)"]]],
   ["Métiers", [["metiers.html", "Les métiers"], ["metiers-pas-a-pas.html", "Métiers pas à pas 1-300"]]],

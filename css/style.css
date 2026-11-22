@@ -1058,3 +1058,7 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .qc-soon{display:block;padding:6px 10px;border:1px dashed var(--line,#ccc);border-radius:6px;font-style:italic;opacity:.8}
 .qc-w b{font-size:inherit}
 .dj-video{position:relative;display:block;max-width:640px;margin:0 0 10px}.dj-video img{width:100%;height:auto;display:block;border-radius:8px}.dj-video .vid-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.aw td{font-size:1.05rem}.aw td small{display:block;font-size:.6rem;font-weight:600;color:var(--muted,#888);line-height:1.15}
+.aw .aw-y{color:#2e8b3e}.aw .aw-n{color:#b9b9b9;font-weight:400}.aw .aw-q{color:#c98a12}
+.aw tr.aw-g th{text-align:left;background:var(--card2,#efe6d2);font-family:Cinzel,serif;font-size:.8rem;letter-spacing:.05em}
+.aw-tr table,.aw-tr{min-width:0}.aw-tr td{text-align:left;font-weight:400;vertical-align:top}.aw-tr td small{color:var(--muted,#888)}

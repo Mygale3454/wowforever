@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-22", type: "site", lien: "armes.html", img: "images/classes-cover.jpg",
+    titre: "Nouveau : les armes utilisables par classe",
+    texte: "Un tableau clair des armes que chaque classe peut porter dans Forever, avec les nouveautés (haches du voleur, deux mains du chaman) et tous les maîtres d'armes." },
   { date: "2026-11-22", type: "site", lien: "news-video-salle-des-thanes.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : la Salle des Thanes en entier",
     texte: "Première vidéo sur la chaîne Mygale TV : le nouveau donjon des niveaux 13 à 18 du début à la fin, avec ses 4 boss." },
