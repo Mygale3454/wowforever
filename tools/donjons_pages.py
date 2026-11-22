@@ -56,7 +56,8 @@ PARCOURS = {
 }
 
 # Vidéos de nos sorties (chaîne Mygale TV)
-VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon complet, avec les 4 boss")}
+VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon complet, avec les 4 boss"),
+          "profondeurs-de-brassenoire": ("KybRsn7H104", "Les Profondeurs de Brassenoire : donjon complet, jusqu'à Aku'mai")}
 
 def video(slug):
     if slug not in VIDEOS: return ""

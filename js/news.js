@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-22", type: "site", lien: "news-video-profondeurs-de-brassenoire.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : les Profondeurs de Brassenoire en entier",
+    texte: "Deuxième vidéo sur la chaîne Mygale TV : le donjon des niveaux 22 à 28 jusqu'à Aku'mai, avec ses 5 boss." },
   { date: "2026-11-22", type: "actu", lien: "news-champs-de-bataille-bloques-quete-rochenoire.html", img: "images/pvp-cover.jpg",
     titre: "Champs de bataille bloqués en Europe, et la quête hebdo passe à Rochenoire",
     texte: "Des joueurs européens n'entrent plus en champ de bataille ni ne gagnent d'honneur, sans réponse de Blizzard. Et la quête d'or de la semaine se fait maintenant à Rochenoire." },
