@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-22", type: "site", lien: "news-video-souilles-de-tranchebauge.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : les Souilles de Tranchebauge en entier",
+    texte: "Troisième vidéo sur la chaîne Mygale TV : le donjon des niveaux 37 à 46 avec ses 5 boss, et des chapitres pour aller droit au but." },
   { date: "2026-11-22", type: "site", lien: "news-video-profondeurs-de-brassenoire.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : les Profondeurs de Brassenoire en entier",
     texte: "Deuxième vidéo sur la chaîne Mygale TV : le donjon des niveaux 22 à 28 jusqu'à Aku'mai, avec ses 5 boss." },
