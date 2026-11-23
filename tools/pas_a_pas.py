@@ -214,6 +214,9 @@ def cond_fr(c):
         out.append(COND.get(x, x))
     return out
 
+_rv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "recettes_vendeurs.json")
+RECV = {k: v for k, v in json.load(open(_rv, encoding="utf-8")).items()} if os.path.exists(_rv) else {}
+
 def goal(body, comment, tr):
     """Renvoie (html, classes concernées ou None) ; None si la ligne n'est pas affichée."""
     try: parts = shlex.split(body.replace("'", "’"))
@@ -243,6 +246,13 @@ def goal(body, comment, tr):
     elif kw == "buy":
         name = html.escape(fr_name("item", ident)) if ident else html.escape(quoted or "")
         h = f'<span class="k">Acheter</span> {n}<b>{name}</b>{cm}'
+        rv = RECV.get(ident) if ident else None
+        if rv is not None:
+            if rv["vendeurs"]:
+                vs = "".join(f'<li{" data-only=" + chr(34) + v["faction"] + chr(34) if v["faction"] in ("Alliance", "Horde") else ""}><span class="race {"a" if v["faction"] == "Alliance" else "h" if v["faction"] == "Horde" else "s"}">{v["faction"]}</span> <b>{html.escape(v["nom"])}</b>, {html.escape(v["zone"])} <span class="xy">{v["x"]}, {v["y"]}</span></li>' for v in rv["vendeurs"])
+                h += f'<ul class="pp-vend">{vs}</ul>'
+            else:
+                h += f' <span class="gc">— marchand pas encore relevé dans Forever : <a href="https://www.wowhead.com/forever/fr/item={ident}" target="_blank" rel="noopener">voir sa fiche Wowhead</a> (onglet « Vendu par ») ou cherche-le à l\'hôtel des ventes.</span>'
     elif kw == "use": h = f'<span class="k">Utiliser</span> <b>{html.escape(fr_name("item", ident))}</b>{pos}{cm}'
     elif kw == "interact": h = f'<span class="k">Cliquer sur</span> <b>{html.escape(fr_name("object", ident))}</b>{pos}{cm}'
     elif kw == "talk": h = f'<span class="k">Parler à</span> <b>{html.escape(fr_name("npc", ident))}</b>{cm}'

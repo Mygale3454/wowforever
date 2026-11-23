@@ -1063,3 +1063,4 @@ html[data-theme="parchemin"] body,html:not([data-theme]) body{background-image:u
 .aw tr.aw-g th{text-align:left;background:var(--card2,#efe6d2);font-family:Cinzel,serif;font-size:.8rem;letter-spacing:.05em}
 .aw-tr table,.aw-tr{min-width:0}.aw-tr td{text-align:left;font-weight:400;vertical-align:top}.aw-tr td small{color:var(--muted,#888)}
 .dvid{display:inline-block;padding:3px 10px;border-radius:14px;background:#c81e1e;color:#fff!important;font-size:.78rem;font-weight:700;text-decoration:none;white-space:nowrap}.dvid:hover{background:#a01515}
+.pp-vend{list-style:none;margin:4px 0 2px 6px;padding:0}.pp-vend li{margin:2px 0;font-size:.9em}.pp-vend .race{font-size:.6rem;padding:1px 6px;margin-right:4px}
