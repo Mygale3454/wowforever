@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-23", type: "site", lien: "news-video-cite-submergee.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : la Cité submergée en entier",
+    texte: "Cinquième vidéo sur la chaîne Mygale TV : le nouveau donjon sous-marin des niveaux 35 à 42, avec ses 6 boss jusqu'à Min'loth le Serpent." },
   { date: "2026-11-23", type: "site", lien: "news-video-uldaman.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : Uldaman en entier",
     texte: "Quatrième vidéo sur la chaîne Mygale TV : la quête extérieure puis les 8 boss jusqu'à Archaedas, avec un chapitre par boss." },
