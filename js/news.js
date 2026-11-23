@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-23", type: "site", lien: "news-video-uldaman.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : Uldaman en entier",
+    texte: "Quatrième vidéo sur la chaîne Mygale TV : la quête extérieure puis les 8 boss jusqu'à Archaedas, avec un chapitre par boss." },
   { date: "2026-11-23", type: "site", lien: "guides.html", img: "images/news/niveau-60.jpg",
     titre: "Builds niveau 60 mis à jour pour les 27 spés",
     texte: "Tous les builds vérifiés sur le patch 1.60.1.71037. Les six spés touchées par les refontes de novembre (voleur, Armes, Fureur, Élémentaire) ont un nouveau build." },

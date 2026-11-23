@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Cinzel+Decorative:wght@900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202611230117">
+<link rel="stylesheet" href="css/style.css?v=202611230152">
 <link rel="canonical" href="https://foreverwow.fr/donjons.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ForeverWoW.fr">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://foreverwow.fr/images/partage.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://foreverwow.fr/"}, {"@type": "ListItem", "position": 2, "name": "Donjons & Raids", "item": "https://foreverwow.fr/donjons.html"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Donjons & Raids", "description": "Liste des donjons et raids de WoW Forever avec niveaux et emplacements.", "inLanguage": "fr-FR", "mainEntityOfPage": "https://foreverwow.fr/donjons.html", "image": ["https://foreverwow.fr/images/donjons-cover.jpg"], "datePublished": "2026-10-26", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}, "publisher": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://foreverwow.fr/"}, {"@type": "ListItem", "position": 2, "name": "Donjons & Raids", "item": "https://foreverwow.fr/donjons.html"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Donjons & Raids", "description": "Liste des donjons et raids de WoW Forever avec niveaux et emplacements.", "inLanguage": "fr-FR", "mainEntityOfPage": "https://foreverwow.fr/donjons.html", "image": ["https://foreverwow.fr/images/donjons-cover.jpg"], "datePublished": "2026-10-26", "dateModified": "2026-11-23", "author": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}, "publisher": {"@type": "Organization", "name": "ForeverWoW.fr", "url": "https://foreverwow.fr/", "logo": {"@type": "ImageObject", "url": "https://foreverwow.fr/images/logo-carre.png"}}}]</script>
 <link rel="alternate" type="application/rss+xml" title="ForeverWoW.fr – News" href="https://foreverwow.fr/rss.xml">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5144798644718811" crossorigin="anonymous"></script>
 </head>
@@ -32,7 +32,7 @@
 <div class="crumbs"><a href="index.html">News</a> › Donjons & Raids</div>
 <h1 class="page-title">Donjons et raids de WoW Forever</h1>
 <p class="page-lead">Tous les donjons de Classic reviennent, accompagnés de neuf nouveaux donjons à 5 joueurs du niveau 13 au 60 : six dans les Royaumes de l'Est et les trois plus difficiles en Kalimdor. Clique sur un donjon pour ouvrir sa page : emplacement, boss, butin et quêtes.</p>
-<p class="stamp auto"><span>📅 Mise à jour le <b>22 novembre 2026</b></span><span>🛠 Patch <b>1.60.1.71037</b></span></p>
+<p class="stamp auto"><span>📅 Mise à jour le <b>23 novembre 2026</b></span><span>🛠 Patch <b>1.60.1.71037</b></span></p>
 <div class="cover"><img src="images/donjons-cover.jpg" alt="Donjons et raids de WoW Forever" style="object-position:center 30%"></div>
 <div class="filters" id="dfilters">
   <button class="on" data-f="all">Tous</button>
@@ -110,6 +110,9 @@ const DONJONS = [["Gouffre de Ragefeu","13–18","Orgrimmar","classic",[["Notre 
 ["Wowhead","https://www.wowhead.com/forever/fr/zone=2057","WH"]]],
 ["Pic Rochenoire supérieur","60","Mont Rochenoire","classic",[["Notre guide","donjon-pic-rochenoire.html","ICI"],
 ["Wowhead","https://www.wowhead.com/forever/fr/zone=1583","WH"]]]];
+// Nos vidéos (chaîne Mygale TV) : nom du donjon -> identifiant YouTube
+const VIDEOS = {"La Salle des Thanes":"T45mZ8WVmXU","Profondeurs de Brassenoire":"KybRsn7H104","Souilles de Tranchebauge":"0Cvai40D_Lw","Uldaman":"NQFoRC2iX-4"};
+function vid(n){ const v = VIDEOS[n]; return v ? `<a class="dvid" href="https://www.youtube.com/watch?v=${v}" target="_blank" rel="noopener" title="Voir le donjon en vidéo">▶ Vidéo</a>` : ""; }
 function guides(g){
   if(!g.length) return '<span class="soon">Guide à venir</span>';
   return '<div class="gl">' + g.map(([n,u,l]) => l==="ICI" ? `<a class="glink ici" href="${u}">${n}</a>` : l==="WH" ? `<a class="glink-wh" href="${u}" target="_blank" rel="noopener">${n} ↗</a>` : `<a class="glink${l==="FR"?" fr":""}" href="${u}" target="_blank" rel="noopener">${n}<small>${l}</small></a>`).join("") + '</div>';
@@ -117,7 +120,7 @@ function guides(g){
 function afficher(f){
   document.getElementById("dtable").innerHTML = DONJONS.filter(d => f==="all" || d[3]===f).map(d =>
     { const ici = d[4].find(g => g[2]==="ICI"), nom = `${d[0]}${d[3]==="new" ? '<sup class="dnew">New</sup>' : ''}`;
-      return `<tr${ici ? ` class="dlink" data-href="${ici[1]}"` : ""}><td>${ici ? `<a class="dname" href="${ici[1]}">${nom}</a>` : `<b>${nom}</b>`}</td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td class="guides">${ici ? '' : guides(d[4])}</td></tr>`; }).join("");
+      return `<tr${ici ? ` class="dlink" data-href="${ici[1]}"` : ""}><td>${ici ? `<a class="dname" href="${ici[1]}">${nom}</a>` : `<b>${nom}</b>`}</td><td class="lvl">${d[1]}</td><td>${d[2]}</td><td class="guides">${vid(d[0])}${ici ? '' : guides(d[4])}</td></tr>`; }).join("");
   document.querySelectorAll("#dtable tr.dlink").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) location.href = tr.dataset.href; }));
 }
 afficher("all");
@@ -130,6 +133,6 @@ document.getElementById("dfilters").addEventListener("click", e => {
 </div></main>
 
 <div id="site-footer"><noscript><p><a href="a-propos.html">À propos</a> · <a href="contact.html">Contact</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · ForeverWoW.fr est un site de fan non officiel, sans lien avec Blizzard Entertainment.</p></noscript></div><!--/site-footer-->
-<script src="js/site.js?v=202611230117"></script>
+<script src="js/site.js?v=202611230152"></script>
 </body>
 </html>
