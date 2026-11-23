@@ -25,7 +25,7 @@ def liste(L):
         rows += f'<div class="tl-row"><div class="tl-t t{t}">{t}</div><ul class="tl-es">{chips}</ul></div>'
     return f'''<section class="tl" id="{L["id"]}">
   <h2>{L["titre"]}</h2>
-  <p class="stamp"><span>📅 Créée le <b>{date_fr(L["cree"])}</b></span><span>🛠 Patch <b>{L["patch"]}</b> (bêta)</span><span>Fiabilité : <b>{L["fiab"]}</b></span></p>
+  <p class="stamp"><span>📅 Créée le <b>{date_fr(L["cree"])}</b></span><span>🛠 Patch <b>{L["patch"]}</b>{" (bêta)" if L["patch"] < "1.60.1.70755" else ""}</span><span>Fiabilité : <b>{L["fiab"]}</b></span></p>
   <p>{L["intro"]}</p>
   {rows}
   <p class="small"><b>Sur quoi repose ce classement :</b> {L["base"]}</p>
@@ -36,10 +36,10 @@ body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Classes / Races › Tier lists niveau 60</div>
 <h1 class="page-title">Tier lists niveau 60</h1>
 <p class="page-lead">Quelles spécialisations dominent au niveau 60 ? Quatre classements : dégâts, tanks, soigneurs et JcJ. Clique sur une spé pour voir son build, ses statistiques et ses races conseillées.</p>
-<div class="info"><b>À lire avant tout :</b> ces classements ont été établis pendant la bêta, limitée au niveau 30. Ce sont des <b>projections</b> : chaque liste indique la date à laquelle elle a été créée et le patch utilisé. Elles seront refaites après la sortie, quand les premiers joueurs auront atteint le niveau 60 et que les raids auront ouvert. Et surtout : joue la classe qui te plaît, l'écart entre une spé S et une spé B compte peu en dehors des raids les plus durs.</div>
+<div class="info"><b>À lire avant tout :</b> les classements dégâts, tanks et soins ont été refaits le 23 novembre d'après les données d'après la sortie. Le classement JcJ date encore de la bêta. Chaque liste indique sa date et son patch. Les raids ouvrent le 9 décembre : tout peut encore bouger. Et surtout : joue la classe qui te plaît, l'écart entre une spé S et une spé B compte peu en dehors des raids les plus durs.</div>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {"".join(liste(L) for L in D["listes"])}
-<p class="small">Classements d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a> (données du 1er octobre 2026), qui recoupe les guides d'Icy Veins, les présentations de Blizzard et les classements publics. Explications rédigées par ForeverWoW. Les builds de chaque spé sont sur la page <a href="guides.html">Guides de spé</a>.</p>
+<p class="small">Dégâts, tanks et soins : d'après les tier lists de <a href="https://www.wowhead.com/forever" target="_blank" rel="noopener">Wowhead</a> du 19 novembre 2026, relayées par <a href="https://wowforever.judgehype.com/article/tier-list-dps-tank-et-soigneurs-raids-wow-forever/" target="_blank" rel="noopener">JudgeHype</a>. JcJ : d'après le projet <a href="https://snibi.github.io/forever-meta/" target="_blank" rel="noopener">Forever Meta</a> (bêta, 1er octobre 2026). Explications rédigées par ForeverWoW. Les builds de chaque spé sont sur la page <a href="guides.html">Guides de spé</a>.</p>
 </div>'''
 
 tpl = open("legacy.html", encoding="utf-8").read()

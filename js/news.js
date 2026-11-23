@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-23", type: "site", lien: "news-tier-list-23-novembre.html", img: "images/news/tier-list.jpg",
+    titre: "Tier lists niveau 60 : le classement d'après la sortie",
+    texte: "Démonistes, chasseur Survie et paladin Vindicte en tête des dégâts, druide ours en tank, chaman Restauration en soins. Et nos 27 builds vérifiés sur le dernier patch." },
+  { date: "2026-11-23", type: "actu", lien: "news-world-buffs-ecran-chargement.html", img: "images/donjons-cover.jpg",
+    titre: "Les bonus de monde disparaissent aux écrans de chargement ?",
+    texte: "Bénédiction du chef de guerre et Puissance de Hurlevent perdues après un zeppelin ou une déconnexion : des joueurs le signalent, Blizzard n'a rien confirmé." },
   { date: "2026-11-23", type: "site", lien: "news-video-cite-submergee.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : la Cité submergée en entier",
     texte: "Cinquième vidéo sur la chaîne Mygale TV : le nouveau donjon sous-marin des niveaux 35 à 42, avec ses 6 boss jusqu'à Min'loth le Serpent." },
