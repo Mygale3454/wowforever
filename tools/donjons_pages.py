@@ -22,7 +22,7 @@ DONJONS = {
   "boss": [
     ("Faldrim Courbenclume", "Faldrim Anvilmar", "L'esprit d'un ancien thane, qu'une des quêtes demande d'apaiser.",
      [("Drapé spectresprit", "Cape", 37.6), ("Sautoir éphémère", "Cou", 31.2), ("Brassards brindecieux", "Poignets", 31.2)]),
-    ("Infurnus", "Infurnus", "Le deuxième boss du tombeau.", []),
+    ("Magmatus", "Magmatus", "Le deuxième boss du tombeau, un être de magma.", []),
     ("Pilleur", "Plunder", "Le troisième boss, dont le butin est taillé dans des pièces de golem gardien.",
      [("Canne cœur-de-golem", "Bâton", 37.3), ("Bottines du golem protecteur", "Pieds", 34.1), ("Plastron de garde golem", "Torse", 28.6)]),
     ("Durgen Mornemartel", "Durgen Dirgehammer", "Le chef des pilleurs, dernier boss. Sa tête est demandée par le roi Magni.",
@@ -56,9 +56,9 @@ PARCOURS = {
 }
 
 # Vidéos de nos sorties (chaîne Mygale TV)
-VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon complet, avec les 4 boss"),
-          "profondeurs-de-brassenoire": ("KybRsn7H104", "Les Profondeurs de Brassenoire : donjon complet, jusqu'à Aku'mai"),
-          "souilles-de-tranchebauge": ("0Cvai40D_Lw", "Les Souilles de Tranchebauge : donjon complet, avec les 5 boss"),
+VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon complet, avec les 4 boss jusqu'à Durgen Mornemartel"),
+          "profondeurs-de-brassenoire": ("KybRsn7H104", "Les Profondeurs de Brassenoire : donjon complet, avec les 5 boss jusqu'à Aku'mai"),
+          "souilles-de-tranchebauge": ("0Cvai40D_Lw", "Les Souilles de Tranchebauge : donjon complet, avec les 5 boss jusqu'à Pestegueule le Pourrissant"),
           "uldaman": ("NQFoRC2iX-4", "Uldaman : donjon complet, avec les 8 boss jusqu'à Archaedas"),
           "la-prison": ("10h7zMqJR-k", "La Prison : donjon complet, avec les 4 boss jusqu'à Dextren Ward")}
 

@@ -23,7 +23,7 @@ const NEWS = [
     texte: "Bénédiction du chef de guerre et Puissance de Hurlevent perdues après un zeppelin ou une déconnexion : des joueurs le signalent, Blizzard n'a rien confirmé." },
   { date: "2026-11-23", type: "site", lien: "news-video-cite-submergee.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : la Cité submergée en entier",
-    texte: "Cinquième vidéo sur la chaîne Mygale TV : le nouveau donjon sous-marin des niveaux 35 à 42, avec ses 6 boss jusqu'à Min'loth le Serpent." },
+    texte: "Cinquième vidéo sur la chaîne Mygale TV : le nouveau donjon sous-marin des niveaux 35 à 40, avec ses 6 boss jusqu'à Min'loth le Serpent." },
   { date: "2026-11-23", type: "site", lien: "news-video-uldaman.html", img: "images/donjons-cover.jpg",
     titre: "Vidéo : Uldaman en entier",
     texte: "Quatrième vidéo sur la chaîne Mygale TV : la quête extérieure puis les 8 boss jusqu'à Archaedas, avec un chapitre par boss." },
