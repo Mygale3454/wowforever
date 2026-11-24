@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-24", type: "actu", lien: "news-correctifs-23-novembre.html", img: "images/classes.jpg",
+    titre: "Correctifs du 23 novembre : bonus de monde, cuisine et Uldaman",
+    texte: "Les bonus de monde ne disparaissent plus en changeant de zone, les plats aux palourdes donnent Bien nourri, et plusieurs sorts trop forts sont corrigés." },
   { date: "2026-11-23", type: "site", lien: "news-tier-list-23-novembre.html", img: "images/news/tier-list.jpg",
     titre: "Tier lists niveau 60 : le classement d'après la sortie",
     texte: "Démonistes, chasseur Survie et paladin Vindicte en tête des dégâts, druide ours en tank, chaman Restauration en soins. Et nos 27 builds vérifiés sur le dernier patch." },
