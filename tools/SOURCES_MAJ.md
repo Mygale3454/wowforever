@@ -22,3 +22,8 @@
 
 Règle : toujours vérifier les noms français dans f_new.sqlite (table l10n, locale frFR),
 et dire clairement quand une info n'est pas confirmée par Blizzard.
+
+## Vignettes des news
+Chaque news de js/news.js a un thème `cat` et la vignette `images/news/cat-<cat>.jpg` :
+donjons, metiers, jcj, classes, races, correctifs, quetes, objets, general, videos, site.
+Pour changer le style : tools/vignettes_news.py.

@@ -119,7 +119,7 @@ from email.utils import format_datetime
 from xml.sax.saxutils import escape as x
 src = open("js/news.js", encoding="utf-8").read()
 items = []
-for m in re.finditer(r'\{\s*date:\s*"([^"]+)",\s*type:\s*"([^"]+)",\s*lien:\s*"([^"]+)",\s*img:\s*"([^"]+)",\s*titre:\s*"((?:[^"\\]|\\.)*)",\s*texte:\s*"((?:[^"\\]|\\.)*)"\s*\}', src):
+for m in re.finditer(r'\{\s*date:\s*"([^"]+)",\s*type:\s*"([^"]+)",\s*lien:\s*"([^"]+)",\s*(?:cat:\s*"[^"]+",\s*)?img:\s*"([^"]+)",\s*titre:\s*"((?:[^"\\]|\\.)*)",\s*texte:\s*"((?:[^"\\]|\\.)*)"\s*\}', src):
     d, typ, lien, img, titre, texte = m.groups()
     items.append((d, lien, img, titre.replace('\\"', '"'), texte.replace('\\"', '"'), typ))
 items.sort(key=lambda i: i[0], reverse=True)
