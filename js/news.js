@@ -3,6 +3,12 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-24", type: "actu", lien: "news-secrets-titre-amiral-armes.html", img: "images/donjons-cover.jpg",
+    titre: "Secrets de Forever : le titre d'amiral, une dague de camouflage et des armes cachées",
+    texte: "Le titre Amiral de la Voile sanglante, une dague du Temple englouti qui donne le Camouflage, une arme secrète pour les mages et un ours tank pour les chasseurs." },
+  { date: "2026-11-24", type: "actu", lien: "news-dossiers-ouverts-24-novembre.html", img: "images/classes.jpg",
+    titre: "Coffres, monture épique et Fracasser armure : les bugs que Blizzard surveille",
+    texte: "Coffres verrouillés fermés pour l'instant, monte épique bloquée pour paladins et démonistes, or d'Uldaman réduit, et la monte des Éolides sans réduction ?" },
   { date: "2026-11-24", type: "actu", lien: "news-correctifs-23-novembre.html", img: "images/classes.jpg",
     titre: "Correctifs du 23 novembre : bonus de monde, cuisine et Uldaman",
     texte: "Les bonus de monde ne disparaissent plus en changeant de zone, les plats aux palourdes donnent Bien nourri, et plusieurs sorts trop forts sont corrigés." },
