@@ -11,7 +11,7 @@ def item(n, i=None):
     return f'<a class="wh" href="https://www.wowhead.com/forever/fr/item={i}" target="_blank" rel="noopener" data-wowhead="item={i}&domain=fr.forever">{e(n)}</a>' if i else e(n)
 
 # Identifiants des objets (données du jeu) : servent aux liens et aux info-bulles Wowhead
-ITEMS = {'Drapé spectresprit': 271097, 'Sautoir éphémère': 270227, 'Brassards brindecieux': 271096, 'Canne cœur-de-golem': 270228, 'Bottines du golem protecteur': 270229, 'Plastron de garde golem': 271098, 'Hache-croissant de Durgen': 270256, 'Jambières de Dirgehammer': 270260, 'Robe de thane déshonoré': 270261, 'Tête de Durgen Mornemartel': 274286, 'Tromblon calibré': 279894, 'Grand marteau de Forgefer': 279895, 'Cœur-de-brasier': 279896, 'Ceinture poussiéreuse': 279897, 'Brassards du marcheur des cryptes': 280095, 'Tome nain': 279898, 'Gants de pillage de tombes': 280096, 'Cape des catacombes': 279899, 'Chausses creuses-tombes': 279900}
+ITEMS = {'Drapé spectresprit': 271097, 'Sautoir éphémère': 270227, 'Brassards brindecieux': 271096, 'Canne cœur-de-golem': 270228, 'Bottines du golem protecteur': 270229, 'Plastron de garde golem': 271098, 'Hache-croissant de Durgen': 270256, 'Jambières de Dirgehammer': 270260, 'Robe de thane déshonoré': 270261, 'Tête de Durgen Mornemartel': 274286, 'Tromblon calibré': 279894, 'Grand marteau de Forgefer': 279895, 'Cœur-de-brasier': 279896, 'Ceinture poussiéreuse': 279897, 'Brassards du marcheur des cryptes': 280095, 'Tome nain': 279898, 'Gants de pillage de tombes': 280096, 'Cape des catacombes': 279899, 'Chausses creuses-tombes': 279900, 'Bloodslash Axe': 274598, 'Oathbound Bracers': 274599, 'Berserker Shackles': 274600, "Linken's Boots of Iron": 271718, 'Ancient Gurubashi Idol': 276894, 'Knucklebone Ring': 274614, 'Viscera Spaulders': 274607, 'Bloodspine Staff': 274606, 'Serpentbane Crown': 274609, "Ritual-Binder's Gloves": 274610, "Maw of Min'loth": 274608, 'Harpoon of Command': 274601, 'Brinebelly Leggings': 274602, 'Priestess Cloak': 274613, 'Frosty Blunderbuss': 274604, 'Dreadfrost Saber': 274603, 'Briny Sash': 274605, 'Waterlogged Burial Shroud': 274612, 'Heart of the Primeval': 274615, 'Robe of the Drowned': 274611, 'Tidesoaked Leggings': 279888, "Naga Priestess's Mantle": 279889, 'Rusted Troll War Belt': 279882, "Saltseer's Helm": 279930, 'Mutinous Cuffs': 279883, 'South Seas Shroud': 279884}
 
 DONJONS = {
 "salle-des-thanes": {
@@ -45,11 +45,59 @@ DONJONS = {
                "Garde la tête de Durgen (58,5 % de chances) pour le roi Magni, au palais de Forgefer."],
   "sources": [("Kami Labs", "https://kami-labs.fr/la-salle-des-thanes-wow-forever/")],
 },
+"cite-submergee": {
+  "nom": "La Cité submergée", "en": "The Drowned City", "niv": "35 à 40", "joueurs": 5, "nouveau": True,
+  "intro": "Au large de Strangleronce, la vieille cité troll d'I'lalai est remontée des flots. Des trolls morts-vivants, les nagas Écaille-de-mer et les pirates sel-augures se la disputent, sous le regard de Min'loth le Serpent. C'est l'un des neuf nouveaux donjons de Forever, ouvert à l'Alliance comme à la Horde, sans clé.",
+  "zone": "Vallée de Strangleronce", "carte": 1434, "x": 21.4, "y": 27.9,
+  "acces": "L'entrée est sous l'eau, à l'ouest du Récif infâme : une grotte marquée par une grande tablette de pierre. Prévois une potion de respiration aquatique. Côté Horde, pars du campement Grom'gol ; côté Alliance, remonte la côte depuis Baie-du-Butin.",
+  "boss": [
+    ("Zul'Alai", "Zul'Alai", "Un troll mort-vivant. Sors de sa portée pendant Heurt monstrueux (étourdissement), dissipe Frappe moisie, et accélère sous 30 % : Serment immortel le soigne et le rend plus rapide.",
+     [("Bloodslash Axe", "Hache à une main", 36), ("Oathbound Bracers", "Poignets (cuir)", 35), ("Berserker Shackles", "Poignets (mailles)", 30), ("Linken's Boots of Iron", "Pieds (mailles)", 1.8)]),
+    ("Var'Taka", "Var'Taka", "Le chef des nagas Écaille-de-mer, avec deux prêtresses : contrôles-en une et tue l'autre. Le tank le tourne dos au groupe (Enchaînement) et revient vite s'il est harponné. Active la perle lumineuse après le combat.",
+     [("Harpoon of Command", "Arme d'hast", 39), ("Brinebelly Leggings", "Jambes (cuir)", 37), ("Priestess Cloak", "Dos", 25)]),
+    ("Capitaine Lèveffroi", "Captain Dreadrise", "Le chef des pirates, sur son épave. Nettoie les pirates autour avant, garde une interruption pour la Salve d'éclairs d'eau, et libère vite un joueur pris dans la Saumure. Il craint les étourdissements. Active la perle après le combat.",
+     [("Frosty Blunderbuss", "Arme à feu", 38), ("Dreadfrost Saber", "Épée à une main", 33), ("Briny Sash", "Taille (tissu)", 29), ("Linken's Boots of Iron", "Pieds (mailles)", 1.4)]),
+    ("Élémentaire primitif", "Primeval Elemental", "Boss facultatif, dans les tunnels noyés près des archives : détruis toutes les offrandes de sa salle pour le faire venir, et attention à son souffle.",
+     [("Waterlogged Burial Shroud", "Dos", 36), ("Heart of the Primeval", "Bijou", 33), ("Robe of the Drowned", "Torse (tissu)", 31)]),
+    ("Moelle impérissable", "Deathless Marrow", "Éclair de sang touche tout le groupe et des renforts arrivent sans cesse : le tank les regroupe, on tue d'abord les gardiens qui étourdissent, sans oublier le boss. Il porte l'Idole antique des Gurubashi.",
+     [("Ancient Gurubashi Idol", "Objet de quête", 87), ("Knucklebone Ring", "Doigt", 28), ("Viscera Spaulders", "Épaules (mailles)", 26), ("Bloodspine Staff", "Bâton", 23)]),
+    ("Min'loth le Serpent", "Min'loth the Serpent", "Le dernier boss, en deux phases. En troll : protège le tank contre Torrent et prépare les soins pour Déluge. En serpent, il revient avec toute sa vie : dissipe le poison et prévois les peurs (le Totem de séisme aide). Un coffre attend dans l'épave voisine.",
+     [("Serpentbane Crown", "Tête (mailles)", 36), ("Ritual-Binder's Gloves", "Mains (cuir)", 34), ("Maw of Min'loth", "Bouclier", 30), ("Linken's Boots of Iron", "Pieds (mailles)", 2.8)]),
+  ],
+  "butin_note": "Taux relevés par Forever Changes. Les objets de ce nouveau donjon n'ont pas encore de nom français dans les données du jeu : on garde le nom anglais pour l'instant.",
+  "quetes": [
+    ("Le seul bon Écaille-de-mer…", 38, "Horde", "Commandant Aggro'gosh, Grom'gol, Strangleronce (32.2, 28.8)", "Tuer Var'Taka.",
+     ["Tidesoaked Leggings", "Naga Priestess's Mantle"], "", "Suit « Des adversaires sous les flots », du même PNJ. Dès le niveau 30."),
+    ("La cité Submergée", 40, "Horde", "Kin'weelay, Grom'gol, Strangleronce (32.2, 27.8)", "Faire des reproductions des quatre tablettes d'I'lalai avec la peau et le charbon.",
+     [], "", "Au bout de la suite « Le Récif infâme », « Les anciennes légendes des Gurubashi » et « À la recherche de la cité perdue ». Dès le niveau 30."),
+    ("L'idole des anciens Gurubashi", 40, "Horde", "Mazu'kon, Mulgore (32.6, 20.6)", "Rapporter l'Idole antique des Gurubashi, portée par la Moelle impérissable.",
+     [], "", "Dès le niveau 30."),
+    ("Cap sur les eaux troubles", 40, "Alliance", "Maître des traditions Dibbs, Austrivage, Contreforts de Hautebrande (50.6, 57.0)", "Faire des reproductions des quatre tablettes d'I'lalai.",
+     [], "", "La suite commence au Camp des rebelles de Strangleronce (Sergent Yohwa, puis frère Nimetz) et mène à Dibbs. Dès le niveau 30."),
+    ("Les magies de la cité Submergée", 40, "Alliance", "Maître des traditions Dibbs, Austrivage, Contreforts de Hautebrande (50.6, 57.0)", "Récupérer 5 fétiches d'I'lalai sur les trolls du donjon.",
+     [], "", "Dès le niveau 30."),
+    ("Les secrets des anciens Gurubashi", 40, "Alliance", "Archimage Timear, devant la Cité de Dalaran, Montagnes d'Alterac (15.6, 73.6)", "Rapporter l'Idole antique des Gurubashi, portée par la Moelle impérissable.",
+     [], "", "Dès le niveau 34."),
+    ("Sel-augures véreux", 40, "Alliance et Horde", "Krazek, Baie-du-Butin, Strangleronce (27.0, 77.2)", "Rapporter 10 artéfacts vaudou pris aux pirates sel-augures.",
+     ["Rusted Troll War Belt", "Saltseer's Helm"], "", "Dès le niveau 34."),
+    ("Le capitaine sel-augure", 40, "Alliance et Horde", "Krazek, Baie-du-Butin, Strangleronce (27.0, 77.2)", "Tuer le capitaine Lèveffroi et 3 légistes sel-augures.",
+     ["Mutinous Cuffs", "South Seas Shroud"], "", "Dès le niveau 34."),
+  ],
+  "conseils": ["Prends toutes les quêtes avant d'entrer : elles rapportent près de 48 000 points d'expérience par faction.",
+               "Il faut activer les deux perles lumineuses (après Var'Taka et après le capitaine Lèveffroi) pour ouvrir le chemin vers la fin : tuer les deux boss ne suffit pas.",
+               "Évite Zin'aka, le requin qui tourne dans le grand bassin central.",
+               "Les monstres reviennent deux heures après leur mort : pas de panique si tu dois ressortir.",
+               "Trois boss rares peuvent apparaître : Umbra et son escorte, Gill (dans les tunnels de l'élémentaire, attention à sa dynamite) et « Pyromancien » Braxton chez les pirates."],
+  "sources": [("JudgeHype", "https://wowforever.judgehype.com/article/cite-submergee/"), ("Forever Changes (butin)", "https://foreverchanges.pro/fr/dungeons/the-drowned-city")],
+},
 }
 
 OBJ = json.load(open("tools/donjons_objets.json", encoding="utf-8")) if os.path.exists("tools/donjons_objets.json") else {}
 # Repères de parcours ajoutés à la main (indices des quêtes, mécanismes)
 PARCOURS = {
+ "cite-submergee": ["Après Zul'Alai, la cité s'ouvre sur un grand bassin central : Var'Taka est dans le bâtiment au sud, l'épave du capitaine Lèveffroi dans le secteur des pirates.",
+             "Les quatre tablettes d'I'lalai (quêtes « La cité Submergée » et « Cap sur les eaux troubles ») : en bas de l'escalier à gauche après Zul'Alai, près de la salle de Var'Taka, dans un grand crâne du secteur des pirates, et près de la salle de Min'loth.",
+             "Une fois les deux perles activées, le chemin mène à la Moelle impérissable puis à Min'loth le Serpent."],
  "uldaman": ["Le Bâton de la Préhistoire ouvre la salle d'Ironaya : assemble la Hampe de Tsol (sur Revelosh) et le Médaillon de Gni'kiv (coffre de Baelog), puis utilise-le près de la maquette, dans la grande salle ronde.",
              "D'après le journal de quête : le rubis est dans une zone barricadée des nains Ombreforge, le topaze dans une urne d'une zone de troggs près des nains de l'Alliance, et le saphir sur Grimlok, le chef des troggs.",
              "Les restes du paladin (quête « Retour à Uldaman ») sont un squelette à cliquer, au sol, à l'intérieur de l'instance."],
@@ -60,7 +108,8 @@ VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon comp
           "profondeurs-de-brassenoire": ("KybRsn7H104", "Les Profondeurs de Brassenoire : donjon complet, avec les 5 boss jusqu'à Aku'mai"),
           "souilles-de-tranchebauge": ("0Cvai40D_Lw", "Les Souilles de Tranchebauge : donjon complet, avec les 5 boss jusqu'à Pestegueule le Pourrissant"),
           "uldaman": ("NQFoRC2iX-4", "Uldaman : donjon complet, avec les 8 boss jusqu'à Archaedas"),
-          "la-prison": ("10h7zMqJR-k", "La Prison : donjon complet, avec les 4 boss jusqu'à Dextren Ward")}
+          "la-prison": ("10h7zMqJR-k", "La Prison : donjon complet, avec les 4 boss jusqu'à Dextren Ward"),
+          "cite-submergee": ("1JFWQZr0nLY", "La Cité submergée : donjon complet, avec les 6 boss jusqu'à Min'loth le Serpent")}
 
 def video(slug):
     if slug not in VIDEOS: return ""
