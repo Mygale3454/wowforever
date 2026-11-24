@@ -3,6 +3,9 @@
    type : "actu" (actualité du jeu), "guide" (guide ou article), "site" (nouveauté sur le site)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-24", type: "site", lien: "news-video-prison.html", img: "images/donjons-cover.jpg",
+    titre: "Vidéo : la Prison en entier",
+    texte: "Sixième vidéo sur la chaîne Mygale TV : la Prison de Hurlevent, avec ses 4 boss jusqu'à Dextren Ward et un chapitre par boss." },
   { date: "2026-11-24", type: "actu", lien: "news-secrets-titre-amiral-armes.html", img: "images/donjons-cover.jpg",
     titre: "Secrets de Forever : le titre d'amiral, une dague de camouflage et des armes cachées",
     texte: "Le titre Amiral de la Voile sanglante, une dague du Temple englouti qui donne le Camouflage, une arme secrète pour les mages et un ours tank pour les chasseurs." },
