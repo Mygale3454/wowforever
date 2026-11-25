@@ -156,7 +156,8 @@ VIDEOS = {"salle-des-thanes": ("T45mZ8WVmXU", "La Salle des Thanes : donjon comp
           "la-prison": ("10h7zMqJR-k", "La Prison : donjon complet, avec les 4 boss jusqu'à Dextren Ward"),
           "cite-submergee": ("1JFWQZr0nLY", "La Cité submergée : donjon complet, avec les 6 boss jusqu'à Min'loth le Serpent"),
           "bastion-kroldok": ("xXw-L8tXzeo", "Le Bastion Krol'dok : donjon complet, avec les 6 boss jusqu'au Suzerain Mugg"),
-          "zul-farrak": ("ATrhzTl0RT0", "Zul'Farrak : donjon complet, avec les 8 boss jusqu'à Gahz'rilla")}
+          "zul-farrak": ("ATrhzTl0RT0", "Zul'Farrak : donjon complet, avec les 8 boss jusqu'à Gahz'rilla"),
+          "maraudon": ("Hl0lapQ10cY", "Maraudon : donjon complet, avec les 8 boss jusqu'à l'Artisan Gizlock")}
 
 def video(slug):
     if slug not in VIDEOS: return ""

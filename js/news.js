@@ -5,6 +5,9 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-25", type: "site", lien: "news-video-maraudon.html", cat: "videos", img: "images/news/cat-videos.jpg",
+    titre: "Vidéo : Maraudon en entier",
+    texte: "Neuvième vidéo sur la chaîne Mygale TV : les 8 boss de Maraudon, de Noxxion à la princesse Theradras, avec un chapitre par boss." },
   { date: "2026-11-25", type: "site", lien: "news-video-kroldok-zul-farrak.html", cat: "videos", img: "images/news/cat-videos.jpg",
     titre: "Vidéos : le Bastion Krol'dok et Zul'Farrak en entier",
     texte: "Deux nouvelles vidéos sur Mygale TV, avec un chapitre par boss. Et un nouveau guide pour le Bastion Krol'dok." },
