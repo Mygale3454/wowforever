@@ -5,6 +5,12 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-25", type: "actu", lien: "news-population-classes-races.html", cat: "classes", img: "images/news/cat-classes.jpg",
+    titre: "Qui joue quoi ? Les classes et races les plus jouées de WoW Forever",
+    texte: "Le chasseur en tête des classes, le mort-vivant en tête des races, le paladin mort-vivant comme duo préféré, et une Horde à peine devant l'Alliance." },
+  { date: "2026-11-25", type: "guide", lien: "news-secrets-dalaran-mortemines.html", cat: "donjons", img: "images/news/cat-donjons.jpg",
+    titre: "Secrets de donjon : le boss caché de Dalaran et la hache qui mine sans métier",
+    texte: "Comment invoquer Lyn the Ignored dans la Cité de Dalaran, et la hache Rockslicer des Mortemines qui permet de miner sans le métier." },
   { date: "2026-11-25", type: "actu", lien: "news-patch-71091.html", cat: "correctifs", img: "images/news/cat-correctifs.jpg",
     titre: "Patch 1.60.1.71091 : monte épique réparée, Serment de lumière et nouvelle BD",
     texte: "Les montures de classe du paladin et du démoniste donnent enfin la monte épique, Serment de lumière dure 1 heure, et une BD animée sur les Éolides." },
