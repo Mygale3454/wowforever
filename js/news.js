@@ -5,6 +5,9 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-25", type: "site", lien: "news-video-kroldok-zul-farrak.html", cat: "videos", img: "images/news/cat-videos.jpg",
+    titre: "Vidéos : le Bastion Krol'dok et Zul'Farrak en entier",
+    texte: "Deux nouvelles vidéos sur Mygale TV, avec un chapitre par boss. Et un nouveau guide pour le Bastion Krol'dok." },
   { date: "2026-11-24", type: "site", lien: "news-video-prison.html", cat: "videos", img: "images/news/cat-videos.jpg",
     titre: "Vidéo : la Prison en entier",
     texte: "Sixième vidéo sur la chaîne Mygale TV : la Prison de Hurlevent, avec ses 4 boss jusqu'à Dextren Ward et un chapitre par boss." },
