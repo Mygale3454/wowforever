@@ -100,7 +100,7 @@ const NEWS = [
     texte: "L'expérience n'est plus coupée que si un membre du groupe a 12 niveaux ou plus au-dessus des monstres. Jusqu'à 11 niveaux d'écart, tout le monde gagne son XP." },
   { date: "2026-11-15", type: "guide", lien: "news-riverglades-leveling.html", cat: "quetes", img: "images/news/cat-quetes.jpg",
     titre: "Rives Claires : la zone idéale pour monter du niveau 38 au 44",
-    texte: "Comment aller dans la nouvelle zone, pourquoi ses quêtes s'enchaînent si bien, et le Bastion de Krol'dok avec son ensemble qui transforme en ogre." },
+    texte: "Comment aller dans la nouvelle zone, pourquoi ses quêtes s'enchaînent si bien, et le Bastion Krol'dok avec son ensemble qui transforme en ogre." },
   { date: "2026-11-14", type: "actu", lien: "news-correctifs-13-novembre.html", cat: "correctifs", img: "images/news/cat-correctifs.jpg",
     titre: "Correctifs du 13 novembre : double spé réparée, Furie-des-vents, XP en donjon",
     texte: "Le bug des barres d'action de la double spécialisation est corrigé, et les monstres de donjon trop bas niveau ne donnent plus d'XP." },
