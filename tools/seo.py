@@ -14,7 +14,7 @@ LASTMOD = {f: gitdate(f) for f in pages}
 # ----- Tampon « Mise à jour le … · Patch … » sous l'introduction de chaque page -----
 # Date = dernier commit qui a vraiment changé le contenu de la page (on ignore les numéros de version ?v=,
 # les balises ajoutées par ce script et le tampon lui-même). Patch = build du jeu en vigueur à cette date.
-PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707"), ("2026-11-02", "1.60.1.70753"), ("2026-11-04", "1.60.1.70755"), ("2026-11-07", "1.60.1.70862"), ("2026-11-11", "1.60.1.70888"), ("2026-11-13", "1.60.1.70938"), ("2026-11-17", "1.60.1.70959"), ("2026-11-21", "1.60.1.71037")]
+PATCHES = [("2026-10-01", "1.60.1.70124"), ("2026-10-14", "1.60.1.70291"), ("2026-11-01", "1.60.1.70707"), ("2026-11-02", "1.60.1.70753"), ("2026-11-04", "1.60.1.70755"), ("2026-11-07", "1.60.1.70862"), ("2026-11-11", "1.60.1.70888"), ("2026-11-13", "1.60.1.70938"), ("2026-11-17", "1.60.1.70959"), ("2026-11-21", "1.60.1.71037"), ("2026-11-24", "1.60.1.71091")]
 NOSTAMP = {"index.html", "galerie.html", "actualites.html", "a-propos.html", "mentions-legales.html", "confidentialite.html", "contact.html"}
 def _norm(l):
     l = re.sub(r'<p class="stamp auto">.*?</p>', "", l)
@@ -164,7 +164,7 @@ for f in pages:
         lst = [it for _, it in order]
         badge = lambda typ: f'<span class="badge {TYP[typ][1]}">{TYP[typ][0]}</span>'
         d0, l0, i0, t0, x0, y0 = lst[0]
-        feat = (f'<a class="hero" href="{l0}"><img src="{i0}" alt=""><div class="hero-body">{badge(y0)} <span class="date">{fmt(d0)}</span>'
+        feat = (f'<a class="hero" href="{l0}"><img src="{re.sub(r'/cat-([a-z]+)\.jpg$', r'/cat-\1-grand.jpg', i0)}" alt=""><div class="hero-body">{badge(y0)} <span class="date">{fmt(d0)}</span>'
                 f'<h1>{html.escape(t0)}</h1><p>{html.escape(x0)}</p></div></a>')
         feed = "".join(f'<a class="nitem" href="{l}"><div class="nthumb"><img src="{i}" alt="" loading="lazy"></div><div class="nbody"><div class="nmeta">{badge(y)}<span class="date">{fmt(d)}</span></div><h3>{html.escape(ti)}</h3><p>{html.escape(tx)}</p></div></a>'
                        for d, l, i, ti, tx, y in lst[1:9])

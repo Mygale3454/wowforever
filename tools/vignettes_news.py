@@ -33,6 +33,7 @@ for k, (src, lab, col) in CAT.items():
     # dégradé bas + filet de couleur
     g = Image.new("L", (1, H)); [g.putpixel((0, j), int(200 * max(0, (j - H * 0.45) / (H * 0.55)) ** 1.4)) for j in range(H)]
     im = Image.composite(Image.new("RGB", (W, H), (10, 8, 12)), im, g.resize((W, H)))
+    im.save(f"images/news/cat-{k}-grand.jpg", quality=84, optimize=True)  # sans étiquette, pour la grande news
     d = ImageDraw.Draw(im)
     fo = font(42); tw = d.textlength(lab, font=fo)
     x0 = (W - tw - 48) // 2  # centré : reste visible quand la vignette est recadrée

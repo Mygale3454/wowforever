@@ -5,6 +5,9 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-25", type: "actu", lien: "news-patch-71091.html", cat: "correctifs", img: "images/news/cat-correctifs.jpg",
+    titre: "Patch 1.60.1.71091 : monte épique réparée, Serment de lumière et nouvelle BD",
+    texte: "Les montures de classe du paladin et du démoniste donnent enfin la monte épique, Serment de lumière dure 1 heure, et une BD animée sur les Éolides." },
   { date: "2026-11-25", type: "site", lien: "news-video-maraudon.html", cat: "videos", img: "images/news/cat-videos.jpg",
     titre: "Vidéo : Maraudon en entier",
     texte: "Neuvième vidéo sur la chaîne Mygale TV : les 8 boss de Maraudon, de Noxxion à la princesse Theradras, avec un chapitre par boss." },
@@ -330,7 +333,7 @@ const NEWS = [
   const f = list[0];
   document.getElementById("featured").innerHTML = `
     <a class="hero" href="${f.lien}">
-      <img src="${f.img}" alt="">
+      <img src="${f.img.replace(/\/cat-([a-z]+)\.jpg$/, "/cat-$1-grand.jpg")}" alt="">
       <div class="hero-body">${badge(f)} <span class="date">${fmt(f.date)}</span>
         <h1>${f.titre}</h1><p>${f.texte}</p></div>
     </a>`;

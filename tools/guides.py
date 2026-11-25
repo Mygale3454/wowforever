@@ -112,7 +112,7 @@ body = f'''<main><div class="wrap">
 <div class="crumbs"><a href="index.html">News</a> › Classes / Races › Guides de spé</div>
 <h1 class="page-title">Guides des spécialisations</h1>
 <p class="page-lead">Les 27 spécialisations de WoW Forever en un coup d'œil : rôle, points forts et faibles, build de talents pour le niveau 60, priorité des statistiques et races conseillées. Chaque build s'ouvre en un clic dans notre calculateur de talents.</p>
-<div class="info">Builds mis à jour le 23 novembre 2026 pour le niveau 60, sur le patch 1.60.1.71037. Les premiers raids n'ouvrent que le 9 décembre : en attendant de vrais résultats de raid, ces builds restent de la théorie. Prends-les comme une base solide, à ajuster selon ton style de jeu.</div>
+<div class="info">Builds mis à jour le 23 novembre 2026 pour le niveau 60, toujours valides sur le patch 1.60.1.71091 (25 novembre). Les premiers raids n'ouvrent que le 9 décembre : en attendant de vrais résultats de raid, ces builds restent de la théorie. Prends-les comme une base solide, à ajuster selon ton style de jeu.</div>
 <p style="margin-top:12px">Quelle spé est la plus forte au niveau 60 ? Voir les <a href="tier-list.html"><b>tier lists niveau 60</b></a>.</p>
 <nav class="jumps" style="margin-top:16px">{jumps}</nav>
 {sections}
