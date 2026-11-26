@@ -5,6 +5,9 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-26", type: "actu", lien: "news-correctifs-25-novembre.html", cat: "correctifs", img: "images/news/cat-correctifs.jpg",
+    titre: "Correctifs du 25 novembre : druide Équilibre revu, Alterac repensé et monte gratuite",
+    texte: "Gros changements du druide Équilibre, une vallée d'Alterac qui récompense les objectifs, la monte gratuite pour paladins et démonistes, et des familiers enfin critiques." },
   { date: "2026-11-25", type: "actu", lien: "news-population-classes-races.html", cat: "classes", img: "images/news/cat-classes.jpg",
     titre: "Qui joue quoi ? Les classes et races les plus jouées de WoW Forever",
     texte: "Le chasseur en tête des classes, le mort-vivant en tête des races, le paladin mort-vivant comme duo préféré, et une Horde à peine devant l'Alliance." },
