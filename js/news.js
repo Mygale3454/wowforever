@@ -5,6 +5,9 @@
           correctifs, quetes, objets, general, videos, site (vignettes créées par tools/vignettes_news.py)
    La plus récente s'affiche automatiquement en grand en haut de la page. */
 const NEWS = [
+  { date: "2026-11-27", type: "actu", lien: "news-infos-27-novembre.html", cat: "general", img: "images/news/cat-general.jpg",
+    titre: "Les infos du 27 novembre : karma à Stratholme et compte à rebours des raids",
+    texte: "Un paladin repart de Stratholme avec ses pièces T0 malgré un groupe qui lance Besoin sur tout, Alterac encore plus généreux, et les raids dans 12 jours." },
   { date: "2026-11-26", type: "actu", lien: "news-correctifs-25-novembre.html", cat: "correctifs", img: "images/news/cat-correctifs.jpg",
     titre: "Correctifs du 25 novembre : druide Équilibre revu, Alterac repensé et monte gratuite",
     texte: "Gros changements du druide Équilibre, une vallée d'Alterac qui récompense les objectifs, la monte gratuite pour paladins et démonistes, et des familiers enfin critiques." },
